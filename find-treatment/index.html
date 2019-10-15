@@ -1,0 +1,205 @@
+<html lang="en"><head><script type="text/javascript">
+	window["_gaUserPrefs"] = {
+		ioo: function() {
+			return true;
+		}
+	}
+
+</script>
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+	<meta name="generator" content="Jekyll v3.8.5">
+	<title>Jumbotron Template · Bootstrap</title>
+
+	<!--    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/jumbotron/">-->
+
+	<!-- Bootstrap core CSS -->
+	<!--
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+	<!--
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+-->
+
+
+
+	<!-- Custom styles for this template -->
+	<link href="css/custom2.css" type="text/css" rel="stylesheet">
+	<link href="css/all.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/unm2lor.css">
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+		
+		#fakevid:before {
+			font: normal normal normal 14px/1 FontAwesome;
+			font-family: 'Font Awesome 5 Free';
+			content: "\f144";
+			margin-left: 0.25em;
+			font-size: 6em;
+			vertical-align: middle;
+			color: #fff;
+			position: absolute;
+			left: 35%;
+			top: 35%;
+			text-align: center;
+			opacity: .7;
+		}
+		
+		main {
+			/*			margin-top: 161px;*/
+			margin-top: 81px;
+		}
+		
+		.btn-success {
+			color: #fff;
+			background-color: #0C867D;
+			border-color: #0C867D;
+			background: linear-gradient(to top right, #064f51, #279184);
+		}
+		
+		.input-group-text {
+			background-color: #f5eae5;
+			background-color: #e4eeef;
+			border: 1px solid #ced4da;
+			border-radius: 0;
+		}
+		
+		#accordionExample .card-header:after {
+			content: "";
+		}
+		
+		.accordion.v3 p {
+			font-size: .9em;
+			margin-bottom: 0;
+		}
+		
+		.v3#accordionExample .card-header {
+			border-top: none !important;
+		}
+		
+		.v3#accordionExample .card-header .btn {
+			padding-left: 0;
+		}
+		
+		.v3#accordionExample .card-header:before {
+			content: " ";
+			position: absolute;
+			z-index: 500;
+			left: 0;
+			width: 10px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			height: 100%;
+			border-radius: 0;
+			height: 10px;
+			top: .7em;
+			margin-left: 0;
+		}
+		
+		.inlinelink {
+			color: #279184 !important;
+		}
+		
+		.footerrow {
+			border-top: 1px solid #61BDB0;
+		}
+		
+		h4 .btn{
+			font-size:1.08rem;
+		}
+
+	</style>
+</head>
+
+<body style="background: #fff">
+	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<!-- <a class="navbar-brand mb-2" href="#"><img class="w-75" src="images/horizontal_logoCropped.png" alt="ATLAS logo"></a> -->
+				</div>
+				<div class="col-md-7">
+					<div class="row">
+            <div class="col-md-12" style="padding-right:0">
+              <!--this padding fix shouldnt' be needed. Row/col/container prob?-->
+              <ul class="navbar-nav mr-auto secondarynav d-flex align-items-end justify-content-end">
+								<li>
+									<form class="form-inline my-2 my-lg-0">
+										<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+									</form>
+								</li>
+								<li>contact us</li>
+								<li>login/register <i class="fas fa-user"></i></li>
+							</ul>
+						</div>
+						<!-- <div class="ribbon col-md-6 offset-md-6" style="background: #F16924; font-size:.75em; color: #fff; font-weight: 600; padding: .5em 1.7em .5em 1em; margin-top: 1em; position: relative;">
+
+							If you are a facility, state or payer participating in ATLAS, log in, or register for an account <i class="fa fa-times-circle" aria-hidden="true" style="position: absolute; top:.5em; right:	.5em"></i>
+            </div>-->
+            <!--</div><div class="row">-->
+
+						<div class="col-md-12" style="padding-right:0; padding-bottom: 15px; margin-left: -30%; width: 200%; max-width: 200%; flex: 200%;">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse float-right" id="navbarsExampleDefault">
+								<ul class="navbar-nav mr-auto">
+                  <!--col col-md-5 offset-md-3-->
+									<!-- <li class="nav-item active">
+                    <a class="nav-link" href="#">Find Treatment
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li> -->
+									<li class="nav-item">
+										<a class="nav-link" href="find-treatment/index.html">Find Treatment</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Learn about Treatment</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">National Principles of Care</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">About</a>
+									</li>
+									<!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          <!--end internal col-10 row-->
+        </div>
+      </div>
+			<!--<div class="row">
+				<div class="col col-md-12" style="background: red">lalal</div>
+      </div>-->
+    </div>
+  </nav> <!-- end NAV-->
+
+  
+</body>
+</html>
