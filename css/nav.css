@@ -1,0 +1,196 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* line 4, src/scss/nav.scss */
+a.nav-link {
+  padding-top: 1em;
+  padding-bottom: 0;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* line 10, src/scss/nav.scss */
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 700;
+}
+
+/* line 13, src/scss/nav.scss */
+.navbar-nav .nav-item {
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+}
+
+/* line 16, src/scss/nav.scss */
+.navbar-nav li:last-of-type a.nav-link {
+  padding-right: 0px;
+}
+
+/* line 20, src/scss/nav.scss */
+.secondarynav {
+  font-size: .8em;
+}
+
+/* line 22, src/scss/nav.scss */
+.secondarynav li {
+  padding-right: 3em;
+  color: #60C5B7;
+}
+
+/* line 26, src/scss/nav.scss */
+.secondarynav li:last-of-type {
+  padding-right: 0;
+}
+
+/* line 30, src/scss/nav.scss */
+.secondarynav .form-control {
+  height: 1.5rem !important;
+  border-radius: 0;
+  color: #60C5B7 !important;
+  padding: 0 3em !important;
+  /* border: $white; */
+  text-align: right;
+  font-size: .9em !important;
+}
+
+/* line 40, src/scss/nav.scss */
+.secondarynav .form-control:after {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-family: "Font Awesome 5 Free";
+  font-size: 5em;
+  vertical-align: middle;
+  font-weight: 900;
+  color: #60C5B7;
+  background: none;
+  position: absolute;
+  left: .5em;
+  top: 90%;
+  content: "\f002";
+  z-index: 500;
+}
+
+/*	************	begin new navbar styles **********/
+/* line 57, src/scss/nav.scss */
+nav.navbar.navbar-expand-md.navbar-light.fixed-top.bg-light {
+  padding-bottom: 0;
+  max-width: 100vw;
+  background-color: #ffffff !important;
+}
+
+/* line 63, src/scss/nav.scss */
+.navbar-nav .nav-item {
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+  position: relative;
+}
+
+/* line 68, src/scss/nav.scss */
+.navbar-nav .nav-item:hover {
+  background: #60C5B7;
+  color: #ffffff !important;
+}
+
+/* line 72, src/scss/nav.scss */
+.navbar-nav .nav-item .nav-link {
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+}
+
+/* line 76, src/scss/nav.scss */
+.navbar-nav .nav-item:hover .nav-link {
+  color: #ffffff !important;
+}
+
+/* line 79, src/scss/nav.scss */
+.navbar-expand-md .navbar-nav .nav-link {
+  /*			these need to be equal*/
+  padding-right: .7em;
+  padding-left: .7em;
+  margin-bottom: 1.5rem;
+}
+
+/* line 86, src/scss/nav.scss */
+.navbar-nav li:last-of-type a.nav-link {
+  padding-right: .7em;
+}
+
+/* line 90, src/scss/nav.scss */
+.secondarynav li:last-of-type {
+  padding-right: .7em;
+}
+
+/* line 95, src/scss/nav.scss */
+.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+/* line 100, src/scss/nav.scss */
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+/* line 111, src/scss/nav.scss */
+.navbar-nav li:hover .dropdown-menu {
+  display: block;
+}
+
+/* line 115, src/scss/nav.scss */
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: 0 2px 4px #5C5D5F;
+          box-shadow: 0 2px 4px #5C5D5F;
+}
+
+/* line 123, node_modules/bootstrap/scss/_dropdown.scss */
+/* line 126, src/scss/nav.scss */
+.dropdown-item {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 130, src/scss/nav.scss */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #60C5B7;
+  text-decoration: underline;
+  background: none;
+}
+
+/* line 137, src/scss/nav.scss */
+#secondNavOuter {
+  display: none;
+}
+
+/* line 140, src/scss/nav.scss */
+.secondNavInner {
+  display: inline;
+}
+
+/* line 143, src/scss/nav.scss */
+.secondNavInner > a {
+  color: #60C5B7 !important;
+}
+
+/* line 146, src/scss/nav.scss */
+.secondNavInner > a:hover {
+  color: #ffffff !important;
+}
+
+/* line 149, src/scss/nav.scss */
+#navToggleDivOuter {
+  display: none;
+}

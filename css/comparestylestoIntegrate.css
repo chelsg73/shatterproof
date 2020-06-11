@@ -1,0 +1,1216 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* line 2, src/scss/comparestylestoIntegrate.scss */
+#facilitytop p a {
+  word-break: break-all;
+}
+
+/* line 6, src/scss/comparestylestoIntegrate.scss */
+.facilityphone {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+@media (min-width: 768px) {
+  /* line 13, src/scss/comparestylestoIntegrate.scss */
+  #facilityhrs {
+    float: right;
+    padding-right: 0;
+  }
+  /* line 17, src/scss/comparestylestoIntegrate.scss */
+  .comparecol #facilityhrs {
+    float: left;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 23, src/scss/comparestylestoIntegrate.scss */
+  #comparefacilfeatures.linearGradBottom {
+    background: #fff;
+  }
+}
+
+/* line 29, src/scss/comparestylestoIntegrate.scss */
+#facility_geninfo {
+  font-size: .85em !important;
+}
+
+/*	table styles. Don't know if we'll want to replace with bootstrap grid so moblie's better'	*/
+/* line 34, src/scss/comparestylestoIntegrate.scss */
+#facilityinfotable td:first-of-type {
+  min-width: 160px;
+  display: table-cell;
+}
+
+/* line 39, src/scss/comparestylestoIntegrate.scss */
+#facilitypaytable td:first-of-type {
+  min-width: 210px;
+  display: table-cell;
+}
+
+@media (min-width: 768px) {
+  /* line 45, src/scss/comparestylestoIntegrate.scss */
+  #insurancecol {
+    padding-left: 4%;
+  }
+}
+
+/* line 50, src/scss/comparestylestoIntegrate.scss */
+h3 {
+  font-weight: 400;
+  color: #949598;
+  letter-spacing: .015em;
+  font-size: 1.5em;
+}
+
+/*        end table styles*/
+/* QualityMeasures COmpare stuff*/
+/* line 61, src/scss/comparestylestoIntegrate.scss */
+.card h4 {
+  font-size: 1.1em;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+/* line 68, src/scss/comparestylestoIntegrate.scss */
+.tier1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+/* line 73, src/scss/comparestylestoIntegrate.scss */
+.tier1:last-of-type {
+  border-bottom: none;
+}
+
+/* line 77, src/scss/comparestylestoIntegrate.scss */
+.tier1 .quest {
+  padding-top: .4em;
+  padding-bottom: .4em;
+  font-size: .9em;
+  line-height: 1.25em;
+  padding-left: 3em;
+  position: relative;
+}
+
+/* line 86, src/scss/comparestylestoIntegrate.scss */
+.tier1 .answ {
+  font-size: .9em;
+  line-height: 1.25em;
+  padding-top: .4em;
+  padding-bottom: .4em;
+}
+
+/* line 93, src/scss/comparestylestoIntegrate.scss */
+.tier1 .flex-grow-1 > .row {
+  min-height: 2em;
+}
+
+/* line 98, src/scss/comparestylestoIntegrate.scss */
+.answ .indicator {
+  width: 30px;
+}
+
+/* line 102, src/scss/comparestylestoIntegrate.scss */
+.answ .fas {
+  font-size: 1.3em;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 108, src/scss/comparestylestoIntegrate.scss */
+.details-wrapper {
+  font-size: .90em;
+  position: relative;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+  /*            			border-bottom: 1px solid #BCE3DE;*/
+}
+
+/* line 115, src/scss/comparestylestoIntegrate.scss */
+.details-wrapper .quest {
+  border-bottom: 1px solid #BCE3DE;
+  padding-left: 6em;
+  padding-top: .35em;
+  padding-bottom: .2em;
+  display: block;
+  font-size: .96em;
+  line-height: 1.35em;
+}
+
+/* line 125, src/scss/comparestylestoIntegrate.scss */
+.accordion li .quest {
+  display: block;
+  font-size: .96em;
+  line-height: 1.35em;
+}
+
+/* line 131, src/scss/comparestylestoIntegrate.scss */
+.details-wrapper .quest:before {
+  content: " ";
+  position: absolute;
+  z-index: 500;
+  left: 0;
+  width: 6em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  border-radius: 0;
+  height: 3px;
+  bottom: -2;
+  margin-left: 0;
+  background: #fff;
+}
+
+/* line 147, src/scss/comparestylestoIntegrate.scss */
+.details-wrapper:last-of-type {
+  margin-bottom: 1em;
+}
+
+/* line 151, src/scss/comparestylestoIntegrate.scss */
+.details-wrapper .answ {
+  border-bottom: 1px solid #BCE3DE;
+}
+
+@media (max-width: 768px) {
+  /* line 156, src/scss/comparestylestoIntegrate.scss */
+  .details-wrapper .quest {
+    border-bottom: none;
+    font-weight: 600;
+  }
+}
+
+/* line 162, src/scss/comparestylestoIntegrate.scss */
+.details-wrapper:hover,
+.tier1:hover {
+  background: #196b660d;
+}
+
+/* line 167, src/scss/comparestylestoIntegrate.scss */
+.details-wrapper .fa-minus {
+  color: #dba500;
+}
+
+/* line 171, src/scss/comparestylestoIntegrate.scss */
+.details-wrapper .fa-times {
+  color: #f16925;
+}
+
+/* line 175, src/scss/comparestylestoIntegrate.scss */
+.details-wrapper .nodata {
+  color: #949598;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+/* line 181, src/scss/comparestylestoIntegrate.scss */
+.details-wrapper.negative .quest div {
+  font-weight: 300;
+  opacity: .8;
+}
+
+/* line 186, src/scss/comparestylestoIntegrate.scss */
+.groupsserved li {
+  color: inherit !important;
+}
+
+/*		for example wide bulleted list in facility deets section*/
+/* line 191, src/scss/comparestylestoIntegrate.scss */
+.groupsserved {
+  word-break: break-word;
+}
+
+/* line 195, src/scss/comparestylestoIntegrate.scss */
+ul.groupsserved.overhang {
+  top: 1.4em;
+  position: absolute;
+  left: 100%;
+  /* top: 0px; */
+  width: 300px;
+}
+
+/* line 203, src/scss/comparestylestoIntegrate.scss */
+.accordion li .answ {
+  display: block;
+}
+
+/* line 207, src/scss/comparestylestoIntegrate.scss */
+.small.instructions {
+  color: #949598;
+}
+
+/* line 211, src/scss/comparestylestoIntegrate.scss */
+i.fa.fa-info-circle {
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+}
+
+/* line 215, src/scss/comparestylestoIntegrate.scss */
+i.fa.fa-info-circle:hover {
+  color: #3E62AC;
+}
+
+/* line 219, src/scss/comparestylestoIntegrate.scss */
+.fa-check-circle {
+  color: #279184;
+}
+
+/* line 223, src/scss/comparestylestoIntegrate.scss */
+.fa-minus-circle {
+  color: #FCAF58;
+}
+
+/* line 227, src/scss/comparestylestoIntegrate.scss */
+.fa-times {
+  color: #F16924;
+}
+
+/* line 231, src/scss/comparestylestoIntegrate.scss */
+.fa-check {
+  color: #279184;
+}
+
+/* line 235, src/scss/comparestylestoIntegrate.scss */
+.fa-question {
+  color: #bcbcbc;
+}
+
+/* line 239, src/scss/comparestylestoIntegrate.scss */
+.card li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* line 243, src/scss/comparestylestoIntegrate.scss */
+.card li:last-of-type {
+  border-bottom: none;
+}
+
+/* line 247, src/scss/comparestylestoIntegrate.scss */
+li ul {
+  list-style: none;
+  font-size: .95em;
+}
+
+/* line 252, src/scss/comparestylestoIntegrate.scss */
+#accordionExample li .fas {
+  font-size: 1.3em;
+  text-align: right;
+  float: right;
+}
+
+/* line 259, src/scss/comparestylestoIntegrate.scss */
+#accordionExample .card-header:after {
+  left: .5em;
+}
+
+/* line 263, src/scss/comparestylestoIntegrate.scss */
+.card-header .btn p {
+  font-size: .83em;
+}
+
+/*	these questions should get a more specific class name*/
+/* line 268, src/scss/comparestylestoIntegrate.scss */
+.card-header .btn .col-12.mb-3 span {
+  font-size: 1.07em;
+}
+
+/* line 272, src/scss/comparestylestoIntegrate.scss */
+b {
+  letter-spacing: .03em;
+}
+
+/* line 276, src/scss/comparestylestoIntegrate.scss */
+#accordionExample .card {
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+      -ms-flex-direction: inherit;
+          flex-direction: inherit;
+}
+
+/* line 280, src/scss/comparestylestoIntegrate.scss */
+.card-body {
+  padding: 0;
+}
+
+/* line 284, src/scss/comparestylestoIntegrate.scss */
+.card li {
+  /*border-bottom: 6px solid rgb(235, 246, 245);*/
+  padding: .3em 2em .2em 0;
+  margin-bottom: 0;
+}
+
+/* line 290, src/scss/comparestylestoIntegrate.scss */
+.card ul {
+  padding-left: 0;
+}
+
+/* line 294, src/scss/comparestylestoIntegrate.scss */
+.card li:first-of-type {
+  padding: 1em 2em .4em 0;
+}
+
+/* line 298, src/scss/comparestylestoIntegrate.scss */
+.card li ul li {
+  border-bottom: none;
+  padding: 0 2em .2em 0;
+}
+
+/* line 303, src/scss/comparestylestoIntegrate.scss */
+.card li ul li:first-of-type {
+  padding: 0 2em .4em 0;
+}
+
+/* line 307, src/scss/comparestylestoIntegrate.scss */
+.card li ul li:last-of-type {
+  padding: .2em 2em 0 0;
+}
+
+/* line 311, src/scss/comparestylestoIntegrate.scss */
+#accordionExample .card-body ul li {
+  list-style: none;
+}
+
+/* line 315, src/scss/comparestylestoIntegrate.scss */
+#patientexp .card-header .btn {
+  color: #5C5D5F !important;
+  font-size: 15px;
+  margin-top: 1em;
+  margin-bottom: .7em;
+  line-height: 1.4em;
+}
+
+/* line 323, src/scss/comparestylestoIntegrate.scss */
+#patientexp .card-header .btn[aria-expanded="true"] {
+  margin-bottom: 0;
+}
+
+/*
+		#patientexp .col-md-3,
+		#patientexp .col-3,
+*/
+/* line 331, src/scss/comparestylestoIntegrate.scss */
+#patientexp .toplabel {
+  /*			border-left: 2px solid #fff;*/
+  font-size: .8em;
+}
+
+/* line 336, src/scss/comparestylestoIntegrate.scss */
+#patientexp .col-md-3,
+#patientexp .col-3,
+#patientexp .col-md-2,
+#patientexp .col-2,
+#patientexp .answ {
+  border-left: 2px solid #fff;
+}
+
+/*
+		#patientexp .card-header {
+			background: #e5e6e88c !important;
+		}
+		
+*/
+/* line 350, src/scss/comparestylestoIntegrate.scss */
+#patientexp .card {
+  /*			background: #ebf6f5;*/
+  background: #e5e6e88c;
+  border-bottom: 12px solid #fff;
+}
+
+/* line 356, src/scss/comparestylestoIntegrate.scss */
+#patientexp .internalrow {
+  /*				to make the same as button that is header row*/
+  padding: 0rem 2rem;
+  border-top: 1px solid #dfdfdf;
+  position: relative;
+}
+
+/*
+		#patientexp .internalrow:after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 45%;
+			top: 5px;
+			right: 30px;
+			border: 1px solid #e3e3e3;
+		}
+*/
+/* line 374, src/scss/comparestylestoIntegrate.scss */
+#patientexp .internalrow .col-md-3 {
+  margin-top: 1em;
+}
+
+/* line 378, src/scss/comparestylestoIntegrate.scss */
+#patientexp.evalaccordion .card-header {
+  border-bottom: none;
+  background: none !important;
+  position: relative;
+}
+
+/* line 384, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .card {
+  margin-bottom: 1.3em;
+}
+
+/* line 388, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .card-header {
+  background-color: #fff !important;
+  border-bottom: 1px solid #fff;
+  padding: 0;
+}
+
+/* line 394, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .card-header .btn {
+  /*			temp for scss nt working*/
+  color: inherit !important;
+}
+
+/* line 399, src/scss/comparestylestoIntegrate.scss */
+.evalaccordion .card-header .btn .surveyanswer:after {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  vertical-align: middle;
+  font-weight: 900;
+  position: absolute;
+  background: none;
+  left: -.4em;
+  top: .15em !important;
+  top: inherit;
+  font-size: .95em;
+  color: #3E62AC;
+}
+
+/* line 413, src/scss/comparestylestoIntegrate.scss */
+.evalaccordion .card-header .btn[aria-expanded="true"] .surveyanswer:after {
+  content: "\f068";
+}
+
+/* line 417, src/scss/comparestylestoIntegrate.scss */
+.evalaccordion .card-header .btn[aria-expanded="false"] .surveyanswer:after {
+  content: "\f067";
+}
+
+/* line 421, src/scss/comparestylestoIntegrate.scss */
+.evalaccordion .card:first-of-type .card-header .btn .surveyanswer:after {
+  content: "" !important;
+}
+
+/* line 425, src/scss/comparestylestoIntegrate.scss */
+.evalaccordion .card .card-header.true:after {
+  content: "" !important;
+}
+
+/* line 429, src/scss/comparestylestoIntegrate.scss */
+.surveyanswer {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 15px !important;
+  /* letter-spacing: .03em; */
+}
+
+/* line 436, src/scss/comparestylestoIntegrate.scss */
+.surveypct {
+  font-weight: bold;
+  font-size: 1.28em;
+  color: #279184;
+}
+
+/* line 442, src/scss/comparestylestoIntegrate.scss */
+.stateavg .surveypct {
+  color: #5C5D5F;
+}
+
+/* line 446, src/scss/comparestylestoIntegrate.scss */
+.facility span.surveypct {
+  color: #279184;
+}
+
+/* line 450, src/scss/comparestylestoIntegrate.scss */
+.toplabel {
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+/* line 455, src/scss/comparestylestoIntegrate.scss */
+.facility .toplabel {
+  color: #3e61ab;
+}
+
+/* line 459, src/scss/comparestylestoIntegrate.scss */
+#patientexp .toplabel {
+  /*			margin-top: -1.3em;*/
+  line-height: 1.3em;
+}
+
+/* line 464, src/scss/comparestylestoIntegrate.scss */
+#accordionExample .facility span.not-provided {
+  font-size: 1.0em;
+}
+
+/* line 468, src/scss/comparestylestoIntegrate.scss */
+main {
+  margin-top: 81px;
+}
+
+/* line 472, src/scss/comparestylestoIntegrate.scss */
+#facilityaddress {
+  line-height: 1.2em;
+}
+
+/* line 476, src/scss/comparestylestoIntegrate.scss */
+.ribbon {
+  font-size: 12px !important;
+  letter-spacing: .03em;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+  width: 100%;
+  position: relative;
+  background: #F16924;
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em;
+  /* Adjust to suit */
+  /* margin: 2em auto 3em; */
+  /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+
+/* line 491, src/scss/comparestylestoIntegrate.scss */
+.ribbon:before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -.5em;
+  border: 1.8em solid #d35210;
+  z-index: -1;
+}
+
+/* line 500, src/scss/comparestylestoIntegrate.scss */
+.ribbon:before {
+  left: -2.5em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+
+/*
+.ribbon:after {
+ right: -2.5em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+*/
+/* line 513, src/scss/comparestylestoIntegrate.scss */
+.ribbon .ribbon-content:before,
+.ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #804f7c transparent transparent transparent;
+  bottom: -1em;
+}
+
+/* line 523, src/scss/comparestylestoIntegrate.scss */
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+
+/* line 528, src/scss/comparestylestoIntegrate.scss */
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+/*	add to real css one row is right*/
+/* line 534, src/scss/comparestylestoIntegrate.scss */
+.btn-success {
+  color: #fff;
+  background-color: #0C867D;
+  border-color: #0C867D;
+  background: -webkit-gradient(linear, left bottom, right top, from(#064f51), to(#279184));
+  background: linear-gradient(to top right, #064f51, #279184);
+}
+
+/* line 541, src/scss/comparestylestoIntegrate.scss */
+#reviews {
+  /*			 this would really be auto: here to show what would happen if several*/
+  overflow-y: auto;
+}
+
+/* line 546, src/scss/comparestylestoIntegrate.scss */
+#reviews .card:first-of-type {
+  border-top: 1px solid #61BDB0;
+}
+
+/* line 550, src/scss/comparestylestoIntegrate.scss */
+#accordionExample .surveypct {
+  font-size: 1.25em;
+}
+
+/* line 554, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .card {
+  margin-bottom: .6em;
+}
+
+/*
+        .v3#accordionExample .card-header h4 button {
+            line-height: 1.2em;
+            padding-top: .4em;
+        }
+*/
+/* line 564, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .card-header:before {
+  width: 18px;
+}
+
+/*		override only styles*/
+/* line 569, src/scss/comparestylestoIntegrate.scss */
+#accordionExample .card-header:after {
+  content: "";
+}
+
+/* line 573, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .card {
+  border-top-style: solid;
+  border-top-width: 2px;
+}
+
+/* line 578, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .fast.card {
+  border-top-color: #804099;
+}
+
+/* line 582, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .fast .card-header {
+  border-top: none;
+}
+
+/* line 586, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .personal.card {
+  border-top-color: #3F63AC;
+}
+
+/* line 590, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .personal .card-header {
+  border-top: none;
+}
+
+/* line 594, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .monitor.card {
+  border-top-color: #8FC640;
+}
+
+/* line 598, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .monitor .card-header {
+  border-top: none;
+}
+
+/* line 602, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .carecoord.card {
+  border-top-color: #9E2064;
+}
+
+/* line 606, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .carecoord .card-header {
+  border-top: none;
+}
+
+/* line 610, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .evidence.card {
+  border-top-color: #9C905C;
+}
+
+/* line 614, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .evidence .card-header {
+  border-top: none;
+}
+
+/* line 618, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .access.card {
+  border-top-color: #299284;
+}
+
+/* line 622, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .access .card-header {
+  border-top: none;
+}
+
+/* line 626, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .recovery.card {
+  border-top-color: #292562;
+}
+
+/* line 630, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .recovery .card-header {
+  border-top: none;
+}
+
+/*		temp to match sentence below p margins*/
+/* line 635, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .card-header .btn {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+}
+
+/* line 641, src/scss/comparestylestoIntegrate.scss */
+p.text-dark.small.offset-md-1 {
+  margin-bottom: 0;
+  display: none;
+  margin-top: .5em;
+  line-height: 1.3em;
+}
+
+/*
+		i#commentIcon {
+    font-size: 10em;
+    color: #BCE3DE;
+}
+*/
+/* line 654, src/scss/comparestylestoIntegrate.scss */
+.comment {
+  background: url(images/noun_comment_2969806.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -1em;
+}
+
+/*
+		.comment.col-md-3:after {
+    content: '\f086';
+    font-family: "Font Awesome 5 Free";
+    color: #BCE3DE;
+    width: 100%;
+    position: absolute;
+}
+*/
+/* line 671, src/scss/comparestylestoIntegrate.scss */
+.not-provided {
+  line-height: 1.2em;
+}
+
+/* line 675, src/scss/comparestylestoIntegrate.scss */
+.textblank {
+  width: 4em;
+  display: inline-block;
+  border-bottom: 1px solid;
+  margin: 0 .3em;
+}
+
+/* line 682, src/scss/comparestylestoIntegrate.scss */
+#reviews .toplabel {
+  color: #5c5d5f !important;
+  font-size: .85em;
+}
+
+/* line 687, src/scss/comparestylestoIntegrate.scss */
+#reviews .toplabel b {
+  color: #0C867D !important;
+  font-weight: 800;
+  font-size: 1.3em;
+}
+
+/* line 693, src/scss/comparestylestoIntegrate.scss */
+#reviews .toplabel .reviewpct {
+  color: #959595 !important;
+  font-size: 1.3em;
+}
+
+/*		popper.js tooltips- already defined tooltip styles elsewhere?!*/
+/* line 699, src/scss/comparestylestoIntegrate.scss */
+.tooltip-inner {
+  max-width: 400px;
+  padding: 0.25rem 0.5rem;
+  color: inherit;
+  text-align: center;
+  background-color: white;
+  border-radius: 0.25rem;
+  /* opacity: 1; */
+  -webkit-box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.31);
+  box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.31);
+  opacity: 1 !important;
+  text-align: left;
+  font-size: .97em;
+  line-height: 1.35em;
+  font-weight: 500;
+  padding: 2em;
+}
+
+/* line 717, src/scss/comparestylestoIntegrate.scss */
+.tooltip-inner ul {
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+
+/* line 722, src/scss/comparestylestoIntegrate.scss */
+.tooltip-inner ul li {
+  padding-bottom: .7em;
+}
+
+/* line 726, src/scss/comparestylestoIntegrate.scss */
+.tooltip.show {
+  opacity: 1;
+}
+
+/* line 730, src/scss/comparestylestoIntegrate.scss */
+.not-provided {
+  line-height: 1.2em;
+}
+
+/* line 734, src/scss/comparestylestoIntegrate.scss */
+.textblank {
+  width: 4em;
+  display: inline-block;
+  border-bottom: 1px solid;
+  margin: 0 .3em;
+}
+
+/* line 741, src/scss/comparestylestoIntegrate.scss */
+#reviews .toplabel {
+  color: #5c5d5f !important;
+  font-size: .85em;
+}
+
+/* line 746, src/scss/comparestylestoIntegrate.scss */
+#reviews .toplabel b {
+  color: #0C867D !important;
+  font-weight: 800;
+  font-size: 1.3em;
+}
+
+/* line 752, src/scss/comparestylestoIntegrate.scss */
+#reviews .toplabel .reviewpct {
+  color: #959595 !important;
+  font-size: 1.3em;
+}
+
+/* line 757, src/scss/comparestylestoIntegrate.scss */
+.comparecol {
+  border-left: 1px solid #61bdb0;
+}
+
+@media (max-width: 768px) {
+  /* line 762, src/scss/comparestylestoIntegrate.scss */
+  .comparecol:first-of-type {
+    border-left: none;
+  }
+}
+
+/* line 767, src/scss/comparestylestoIntegrate.scss */
+.col-1.answ.comparecol {
+  border-left: none;
+}
+
+/* line 771, src/scss/comparestylestoIntegrate.scss */
+.comparecolhead {
+  font-size: .85em;
+  letter-spacing: .03em;
+  margin-top: -1.2em;
+  color: #279084;
+  /*			is this going to need to change per-compares selected?*/
+  /*		temporary- need to restructure to always match the # of compare cols*/
+  /*			width: 1140px;*/
+  /*			this should be changed so left pad is always set at the same time as the normal display padding*/
+  /*			padding-left: 48px;*/
+  z-index: 5;
+  line-height: 1.3em;
+}
+
+/* line 785, src/scss/comparestylestoIntegrate.scss */
+.facilityfeaturescolhead {
+  font-size: .85em;
+  letter-spacing: .03em;
+  margin-top: -1.2em;
+  color: #279084;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d6e5e6));
+  background: linear-gradient(to top, #ffffff, #d6e5e6);
+}
+
+/*		if we use this- there should be broad comparecol and comparecol head styles, then just more specific rules to the specific sections (like for measures needs left pad, but facil features does not)*/
+/* line 794, src/scss/comparestylestoIntegrate.scss */
+.facilityfeaturescolhead .comparecol {
+  /*			background: linear-gradient(to top, #ffffff, #d6e5e6);*/
+  padding-top: .7em;
+  padding-bottom: .4em;
+}
+
+/* line 800, src/scss/comparestylestoIntegrate.scss */
+.comparecolhead .comparecol {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d6e5e6));
+  background: linear-gradient(to top, #ffffff, #d6e5e6);
+  padding-left: 4em;
+  padding-top: .7em;
+  padding-bottom: .4em;
+}
+
+/* line 807, src/scss/comparestylestoIntegrate.scss */
+.comparecolhead .comparecol:before {
+  content: " ";
+  position: absolute;
+  z-index: 500;
+  right: 0;
+  width: 8px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  border-radius: 0;
+  height: 100%;
+  top: 0;
+  margin-left: 0;
+  background: #fff;
+}
+
+/* line 823, src/scss/comparestylestoIntegrate.scss */
+.comparecol .small {
+  font-size: .9em;
+}
+
+/* line 827, src/scss/comparestylestoIntegrate.scss */
+.comparecol .flex-grow-1 {
+  position: relative;
+}
+
+/* line 831, src/scss/comparestylestoIntegrate.scss */
+.comparecol .flex-grow-1 span {
+  /*			position: absolute;*/
+}
+
+/* line 835, src/scss/comparestylestoIntegrate.scss */
+h4.facilitycomparetitle {
+  line-height: 1.25em;
+  border-bottom: 1px solid #61bdb0;
+  padding-top: .4em;
+}
+
+@media (max-width: 768px) {
+  /* line 842, src/scss/comparestylestoIntegrate.scss */
+  h4.facilitycomparetitle {
+    font-size: 1em;
+  }
+  /* line 845, src/scss/comparestylestoIntegrate.scss */
+  .facilityaddress,
+  .facilitydist,
+  .facilityphone,
+  .facilitylink {
+    font-size: .88em;
+  }
+}
+
+/* line 853, src/scss/comparestylestoIntegrate.scss */
+#facilityinfocomparetable {
+  font-size: .9em;
+  font-weight: 700;
+}
+
+/* line 858, src/scss/comparestylestoIntegrate.scss */
+#facility_geninfo b {
+  font-size: 1.2em;
+}
+
+/*		these should get fixed to not rely on the col-4 so all still works if we allow 3 comparisons*/
+/* line 863, src/scss/comparestylestoIntegrate.scss */
+#facilityinfocomparetable .col-4 {
+  margin-bottom: 0 !important;
+  vertical-align: text-bottom;
+  border-bottom: 1px solid #ededed;
+  padding-top: .3em;
+  padding-bottom: .3em;
+}
+
+/* line 871, src/scss/comparestylestoIntegrate.scss */
+#facilityinfocomparetable .col-4:first-of-type {
+  font-weight: 300;
+  text-align: right;
+}
+
+/* line 877, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample a.small {
+  float: right;
+  color: #3E62AC;
+  font-size: .85EM;
+  font-weight: 600;
+}
+
+/* line 886, src/scss/comparestylestoIntegrate.scss */
+.stuck {
+  position: fixed;
+  top: 108px;
+  z-index: 5;
+}
+
+/* line 892, src/scss/comparestylestoIntegrate.scss */
+.tostick.stuck {
+  height: 5em;
+}
+
+/* line 896, src/scss/comparestylestoIntegrate.scss */
+.patExpColhead {
+  border-bottom: 2px solid #fff;
+}
+
+/* line 900, src/scss/comparestylestoIntegrate.scss */
+.patExpColhead .facility {
+  color: #279184;
+  text-transform: none;
+  font-weight: 600;
+  font-size: .9em !important;
+}
+
+/* line 907, src/scss/comparestylestoIntegrate.scss */
+.tostickExp .facility {
+  color: #3e61ab;
+  text-transform: none;
+  font-weight: 600;
+  font-size: .9em !important;
+}
+
+/* line 914, src/scss/comparestylestoIntegrate.scss */
+.tostickExp.stuck {
+  width: 1140px;
+}
+
+/* line 918, src/scss/comparestylestoIntegrate.scss */
+.tostickExp .flex-grow-1 {
+  margin: 0 15px;
+}
+
+/* line 922, src/scss/comparestylestoIntegrate.scss */
+.tostickExp .flex-grow-1 .col-sm {
+  border-left: 1px solid #fff;
+}
+
+/* line 926, src/scss/comparestylestoIntegrate.scss */
+.tostickExp > .row {
+  background: #f1f1f2;
+}
+
+/* line 930, src/scss/comparestylestoIntegrate.scss */
+.tostickExp.stuck > .row {
+  background: none;
+}
+
+/* line 934, src/scss/comparestylestoIntegrate.scss */
+.tostickExp > .row > .col.flex-grow-1 {
+  border-bottom: 2px solid #fff;
+}
+
+/* line 938, src/scss/comparestylestoIntegrate.scss */
+.tostickExp.stuck > .row > .col.flex-grow-1 {
+  background: #f1f1f2;
+  /*			below is temporary mess for screenshots- needs resolving*/
+  margin-left: 0;
+  margin-right: 30px;
+}
+
+/* line 945, src/scss/comparestylestoIntegrate.scss */
+.v3#accordionExample .answ a.small:hover {
+  color: #279084;
+}
+
+/* line 949, src/scss/comparestylestoIntegrate.scss */
+.indicator align-self-center {
+  width: 40px !important;
+  /*			set this by px not em so smaller text for drill-downs doesn't shrink it*/
+  padding-right: .7em;
+}
+
+/* line 955, src/scss/comparestylestoIntegrate.scss */
+#facilityinfocomparetable .row.d-flex > div {
+  border-bottom: 1px solid #ededed;
+  padding-top: .3em;
+  padding-bottom: .3em;
+}
+
+/*
+		#facilityinfocomparetable .row.d-flex>div:first-of-type {
+			font-weight: 300;
+			text-align: right;  replaced with responsive class
+		}
+*/
+/* line 967, src/scss/comparestylestoIntegrate.scss */
+#facilityinfocomparetable .tablelabel {
+  font-weight: 300;
+  /*			text-align: right;  replaced with responsive class*/
+}
+
+/* line 972, src/scss/comparestylestoIntegrate.scss */
+.comparecol li {
+  color: inherit;
+  /*			list-style: none;*/
+  /* border-bottom: none; */
+  padding: .16em 0;
+  line-height: 1.1rem;
+}
+
+/* line 980, src/scss/comparestylestoIntegrate.scss */
+.comparecol ul {
+  padding-bottom: .8em;
+}
+
+/*		color and all caps should be consistent for this throughout the site. Size and weight will need to change with context.*/
+/* line 988, src/scss/comparestylestoIntegrate.scss */
+.nodata {
+  color: #949598;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* line 994, src/scss/comparestylestoIntegrate.scss */
+.multilevel {
+  border-right: 1px solid #61bdb0;
+  text-transform: uppercase;
+  font-size: .9em;
+  letter-spacing: .04em;
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+}
+
+/* line 1003, src/scss/comparestylestoIntegrate.scss */
+.multilevel span,
+span.multilevel {
+  border-top: 1px solid #f16925;
+}
+
+/* line 1008, src/scss/comparestylestoIntegrate.scss */
+h4 .multilevel {
+  display: block;
+  font-size: .64em;
+  border-right: none;
+  line-height: 1em;
+  padding-top: .42em;
+  letter-spacing: .03em;
+}
+
+/* line 1017, src/scss/comparestylestoIntegrate.scss */
+#facilitytop .comparecol .fas.fa-times-circle {
+  /*
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .3em;
+*/
+  color: #BCE3DE;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+  text-align: right;
+  float: right;
+  line-height: 0;
+}
+
+/* line 1031, src/scss/comparestylestoIntegrate.scss */
+#facilitytop .comparecol .fas.fa-times-circle:hover {
+  color: #fff;
+}
+
+/* line 1035, src/scss/comparestylestoIntegrate.scss */
+#comparenames {
+  margin-top: -1em;
+}

@@ -1,0 +1,193 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* line 3, src/scss/supportpgaccordion.scss */
+.supportpg .hero_overlay {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+3,1+34,0+83 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(3%, rgba(0, 0, 0, 0)), color-stop(34%, rgba(0, 0, 0, 0.54)), color-stop(83%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 3%, rgba(0, 0, 0, 0.54) 34%, rgba(0, 0, 0, 0) 83%, rgba(0, 0, 0, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/* line 12, src/scss/supportpgaccordion.scss */
+.supportpg .pagetitle {
+  font-family: 'museo-sans';
+  font-size: 2.4em;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: .02em;
+  text-transform: none;
+  margin: 4.2em 0 1.8em;
+}
+
+/* line 21, src/scss/supportpgaccordion.scss */
+.supportpg h2 {
+  font-size: 2.35rem;
+}
+
+/* line 24, src/scss/supportpgaccordion.scss */
+.supportpg h3 {
+  font-weight: 400;
+  color: #949598;
+  letter-spacing: .015em;
+  font-size: 1.01em;
+}
+
+/* line 30, src/scss/supportpgaccordion.scss */
+.supportpg .facility_header {
+  color: #0C867D;
+  letter-spacing: .03em;
+  font-size: 1.05em;
+  font-weight: 700;
+}
+
+/* line 36, src/scss/supportpgaccordion.scss */
+.supportpg .clickExpand {
+  color: #949598;
+}
+
+/* line 39, src/scss/supportpgaccordion.scss */
+.supportpg .toplabel {
+  font-size: .8em;
+  line-height: 1.1em;
+  padding: 0 0 0 1rem;
+}
+
+/* line 44, src/scss/supportpgaccordion.scss */
+.supportpg .border-bottom {
+  border-bottom: 2px solid #e3e3e3;
+}
+
+/* line 47, src/scss/supportpgaccordion.scss */
+.supportpg .internalrow {
+  /*				to make the same as button that is header row*/
+  padding: 0rem 2rem;
+  border-top: 1px solid #dfdfdf;
+  position: relative;
+}
+
+/* line 53, src/scss/supportpgaccordion.scss */
+.supportpg .internalrow .col-md-3 {
+  margin-top: 1em;
+}
+
+/* line 56, src/scss/supportpgaccordion.scss */
+.supportpg .card {
+  border-bottom: 12px solid #fff;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+}
+
+/* line 62, src/scss/supportpgaccordion.scss */
+.supportpg .card-header {
+  border-bottom: none;
+  background: none !important;
+  position: relative;
+  border-bottom: 3px solid #fff;
+  padding: 0px;
+}
+
+/* line 69, src/scss/supportpgaccordion.scss */
+.supportpg .card-header .btn {
+  color: #5C5D5F !important;
+  line-height: 1.4em;
+  width: 100%;
+  text-align: left;
+}
+
+/* line 75, src/scss/supportpgaccordion.scss */
+.supportpg .card-header .btn[aria-expanded="true"] {
+  margin-bottom: 0;
+  border-bottom: 1px solid #0C867D;
+}
+
+/* line 80, src/scss/supportpgaccordion.scss */
+.supportpg .card-header .btn .expander:after {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  vertical-align: middle;
+  font-weight: 900;
+  position: absolute;
+  background: none;
+  left: -15px;
+  top: .65em;
+  color: #11857d;
+  -webkit-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
+}
+
+/* line 93, src/scss/supportpgaccordion.scss */
+.supportpg .card-header .btn[aria-expanded="true"] .expander:after {
+  content: "\f068";
+}
+
+/* line 96, src/scss/supportpgaccordion.scss */
+.supportpg .card-header .btn[aria-expanded="false"] .expander:after {
+  content: "\f067";
+}
+
+/* line 99, src/scss/supportpgaccordion.scss */
+.supportpg .card-header.true:after {
+  color: #0C867D;
+  background: #fff;
+}
+
+/* line 103, src/scss/supportpgaccordion.scss */
+.supportpg .card-header.false:after {
+  color: #F26722;
+  background: #fff;
+  content: "\f057";
+}
+
+/* line 108, src/scss/supportpgaccordion.scss */
+.supportpg li,
+.supportpg .card ul li {
+  list-style: none;
+  color: #5C5D5F;
+  border-bottom: none;
+  font-size: 1em;
+}
+
+/* line 115, src/scss/supportpgaccordion.scss */
+.supportpg li ul {
+  font-size: 1em;
+}
+
+/* line 118, src/scss/supportpgaccordion.scss */
+.supportpg ul li::before {
+  content: "\2022";
+  color: #0d867d;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* line 127, src/scss/supportpgaccordion.scss */
+.supportpg ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  -webkit-padding-start: 25px;
+          padding-inline-start: 25px;
+}
+
+/* line 132, src/scss/supportpgaccordion.scss */
+.supportpg ol li {
+  counter-increment: my-awesome-counter;
+}
+
+/* line 135, src/scss/supportpgaccordion.scss */
+.supportpg ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: #0C867D;
+  font-weight: 600;
+  font-size: 1.2em;
+}

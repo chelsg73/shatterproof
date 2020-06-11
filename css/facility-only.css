@@ -1,0 +1,294 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* line 7, src/scss/facility-only.scss */
+h3 {
+  font-weight: 400;
+  color: #949598;
+  letter-spacing: .015em;
+  font-size: 1.5em;
+}
+
+/* line 14, src/scss/facility-only.scss */
+.toplabel {
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+/* line 20, src/scss/facility-only.scss */
+p.text-dark.small.offset-md-1 {
+  margin-bottom: 0;
+  display: none;
+  margin-top: .5em;
+  line-height: 1.3em;
+}
+
+/* line 27, src/scss/facility-only.scss */
+.not-provided {
+  line-height: 1.2em;
+  color: #949598;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+/* line 35, src/scss/facility-only.scss */
+.textblank {
+  width: 4em;
+  display: inline-block;
+  border-bottom: 1px solid;
+  margin: 0 .3em;
+}
+
+/* line 46, src/scss/facility-only.scss */
+.facility .toplabel {
+  color: #0C867D;
+}
+
+/* line 50, src/scss/facility-only.scss */
+.facility-top-table .nodata {
+  color: #949598;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* line 65, src/scss/facility-only.scss */
+.facility-top-table td {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 70, src/scss/facility-only.scss */
+.facility-top-table td, #facilityinfocomparetable .row.d-flex > div {
+  vertical-align: text-bottom;
+  border-bottom: 1px solid #ededed;
+  font-weight: 700;
+  color: #5C5D5F;
+  font-size: 0.9em;
+  padding-top: .38em;
+  padding-bottom: .38em;
+}
+
+/* line 80, src/scss/facility-only.scss */
+.facility_header {
+  color: #0C867D;
+  letter-spacing: .03em;
+  font-size: 1.05em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* line 89, src/scss/facility-only.scss */
+#facilityaddress {
+  line-height: 1.2em;
+}
+
+/* line 93, src/scss/facility-only.scss */
+.facilitytitle {
+  font-family: 'museo-sans';
+  font-size: 2.4em;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: .02em;
+  text-transform: none;
+}
+
+/* line 102, src/scss/facility-only.scss */
+.facilityphone {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+/* line 108, src/scss/facility-only.scss */
+.facility-top-table td:first-of-type, #facilityinfocomparetable .tablelabel {
+  font-weight: 300 !important;
+  min-width: 2.6rem;
+}
+
+/* line 113, src/scss/facility-only.scss */
+.facility-top-table td:first-of-type {
+  display: table-cell;
+}
+
+/* line 117, src/scss/facility-only.scss */
+#facilityinfotable td:first-of-type {
+  min-width: 160px !important;
+}
+
+/* line 121, src/scss/facility-only.scss */
+#facilitypaytable td:first-of-type {
+  min-width: 210px !important;
+}
+
+/* line 125, src/scss/facility-only.scss */
+#facilityinfocomparetable li {
+  line-height: 1.25em;
+  padding-bottom: .3em;
+}
+
+/* line 130, src/scss/facility-only.scss */
+#facility_multilevel {
+  border-top: 1px solid #60C5B7;
+}
+
+/* line 133, src/scss/facility-only.scss */
+#facility_multilevel a.careleveltab {
+  border-right: 1px solid #60C5B7;
+  font-family: "Tungsten";
+  text-transform: uppercase;
+  font-size: 1.6em;
+  letter-spacing: .04em;
+  line-height: 1.25em;
+  color: white;
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+}
+
+/* line 143, src/scss/facility-only.scss */
+#facility_multilevel a.careleveltab:hover {
+  color: white !important;
+  background: #60C5B7;
+  text-decoration: none;
+}
+
+/* line 150, src/scss/facility-only.scss */
+#facility_multilevel a.active {
+  background: #fff;
+  color: #0C867D;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d6e5e6));
+  background: linear-gradient(to top, #ffffff, #d6e5e6);
+  border-top: 3px solid #60C5B7;
+  -webkit-box-shadow: 0px -7px 7px 1px rgba(12, 86, 81, 0.53);
+          box-shadow: 0px -7px 7px 1px rgba(12, 86, 81, 0.53);
+}
+
+/* line 157, src/scss/facility-only.scss */
+#facility_multilevel a.active span {
+  border-bottom: 2px solid #F26722;
+  padding: 0 5px;
+}
+
+/* line 162, src/scss/facility-only.scss */
+#facility_multilevel a.active:hover {
+  color: #fff;
+}
+
+/* line 164, src/scss/facility-only.scss */
+#facility_multilevel a.active:hover span {
+  border-bottom: 2px solid #60C5B7 !important;
+}
+
+/* line 170, src/scss/facility-only.scss */
+#facility_multilevel .careleveltab .fa.fa-info-circle {
+  font-size: .55em;
+}
+
+/* line 175, src/scss/facility-only.scss */
+#facility_multilevel .careleveltab .fa.fa-info-circle {
+  color: #a2dcd4;
+}
+
+/* line 179, src/scss/facility-only.scss */
+#facility_multilevel .careleveltab.active .fa.fa-info-circle {
+  color: #a4a4a4;
+}
+
+/* line 183, src/scss/facility-only.scss */
+#facility_multilevel .careleveltab .fa.fa-info-circle:before {
+  top: -1em;
+  position: relative;
+  padding-left: .5em;
+}
+
+@media (max-width: 576px) {
+  /* line 193, src/scss/facility-only.scss */
+  .facInfoheader {
+    border-left: 15px solid #196c66;
+    border-right: 15px solid #196c66;
+  }
+}
+
+/* line 199, src/scss/facility-only.scss */
+.facInfo {
+  border-left: 15px solid #196c66;
+  border-right: 15px solid #196c66;
+}
+
+/* line 208, src/scss/facility-only.scss */
+.surveyanswer {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 15px !important;
+  /* letter-spacing: .03em; */
+}
+
+/* line 215, src/scss/facility-only.scss */
+.surveypct {
+  font-weight: bold;
+  font-size: 1.28em;
+  color: #0C867D;
+}
+
+/* line 222, src/scss/facility-only.scss */
+.stateavg .surveypct {
+  color: #5C5D5F;
+}
+
+/* line 233, src/scss/facility-only.scss */
+.tooltip-inner {
+  max-width: 400px;
+  padding: 0.25rem 0.5rem;
+  color: inherit;
+  text-align: center;
+  background-color: white;
+  border-radius: 0.25rem;
+  /* opacity: 1; */
+  -webkit-box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.31);
+  box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.31);
+  opacity: 1 !important;
+  text-align: left;
+  font-size: .97em;
+  line-height: 1.35em;
+  font-weight: 500;
+  padding: 2em;
+}
+
+/* line 251, src/scss/facility-only.scss */
+.tooltip-inner ul {
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+
+/* line 256, src/scss/facility-only.scss */
+.tooltip-inner ul li {
+  padding-bottom: .7em;
+}
+
+/* line 260, src/scss/facility-only.scss */
+.tooltip.show {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  /* line 266, src/scss/facility-only.scss */
+  #facilityhrs {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 272, src/scss/facility-only.scss */
+  .row.contentblock {
+    padding-bottom: 0;
+  }
+  /* line 277, src/scss/facility-only.scss */
+  #qualityCare .card:last-of-type {
+    margin-bottom: 0;
+  }
+}

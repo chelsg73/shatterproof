@@ -1,0 +1,109 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* line 4, src/scss/compare-only.scss */
+#facilitytop #compareremoval .comparecol .fas.fa-times-circle {
+  color: #a2dcd4;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+  text-align: right;
+  float: right;
+  line-height: 0;
+}
+
+/* line 11, src/scss/compare-only.scss */
+#facilitytop h4 .multilevel {
+  display: block;
+  font-size: .64em;
+  line-height: 1em;
+  padding-top: .42em;
+}
+
+/* line 18, src/scss/compare-only.scss */
+h4.facilitycomparetitle {
+  line-height: 1.25em;
+  border-bottom: 1px solid #60C5B7;
+  padding-top: .4em;
+}
+
+/* line 24, src/scss/compare-only.scss */
+#facilitytop p a {
+  word-break: break-all;
+}
+
+/* line 27, src/scss/compare-only.scss */
+.groupsserved {
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  /* line 31, src/scss/compare-only.scss */
+  h4.facilitycomparetitle {
+    font-size: 1em;
+  }
+  /* line 34, src/scss/compare-only.scss */
+  .facilityaddress,
+  .facilitydist,
+  .facilityphone,
+  .facilitylink {
+    font-size: .88em;
+  }
+  /* line 40, src/scss/compare-only.scss */
+  .groupsserved {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 45, src/scss/compare-only.scss */
+  #facilityhrs {
+    float: right;
+    padding-right: 0;
+  }
+  /* line 49, src/scss/compare-only.scss */
+  .comparecol #facilityhrs {
+    float: left;
+  }
+  /* line 52, src/scss/compare-only.scss */
+  #insurancecol {
+    padding-left: 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 57, src/scss/compare-only.scss */
+  #comparefacilfeatures.linearGradBottom {
+    background: #fff;
+  }
+}
+
+/* line 63, src/scss/compare-only.scss */
+.facilityfeaturescolhead {
+  display: none;
+}
+
+/* line 66, src/scss/compare-only.scss */
+.facilityfeaturescolhead {
+  font-size: .85em;
+  letter-spacing: .03em;
+  margin-top: -1.2em;
+  color: #0C867D;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d6e5e6));
+  background: linear-gradient(to top, #ffffff, #d6e5e6);
+}
+
+/* line 73, src/scss/compare-only.scss */
+.facilityfeaturescolhead .comparecol {
+  padding-top: .7em;
+  padding-bottom: .4em;
+}
+
+/* line 79, src/scss/compare-only.scss */
+#qualityCare .row.tier1 > div {
+  padding-top: 0;
+}

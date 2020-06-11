@@ -1,0 +1,1237 @@
+<html lang="en">
+<script type="text/javascript">
+	window["_gaUserPrefs"] = {
+		ioo: function() {
+			return true;
+		}
+	}
+
+</script>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+	<meta name="generator" content="Jekyll v3.8.5">
+	<title>Jumbotron Template · Bootstrap</title>
+
+	<!--    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/jumbotron/">-->
+
+	<!-- Bootstrap core CSS -->
+	<!--
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+	<!--
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+-->
+
+
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+
+	</style>
+	<!-- Custom styles for this template -->
+	<link href="/dist/css/custom.css" rel="stylesheet">
+	<link href="/node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+
+	<style>
+		#facility_geninfo {
+			font-size: .85em !important;
+		}
+		
+		.accordion li .quest {
+			display: block;
+		}
+		
+		.accordion li .answ {
+			display: block;
+		}
+		
+		.answ .small {
+			padding-left: 1em;
+		}
+		
+		i.fa.fa-info-circle {
+			color: #a4a4a4;
+		}
+		
+		i.fa.fa-info {
+			color: #a4a4a4;
+			font-size: .8em;
+			vertical-align: middle;
+			vertical-align: text-top;
+		}
+		
+		.fa-check-circle {
+			color: #279184;
+		}
+		
+		.fa-ban {
+			color: #F16924;
+		}
+		
+		.card li {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+		}
+		
+		.card li:last-of-type {
+			border-bottom: none;
+		}
+		
+		li ul {
+			list-style: none;
+			font-size: .95em;
+		}
+		
+		#accordionExample li .fas {
+			font-size: 1.3em;
+			text-align: right;
+			float: right;
+		}
+		
+		#accordionExample li ul li .fas {
+			font-size: 1em;
+		}
+		
+		.card li ul li {
+			border-bottom: none;
+			padding-bottom: 0;
+			margin-bottom: 0.3em;
+		}
+		
+		.card li ul li .quest {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+		}
+		
+		.card li ul li .answ {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+		}
+		
+		.card li ul li:last-of-type .answ {
+			border-bottom: none;
+		}
+		
+		.card li ul li:last-of-type .quest {
+			border-bottom: none;
+		}
+		
+		#patientex .card-header {
+			background: #e5e6e88c !important;
+		}
+		
+		#patientex .card-header .btn {
+			color: #333 !important;
+			padding-left: 1.75em;
+		}
+		
+		#patientex .card-header .btn {
+			font-size: 15px;
+			margin-top: 1em;
+			margin-bottom: .7em;
+		}
+		
+		#patientex .col-md-3 {
+			text-align: center;
+			border-left: 2px solid #fff;
+		}
+		/*
+		.card-header p{
+			margin-left:3em
+		}
+*/
+		
+		.v3#accordionExample .card-header {
+			background-color: #fff !important;
+			border-bottom: 1px solid #fff;
+			padding-left: 0;
+		}
+		
+		.v3#accordionExample .card-header h4 {
+			background-color: #E5E6E8 !important;
+			padding-left: 1em;
+		}
+		
+		#facility_geninfo table td {
+			color: #fff;
+		}
+		
+		#facility_geninfo table td:first-of-type {
+			color: #fff;
+		}
+		
+		#facility_geninfo b {
+			color: #fff;
+			letter-spacing: .03em;
+		}
+		
+		#topsection b,
+		strong {
+			font-weight: bolder;
+			font-weight: 400;
+			text-transform: uppercase;
+			font-size: .8em;
+			letter-spacing: .02em;
+			opacity: .75;
+			color: #DAE3F6;
+		}
+		
+		.timetable td {
+			padding-left: .6em;
+		}
+		
+		.timetable td:last-of-type {
+			font-weight: 100;
+			font-size: .9em;
+		}
+		
+		.surveyanswer {
+			font-weight: 600;
+			font-style: italic;
+			/* letter-spacing: .03em; */
+		}
+		
+		.surveypct {
+			font-weight: bold;
+			font-size: 1.5em;
+			color: #3e61ab;
+		}
+		
+		#facility_geninfo table td {
+			padding: .38em 0;
+			vertical-align: text-bottom;
+			border-bottom: 1px solid #84A1DD;
+		}
+		
+		b {
+			letter-spacing: .03em;
+		}
+
+	</style>
+
+
+
+</head>
+
+<body style="background: #3e62ac">
+
+	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+
+		<div class="container">
+			<div class="row" style="width:100%">
+				<div class="col-md-5">
+					<a class="navbar-brand" href="#"><img class="w-75" src="/images/horizontal_logoCropped.png" alt="ATLAS logo"></a>
+
+				</div>
+
+
+
+				<div class="col-md-7 d-flex align-items-end justify-content-end">
+					<div class="row">
+
+						<div class="col-md-12" style="padding-right:0">
+							<!--							this padding fix shouldnt' be needed. Row/col/container prob?-->
+							<ul class="navbar-nav mr-auto secondarynav d-flex align-items-end justify-content-end">
+								<li>
+									<form class="form-inline my-2 my-lg-0">
+										<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+									</form>
+								</li>
+								<li>contact us</li>
+								<li>account <i class="fas fa-user"></i></li>
+
+							</ul>
+						</div>
+
+
+						<!--					</div><div class="row">-->
+
+						<div class="col-md-12  " style="padding-right:0">
+
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse float-right" id="navbarsExampleDefault" style="font-size: .9em;">
+								<ul class="navbar-nav mr-auto">
+									<!--				col col-md-5 offset-md-3-->
+									<!--
+									<li class="nav-item active">
+										<a class="nav-link" href="#">Find Treatment
+						<span class="sr-only">(current)</span>
+					</a>
+									</li>
+-->
+									<li class="nav-item">
+										<a class="nav-link" href="#">Treatment Options</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">National Principles of Care</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">About the Tool</a>
+									</li>
+
+									<!--
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+-->
+								</ul>
+
+
+							</div>
+
+						</div>
+					</div>
+					<!--					end internal col-10 row-->
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+	</nav>
+
+	<main role="main">
+		<div class="row">
+			<div class="container mt-5 text-light" id="topsection">
+				<div class="row">
+
+					<div class="col-md-8">
+						<div class="row">
+
+							<!--							<div class="col-md-6" style="border-right:6px solid #fff; border-left:6px solid #fff; padding:2em; background: #3e62ac">-->
+							<div class="col-md-8 mt-3 mb-3 mt-4">
+								<!--								<h2 class="mt-5" style="font-family:'Museo Slab'; font-size:2.5em; text-transform: uppercase; font-weight: 600; color:#fff;">Facility Name</h2>-->
+								<h2 class="mt-5" style="font-family:'Museo Slab'; font-size:2.6em; text-transform: none; font-weight: 100; color:#fff;">Facility Name</h2>
+								<br/>
+								<p>Some space here for some about text for a facility if it is available. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. </p>
+							</div>
+							<div class="col-md-4 d-flex align-items-end  justify-content-end mt-4" style="padding-top:2em;">
+
+								<p class="mt-5"><b>Facility Hours:</b>
+									<table class="mt-2 timetable text-right text-light mb-4 ">
+										<tr>
+											<td>Mon: </td>
+											<td>8am - 4pm</td>
+										</tr>
+										<tr>
+											<td>Tue: </td>
+											<td>8am - 9pm</td>
+										</tr>
+										<tr>
+											<td>Wed: </td>
+											<td>8am - 9pm</td>
+										</tr>
+										<tr>
+											<td>Thu: </td>
+											<td>8am - 9pm</td>
+										</tr>
+										<tr>
+											<td>Fri: </td>
+											<td>8am - 9pm</td>
+										</tr>
+										<tr>
+											<td>Sat: </td>
+											<td>8am - 4pm</td>
+										</tr>
+										<tr>
+											<td>Sun: </td>
+											<td>8am - 4pm</td>
+										</tr>
+									</table>
+
+
+							</div>
+						</div>
+
+						<!--						<div class="row">-->
+
+						<!--							<div class="col-md-12">-->
+
+						<div class="row mb-4">
+							<div class="col-md-6">
+								<!--							<b>Address:</b><br/>-->
+								937 Fulton Street, 2nd and 3rd Floors
+								<br/>Brooklyn, NY 11238
+							</div>
+							<div class="col-md-3">
+								<!--							<b>Main Phone Number:</b><br/>-->
+								718-789-1212</div>
+
+							<div class="col-md-3">
+								<a class="text-light" href="">
+									<!--								<b>Website:</b><br/> -->http://www.startny.org</a>
+							</div>
+						</div>
+
+
+
+
+						<!--
+								<b>Facility Hours:</b>
+
+
+								<table class=" col-md-12 timetable text-right text-light mb-4">
+									<tr class="text-left">
+										<td>Sun: </td>
+										<td>Mon: </td>
+										<td>Tue: </td>
+										<td>Wed: </td>
+										<td>Thu: </td>
+										<td>Fri: </td>
+										<td>Sat: </td>
+
+									</tr>
+									<tr class="text-left">
+
+										<td>8am - 4pm</td>
+										<td>8am - 9pm</td>
+										<td>8am - 9pm</td>
+										<td>8am - 9pm</td>
+										<td>8am - 9pm</td>
+										<td>8am - 9pm</td>
+										<td>8am - 4pm</td>
+									</tr>
+
+
+								</table>
+-->
+
+
+						<!--							</div>-->
+						<!--						</div>-->
+					</div>
+					<div class="col-md-4 d-flex align-items-end  justify-content-center" style=" padding:2em; ">
+						<!--						<div class="row">-->
+						<div class="mt-5 col-md-12 d-flex align-items-end  justify-content-center" style="position:relative; height: 80%;">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.674070845683!2d-78.86596278414633!3d35.90599742521843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acef93d0a7cbfd%3A0xf1433fdc893ee74e!2sRTI+International!5e0!3m2!1sen!2sus!4v1564165785355!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0; position: absolute" allowfullscreen></iframe>
+						</div>
+						<!--					</div>-->
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="row" style="background: #e5e6e8;
+    border: 12px solid #fff;">
+
+			<div class="container ">
+
+
+				<div class="row contentblock justify-content-center bg-light">
+
+					<div class="col-md-8 ">
+
+						<div class="row">
+
+							<h2 class="mb-3" style="color: #8B8E99 !important; font-weight: 100; font-size: 1.8em; font-family:'Museo Sans';">Signs of High-Quality Care</h2>
+						</div>
+
+						<div class="row">
+							<span class="small">click sections to expand</span>
+							<div class="accordion v3" id="accordionExample">
+								<div class="card fast">
+									<div class="card-header true" id="headingOne">
+										<h4 class="mb-0">
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		
+		Fast Access to Treatment 
+		
+		
+       
+        </button>
+      </h4>
+										<p class="text-dark small offset-md-1 mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation. </p>
+									</div>
+
+									<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+										<div class="card-body">
+											<ul>
+												<li class="true"><span>Does this facility offer same day access/walk-in appointments for patient’s requiring outpatient care?</span></li>
+
+												<li><span class="true">If this facility has no available beds, will this provider help patients find immediate alternative treatment?</span></li>
+											</ul>
+
+										</div>
+									</div>
+								</div>
+								<div class="card personal">
+									<div class="card-header false" id="headingTwo">
+										<h4 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         Personalized Assessment and Treatment Plan
+        </button>
+											
+      </h4>
+										<p class="text-dark small offset-md-1 mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation. </p>
+									</div>
+									<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+										<div class="card-body">
+											<ul>
+												<li class="true"><span>Top-line measure 1</span></li>
+
+												<li class="false"><span>Top-line measure 2</span></li>
+												<li class="false"><span>Top-line measure 3</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card monitor">
+									<div class="card-header true" id="headingThree">
+										<h4 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Long-term Treatment and Monitoring
+		
+        </button>
+      </h4>
+										<p class="text-dark small offset-md-1 mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation. </p>
+									</div>
+									<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+										<div class="card-body">
+											<li><span>Top-line measure 1</span></li>
+
+											<li><span>Top-line measure 2</span></li>
+											<li><span>Top-line measure 3</span></li>
+										</div>
+									</div>
+								</div>
+								<div class="card carecoord">
+									<div class="card-header true" id="headingFour">
+										<h4 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Treatment Integrated with Mental and Physical Health
+        </button>
+										
+      </h4>
+										<p class="text-dark small offset-md-1 mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation. </p>
+									</div>
+									<div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
+										<div class="card-body ">
+											<ul>
+												<li class="">
+													<div class="row mt-3">
+														<div class="col-md-5 quest"><span>Access to primary health care:</span> <i class="fa fa-info" aria-hidden="true"></i></div>
+														<div class="col-md-1 answ">
+															<span><i class="fas fa-check-circle"></i></span>
+
+														</div>
+														<div class="col-md-4 answ">
+															<span>on site</span> <a class="small" href="detailthing.html"> see more</a>
+
+														</div>
+														<!--
+															<div class="col-md-2 answ">
+															<span></span>
+															<br/>
+															<a class="small" href="detailthing.html">see more</a>
+														</div>
+-->
+													</div>
+
+													<div class="row mt-3">
+														<div class="col-md-5 quest text-right">
+															<span style="font-size: .95em;">On-site testing provided:</span>
+															<i class="fa fa-info" aria-hidden="true"></i>
+														</div>
+														<div class="col-md-1 answ">
+
+
+														</div>
+
+														<div class="col answ">
+															<ul class="col mb-2" style="padding-left:0;">
+																<li class="">
+																	<div class="row">
+																		<div class="col-md-7  quest">
+																			<span>Hepatitis B</span>
+																		</div>
+
+																		<!--
+															<div class="col-md-4 answ">
+															</div>
+-->
+																	</div>
+
+																</li>
+
+																<li>
+																	<div class="row">
+																		<div class="col-md-7 quest">
+																			<span>Hepatitis C</span>
+																		</div>
+
+																		<!--
+															<div class="col-md-4 answ">
+															</div>
+-->
+																	</div>
+
+																</li>
+
+																<li>
+																	<div class="row">
+																		<div class="col-md-7 quest">
+																			<span>HIV</span>
+																		</div>
+
+																		<!--
+															<div class="col-md-4 answ">
+															</div>
+-->
+																	</div>
+
+																</li>
+																<li class="">
+																	<div class="row">
+																		<div class="col-md-7 quest">
+																			<span>STIs</span>
+																		</div>
+
+																		<!--
+															<div class="col-md-4 answ">
+															</div>
+-->
+																	</div>
+																</li>
+
+																<li>
+																	<div class="row">
+																		<div class="col-md-7 quest">
+																			<span style="color: #949598">Tuberculosis</span>
+																		</div>
+
+																	</div>
+																</li>
+
+
+															</ul>
+														</div>
+													</div>
+												</li>
+
+
+
+												<li>
+													<div class="row">
+														<div class="col-md-5 quest"><span>Access to mental healthcare:</span> <i class="fa fa-info" aria-hidden="true"></i></div>
+														<div class="col-md-1 answ">
+															<span><i class="fas fa-check-circle"></i></span>
+
+														</div>
+														<div class="col-md-4 answ">
+															<span>on site </span>
+
+															<a class="small" href="detailthing.html"> see more</a>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card evidence">
+									<div class="card-header true" id="headingFive">
+										<h4 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+               Science-based Treatment from Qualified Providers
+	
+        </button>
+      </h4>
+										<p class="text-dark small offset-md-1 mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation. </p>
+									</div>
+									<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+										<div class="card-body">
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</div>
+									</div>
+								</div>
+								<div class="card access">
+									<div class="card-header true" id="headingSix">
+										<h4 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Access to Medications for Addiction Treatment
+		
+        </button>
+      </h4>
+										<p class="text-dark small offset-md-1 mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation. </p>
+									</div>
+									<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+										<div class="card-body">
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</div>
+									</div>
+								</div>
+								<div class="card recovery">
+									<div class="card-header true" id="headingSeven">
+										<h4 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          Additional Services to Support Recovery
+		
+        </button>
+      </h4>
+										<p class="text-dark small offset-md-1 mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation. </p>
+									</div>
+									<div id="collapseThree" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+										<div class="card-body">
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!--						end first accordion-->
+
+
+							<!--						end accordion-->
+
+
+
+						</div>
+					</div>
+
+				</div>
+
+
+
+			</div>
+			<!--			end container?-->
+		</div>
+		<!--		end internal row?-->
+		<!--				<div class="row" id="facility_geninfo" style="background: #E5E6E8">-->
+		<div class="row text-light" id="facility_geninfo">
+
+			<div class="container mt-4 mb-1">
+
+				<div class="row">
+					<!--							internal row-->
+
+					<div class="col-md-4 text-light" style="position: relative">
+
+
+						<b>Insurance and Payment Options:</b>
+						<br/>
+						<table class="mb-4">
+							<tr>
+								<td>Insurance Accepted:</td>
+								<td>Medicare, Medicaid, Aetna, BlueCross BlueShield</td>
+							</tr>
+							<tr>
+								<td>Payment Options:</td>
+								<td>cash and self-payment accepted</td>
+							</tr>
+							<tr>
+								<td>Sliding Fee Scale:</td>
+								<td>Yes</td>
+							</tr>
+						</table>
+
+
+
+
+
+					</div>
+
+
+					<div class="col-md-4" style="position: relative">
+						<b>Health System:</b>
+						<table class="">
+							<tr>
+								<td>Health System:</td>
+								<td>PARENT ORG NAME</td>
+							</tr>
+
+							<tr>
+								<td>Accredidation + Licensure:</td>
+								<td>AODE - BHSO - CARF</td>
+							</tr>
+
+
+							<!--
+							<tr>
+								<td>Same-day access + walk-ins:</td>
+								<td>accepted</td>
+							</tr>
+-->
+
+							<tr>
+								<td>Tobacco Policy:</td>
+								<td>XYZ</td>
+							</tr>
+
+						</table>
+					</div>
+
+
+					<div class="col-md-4" style="position: relative">
+						<b>Facility Features:</b>
+						<table>
+							<tr>
+								<td>Service Setting:</td>
+								<td>Residential; Inpatient Hospital (ER)</td>
+							</tr>
+							<tr>
+								<td>Substance Focus:</td>
+								<td>Acohol, Opioids</td>
+							</tr>
+							<tr>
+								<td>Special Populations:</td>
+								<td>Pregnant women; LGBTQ</td>
+							</tr>
+							<tr>
+								<td>Languages Spoken:</td>
+								<td>English</td>
+							</tr>
+							<tr>
+								<td>Translation Services:</td>
+								<td>Yes</td>
+							</tr>
+
+						</table>
+
+					</div>
+
+				</div>
+				<!--				end internal row-->
+			</div>
+			<!--		end contianer?-->
+
+		</div>
+		<!--		end colorblock row-->
+
+		<div class="row bg-light">
+			<div class="container">
+				<div class="row contentblock">
+
+					<div class="col-md-6">
+						<h2 class="" style="color: #8B8E99 !important; font-weight: 100; font-size: 1.8em; font-family:'Museo Sans';">Patient Experience</h2>
+						<div class="row small" style="color:#949598">
+
+							<div class="col col-md-6"></div>
+							<div class="col col-md-3">[Facility Name] Average</div>
+							<div class="col col-md-3">[State Name] Average</div>
+						</div>
+
+						<div class="accordion v3 evalaccordion evalaccordion2 " id="patientex">
+							<div class="card">
+								<div class="card-header true" id="headingOne">
+									<h4 class="mb-0">
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			<div class="row">
+				<div class="col col-md-6">
+        How much have you been helped by the treatment you got here? 
+					</div>
+			<div class="col col-md-3"><span class="surveypct">28<sup>%</sup><br/></span><span>say<br/><span class="surveyanswer">“a lot”</span></span></div>
+							<div class="col col-md-3"><span class="surveypct">34<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">“a lot”</span></span></div>
+				
+				</div>
+        </button>
+      </h4>
+								</div>
+
+								<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+									<div class="card-body">
+										<div class="row internalrow">
+											<div class="col col-md-6">
+											</div>
+											<div class="col col-md-3">32% say “somewhat”</div>
+											<div class="col col-md-3">39% say “somewhat”</div>
+										</div>
+										<div class="row internalrow">
+											<div class="col col-md-6">
+											</div>
+											<div class="col col-md-3">32% say “a little”</div>
+											<div class="col col-md-3">39% say “a little”</div>
+										</div>
+										<div class="row internalrow">
+											<div class="col col-md-6">
+											</div>
+											<div class="col col-md-3">32% say “not at all”</div>
+											<div class="col col-md-3">39% say “not at all”</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header false" id="headingTwo">
+									<h4 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			
+			<div class="row">
+				<div class="col col-md-6">
+       Using any number from 0 to 10, where 0 is the worst treatment program possible and 10 is the best treatment program possible, what number would you use to rate this treatment program?
+				</div>
+			
+	<div class="col col-md-3"><span class="surveypct">29<sup>%</sup> </span><br/><span>gave ratings of<br/><span class="surveyanswer">9 or 10</span></span></div>		
+<div class="col col-md-3"><span class="surveypct">36<sup>%</sup> </span><br/><span>gave ratings of<br/><span class="surveyanswer">9 or 10</span></span></div>
+			</div>
+        </button>
+      </h4>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div class="card-body">
+										<li class="true"><span>Top-line measure 1</span></li>
+
+										<li class="false"><span>Top-line measure 2</span></li>
+										<li class="false"><span>Top-line measure 3</span></li>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header true" id="headingThree">
+									<h4 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			
+			<div class="row">
+				<div class="col col-md-6">
+         Compared to when you entered this treatment program, how would you rate your ability to deal with daily problems now?
+					</div>		
+			
+	<div class="col col-md-3"><span class="surveypct">29<sup>%</sup> </span><br/><span>gave ratings of<br/><span class="surveyanswer">9 or 10</span></span></div>		
+<div class="col col-md-3"><span class="surveypct">36<sup>%</sup> </span><br/><span>gave ratings of<br/><span class="surveyanswer">9 or 10</span></span></div>
+			
+			</div>
+        </button>
+      </h4>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+									<div class="card-body">
+										<li><span>Top-line measure 1</span></li>
+
+										<li><span>Top-line measure 2</span></li>
+										<li><span>Top-line measure 3</span></li>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header true" id="headingThree">
+									<h4 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+				<div class="row">
+ 	<div class="col col-md-6">
+         Have staff in this treatment program talked with you about including your family or friends in your counseling or treatment?
+					</div>	
+					<div class="col col-md-3"><span class="surveypct">56<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"yes"</span></span></div>		
+<div class="col col-md-3"><span class="surveypct">58<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"yes"</span></span></div>
+			
+			</div>
+        </button>
+      </h4>
+								</div>
+								<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header true" id="headingThree">
+									<h4 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			<div class="row">
+         <div class="col col-md-6">
+       When you needed treatment right away, how often did you see someone from this treatment program as soon as you wanted? 
+					</div>	
+								<div class="col col-md-3"><span class="surveypct">65<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"always"</span></span></div>		
+<div class="col col-md-3"><span class="surveypct">57<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"always"</span></span></div>
+			
+			</div>
+        </button>
+      </h4>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header false" id="headingTwo">
+									<h4 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			
+			<div class="row">
+				<div class="col col-md-6">
+   During your treatment, how often did treatment staff show respect for what you had to say?
+				</div>
+									<div class="col col-md-3"><span class="surveypct">65<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"always"</span></span></div>		
+<div class="col col-md-3"><span class="surveypct">57<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"always"</span></span></div>
+			
+
+			</div>
+        </button>
+      </h4>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div class="card-body">
+										<li class="true"><span>Top-line measure 1</span></li>
+
+										<li class="false"><span>Top-line measure 2</span></li>
+										<li class="false"><span>Top-line measure 3</span></li>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header false" id="headingTwo">
+									<h4 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			
+			<div class="row">
+				<div class="col col-md-6">
+ During your treatment, were you given information about different kinds of treatment services and programs that are available? 
+				</div>
+			<div class="col col-md-3"><span class="surveypct">56<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"yes"</span></span></div>		
+<div class="col col-md-3"><span class="surveypct">58<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"yes"</span></span></div>
+			
+			</div>
+        </button>
+      </h4>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div class="card-body">
+										<li class="true"><span>Top-line measure 1</span></li>
+
+										<li class="false"><span>Top-line measure 2</span></li>
+										<li class="false"><span>Top-line measure 3</span></li>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+
+						<!--
+
+						<div class="accordion v3" id="patientex">
+							<div class="card">
+								<div class="card-header true" id="headingOne">
+									<h4 class="mb-0">
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       <div class="row">
+		   <div class="col col-md-6">CES Measure 1:</div>
+		    <div class="col col-md-6">XXX % said ...</div>
+			</div> 
+        </button>
+      </h4>
+								</div>
+
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+									<div class="card-body">
+										<ul>
+											<li><span>detail about measure 1</span></li>
+
+											<li><span>detail about measure 1</span></li>
+										</ul>
+
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header false" id="headingTwo">
+									<h4 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <div class="row">
+		   <div class="col col-md-6">CES Measure 2:</div>
+		    <div class="col col-md-6">XXX % said ...</div>
+			</div> 
+        </button>
+      </h4>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div class="card-body">
+										<li class="true"><span>Top-line measure 1</span></li>
+
+										<li class="false"><span>Top-line measure 2</span></li>
+										<li class="false"><span>Top-line measure 3</span></li>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header true" id="headingThree">
+									<h4 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         <div class="row">
+		   <div class="col col-md-6">CES Measure 3:</div>
+		    <div class="col col-md-6">XXX % said ...</div>
+			</div> 
+        </button>
+      </h4>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+									<div class="card-body">
+										<li><span>Top-line measure 1</span></li>
+
+										<li><span>Top-line measure 2</span></li>
+										<li><span>Top-line measure 3</span></li>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header true" id="headingThree">
+									<h4 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+          <div class="row">
+		   <div class="col col-md-6">CES Measure 4:</div>
+		    <div class="col col-md-6">XXX % said ...</div>
+			</div> 
+        </button>
+      </h4>
+								</div>
+								<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header true" id="headingThree">
+									<h4 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+       <div class="row">
+		   <div class="col col-md-6">CES Measure 5:</div>
+		    <div class="col col-md-6">XXX % said ...</div>
+			</div> 
+        </button>
+      </h4>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+-->
+
+
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-11 offset-md-1">
+								<h2 class="" style="color: #8B8E99 !important; font-weight: 100; font-size: 1.8em; font-family:'Museo Sans';">Patient Reviews</h2>
+
+								<div class="mb-5" id="reviews">
+
+									<div class="card">
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+										<span class="text-right text-dark">Consectetuer Adipiscing, City, ST</span>
+									</div>
+									<div class="card">
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+										<span class="text-right text-dark">Consectetuer Adipiscing, City, ST</span>
+									</div>
+									<div class="card">
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+										<span class="text-right text-dark">Consectetuer Adipiscing, City, ST</span></div>
+								</div>
+								<a class="btn btn-primary btn-lg float-right" href="#" role="button">Leave a Review</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!--						end internal row-->
+			</div>
+			<!--					end container-->
+
+
+		</div>
+		<!--				end colorblock row-->
+
+
+
+
+
+		</div>
+
+		</div>
+		<!--					end row-->
+
+
+
+
+
+		<!--		</div>-->
+
+
+
+
+		<!--		</div>-->
+
+
+
+
+
+
+		<!--			end row-->
+
+
+		<!-- /container -->
+
+
+
+
+	</main>
+	<div class="row bg-light">
+		<footer class="container">
+
+			<div class="row mt-5">
+				<div class="col-md-2">
+					<img class="img-fluid" src="/images/Shatterproof_withtag.svg">
+				</div>
+
+				<div class="col-md-2 d-flex align-items-center">
+					<a class="btn btn-primary btn-lg" href="#" role="button">Donate</a>
+				</div>
+				<div class="col-md-5">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+				</div>
+				<div class="col-md-3">
+					<a class="btn btn-primary btn-lg" href="#" role="button">Sign Up for Email Updates</a>
+
+					<div class="row mt-3">
+						<div class="container">
+							<i class="fab fa-facebook col-sm-3"></i><i class="fab fa-twitter col-sm-3"></i><i class="fab fa-instagram col-sm-3"></i><i class="fas fa-share col-sm-3"></i>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

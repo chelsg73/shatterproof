@@ -1,0 +1,107 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* line 2, src/scss/proffacil-only.scss */
+#editcontent {
+  color: #60C5B7;
+  font-size: .85em;
+}
+
+/* line 6, src/scss/proffacil-only.scss */
+#editcontent i {
+  font-size: 1.35em;
+}
+
+/* line 9, src/scss/proffacil-only.scss */
+#editcontent:hover {
+  color: #0C867D;
+}
+
+/* line 12, src/scss/proffacil-only.scss */
+.custom-control.custom-checkbox.form-check {
+  padding-right: 2em;
+  font-size: .9em;
+}
+
+/* line 17, src/scss/proffacil-only.scss */
+.loc {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d6e5e6));
+  background: linear-gradient(to top, #ffffff, #d6e5e6);
+  color: #0C867D;
+}
+
+/* line 21, src/scss/proffacil-only.scss */
+.headertoprow {
+  color: #0C867D;
+  text-transform: uppercase;
+  border-bottom: 2px solid #0C867D;
+}
+
+/* line 26, src/scss/proffacil-only.scss */
+.loccol {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d6e5e6));
+  background: linear-gradient(to top, #ffffff, #d6e5e6);
+}
+
+/* line 29, src/scss/proffacil-only.scss */
+.statecol {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d6e5e6));
+  background: linear-gradient(to bottom, #ffffff, #d6e5e6);
+}
+
+/* line 32, src/scss/proffacil-only.scss */
+.tostick .facilcol .toplabel {
+  color: #0C867D;
+}
+
+/* line 36, src/scss/proffacil-only.scss */
+.stuck .flex-grow-1 {
+  background: #fff;
+}
+
+/* line 40, src/scss/proffacil-only.scss */
+.col.pr-1.mt-1.d-flex.align-content-end.flex-wrap {
+  border-left: 1px solid #60C5B7;
+}
+
+/* line 44, src/scss/proffacil-only.scss */
+#qualityCare .surveypct {
+  padding: .5rem 0;
+}
+
+/* line 47, src/scss/proffacil-only.scss */
+.toplabel {
+  line-height: 1.15em;
+  word-break: break-word;
+}
+
+/* line 52, src/scss/proffacil-only.scss */
+.answ > a.small::after {
+  text-align: right;
+  position: absolute;
+  bottom: -2px;
+  right: 6px;
+}
+
+@media (max-width: 768px) {
+  /* line 59, src/scss/proffacil-only.scss */
+  .facInfo {
+    border-left: none;
+    border-right: none;
+  }
+  /* line 64, src/scss/proffacil-only.scss */
+  .stuck {
+    padding-left: 15px;
+  }
+}
+
+/* line 70, src/scss/proffacil-only.scss */
+.facility .surveypct,
+.surveypct.facility {
+  color: #0C867D;
+}

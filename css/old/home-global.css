@@ -1,0 +1,210 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* line 5, src/scss/old/home-global.scss */
+.btn-success {
+  color: #fff !important;
+  background-color: #0C867D;
+  border-color: #0C867D;
+  background: -webkit-gradient(linear, left bottom, right top, from(#064f51), to(#279184));
+  background: linear-gradient(to top right, #064f51, #279184);
+}
+
+/* line 12, src/scss/old/home-global.scss */
+.btn-success:hover {
+  background-color: #0C867D;
+}
+
+/*	************	begin new navbar styles **********/
+/* line 22, src/scss/old/home-global.scss */
+nav.navbar.navbar-expand-md.navbar-light.fixed-top.bg-light {
+  padding-bottom: 0;
+}
+
+/* line 26, src/scss/old/home-global.scss */
+.navbar-nav .nav-item {
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+  position: relative;
+}
+
+/* line 31, src/scss/old/home-global.scss */
+.navbar-nav .nav-item:hover {
+  background: #61BDB0;
+  color: #fff;
+  /*
+  background: $primary;
+  color: $ltbg;
+*/
+}
+
+/* line 39, src/scss/old/home-global.scss */
+.navbar-nav .nav-item .nav-link {
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+}
+
+/* line 43, src/scss/old/home-global.scss */
+.navbar-nav .nav-item:hover .nav-link {
+  color: #fff;
+}
+
+/* line 46, src/scss/old/home-global.scss */
+.navbar-expand-md .navbar-nav .nav-link {
+  /*			these need to be equal*/
+  padding-right: .7em;
+  padding-left: .7em;
+  margin-bottom: 1.5rem;
+}
+
+/* line 53, src/scss/old/home-global.scss */
+.navbar-nav li:last-of-type a.nav-link {
+  padding-right: .7em;
+}
+
+/* line 57, src/scss/old/home-global.scss */
+.secondarynav li:last-of-type {
+  padding-right: .7em;
+}
+
+/* line 60, src/scss/old/home-global.scss */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* line 63, src/scss/old/home-global.scss */
+.navbar-nav li:hover .dropdown-menu {
+  display: block;
+}
+
+/* line 66, src/scss/old/home-global.scss */
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: 0 2px 4px #5C5D5F;
+          box-shadow: 0 2px 4px #5C5D5F;
+}
+
+/* line 123, node_modules/bootstrap/scss/_dropdown.scss */
+/* line 77, src/scss/old/home-global.scss */
+.dropdown-item {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 80, src/scss/old/home-global.scss */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #61BDB0;
+  text-decoration: underline;
+  background: none;
+}
+
+/* line 91, src/scss/old/home-global.scss */
+#secondNavOuter {
+  display: none;
+}
+
+/* line 94, src/scss/old/home-global.scss */
+.secondNavInner {
+  display: inline;
+}
+
+/* line 97, src/scss/old/home-global.scss */
+.secondNavInner > a {
+  color: #61BDB0 !important;
+}
+
+/* line 100, src/scss/old/home-global.scss */
+.secondNavInner > a:hover {
+  color: white !important;
+}
+
+/* line 103, src/scss/old/home-global.scss */
+#navToggleDivOuter {
+  display: none;
+}
+
+/* line 113, src/scss/old/home-global.scss */
+main {
+  margin-top: 61px;
+}
+
+/* line 122, src/scss/old/home-global.scss */
+.footerrow {
+  border-top: 1px solid #61BDB0;
+}
+
+/* line 126, src/scss/old/home-global.scss */
+#mobileSignUp {
+  width: 75% !important;
+}
+
+/* line 129, src/scss/old/home-global.scss */
+#mobileDonate {
+  width: 90% !important;
+}
+
+@media (min-width: 768px) {
+  /* line 138, src/scss/old/home-global.scss */
+  #secondNavOuter {
+    display: inline;
+  }
+  /* line 141, src/scss/old/home-global.scss */
+  .secondNavInner {
+    display: none;
+  }
+  /* line 144, src/scss/old/home-global.scss */
+  #navToggleDivOuter {
+    display: inline-block;
+    padding-right: 0;
+    margin-left: -30%;
+    width: 200%;
+    max-width: 200%;
+    -webkit-box-flex: 200%;
+        -ms-flex: 200%;
+            flex: 200%;
+  }
+  /* line 152, src/scss/old/home-global.scss */
+  #navToggleDivInner {
+    display: none;
+  }
+  /* line 155, src/scss/old/home-global.scss */
+  #navbarsExampleDefault {
+    float: right;
+  }
+  /* line 163, src/scss/old/home-global.scss */
+  main {
+    margin-top: 150px;
+  }
+  /* line 171, src/scss/old/home-global.scss */
+  #mobileSignUp {
+    width: 75% !important;
+  }
+  /* line 174, src/scss/old/home-global.scss */
+  #mobileDonate {
+    width: 75% !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 184, src/scss/old/home-global.scss */
+  main {
+    margin-top: 113px;
+  }
+  /* line 192, src/scss/old/home-global.scss */
+  #mobileSignUp {
+    width: 100% !important;
+  }
+  /* line 195, src/scss/old/home-global.scss */
+  #mobileDonate {
+    width: 70% !important;
+  }
+}

@@ -1,0 +1,70 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* line 3, src/scss/bar-rating.scss */
+.bar-label {
+  text-transform: uppercase;
+  color: #5C5D5F !important;
+  font-size: .85em;
+  margin: 0 1rem 0 0;
+  padding: 0.5rem 0 0 0;
+}
+
+/* line 11, src/scss/bar-rating.scss */
+.br-current-rating {
+  float: left;
+  padding: 0 0 0 1rem;
+  font-size: 1.3em;
+  color: #0C867D;
+  font-weight: 800;
+}
+
+/* line 17, src/scss/bar-rating.scss */
+.br-current-rating .text-gray {
+  color: #959595;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+/* line 26, src/scss/bar-rating.scss */
+.br-theme-bars-1to10 .br-widget {
+  height: auto;
+  white-space: nowrap;
+}
+
+/* line 30, src/scss/bar-rating.scss */
+.br-theme-bars-1to10 .br-widget span {
+  display: block;
+  width: 15.7px;
+  padding: 5px 0;
+  height: 8px;
+  float: left;
+  background-color: #d2d2d2;
+  margin: 1px;
+  text-align: center;
+}
+
+/* line 40, src/scss/bar-rating.scss */
+.br-theme-bars-1to10 .br-widget span.br-active, .br-theme-bars-1to10 .br-widget span.br-selected {
+  background-color: #0C867D;
+}
+
+/* line 51, src/scss/bar-rating.scss */
+.br-theme-bars-1to10 .br-readonly a {
+  cursor: default;
+}
+
+/* line 54, src/scss/bar-rating.scss */
+.br-theme-bars-1to10 .br-readonly a.br-active, .br-theme-bars-1to10 .br-readonly a.br-selected {
+  background-color: #949598;
+}
+
+/* line 59, src/scss/bar-rating.scss */
+.br-theme-bars-1to10 .br-readonly .br-current-rating {
+  color: #10b5a9;
+}

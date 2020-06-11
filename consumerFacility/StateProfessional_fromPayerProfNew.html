@@ -1,0 +1,4762 @@
+<html lang="en">
+<script type="text/javascript">
+	window["_gaUserPrefs"] = {
+		ioo: function() {
+			return true;
+		}
+	}
+
+</script>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+	<meta name="generator" content="Jekyll v3.8.5">
+	<title>Jumbotron Template · Bootstrap</title>
+
+	<!--    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/jumbotron/">-->
+
+	<!-- Bootstrap core CSS -->
+	<!--
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+	<!--
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+-->
+
+
+	<!-- Custom styles for this template -->
+	<link href="css/custom2.css" type="text/css" rel="stylesheet">
+	<link href="css/all.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/unm2lor.css">
+
+
+
+
+	<style>
+		.statetitle {
+			font-family: 'museo-sans';
+			font-size: 2.4em;
+			font-weight: 400;
+			color: #fff;
+			letter-spacing: .02em;
+			text-transform: none;
+		}
+		
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+		
+		@media (min-width: 768px) {
+			#facilityhrs {
+				float: right;
+				padding-right: 0;
+			}
+		}
+		
+		@media (max-width: 768px) {
+			#patientexp.evalaccordion .card-header .col-12 {
+				/*
+				margin-bottom: 2em;
+				padding-bottom: .6em;
+				border-bottom: 2px solid #e3e3e3;
+*/
+			}
+		}
+		/*	table styles. Don't know if we'll want to replace with bootstrap grid so moblie's better'	*/
+		
+		#stateinfotable {}
+		
+		#facilityinfotable td:first-of-type {
+			min-width: 160px;
+			display: table-cell;
+		}
+		
+		#facilitypaytable td:first-of-type {
+			min-width: 210px;
+			display: table-cell;
+		}
+		
+		@media (min-width: 768px) {
+			#insurancecol {
+				padding-left: 4%;
+			}
+		}
+		
+		h3 {
+			font-weight: 400;
+			color: #949598;
+			letter-spacing: .015em;
+			font-size: 1.5em;
+		}
+		
+		nav,
+		#facility_geninfo {
+			font-family: "museo-sans";
+		}
+		
+		#facility_geninfo {
+			font-size: .85em !important;
+		}
+		
+		div.details-wrapper {
+			font-size: .85em;
+			padding-bottom: 0;
+			padding-top: 0;
+			border-bottom: 1px solid #BCE3DE;
+			position: relative;
+		}
+		
+		.details-wrapper:after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 2.5em;
+			left: 0px;
+			bottom: -1px;
+			border: 1px solid #fff;
+		}
+		
+		.accordion li .quest,
+		.accordion div.details-wrapper div.quest {
+			display: block;
+			line-height: 1.35em;
+		}
+		
+		.details-wrapper .quest {
+			padding-left: 3em;
+		}
+		
+		.details-wrapper .fa-minus {
+			color: #dba500;
+		}
+		
+		.details-wrapper .fa-times {
+			color: #f16925
+		}
+		
+		.details-wrapper .nodata {
+			color: #949598;
+			text-transform: uppercase;
+			font-size: .8em;
+		}
+		
+		.details-wrapper.negative .quest div {
+			font-weight: 300;
+			opacity: .8;
+		}
+		
+		.groupsserved li {
+			color: inherit !important;
+		}
+		/*		for example wide bulleted list in facility deets section*/
+		
+		ul.groupsserved.overhang {
+			top: 1.4em;
+			position: absolute;
+			left: 100%;
+			/* top: 0px; */
+			width: 300px;
+		}
+		
+		.accordion li .answ {
+			display: block;
+		}
+		
+		.small.instructions {
+			color: #949598;
+		}
+		
+		i.fa.fa-info-circle {
+			transition: 400ms all;
+		}
+		
+		i.fa.fa-info-circle:hover {
+			color: #3E62AC;
+		}
+		
+		.fa-check-circle {
+			color: #279184;
+		}
+		
+		.fa-minus-circle {
+			color: #FCAF58;
+		}
+		
+		.fa-times {
+			color: #F16924;
+		}
+		
+		.fa-check {
+			color: #279184;
+		}
+		
+		.fa-question {
+			color: #bcbcbc
+		}
+		
+		.card li {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+		}
+		
+		.card li:last-of-type {
+			border-bottom: none;
+		}
+		
+		li ul {
+			list-style: none;
+			font-size: .95em;
+		}
+		/*
+		#accordionExample li .fas {
+			font-size: 1.3em;
+			text-align: right;
+			float: right;
+		}
+		
+		#accordionExample li ul li .fas,
+		#accordionExample div.details-wrapper div.answ .fas {
+			font-size: .95em;
+			padding-top: .5em;
+		}
+*/
+		/*
+		.card-header p{
+			margin-left:3em
+		}
+*/
+		/*		ERROR BLOCK END*/
+		
+		.accordion .card-header:after {
+			left: .5em;
+		}
+		
+		.card-header .btn {
+			font-size: .73em;
+		}
+		
+		.card-header .btn p {
+			font-size: .83em;
+		}
+		
+		b {
+			letter-spacing: .03em;
+		}
+		
+		.accordion .toplabel {
+			line-height: 1.15em;
+		}
+		
+		.card-body {
+			padding: 0;
+		}
+		
+		.card li {
+			/*border-bottom: 6px solid rgb(235, 246, 245);*/
+			padding: .3em 2em .2em 0;
+			margin-bottom: 0;
+		}
+		
+		.card ul {
+			padding-left: 0;
+		}
+		
+		.card li:first-of-type {
+			padding: 1em 2em .4em 0;
+		}
+		
+		.card li ul li {
+			border-bottom: none;
+			padding: 0 2em .2em 0;
+		}
+		
+		.card li ul li:first-of-type {
+			padding: 0 2em .4em 0;
+		}
+		
+		.card li ul li:last-of-type {
+			padding: .2em 2em 0 0;
+		}
+		/*
+		.accordion li ul .quest,
+		.accordion div.details-wrapper div.quest {
+			display: block;
+						border-bottom: 1px solid #BCE3DE;
+		}
+*/
+		/*
+		.details-wrapper .quest div {
+   border-bottom: 1px solid #BCE3DE;
+}
+*/
+		/*
+		#collapseFour .card-body {
+			background: #fff;
+			margin: 0 2em 2em 5em;
+			padding: 0;
+		}
+*/
+		/*
+		#collapseFour .card-body ul {
+			padding: 0;
+		}
+*/
+		
+		.accordionExample .card-body ul li {
+			list-style: none;
+		}
+		
+		#patientexp .card-header .btn {
+			color: #5C5D5F !important;
+			font-size: 15px;
+			margin-top: 1em;
+			margin-bottom: .7em;
+			line-height: 1.4em;
+		}
+		
+		#patientexp .card-header .btn[aria-expanded="true"] {
+			margin-bottom: 0;
+		}
+		/*
+		#patientexp .col-md-3,
+		#patientexp .col-3,
+*/
+		
+		#patientexp .toplabel {
+			/*			border-left: 2px solid #fff;*/
+			font-size: .8em;
+		}
+		/*
+		#patientexp .col-md-3,
+		#patientexp .col-3 {
+			border-left: 2px solid #fff;
+		}
+*/
+		/*
+		#patientexp .card-header {
+			background: #e5e6e88c !important;
+		}
+		
+*/
+		
+		#patientexp .col-md-3,
+		#patientexp .stateavg {
+			border-left: 2px solid #fff;
+		}
+		
+		#patientexp .card {
+			/*			background: #ebf6f5;*/
+			background: #e5e6e88c;
+			border-bottom: 12px solid #fff;
+		}
+		
+		#patientexp .internalrow {
+			/*				to make the same as button that is header row*/
+			padding: 0rem 2rem;
+			border-top: 1px solid #dfdfdf;
+			position: relative;
+		}
+		/*
+		#patientexp .internalrow:after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 45%;
+			top: 5px;
+			right: 30px;
+			border: 1px solid #e3e3e3;
+		}
+*/
+		
+		#patientexp .internalrow .col-md-3 {
+			margin-top: 1em;
+		}
+		
+		#patientexp.evalaccordion .card-header {
+			border-bottom: none;
+			background: none !important;
+			position: relative;
+		}
+		
+		.v3#accordionExample .card {
+			margin-bottom: 1.3em;
+		}
+		
+		.v3#accordionExample .card {
+			flex-direction: inherit;
+		}
+		
+		.v3#accordionExample .card-header {
+			background-color: #fff !important;
+			border-bottom: 1px solid #fff;
+			padding: 0;
+		}
+		
+		.v3#accordionExample .card-header .btn {
+			/*			temp for scss nt working*/
+			color: inherit !important;
+		}
+		
+		.v3 .answ.col-md-2 {
+			line-height: 1.3em;
+		}
+		
+		.evalaccordion .card-header .btn .surveyanswer:after {
+			font: normal normal normal 14px/1 FontAwesome;
+			font-family: 'Font Awesome 5 Free';
+			vertical-align: middle;
+			font-weight: 900;
+			position: absolute;
+			background: none;
+			left: -.4em;
+			top: .15em !important;
+			top: inherit;
+			font-size: .95em;
+			color: #11857d;
+		}
+		
+		.evalaccordion .card-header .btn[aria-expanded="true"] .surveyanswer:after {
+			content: "\f068";
+		}
+		
+		.evalaccordion .card-header .btn[aria-expanded="false"] .surveyanswer:after {
+			content: "\f067";
+		}
+		
+		.evalaccordion .card:first-of-type .card-header .btn .surveyanswer:after {
+			content: "" !important;
+		}
+		
+		.evalaccordion .card .card-header.true:after {
+			content: "" !important;
+		}
+		
+		.surveyanswer {
+			font-weight: 400;
+			font-style: italic;
+			font-size: 15px !important;
+			/* letter-spacing: .03em; */
+		}
+		
+		.surveypct {
+			font-weight: bold;
+			font-size: 1.28em;
+			color: #3e61ab;
+		}
+		
+		.stateavg .surveypct {
+			color: #5C5D5F;
+		}
+		
+		.facility span.surveypct {
+			color: #3e61ab;
+		}
+		
+		.toplabel {
+			text-transform: uppercase;
+			font-size: .8em;
+		}
+		
+		.facility .toplabel {
+			color: #3e61ab;
+		}
+		
+		#patientexp .toplabel {
+			/*			margin-top: -1.3em;*/
+			line-height: 1.1em;
+		}
+		
+		#accordionExample .facility span.not-provided {
+			font-size: 1.0em;
+		}
+		
+		main {
+			margin-top: 81px;
+		}
+		
+		#facilityaddress {
+			line-height: 1.2em;
+		}
+		
+		.ribbon {
+			font-size: 12px !important;
+			letter-spacing: .03em;
+			/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+			width: 100%;
+			position: relative;
+			background: #F16924;
+			color: #fff;
+			text-align: center;
+			padding: 1em 2em;
+			/* Adjust to suit */
+			/* margin: 2em auto 3em; */
+			/* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+		}
+		
+		.ribbon:before {
+			content: "";
+			position: absolute;
+			display: block;
+			bottom: -.5em;
+			border: 1.8em solid #d35210;
+			z-index: -1;
+		}
+		
+		.ribbon:before {
+			left: -2.5em;
+			border-right-width: 1.5em;
+			border-left-color: transparent;
+		}
+		/*
+.ribbon:after {
+ right: -2.5em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+*/
+		
+		.ribbon .ribbon-content:before,
+		.ribbon .ribbon-content:after {
+			content: "";
+			position: absolute;
+			display: block;
+			border-style: solid;
+			border-color: #804f7c transparent transparent transparent;
+			bottom: -1em;
+		}
+		
+		.ribbon .ribbon-content:before {
+			left: 0;
+			border-width: 1em 0 0 1em;
+		}
+		
+		.ribbon .ribbon-content:after {
+			right: 0;
+			border-width: 1em 1em 0 0;
+		}
+		/*	add to real css one row is right*/
+		
+		.btn-success {
+			color: #fff;
+			background-color: #0C867D;
+			border-color: #0C867D;
+			background: linear-gradient(to top right, #064f51, #279184);
+		}
+		
+		#reviews {
+			/*			 this would really be auto: here to show what would happen if several*/
+			overflow-y: auto;
+		}
+		
+		#reviews .card:first-of-type {
+			border-top: 1px solid #61BDB0;
+		}
+		
+		#accordionExample .surveypct {
+			font-size: 1.25em;
+		}
+		
+		.v3#accordionExample .card {
+			margin-bottom: .6em;
+		}
+		
+		.v3#accordionExample .card-header h4 button {
+			line-height: 1.2em;
+			padding-top: .4em;
+		}
+		
+		.v3#accordionExample .card-header:before {
+			width: 18px;
+		}
+		/*		override only styles*/
+		
+		#accordionExample .card-header:after {
+			content: "";
+		}
+		
+		.v3#accordionExample .card {
+			border-top-style: solid;
+			border-top-width: 2px;
+		}
+		
+		.v3#accordionExample .fast.card {
+			border-top-color: #804099;
+		}
+		
+		.v3#accordionExample .fast .card-header {
+			border-top: none;
+		}
+		
+		.v3#accordionExample .personal.card {
+			border-top-color: #3F63AC;
+		}
+		
+		.v3#accordionExample .personal .card-header {
+			border-top: none;
+		}
+		
+		.v3#accordionExample .monitor.card {
+			border-top-color: #8FC640;
+		}
+		
+		.v3#accordionExample .monitor .card-header {
+			border-top: none;
+		}
+		
+		.v3#accordionExample .carecoord.card {
+			border-top-color: #9E2064;
+		}
+		
+		.v3#accordionExample .carecoord .card-header {
+			border-top: none;
+		}
+		
+		.v3#accordionExample .evidence.card {
+			border-top-color: #9C905C;
+		}
+		
+		.v3#accordionExample .evidence .card-header {
+			border-top: none;
+		}
+		
+		.v3#accordionExample .access.card {
+			border-top-color: #299284;
+		}
+		
+		.v3#accordionExample .access .card-header {
+			border-top: none;
+		}
+		
+		.v3#accordionExample .recovery.card {
+			border-top-color: #292562;
+		}
+		
+		.v3#accordionExample .recovery .card-header {
+			border-top: none;
+		}
+		
+		.v3#accordionExample .card.toStick {
+			border: none;
+			border-radius: 0;
+			border-width: 0;
+		}
+		/*		temp to match sentence below p margins*/
+		
+		.v3#accordionExample .card-header .btn {
+			padding-left: 2em;
+			padding-right: 2em;
+			padding-top: 1em;
+		}
+		
+		p.text-dark.small.offset-md-1 {
+			margin-bottom: 0;
+			display: none;
+			margin-top: .5em;
+			line-height: 1.3em;
+		}
+		/*
+		i#commentIcon {
+    font-size: 10em;
+    color: #BCE3DE;
+}
+*/
+		
+		.comment {
+			background: url(images/noun_comment_2969806.svg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position-x: center;
+			background-position-y: -1em;
+		}
+		/*
+		.comment.col-md-3:after {
+    content: '\f086';
+    font-family: "Font Awesome 5 Free";
+    color: #BCE3DE;
+    width: 100%;
+    position: absolute;
+}
+*/
+		
+		.not-provided {
+			line-height: 1.2em;
+		}
+		
+		.textblank {
+			width: 4em;
+			display: inline-block;
+			border-bottom: 1px solid;
+			margin: 0 .3em;
+		}
+		
+		#reviews .toplabel {
+			color: #5c5d5f !important;
+			font-size: .85em;
+		}
+		
+		#reviews .toplabel b {
+			color: #0C867D !important;
+			font-weight: 800;
+			font-size: 1.3em;
+		}
+		
+		#reviews .toplabel .reviewpct {
+			color: #959595 !important;
+			font-size: 1.3em;
+		}
+		/*		popper.js tooltips- already defined tooltip styles elsewhere?!*/
+		
+		.tooltip-inner {
+			max-width: 400px;
+			padding: 0.25rem 0.5rem;
+			color: inherit;
+			text-align: center;
+			background-color: rgb(255, 255, 255);
+			border-radius: 0.25rem;
+			/* opacity: 1; */
+			-webkit-box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.31);
+			box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.31);
+			opacity: 1 !important;
+			text-align: left;
+			font-size: .97em;
+			line-height: 1.35em;
+			font-weight: 500;
+			padding: 2em;
+		}
+		
+		.tooltip-inner ul {
+			padding-left: 1em;
+			margin-bottom: 0;
+		}
+		
+		.tooltip-inner ul li {
+			padding-bottom: .7em;
+		}
+		
+		.tooltip.show {
+			opacity: 1;
+		}
+		
+		*/ .not-provided {
+			line-height: 1.2em;
+		}
+		
+		.textblank {
+			width: 4em;
+			display: inline-block;
+			border-bottom: 1px solid;
+			margin: 0 .3em;
+		}
+		
+		#reviews .toplabel {
+			color: #5c5d5f !important;
+			font-size: .85em;
+		}
+		
+		#reviews .toplabel b {
+			color: #0C867D !important;
+			font-weight: 800;
+			font-size: 1.3em;
+		}
+		
+		#reviews .toplabel .reviewpct {
+			color: #959595 !important;
+			font-size: 1.3em;
+		}
+		/*		changes to styles for prof view*/
+		
+		.card h4 {
+			font-size: 1.1em;
+			line-height: 1.2em;
+			font-weight: 600;
+			padding-bottom: 1em;
+		}
+		
+		.row.tier1 .quest {
+			font-size: .9em;
+			line-height: 1.25em;
+			padding-left: 3em;
+			position: relative;
+		}
+		
+		.tier1 {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+		}
+		
+		.tier1:last-of-type {
+			border-bottom: none;
+		}
+		
+		.row.tier1>div {
+			padding-top: .3em;
+			padding-bottom: .2em;
+		}
+		/*
+		.row.collapse .quest:before {
+			content: " ";
+			position: absolute;
+			z-index: 500;
+			left: 0;
+			width: 6em;
+			background-size: contain;
+			background-repeat: no-repeat;
+			height: 100%;
+			border-radius: 0;
+			height: 2px;
+			bottom: -1;
+			margin-left: 0;
+			background: #fff;
+		}
+		
+*/
+		
+		.row.details-wrapper:last-of-type {
+			/* background: red; */
+			margin-bottom: 1em;
+		}
+		
+		.row.collapse .quest {
+			line-height: 1.25em;
+			padding-left: 6em;
+		}
+		
+		.card h4 {
+			font-size: 1.1em;
+			line-height: 1.2em;
+			font-weight: 600;
+			padding-bottom: 1em;
+		}
+		
+		.v3#accordionExample a.small {
+			float: right;
+			color: #61BDB0;
+			line-height: 1em;
+		}
+		
+		.answ .fas {
+			font-size: 1.3em;
+			text-align: right;
+			float: right;
+		}
+		
+		.surveypct {
+			color: inherit;
+		}
+		
+		.col.col-sm.pr-1.mt-1.d-flex.align-content-between.flex-wrap {
+			border-left: 1px solid #61bdb0;
+		}
+		
+/*
+		.col.col-sm.pr-1.mt-1.d-flex.align-content-end.flex-wrap {
+			border-bottom: 1px solid #3e61ab;
+		}
+*/
+		
+		.custom-control.custom-checkbox.form-check {
+			padding-right: 2em;
+			font-size: .9em;
+		}
+		
+		.comparecol {
+			border-left: 1px solid #61bdb0;
+		}
+		
+		.facilcol {
+			border-left: none;
+		}
+		
+		.loccol {
+			background: linear-gradient(to top, #ffffff45, #d6e5e6ad);
+		}
+		
+		.statecol {
+			background: linear-gradient(to bottom, #ffffff45, #d6e5e6ad);
+		}
+		
+		.stuck {
+			position: fixed;
+			top: 108px;
+			z-index: 5;
+		}
+		
+		.tostick.stuck {
+			width: 1140px;
+		}
+		
+		.tostick2.stuck {
+			width: 1140px;
+		}
+		/*
+		#claims .v3#accordionExample .card {
+			background: #f1f1f2;
+			border-top: none;
+			border-top-width: 0px;
+			padding-top: 1em;
+		}
+*/
+		
+		#claims .accordion .card {
+			background: #f1f1f2;
+			border-top: none;
+			border-top-width: 0px;
+			padding-top: 1em;
+		}
+		
+		#claims .tier1 {
+			border-bottom: 1px solid #fff;
+		}
+		
+		#claims .details-wrapper {
+			border-bottom: 1px solid #fff;
+		}
+		
+		#claims .details-wrapper:after {
+			border: 1px solid #f1f1f2;
+		}
+		
+		#claims .col.col-sm.pr-1.mt-1.d-flex.align-content-between.flex-wrap {
+			border-left: 2px solid #fff;
+		}
+		
+		#claims .quest {
+			font-size: 15px;
+		}
+		
+		#claims .card h4 {
+			font-size: 1.1em;
+			line-height: 1.2em;
+			font-weight: 600;
+			padding-bottom: 1em;
+		}
+		
+		#stateinfotable2 td {
+			width: 25%;
+			letter-spacing: .03em;
+		}
+		
+		#stateinfotable2 .toplabel {
+			padding-top: .4em;
+			padding-bottom: .25em;
+		}
+		
+		#stateinfotable2 b {
+			letter-spacing: .03em;
+			font-size: 1.1em;
+			letter-spacing: .04em;
+			padding-top: .7em;
+			display: inline-block;
+			padding-bottom: .1em;
+		}
+		
+		#stateinfotable2 .surveypct {
+			color: inherit;
+			font-size: 1.55em;
+		}
+		
+		#stateinfotable2 .toplabel {
+			padding-top: .4em;
+			padding-bottom: .25em;
+			padding-right: .7em;
+			font-size: .9em;
+			font-weight: 300;
+		}
+		
+		#stateinfotable2 .headerrow {
+			border-top: 1px solid #53ad9f;
+		}
+		
+		#stateinfotable2 .headerrow:first-of-type {
+			border-top: none;
+		}
+		
+		.claims2#claims .tier1 {
+			border-bottom: none;
+		}
+		/*
+		.claims2#claims .answ col:last-of-type {
+			border-left:1px solid red;
+		}
+*/
+		
+		.claims2#claims .answ .col:last-of-type {
+			border-left: 2px solid #fff;
+		}
+		
+		.claims2#claims .card {
+			padding-bottom: 1em;
+		}
+		
+		h2 .subtitle {
+			text-transform: none;
+			font-family: "museo-sans";
+			font-weight: 400;
+			font-size: 24px;
+		}
+		
+		div#stateselect {
+			font-size: .9em;
+		}
+		
+		table#stateinfotable2 {
+			font-size: .9em;
+		}
+		
+		#stateinfotable2 td .surveypct {
+			padding-bottom: .3em;
+			display: inline-block;
+		}
+
+		
+/*		from professfail*/
+		#claims .card h4 .toplabel {
+    display: inline-block;
+    font-size: .86em;
+    font-weight: 400;
+    border-bottom: 1px solid;
+}
+		
+		.tostick .col.col-sm.pr-1.mt-1.d-flex.align-content-end.flex-wrap {
+    border-bottom: 1px solid #3e61ab;
+}
+		
+		#claims .col.col-sm.pr-1.mt-1.d-flex.align-content-end.flex-wrap {
+    border-left: 2px solid #fff;
+}
+		
+
+		
+	</style>
+
+
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<a class="navbar-brand" href="#"><img class="w-75" src="images/horizontal_logoCropped.png" alt="ATLAS logo"></a>
+
+				</div>
+				<div class="col-md-7">
+					<div class="row">
+
+						<div class="col-md-12" style="padding-right:0">
+							<!--							this padding fix shouldnt' be needed. Row/col/container prob?-->
+							<ul class="navbar-nav mr-auto secondarynav d-flex align-items-end justify-content-end">
+								<li>
+									<form class="form-inline my-2 my-lg-0">
+										<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+									</form>
+								</li>
+								<li>contact us</li>
+								<li>login/register<i class="fas fa-user"></i></li>
+
+							</ul>
+						</div>
+
+						<div class="col-md-12" style="padding-right:0; padding-bottom: 15px; margin-left: -30%; width: 200%; max-width: 200%; flex: 200%;">
+
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse float-right" id="navbarsExampleDefault">
+								<ul class="navbar-nav mr-auto">
+
+									<li class="nav-item">
+										<a class="nav-link" href="#">Find Treatment</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Learn about Treatment</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">National Principles of Care</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">About</a>
+									</li>
+
+								</ul>
+
+
+							</div>
+
+						</div>
+					</div>
+					<!--					end internal col-10 row-->
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</nav>
+
+	<main role="main">
+		<div class="container-fluid">
+			<div class="row linearGradTop" id="statetop">
+
+				<div class="container mt-5 text-light">
+
+
+
+					<div class="row pb-4">
+						<h2 class="col-sm-12 col-md-7 statetitle mb-0">New York</h2>
+						
+							<div class="col-md-4 offset-md-1 align-self-end pb-4">
+															
+<!--															fix this for true bottom alignment-->
+									<div class="mt-2" id="stateselect" style="color: #0d867d; background: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e) no-repeat right 0.75rem center/8px 10px; ">
+										<select class="custom-select" style="width: auto; display: inline-block; border-radius: 0; font-weight: 500; font-size:1em;     padding-right: 2em; padding-top: 3px;
+    padding-bottom: 3px;">
+											<option selected="">Select state</option>
+
+											<option value="Delaware">Delaware</option>
+											<option value="Louisiana">Louisiana</option>
+											<option value="Massachusetts">Massachusetts</option>
+											<option value="New York">New York</option>
+											<option value="North Carolina">North Carolina</option>
+											<option value="West Viriginia">West Viriginia</option>
+
+										</select>
+									</div>
+
+
+
+
+								</div>
+						
+
+
+					</div>
+
+
+
+					<div class="row  mb-3">
+
+						<div class="col-md-7">
+
+
+
+							<table class="mb-3 text-light" id="stateinfotable2">
+
+
+							
+
+								<tr class="headerrow">
+									<td colspan='4'><b>Payer Distribution: </b> <i>Percentage of ATLAS facilities accepting - </i></td>
+
+								</tr>
+								<tr>
+									<td class="toplabel">Medicaid</td>
+									<td class="toplabel">Medicare</td>
+									<td class="toplabel">Private Insurance</td>
+									<td class="toplabel">Cash/self-payment</td>
+								</tr>
+								<tr>
+									<td><span class="surveypct">42<sup>%</sup></span></td>
+									<td><span class="surveypct">42<sup>%</sup></span></td>
+									<td><span class="surveypct">42<sup>%</sup></span></td>
+									<td><span class="surveypct">42<sup>%</sup></span></td>
+								</tr>
+
+								<tr class="headerrow">
+									<td colspan='4'><b>Care Setting Distribution: </b> <i>Percentage of ATLAS facilities - </i></td>
+								</tr>
+
+								<tr>
+									<td class="toplabel">outpatient facilities</td>
+									<td class="toplabel">inpatient facilities</td>
+
+									<td class="toplabel">Opioid Treatment Programs (OTPs)</td>
+									<td class="toplabel">residential facilities</td>
+								</tr>
+
+								<tr>
+									<td><span class="surveypct">42<sup>%</sup></span></td>
+									<td><span class="surveypct">42<sup>%</sup></span></td>
+									<td><span class="surveypct">42<sup>%</sup></span></td>
+									<td><span class="surveypct">42<sup>%</sup></span></td>
+								</tr>
+
+
+
+
+							</table>
+
+
+
+
+
+
+						</div>
+
+						<div class="col-md-4 offset-md-1 align-self-end">
+							<!--							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.674070845683!2d-78.86596278414633!3d35.90599742521843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acef93d0a7cbfd%3A0xf1433fdc893ee74e!2sRTI+International!5e0!3m2!1sen!2sus!4v1564165785355!5m2!1sen!2sus" width="95%" height="100%" frameborder="0" style="border:0; position: absolute" allowfullscreen></iframe>-->
+
+							
+							<table class="mb-3 text-light" id="stateinfotable2">
+								<tr class="headerrow">
+									<td colspan='4'><b>Survey Completion:</b></td>
+								</tr>
+								<tr>
+									<td colspan='4'><span class="surveypct">42<sup>%</sup></span> in the state completed the ATLAS survey</td>
+								</tr>
+
+								<tr class="headerrow">
+									<td colspan='4'><b>Claims Data:</b></td>
+								</tr>
+
+								<tr>
+									<td colspan='4'><span class="surveypct">42<sup>%</sup></span> of facilities have claims data in ATLAS</td>
+								</tr>
+
+							</table>
+
+
+
+						</div>
+
+					</div>
+				</div>
+				<!--end top colored bg container-->
+
+			</div>
+
+
+			<div class="row bg-light contentblock ">
+				<div class="container">
+
+					<div class="row justify-content-center ">
+
+						<div class="col-md-12">
+
+
+							<div class="row">
+
+								<h2 class="col col-md-7 mb-3">Signs of High-Quality Care: <small>Average Responses Across NY</small></h2>
+								<div class="col-md-5 mb-3 text-right font-italic d-flex align-items-end justify-content-end">Data last updated 01/31/2020</div>
+
+
+								<div class="col-md-12">
+									<div class="row">
+
+										<label class="col" for="inputGroupSelect01" style=" color: #0C867D; letter-spacing: .03em; font-size: .9em;">Select State-Level Stratifications:</label>
+
+									</div>
+
+
+									<div class="row">
+										<div class="col-md-12 input-group mb-4 text-right">
+
+											<div class="custom-control custom-checkbox form-check">
+												<input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+												<label class="custom-control-label" for="customCheck1">Inpatient</label>
+											</div>
+
+											<div class="custom-control custom-checkbox form-check">
+												<input type="checkbox" class="custom-control-input" id="customCheck2"  checked>
+												<label class="custom-control-label" for="customCheck2">Outpatient</label>
+											</div>
+
+											<div class="custom-control custom-checkbox form-check">
+												<input type="checkbox" class="custom-control-input" id="customCheck3"  checked>
+												<label class="custom-control-label" for="customCheck3">OTP</label>
+											</div>
+
+											<div class="custom-control custom-checkbox form-check">
+												<input type="checkbox" class="custom-control-input" id="customCheck4"  checked>
+												<label class="custom-control-label" for="customCheck4">Residential</label>
+											</div>
+
+
+											<div class="custom-control custom-checkbox form-check">
+												<input type="checkbox" class="custom-control-input" id="customCheck5"  checked>
+												<label class="custom-control-label" for="customCheck5">State Overall</label>
+											</div>
+
+											<div class="custom-control custom-checkbox form-check">
+												<input type="checkbox" class="custom-control-input" id="customCheck6"  checked>
+												<label class="custom-control-label" for="customCheck6">Facilities Accepting Medicaid</label>
+											</div>
+
+										</div>
+									</div>
+
+
+
+								</div>
+
+
+								<div id="endqualitymeasures"></div>
+
+							</div>
+
+							<div class="row">
+								<div class="col-12 accordion v3" id="accordionExample">
+
+
+
+									<div class="card toStick fromcomp">
+										<div class="col-md-12">
+
+
+
+
+											<div class="row pl-5">
+
+												<div id="collapseSix" class="col-12">
+
+
+
+													<div class="row tier1 d-flex align-items-end">
+														<div class="col-sm-12 col-md-3 quest">
+
+
+														</div>
+														<div class="col-md-1 answ d-flex align-items-center">
+
+														</div>
+
+
+														<div class="col flex-grow-1">
+
+
+															<div class="row">
+
+
+
+
+																<div class="col small text-center facility" style="color:#0C867D; text-transform: uppercase; border-bottom:2px solid #0C867D">ATLAS facilities- State average for:</div>
+															</div>
+
+															<div class="row d-flex align-content-end justify-content-end mt-3">
+
+
+																<div class="d-flex flex-grow-1">
+																	<div class="col loc text-center" style="color:#0C867D; background: linear-gradient(to top, #ffffff45, #d6e5e6ad);">
+																		Level of Care
+																	</div>
+																	<div class="col-4 loc">
+																		<!--															placeholder above state-->
+																	</div>
+																</div>
+
+
+															</div>
+
+															<div class="row d-flex align-content-end justify-content-end ">
+
+
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap comparecol loccol" style=" background: linear-gradient(to top, #ffffff45, #d6e5e6ad);">
+																	<div class="w-100 small toplabel" style="text-transform: uppercase">Inpatient Facilities:</div>
+
+																</div>
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
+																	<div class="w-100 small toplabel" style="text-transform: uppercase">Outpatient Facilities:</div>
+
+																</div>
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
+																	<div class="w-100 small toplabel" style=" text-transform: uppercase">Opioid Treatment Programs (OTPs):</div>
+
+																</div>
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
+																	<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential Facilities:</div>
+																</div>
+
+
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap comparecol statecol">
+																	<div class="w-100 small toplabel" style="text-transform: uppercase">State Overall:</div>
+
+																</div>
+
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap comparecol statecol">
+																	<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>
+
+																</div>
+
+															</div>
+
+
+														</div>
+
+
+													</div>
+
+
+												</div>
+
+
+											</div>
+
+
+
+										</div>
+
+
+
+
+									</div>
+
+
+
+									<div class="card fast fromcomp">
+										<div class="col-md-12 card-header true" id="headingOne">
+
+											<div class="row d-flex pl-5 mt-3">
+												<h4 class="col-md-3 mb-0">          
+Fast Access to Treatment
+      </h4>
+
+											</div>
+
+
+
+											<div class="row pl-5">
+
+												<div id="collapseSix" class="col-12">
+
+
+
+													<div class="row tier1">
+														<div class="col-sm-12 col-md-3 quest"><span>Offers same day or walk-in appointments</span> <i class="fa fa-info-circle" aria-hidden="true"></i>
+														</div>
+														<div class="col-md-1 answ d-flex align-items-center">
+
+
+														</div>
+
+														<div class="col flex-grow-1">
+															<div class="row h-100">
+
+
+																<div class="col answ">
+
+																	<div class="row ">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+
+																	</div>
+
+																</div>
+
+
+															</div>
+														</div>
+
+
+													</div>
+
+													<div class="row tier1">
+														<div class="col-sm-12 col-md-3 quest"><span>Helps patients in other ways if residential beds are not available</span> <i class="fa fa-info-circle" aria-hidden="true"></i></div>
+
+														<div class="col-md-1 answ d-flex align-items-center">
+
+															<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#fastOneHidden">+ more</a>
+														</div>
+
+														<div class="col flex-grow-1">
+															<div class="row h-100">
+
+
+
+																<div class="col answ">
+
+
+																	<div class="row ">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																	</div>
+
+																</div>
+
+
+															</div>
+														</div>
+
+
+
+
+
+													</div>
+
+													<div class="row mb-3 collapse" id="fastOneHidden">
+														<div class="my-1">
+															This facility:
+														</div>
+														<div class="col-sm-12 col-md-3 quest">
+
+															<div>
+																Refers the patient to one or more specific treatment facilities outside the organization.
+															</div>
+														</div>
+
+														<!--														<div class="col flex-grow-1" style="display:none">-->
+														<div class="col flex-grow-1">
+															<div class="row h-100 align-content-end">
+
+
+
+																<div class="col-md-1 answ d-flex align-items-center justify-content-end">
+																	<!--																	<span><i class="fas fa-check-circle"></i></span>-->
+																</div>
+
+																<div class="col-md-2 answ d-flex align-items-center">
+																	different location
+																</div>
+
+																<div class="col answ">
+																	<!--
+																	<div class="row">
+																		<div class="col col-md-12 facility text-center pr-1" style="border-bottom: 1px solid #3e61ab;"><span class="small toplabel" style="color:#3e61ab; text-transform: uppercase; ">ATLAS facilities- State average for:</span>
+																		</div>
+
+																	</div>
+-->
+
+
+																	<div class="row ">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<div class="w-100 small toplabel" style="    color: #3e61ab;
+    text-transform: none;
+    font-weight: 600;">onsite:</div>
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">Inpatient:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																	</div>
+
+																</div>
+
+
+															</div>
+														</div>
+														<!--this should be end collapse-->
+
+													</div>
+
+
+
+												</div>
+
+
+											</div>
+
+
+
+										</div>
+
+
+
+
+									</div>
+
+
+									<div class="card personal">
+										<div class="col-md-12 card-header" id="headingTwo">
+											<h4 class="mb-0">
+        <button class="btn " type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         Personalized Evaluation and Treatment Plan
+        </button>
+											
+      </h4>
+
+										</div>
+										<div id="collapseTwo" class="col-md-8 collapse show" aria-labelledby="headingTwo">
+											<div class="card-body">
+
+
+												<ul>
+													<li class="">
+														<div class="row">
+															<div class="col-md-7 quest"><span>Examines all of the 6 critical factors during the intake process to develop the patient’s treatment plan</span> <i class="fa fa-info-circle" aria-hidden="true"></i></div>
+															<div class="col-md-1 answ">
+																<span><i class="fas fa-times-circle"></i></span>
+
+															</div>
+															<div class="col-md-4 answ">
+
+																<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#personalOneHidden">+ more</a>
+
+															</div>
+
+														</div>
+
+
+														<div class="row mb-3 collapse" id="personalOneHidden">
+															<div class="col-md-12">
+																<p class="mt-3">Before starting treatment, asks about: </p>
+															</div>
+
+															<div class="col-md-12">
+																<div data-brackets-id="71491" class="row details-wrapper">
+																	<div data-brackets-id="71492" class="col-md-7 quest">
+																		<div>Intoxication and/or withdrawal potential <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i data-brackets-id="71479" class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+																<div data-brackets-id="71495" class="row details-wrapper">
+																	<div data-brackets-id="71496" class="col-md-7 quest">
+																		<div>General health <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i data-brackets-id="71479" class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Mental health <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+
+																	<div class="col-md-1 answ">
+																		<i data-brackets-id="71479" class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper negative">
+																	<div class="col-md-7 quest">
+																		<div>Readiness to change <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-times"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper negative">
+																	<div class="col-md-7 quest">
+																		<div>Potential to relapse <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-times"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper negative">
+																	<div class="col-md-7 quest">
+																		<div>Recovery and living environment <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-times"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+															</div>
+														</div>
+													</li>
+
+
+
+												</ul>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="card access fromcomp">
+										<div class="col-md-12 card-header true" id="headingOne">
+
+											<div class="row d-flex pl-5 mt-3">
+												<h4 class="col-md-3 mb-0">          
+  Access to Medications for Opioid or Alcohol Use Disorder
+      </h4>
+
+											</div>
+
+
+
+											<div class="row pl-5">
+
+												<div id="collapseSix" class="col-12">
+
+
+
+													<div class="row tier1">
+														<div class="col-sm-12 col-md-3 quest"><span>Offers FDA-approved medication for <b>opioid use disorder</b>:</span> <i class="fa fa-info-circle" aria-hidden="true"></i></div>
+														<div class="col-md-1 answ d-flex align-items-center">
+
+															<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#accessOneHidden">+ more</a>
+
+														</div>
+
+
+														<div class="col flex-grow-1">
+															<div class="row h-100">
+
+
+
+
+																<div class="col answ">
+
+																	<div class="row ">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">state:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">Inpatient:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+
+																	</div>
+
+																</div>
+
+
+															</div>
+														</div>
+
+
+													</div>
+
+
+													<div class="row mb-3 collapse" id="accessOneHidden">
+
+
+														<div class="col-md-12">
+
+															<div class="row details-wrapper">
+
+
+																<div class="col-sm-12 col-md-3 quest">
+																	<span>Methadone</span> <i class="fa fa-info-circle" aria-hidden="true"></i>
+																</div>
+
+
+
+																<div class="col-md-1 answ d-flex align-items-center justify-content-end">
+																	<!--																placeholder, or make prior div col-md-4 for internal rows only-->
+																</div>
+
+
+																<div class="col flex-grow-1">
+																	<div class="row h-100 align-content-end">
+
+
+
+
+
+																		<div class="col answ">
+																			<!--
+																	<div class="row">
+																		<div class="col col-md-12 facility text-center pr-1" style="border-bottom: 1px solid #3e61ab;"><span class="small toplabel" style="color:#3e61ab; text-transform: uppercase; ">ATLAS facilities- State average for:</span>
+																		</div>
+
+																	</div>
+-->
+
+
+																			<div class="row ">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																			</div>
+
+																		</div>
+
+
+																	</div>
+																</div>
+
+															</div>
+
+															<div class="row details-wrapper">
+
+
+																<div class="col-sm-12 col-md-3 quest">
+																	Buprenorphine (Suboxone®, Subutex®, or Bunavail®) <i class="fa fa-info-circle" aria-hidden="true"></i>
+																</div>
+
+
+																<div class="col-md-1 answ d-flex align-items-center justify-content-end">
+																	<!--																placeholder, or make prior div col-md-4 for internal rows only-->
+																</div>
+
+
+																<div class="col flex-grow-1">
+																	<div class="row h-100 align-content-end">
+
+
+
+
+
+																		<div class="col answ">
+																			<!--
+																	<div class="row">
+																		<div class="col col-md-12 facility text-center pr-1" style="border-bottom: 1px solid #3e61ab;"><span class="small toplabel" style="color:#3e61ab; text-transform: uppercase; ">ATLAS facilities- State average for:</span>
+																		</div>
+
+																	</div>
+-->
+
+
+																			<div class="row ">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																			</div>
+
+																		</div>
+
+
+																	</div>
+																</div>
+
+
+
+
+															</div>
+
+															<div class="row details-wrapper">
+
+
+																<div class="col-sm-12 col-md-3 quest">
+																	Buprenorphine without naloxone (e.g., Subutex®) <i class="fa fa-info-circle" aria-hidden="true"></i>
+																</div>
+
+
+																<div class="col-md-1 answ d-flex align-items-center justify-content-end">
+																	<!--																placeholder, or make prior div col-md-4 for internal rows only-->
+																</div>
+
+
+																<div class="col flex-grow-1">
+																	<div class="row h-100 align-content-end">
+
+
+
+
+
+																		<div class="col answ">
+																			<!--
+																	<div class="row">
+																		<div class="col col-md-12 facility text-center pr-1" style="border-bottom: 1px solid #3e61ab;"><span class="small toplabel" style="color:#3e61ab; text-transform: uppercase; ">ATLAS facilities- State average for:</span>
+																		</div>
+
+																	</div>
+-->
+
+
+																			<div class="row ">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																			</div>
+
+																		</div>
+
+
+																	</div>
+																</div>
+
+
+
+															</div>
+
+
+															<div class="row details-wrapper">
+
+
+																<div class="col-sm-12 col-md-3 quest">
+																	Buprenorphine injection (e.g., Sublocade®) <i class="fa fa-info-circle" aria-hidden="true"></i>
+																</div>
+
+
+																<div class="col-md-1 answ d-flex align-items-center justify-content-end">
+																	<!--																placeholder, or make prior div col-md-4 for internal rows only-->
+																</div>
+
+
+																<div class="col flex-grow-1">
+																	<div class="row h-100 align-content-end">
+
+
+
+
+
+																		<div class="col answ">
+																			<!--
+																	<div class="row">
+																		<div class="col col-md-12 facility text-center pr-1" style="border-bottom: 1px solid #3e61ab;"><span class="small toplabel" style="color:#3e61ab; text-transform: uppercase; ">ATLAS facilities- State average for:</span>
+																		</div>
+
+																	</div>
+-->
+
+
+																			<div class="row ">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																			</div>
+
+																		</div>
+
+
+																	</div>
+																</div>
+
+
+
+
+															</div>
+
+
+															<div class="row details-wrapper">
+
+
+																<div class="col-sm-12 col-md-3 quest">
+																	Buprenorphine implant (e.g., Probuphine®) <i class="fa fa-info-circle" aria-hidden="true"></i>
+																</div>
+
+
+																<div class="col-md-1 answ d-flex align-items-center justify-content-end">
+																	<!--																placeholder, or make prior div col-md-4 for internal rows only-->
+																</div>
+
+
+																<div class="col flex-grow-1">
+																	<div class="row h-100 align-content-end">
+
+
+
+
+
+																		<div class="col answ">
+																			<!--
+																	<div class="row">
+																		<div class="col col-md-12 facility text-center pr-1" style="border-bottom: 1px solid #3e61ab;"><span class="small toplabel" style="color:#3e61ab; text-transform: uppercase; ">ATLAS facilities- State average for:</span>
+																		</div>
+
+																	</div>
+-->
+
+
+																			<div class="row ">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																			</div>
+
+																		</div>
+
+
+																	</div>
+																</div>
+
+
+
+															</div>
+
+															<div class="row details-wrapper">
+
+
+																<div class="col-sm-12 col-md-3 quest">
+																	Oral Naltrexone (e.g., Depade®, Revia®) <i class="fa fa-info-circle" aria-hidden="true"></i>
+																</div>
+
+
+																<div class="col-md-1 answ d-flex align-items-center justify-content-end">
+																	<!--																placeholder, or make prior div col-md-4 for internal rows only-->
+																</div>
+
+
+																<div class="col flex-grow-1">
+																	<div class="row h-100 align-content-end">
+
+
+
+
+
+																		<div class="col answ">
+																			<!--
+																	<div class="row">
+																		<div class="col col-md-12 facility text-center pr-1" style="border-bottom: 1px solid #3e61ab;"><span class="small toplabel" style="color:#3e61ab; text-transform: uppercase; ">ATLAS facilities- State average for:</span>
+																		</div>
+
+																	</div>
+-->
+
+
+																			<div class="row ">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																			</div>
+
+																		</div>
+
+
+																	</div>
+																</div>
+
+
+
+															</div>
+
+															<div class="row details-wrapper">
+
+
+																<div class="col-sm-12 col-md-3 quest">
+																	Injectable long-acting Naltrexone (e.g., Vivitrol®) <i class="fa fa-info-circle" aria-hidden="true"></i>
+																</div>
+
+
+
+																<div class="col-md-1 answ d-flex align-items-center justify-content-end">
+																	<!--																placeholder, or make prior div col-md-4 for internal rows only-->
+																</div>
+
+
+																<div class="col flex-grow-1">
+																	<div class="row h-100 align-content-end">
+
+
+
+
+
+																		<div class="col answ">
+																			<!--
+																	<div class="row">
+																		<div class="col col-md-12 facility text-center pr-1" style="border-bottom: 1px solid #3e61ab;"><span class="small toplabel" style="color:#3e61ab; text-transform: uppercase; ">ATLAS facilities- State average for:</span>
+																		</div>
+
+																	</div>
+-->
+
+
+																			<div class="row ">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																			</div>
+
+																		</div>
+
+
+																	</div>
+																</div>
+
+
+
+															</div>
+
+
+
+														</div>
+														<!--this should be end collapse-->
+
+													</div>
+
+
+
+													<div class="row tier1">
+														<div class="col-sm-12 col-md-3 quest"><span>Provides Naloxone (e.g., Narcan, Evzio) access to patients at risk for overdose:</span> <i class="fa fa-info-circle" aria-hidden="true"></i>
+														</div>
+
+														<div class="col-md-1 answ d-flex align-items-center">
+
+															<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#accessOneHidden">+ more</a>
+
+														</div>
+
+
+														<div class="col flex-grow-1">
+															<div class="row h-100">
+
+
+
+																<div class="col answ">
+
+																	<div class="row ">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																	</div>
+
+																</div>
+
+
+															</div>
+														</div>
+
+
+
+
+
+													</div>
+
+
+													<div class="row mb-3 collapse" id="accessTwoHidden">
+
+
+														<div class="col-md-12">
+
+															<div class="row details-wrapper">
+
+
+																<div class="col-sm-12 col-md-3 quest">
+																	<div>Naloxone available onsite </div>
+																</div>
+
+
+																<div class="col flex-grow-1">
+																	<div class="row h-100 align-content-end">
+
+
+
+																		<div class="col-md-1 answ d-flex align-items-center justify-content-end">
+																			<i class="fas fa-check"></i>
+																		</div>
+
+																		<div class="col-md-2 answ d-flex align-items-center">
+
+																			Yes, for family/friends of patients
+
+																		</div>
+
+																		<div class="col answ">
+																			<!--
+																	<div class="row">
+																		<div class="col col-md-12 facility text-center pr-1" style="border-bottom: 1px solid #3e61ab;"><span class="small toplabel" style="color:#3e61ab; text-transform: uppercase; ">ATLAS facilities- State average for:</span>
+																		</div>
+
+																	</div>
+-->
+
+
+																			<div class="row ">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<div class="w-100 small toplabel" style="    color: #3e61ab;
+    text-transform: none;
+    font-weight: 600;">onsite:</div>
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																			</div>
+
+																		</div>
+
+
+																	</div>
+																</div>
+
+															</div>
+
+															<div class="row details-wrapper">
+
+
+																<div class="col-sm-12 col-md-3 quest">
+																	<div>Naloxone training offered </div>
+																</div>
+
+
+																<div class="col flex-grow-1">
+																	<div class="row h-100 align-content-end">
+
+
+
+																		<div class="col-md-1 answ d-flex align-items-center justify-content-end">
+																			<!--																	<span><i class="fas fa-check-circle"></i></span>-->
+																		</div>
+
+																		<div class="col-md-2 answ d-flex align-items-center">
+																			Different location
+																		</div>
+
+																		<div class="col answ">
+																			<!--
+																	<div class="row">
+																		<div class="col col-md-12 facility text-center pr-1" style="border-bottom: 1px solid #3e61ab;"><span class="small toplabel" style="color:#3e61ab; text-transform: uppercase; ">ATLAS facilities- State average for:</span>
+																		</div>
+
+																	</div>
+-->
+
+
+																			<div class="row ">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<div class="w-100 small toplabel" style="    color: #3e61ab;
+    text-transform: none;
+    font-weight: 600;">onsite:</div>
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																			</div>
+
+																		</div>
+
+
+																	</div>
+																</div>
+
+															</div>
+
+
+
+														</div>
+														<!--this should be end collapse-->
+
+													</div>
+
+
+
+
+
+												</div>
+
+
+											</div>
+
+
+
+										</div>
+
+
+
+
+									</div>
+
+
+
+
+
+
+
+									<div class="card evidence">
+										<div class="col-md-12 card-header false" id="headingTwo">
+											<h4 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Effective Behavioral Therapies for Addiction
+        </button>
+											
+      </h4>
+											<p class="text-dark small offset-md-1">
+												Addiction alters brain chemistry. You need to have access to treatment as soon as you are ready.
+											</p>
+										</div>
+										<div id="collapseTwo" class="col-md-8 collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+											<div class="card-body">
+
+
+												<ul>
+													<li class="">
+														<div class="row">
+															<div class="col-md-7 quest"><span>Offers behavioral therapy that has been shown to help people with addiction</span> <i class="fa fa-info-circle" aria-hidden="true"></i></div>
+															<div class="col-md-1 answ">
+																<span><i class="fas fa-check-circle"></i></span>
+
+															</div>
+															<div class="col-md-4 answ">
+
+																<a class="small ml-auto mt-auto align-self-end" data-toggle="collapse" data-target="#behaviorOneHidden">+ more</a>
+
+															</div>
+
+														</div>
+
+
+														<div class="row mb-3 collapse" id="behaviorOneHidden">
+															<div class="col-md-12">
+																<p class="mt-3">This facility offers the following therapies: </p>
+															</div>
+															<div class="col-md-12">
+																<div data-brackets-id="71491" class="row details-wrapper">
+																	<div data-brackets-id="71492" class="col-md-7 quest">
+																		<div>Cognitive Behavioral Health Therapy (CBT) <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i data-brackets-id="71479" class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+																<div data-brackets-id="71495" class="row details-wrapper">
+																	<div data-brackets-id="71496" class="col-md-7 quest">
+																		<div>Community Reinforcement Approach (CRA) <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i data-brackets-id="71479" class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Contingency Management/Motivational Incentives <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+
+																	<div class="col-md-1 answ">
+																		<i data-brackets-id="71479" class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper negative">
+																	<div class="col-md-7 quest">
+																		<div>Family Behavior Therapy <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-times"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper  negative">
+																	<div class="col-md-7 quest">
+																		<div>Matrix Model <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-times"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper  negative">
+																	<div class="col-md-7 quest">
+																		<div>Mindfulness-based Relapse Prevention <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-times"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper  negative">
+																	<div class="col-md-7 quest">
+																		<div>Motivational Enhancement Therapy <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-times"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper  negative">
+																	<div class="col-md-7 quest">
+																		<div>Twelve-Step Facilitation Therapy (TSF) <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-times"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+															</div>
+
+														</div>
+
+
+
+
+
+
+													</li>
+
+													<li class="">
+														<div class="row">
+															<div class="col-md-7 quest"><span>Offers individual counseling</span></div>
+															<div class="col-md-1 answ">
+																<span><i class="fas fa-check-circle"></i></span>
+
+															</div>
+															<div class="col-md-4 answ">
+
+
+															</div>
+
+														</div>
+
+
+
+
+
+													</li>
+
+
+
+
+
+
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--									end card evidence-->
+
+									<div class="card monitor">
+										<div class="col-md-12 card-header true" id="headingThree">
+											<h4 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Long-term Treatment and <span style="white-space: nowrap">Follow-up</span>
+		
+        </button>
+      </h4>
+											<p class="text-dark small offset-md-1">
+												Addiction alters brain chemistry. You need to have access to treatment as soon as you are ready.
+											</p>
+
+										</div>
+										<div id="collapseThree" class="col-md-8 collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+											<div class="card-body">
+
+												<ul>
+													<li>
+														<div class="row">
+
+
+
+															<div class="col-md-7 quest"><span>Tracks patient progress over time on all 6 critical factors</span> <i class="fa fa-info-circle" aria-hidden="true"></i>
+															</div>
+															<div class="col-md-1 answ">
+																<span><i class="fas fa-times-circle"></i></span>
+
+															</div>
+
+															<div class="col-md-4 answ">
+																<!--															<span>This facility offers:</span>-->
+																<a class="small small ml-auto mt-auto align-self-end" data-toggle="collapse" data-target="#monitorOneHidden">+ more</a>
+
+
+																<!--
+															  <button type="button" class="dropdown-toggle small" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    + more
+  </button>
+-->
+															</div>
+
+
+
+
+														</div>
+
+														<div class="row mb-3 collapse" id="monitorOneHidden">
+															<div class="col-md-12">
+																<p class="mt-3">Tracks patient progress on: </p>
+															</div>
+															<div class="col-md-12">
+																<div data-brackets-id="71491" class="row details-wrapper">
+																	<div data-brackets-id="71492" class="col-md-7 quest">
+																		<div>Intoxication and/or withdrawal potential <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i data-brackets-id="71479" class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+																<div data-brackets-id="71495" class="row details-wrapper">
+																	<div data-brackets-id="71496" class="col-md-7 quest">
+																		<div>General health <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i data-brackets-id="71479" class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Mental health <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+
+																	<div class="col-md-1 answ">
+																		<i data-brackets-id="71479" class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper  negative">
+																	<div class="col-md-7 quest">
+																		<div>Readiness to change <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-times"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper  negative">
+																	<div class="col-md-7 quest">
+																		<div>Potential to relapse <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-times"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper  negative">
+																	<div class="col-md-7 quest">
+																		<div>Recovery and living environment <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-times"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+															</div>
+
+														</div>
+
+
+
+
+
+													</li>
+													<li class="">
+														<div class="row">
+															<div class="col-md-7 quest"><span>Uses lab tests to track patient progress</span> <i class="fa fa-info-circle" aria-hidden="true"></i></div>
+															<div class="col-md-1 answ">
+																<span><i class="fas fa-check-circle"></i></span>
+
+															</div>
+															<div class="col-md-4 answ">
+
+
+															</div>
+
+														</div>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+									</div>
+
+
+
+									<div class="card carecoord fromcomp">
+										<div class="col-md-12 card-header true" id="headingFour">
+
+											<div class="row d-flex pl-5 mt-3">
+												<h4 class="col-md-3 mb-0">          
+   Coordinated Care for Mental and Physical Health
+      </h4>
+
+											</div>
+
+
+
+											<div class="row pl-5">
+
+												<div id="collapseSix" class="col-12">
+
+
+
+													<div class="row tier1">
+														<div class="col-sm-12 col-md-3 quest"><span>Offers mental health care</span> <i class="fa fa-info-circle" aria-hidden="true"></i></div>
+														<div class="col-md-1 answ d-flex align-items-center">
+
+															<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#carecoordOneHidden">+ more</a>
+
+														</div>
+
+
+														<div class="col flex-grow-1">
+															<div class="row h-100">
+
+
+																<div class="col answ">
+
+																	<div class="row ">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">state:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">Inpatient:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+
+																	</div>
+
+																</div>
+
+
+															</div>
+														</div>
+
+
+													</div>
+
+
+													<div class="row mb-3 collapse" id="carecoordOneHidden">
+
+
+														<div class="col-md-12">
+
+															<div class="row details-wrapper">
+
+
+																<div class="col-sm-12 col-md-3 quest">
+																	<span>Staff Include:</span> <i class="fa fa-info-circle" aria-hidden="true"></i>
+																</div>
+
+
+																<div class="col flex-grow-1">
+																	<div class="row h-100 align-content-end">
+
+
+																		<!--																		these longer details=wrapper items are going to have to not have the checkmark column so they can have a witdht of 3 not 2-->
+
+
+																		<!--
+																		<div class="col-md-1 answ d-flex align-items-center justify-content-end">
+												
+																		</div>
+-->
+
+
+
+																		<div class="col-md-3 answ d-flex align-items-center justify-content-end">
+																			Psychiatrist (MD, DO), Other physician (MD, DO), Psychologist (PsD or PhD), Physician Assistant (PA), Nurse Practitioner (NP), Registered Nurse (RN), Social Worker (MSW/DSW), Counselor (Licensed, Master's level), Peer Recovery Counselor, Other
+																		</div>
+
+
+
+																	</div>
+																</div>
+
+															</div>
+
+															<div class="row details-wrapper">
+
+
+																<div class="col-sm-12 col-md-3 quest">
+																	Medications offered for mental health:
+																</div>
+
+
+																<div class="col flex-grow-1">
+																	<div class="row h-100 align-content-end">
+
+
+
+																		<div class="col-md-1 answ d-flex align-items-center justify-content-end">
+																			<i class="fas fa-check"></i>
+																		</div>
+
+																		<div class="col-md-2 answ d-flex align-items-center">
+
+																		</div>
+
+																		<div class="col answ">
+
+
+																			<div class="row ">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<div class="w-100 small toplabel" style="    color: #3e61ab;
+    text-transform: none;
+    font-weight: 600;">onsite:</div>
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																			</div>
+
+																		</div>
+
+
+																	</div>
+																</div>
+
+															</div>
+
+
+														</div>
+														<!--this should be end collapse-->
+
+													</div>
+
+
+
+													<div class="row tier1">
+														<div class="col-sm-12 col-md-3 quest"><span>Offers primary health care</span> <i class="fa fa-info-circle" aria-hidden="true"></i>
+
+														</div>
+
+														<div class="col-md-1 answ d-flex align-items-center">
+
+															<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#carecoordTwoHidden">+ more</a>
+
+														</div>
+
+
+														<div class="col flex-grow-1">
+															<div class="row h-100">
+
+																<div class="col answ">
+
+																	<div class="row ">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+
+																			<div class="w-100 surveypct">42<sup>%</sup> </div>
+																		</div>
+																	</div>
+
+																</div>
+
+
+															</div>
+														</div>
+
+
+
+
+
+													</div>
+
+
+													<div class="row mb-3 collapse" id="carecoordTwoHidden">
+
+
+														<div class="col-md-12">
+
+															<div class="row details-wrapper">
+
+
+																<div class="col-sm-12 col-md-3 quest">
+																	<div>Naloxone available onsite </div>
+																</div>
+
+
+																<div class="col flex-grow-1">
+																	<div class="row h-100 align-content-end">
+
+
+
+																		<div class="col-md-1 answ d-flex align-items-center justify-content-end">
+																			<i class="fas fa-check"></i>
+																		</div>
+
+																		<div class="col-md-2 answ d-flex align-items-center">
+
+																			Yes, for family/friends of patients
+
+																		</div>
+
+																		<div class="col answ">
+																			<!--
+																	<div class="row">
+																		<div class="col col-md-12 facility text-center pr-1" style="border-bottom: 1px solid #3e61ab;"><span class="small toplabel" style="color:#3e61ab; text-transform: uppercase; ">ATLAS facilities- State average for:</span>
+																		</div>
+
+																	</div>
+-->
+
+
+																			<div class="row ">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<div class="w-100 small toplabel" style="    color: #3e61ab;
+    text-transform: none;
+    font-weight: 600;">onsite:</div>
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																			</div>
+
+																		</div>
+
+
+																	</div>
+																</div>
+
+															</div>
+
+															<div class="row details-wrapper">
+
+
+																<div class="col-sm-12 col-md-3 quest">
+																	<div>Naloxone training offered </div>
+																</div>
+
+
+																<div class="col flex-grow-1">
+																	<div class="row h-100 align-content-end">
+
+
+
+																		<div class="col-md-1 answ d-flex align-items-center justify-content-end">
+																			<!--																	<span><i class="fas fa-check-circle"></i></span>-->
+																		</div>
+
+																		<div class="col-md-2 answ d-flex align-items-center">
+																			Different location
+																		</div>
+
+																		<div class="col answ">
+																			<!--
+																	<div class="row">
+																		<div class="col col-md-12 facility text-center pr-1" style="border-bottom: 1px solid #3e61ab;"><span class="small toplabel" style="color:#3e61ab; text-transform: uppercase; ">ATLAS facilities- State average for:</span>
+																		</div>
+
+																	</div>
+-->
+
+
+																			<div class="row ">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<div class="w-100 small toplabel" style="    color: #3e61ab;
+    text-transform: none;
+    font-weight: 600;">onsite:</div>
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
+																					<div class="w-100 surveypct">42<sup>%</sup> </div>
+																				</div>
+																			</div>
+
+																		</div>
+
+
+																	</div>
+																</div>
+
+															</div>
+
+
+
+														</div>
+														<!--this should be end collapse-->
+
+													</div>
+
+
+
+
+
+												</div>
+
+
+											</div>
+
+
+
+										</div>
+
+
+
+
+									</div>
+
+
+
+
+
+									<div class="card recovery">
+										<div class="col-md-12 card-header true" id="headingSeven">
+											<h4 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+         Additional Services to Support Recovery
+		
+        </button>
+      </h4>
+											<p class="text-dark small offset-md-1">
+												Addiction alters brain chemistry. You need to have access to treatment as soon as you are ready.
+											</p>
+
+										</div>
+										<div id="collapseSeven" class="col-md-8 collapse show" aria-labelledby="headingSeven" data-parent="#accordionExample">
+											<div class="card-body">
+
+												<ul>
+													<li class="">
+
+														<div class="row">
+															<div class="col-md-7 quest"><span>Offers recovery support services:</span> <i class="fa fa-info-circle" aria-hidden="true"></i></div>
+															<div class="col-md-1 answ">
+																<span><i class="fas fa-check-circle"></i></span>
+
+															</div>
+															<div class="col-md-4 answ">
+																<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#collapseSupportServices">+ more</a>
+															</div>
+
+														</div>
+
+														<div class="row mb-3 collapse" id="collapseSupportServices">
+															<div class="col-md-12">
+																<p class="mt-3"></p>
+															</div>
+															<div class="col-md-12">
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Assistance with childcare</div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Assistance with obtaining social services (e.g., Medicaid, WIC, SSI, SSDI)</div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Assistance with transportation to/from treatment </div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Domestic violence (e.g., physical, sexual, and/or emotional abuse) services</div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Case management</div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Educational assistance (e.g., GED courses)</div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Employment counseling or training </div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Family services (e.g., marriage counseling, parenting training) </div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Assistance with obtaining social services (e.g., Medicaid, WIC, SSI, SSDI) </div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Housing support</div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Legal aid</div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Peer recovery support</div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Spiritual support</div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+																<div class="row details-wrapper">
+																	<div class="col-md-7 quest">
+																		<div>Wellness and health promotion (e.g., healthy eating, exercise)</div>
+																	</div>
+																	<div class="col-md-1 answ">
+																		<i class="fas fa-check"></i>
+																	</div>
+																	<div class="col-md-3 answ"> </div>
+																</div>
+
+
+															</div>
+
+
+														</div>
+
+
+
+													</li>
+
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!--						end first accordion-->
+
+
+								<!--						end accordion-->
+
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="row bg-light contentblock ">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-12">
+
+							<div class="row">
+								<h2 class="mb-3 col-md-7">
+                  STATE-LEVEL SUMMARY STATISTICS
+                </h2>
+								<div class="col-md-5 mb-3 text-right font-italic d-flex align-items-end justify-content-end">Data last updated 01/31/2020</div>
+
+							</div>
+
+
+							<div class="row" id="claims">
+
+
+								<div class="col-12  accordion">
+
+
+						
+											<div class="card">
+
+										<div class="col-12">
+											<div class="row d-flex mt-3">
+
+
+												<h4 class="col-sm-12 col-md-9 pl-5 quest">          
+State Data from Other Sources
+																									<br/><span class="toplabel mt-3">          
+Insurance
+      </span>
+      </h4>
+
+
+												<div class="col flex-grow-1 align-self-end">
+
+
+													<div class="row d-flex align-content-end justify-content-end ">
+
+
+
+
+														<div class="col col-sm mt-1 d-flex align-content-end flex-wrap">
+															<div class="w-100 small toplabel" style="text-transform: uppercase">New York:</div>
+
+														</div>
+
+
+
+														<div class="col col-sm mt-1 d-flex align-content-end flex-wrap">
+															<div class="w-100 small toplabel" style=" text-transform: uppercase">United States:</div>
+
+														</div>
+
+													</div>
+
+
+												</div>
+
+
+											</div>
+
+											<div class="row tier1">
+
+
+
+												<div class="col-sm-12 d-flex align-self-center col-md-9 quest">
+													<span>
+													Percentage of residents who are covered by Medicaid in the state and nation <span class="small pt-1" >(source: <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">U.S. Census, 2018</a>)</span></span>
+												</div>
+
+
+												<div class="col flex-grow-1">
+													<div class="row h-100 align-content-end">
+
+
+
+
+
+														<div class="col answ">
+
+
+															<div class="row ">
+
+
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+
+																	<div class="w-100 surveypct">42<sup>%</sup> </div>
+																</div>
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+
+																	<div class="w-100 surveypct">42<sup>%</sup> </div>
+																</div>
+															</div>
+
+														</div>
+
+
+													</div>
+												</div>
+
+											</div>
+
+
+											<div class="row tier1">
+
+
+
+												<div class="col-sm-12 d-flex align-self-center col-md-9 quest">
+													<span>
+													Percentage of residents who are uninsured in the state and nation <span class="small pt-1" >(source: <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">U.S. Census, 2018</a>)</span></span>
+												</div>
+
+
+												<div class="col flex-grow-1">
+													<div class="row h-100 align-content-end">
+
+
+
+
+
+														<div class="col answ">
+
+
+															<div class="row ">
+
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+
+																	<div class="w-100 surveypct">42<sup>%</sup> </div>
+																</div>
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+
+																	<div class="w-100 surveypct">42<sup>%</sup> </div>
+																</div>
+															</div>
+
+														</div>
+
+
+													</div>
+												</div>
+
+											</div>
+
+
+
+										</div>
+
+										<div class="col-12">
+											<div class="row d-flex mt-3">
+												<h4 class="col-sm-12 col-md-12 pl-5 quest">          
+													<span class="toplabel"> Substance Use Disorder Prevalence</span>
+      </h4>
+
+
+
+											</div>
+
+											<div class="row tier1">
+
+
+
+												<div class="col-sm-12 col-md-9 d-flex align-self-center quest">
+
+
+													<span>
+													Percentage of residents ages 12+ with substance use disorder in the past year <span class="small pt-1" >(source: <a href="https://www.samhsa.gov/data/sites/default/files/NSDUHsaePercents2016/NSDUHsaePercents2016.pdf  ">NSDUH, 2017</a>)</span></span>
+
+												</div>
+
+
+												<div class="col flex-grow-1">
+													<div class="row h-100 align-content-end">
+
+
+
+
+
+														<div class="col answ">
+
+
+															<div class="row ">
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+
+																	<div class="w-100 surveypct">42<sup>%</sup> </div>
+																</div>
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+
+																	<div class="w-100 surveypct">42<sup>%</sup> </div>
+																</div>
+
+															</div>
+
+														</div>
+
+
+													</div>
+												</div>
+
+											</div>
+
+
+											<div class="row tier1">
+
+
+
+												<div class="col-sm-12 d-flex align-self-center col-md-9 quest">
+													<span>
+														Percentage of residents needing but not receiving treatment at a specialty facility for substance use <span class="small pt-1">(source: <a href="https://www.samhsa.gov/data/sites/default/files/NSDUHsaePercents2016/NSDUHsaePercents2016.pdf ">NSDUH, 2016</a>)</span></span>
+												</div>
+
+
+												<div class="col flex-grow-1">
+													<div class="row h-100 align-content-end">
+
+
+
+
+
+														<div class="col answ">
+
+
+															<div class="row ">
+
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+
+																	<div class="w-100 surveypct">42<sup>%</sup> </div>
+																</div>
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+
+																	<div class="w-100 surveypct">42<sup>%</sup> </div>
+																</div>
+															</div>
+
+														</div>
+
+
+													</div>
+												</div>
+
+											</div>
+
+
+											<div class="row tier1">
+
+
+
+												<div class="col-sm-12 d-flex align-self-center col-md-9 quest">
+													<span>
+													Drug-related overdose death rate in the state <span class="small pt-1">(source: <a href="https://www.cdc.gov/drugoverdose/data/statedeaths/drug-overdose-death-2017.html">CDC, 2017</a>)</span></span>
+												</div>
+
+
+												<div class="col flex-grow-1">
+													<div class="row h-100 align-content-end">
+
+
+
+
+
+														<div class="col answ">
+
+
+															<div class="row ">
+
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+
+																	<div class="w-100 surveypct">42<sup>%</sup> </div>
+																</div>
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+
+																	<div class="w-100 surveypct">42<sup>%</sup> </div>
+																</div>
+															</div>
+
+														</div>
+
+
+													</div>
+												</div>
+
+											</div>
+
+
+
+										</div>
+
+
+
+
+
+									</div>
+
+
+
+								</div>
+				
+
+							</div>
+						</div>
+						<!--end row-->
+					</div>
+					<!--end col-md-12-->
+				</div>
+				<!--end content block-->
+			</div>
+
+			<div class="row bg-light contentblock">
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-md-6">
+
+
+
+							<div class="row">
+
+								<h2 class="col mb-4">Claims-Based Measures: <small>Averages Across NY</small></h2>
+
+								<div class="col-12 mb-2 text-right font-italic d-flex align-items-end justify-content-end">Data last updated 02/28/2020</div>
+
+							</div>
+
+							<div class="row claims2 stateclaims" id="claims">
+
+
+								<div class="col-12  accordion">
+
+
+
+									<div class="card">
+
+										<div class="col-12">
+
+
+											<div class="row tier1">
+
+												<!--												old responsive style for full width-->
+												<!--
+															<div class="col-sm-12 col-lg-8 pb-3 pb-lg-0 d-flex align-self-end quest">Patients received follow-up treatment within 7 or 30 days of being discharged from inpatient or residential treatment
+												</div>
+-->
+
+
+												<div class="col-sm-12 pb-3 d-flex align-self-end quest">Patients  received follow-up treatment within 30 days of being discharged from inpatient or residential treatment
+												</div>
+
+												<div class="col">
+
+													<div class="row answ">
+														<div class="col quest d-flex align-self-end">
+
+															<!--													quest tag still needed here for alignment- better to rework padding for card overall-->
+															<div class="small toplabel">patients in <b>NY</b> with Medicaid:</div>
+
+														</div>
+														<div class="col d-flex align-self-end">
+															<div class="small toplabel">patients in <b>NY</b> with Private insurance:</div>
+
+														</div>
+													</div>
+
+
+													<div class="row answ">
+														<div class="col quest d-flex align-self-end">
+
+															<div class="surveypct">42<sup>%</sup> </div>
+														</div>
+														<div class="col d-flex align-self-end">
+
+															<div class="surveypct">42<sup>%</sup> </div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+
+
+									<div class="card">
+
+										<div class="col-12">
+
+
+											<div class="row tier1">
+												<div class="col-sm-12 pb-3 d-flex align-self-end quest">Patients with opioid use disorders received opioid use disorder medications within 30 days of being treated for opioid use disorder by the organization
+												</div>
+
+												<div class="col">
+
+													<div class="row answ">
+														<div class="col quest d-flex align-self-end">
+															<div class="small toplabel">patients in <b>NY</b> with Medicaid:</div>
+
+														</div>
+														<div class="col d-flex align-self-end">
+															<div class="small toplabel">patients in <b>NY</b> with Private insurance:</div>
+
+														</div>
+
+													</div>
+													<div class="row answ">
+
+														<div class="col quest d-flex align-self-end">
+
+															<div class="surveypct">42<sup>%</sup> </div>
+														</div>
+														<div class="col d-flex align-self-end ">
+
+															<div class="surveypct">42<sup>%</sup> </div>
+														</div>
+
+
+													</div>
+												</div>
+
+
+											</div>
+										</div>
+									</div>
+
+
+									<div class="card">
+
+										<div class="col-12">
+
+
+											<div class="row tier1">
+												<div class="col-sm-12 pb-3 d-flex align-self-end quest">Patients with opioid use disorders received opioid use disorder medications for at least for 180 days
+												</div>
+
+												<div class="col">
+													<div class="row answ">
+														<div class="col quest d-flex align-self-end">
+															<div class="small toplabel">patients in <b>NY</b> with Medicaid:</div>
+
+														</div>
+														<div class="col d-flex align-self-end ">
+															<div class="small toplabel">patients in <b>NY</b> with Private insurance:</div>
+
+														</div>
+													</div>
+
+													<div class="row answ">
+														<div class="col quest d-flex align-self-end ">
+
+															<div class="surveypct">42<sup>%</sup> </div>
+														</div>
+														<div class="col d-flex align-self-end">
+
+															<div class="surveypct">42<sup>%</sup> </div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+
+
+
+
+										</div>
+									</div>
+
+									<div class="card">
+
+										<div class="col-12">
+
+
+											<div class="row tier1">
+												<div class="col-sm-12 pb-3 d-flex align-self-end quest">Patients visited the hospital or emergency department for a reason related to substance use disorder
+												</div>
+
+												<div class="col">
+
+													<div class="row pt-3 answ">
+														<div class="col quest d-flex align-self-end">
+															<div class="small toplabel">patients in <b>NY</b> with Medicaid:</div>
+
+														</div>
+														<div class="col d-flex align-self-end">
+															<div class="small toplabel">patients in <b>NY</b> with Private insurance:</div>
+
+														</div>
+													</div>
+
+
+													<div class="row answ">
+														<div class="col quest d-flex align-self-end">
+
+															<div class="surveypct ">42<sup>%</sup> </div>
+														</div>
+														<div class="col d-flex align-self-end">
+
+															<div class="surveypct">42<sup>%</sup> </div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+
+
+
+
+										</div>
+									</div>
+
+								</div>
+
+
+
+
+							</div>
+											<div class="col-12 small pt-3">Note: Medicaid measures were calculated by state Medicaid agencies based on Medicaid claims at in-state facilities operated by organizations providing substance use disorder (SUD) treatment. Commercial measures were calculated by several participating health plans based on the commercial membership of each participating state. Measures calculated by each participating health plan were aggregated at the organization level. The commercial measures do not include <i>all</i> commercially-insured patients in the state.</div>
+
+
+						</div>
+						<div class="col-md-6">
+
+
+							<div class="row">
+
+								<h2 class="col mb-4">Patient Feedback: <small>Average Responses Across NY</small></h2>
+
+								<div class="col-12 mb-2 text-right font-italic d-flex align-items-end justify-content-end">Data last updated 03/02/2020</div>
+
+							</div>
+
+
+
+
+							<!--						pasted-->
+							<div class="accordion evalaccordion" id="patientexp">
+
+								<div class="card">
+									<div class="card-header true" id="headingEight">
+										<h4 class="mb-0">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseEightpatientexp" aria-expanded="true" aria-controls="collapseEight">
+                          <div class="row d-flex flex-row">
+                            <div class="col-9  mt-auto font-weight-normal">
+                             <span class ="surveyanswer">Number of survey responses <i class="fa fa-info-circle" aria-hidden="true"></i></span> 
+                            </div>
+                       
+                            <div class="col-3 mt-auto  stateavg">
+								<div class="row"><div class="col mb-2 toplabel"><b>NY</b>:</div></div>
+                              <span class="surveypct">235</span>
+                            </div>
+                          </div> <!--end row -->
+                        </button>
+                      </h4>
+									</div>
+									<!--end card header-->
+									<!--end collapse-->
+								</div>
+								<!--end card-->
+
+								<div class="row small instructions">
+
+									<div class="col col-md-6">click sections to expand</div>
+
+								</div>
+
+
+
+								<div class="card">
+									<div class="card-header true" id="headingOne">
+										<h4 class="mb-0">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOnepatientexp" aria-expanded="false" aria-controls="collapseOne">
+                          <div class="row">
+                            <div class="col-12  font-weight-normal">
+                              <span>How much have you been helped by the treatment you got here? </span>
+								
+                            </div>
+							  <div class="col-12">
+							  
+							  <div class="row  pt-3">
+							    <div class="col-9">
+										<div class="row">
+											<div class="col-12  mb-2 toplabel" >
+												Respondents were helped...
+											</div>
+									</div>
+									<div class="row">
+									<div class="col-12 surveyanswer">“A lot”</div>
+									</div>
+									
+                            </div>
+                     
+                            <div class="col-3 stateavg">
+								<div class="row"><div class="col mb-2 toplabel" ><b>NY</b> Average:</div></div>
+                              <span class="surveypct">34<sup>%</sup></span>
+                            </div>
+								  </div>
+								  </div>
+                          </div> <!--end row -->
+                        </button>
+                      </h4>
+									</div>
+									<!--end card header-->
+									<div id="collapseOnepatientexp" class="collapse" aria-labelledby="headingOne">
+										<div class="card-body mb-3">
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+
+													<div class="row">
+														<div class="col-12 surveyanswer">“Somewhat”</div>
+													</div>
+
+												</div>
+
+												<div class="col-3 stateavg">
+
+													<span class="surveypct">39<sup>%</sup> </span>
+
+												</div>
+											</div>
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+													<span class="surveyanswer">“A little”</span>
+												</div>
+
+												<div class="col-3 stateavg"><span class="surveypct">39<sup>%</sup> </span>
+
+												</div>
+											</div>
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+													<span class="surveyanswer">“Not at all”</span>
+												</div>
+
+												<div class="col-3 stateavg"><span class="surveypct">39<sup>%</sup> </span>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--end collapse-->
+								</div>
+								<!--end card-->
+
+
+								<div class="card">
+									<div class="card-header true" id="headingTwo">
+										<h4 class="mb-0">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwopatientexp" aria-expanded="false" aria-controls="collapseTwo">
+                          <div class="row">
+                            <div class="col-12  font-weight-normal">
+                              <span> Using any number from 0 to 10, where 0 is the worst treatment program possible and 10 is the best treatment program possible, what number would you use to rate this treatment program? </span>
+								
+                            </div>
+							  <div class="col-12">
+								  
+						
+								  		  <div class="row  d-flex flex-row pt-3">
+							    <div class="col-9 mt-auto">
+								
+									
+                            </div>
+       
+                            <div class="col-3 mt-auto stateavg">
+								<div class="row"><div class="col mb-2 toplabel" ><b>NY</b> Average:</div></div>
+                          
+                            </div>
+								  </div>
+								  
+								  		  
+								  		  <div class="row  d-flex flex-row" >
+							    <div class="col-9 mt-auto">
+										<div class="row">
+											<div class="col-12 surveyanswer" >
+<!--												this one is unique in not getting bottom margin-->
+												Average rating:
+											</div>
+									</div>
+									
+									
+                            </div>
+                       
+                            <div class="col-3 mt-auto stateavg">
+								<span class="surveypct">6</span>
+                          
+                            </div>
+								  </div>
+								  
+								  
+								  
+							  
+					
+								  </div>
+                          </div> <!--end row -->
+                        </button>
+                      </h4>
+									</div>
+									<!--end card header-->
+									<div id="collapseTwopatientexp" class="collapse" aria-labelledby="headingTwo">
+										<div class="card-body mb-3">
+
+
+
+
+
+
+											<div class="row  internalrow d-flex flex-row pt-2">
+												<!--								  different top padding here-->
+												<div class="col-9 mt-auto">
+													<div class="row">
+														<div class="col-12  mb-2 toplabel">
+															Respondents gave ratings of...
+														</div>
+													</div>
+
+
+												</div>
+
+												<div class="col-3 mt-auto stateavg">
+													<!--								<div class="row"><div class="col mb-2 toplabel" >NY Average:</div></div>-->
+
+												</div>
+											</div>
+
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+
+													<div class="row">
+														<div class="col-12 surveyanswer">9-10</div>
+													</div>
+
+												</div>
+
+												<div class="col-3 stateavg">
+
+													<span class="surveypct">39<sup>%</sup> </span>
+												</div>
+											</div>
+
+
+
+
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+
+													<div class="row">
+														<div class="col-12 surveyanswer">7-8</div>
+													</div>
+
+												</div>
+
+
+												<div class="col-3 stateavg">
+
+													<span class="surveypct">39<sup>%</sup> </span>
+
+												</div>
+											</div>
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+													<span class="surveyanswer">6 or lower</span>
+												</div>
+												<div class="col-3 stateavg"><span class="surveypct">39<sup>%</sup> </span>
+
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<!--end collapse-->
+								</div>
+								<!--end card-->
+
+
+
+
+
+								<div class="card">
+									<div class="card-header true" id="headingThree">
+										<h4 class="mb-0">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseThreepatientexp" aria-expanded="false" aria-controls="collapseThree">
+                          <div class="row">
+                            <div class="col-12  font-weight-normal">
+                              <span>     Compared to when you entered this treatment program, how would you rate your ability to deal with daily problems now? </span>
+								
+                            </div>
+							  <div class="col-12">
+							  
+							  <div class="row d-flex flex-row pt-3">
+							    <div class="col-9 mt-auto">
+										<div class="row">
+											<div class="col-12  mb-2 toplabel" >
+												Respondents rated their ability...
+											</div>
+									</div>
+								
+									
+                            </div>
+                     
+                            <div class="col-3 mt-auto stateavg">
+								<div class="row"><div class="col mb-2 toplabel" ><b>NY</b> Average:</div></div>
+                             
+                            </div>
+								  </div>
+								  
+								  	  <div class="row">
+							    <div class="col-9">
+								
+									<div class="row">
+									<div class="col-12 surveyanswer">Much better</div>
+									</div>
+									
+                            </div>
+                    
+                            <div class="col-3 stateavg">
+							
+                              <span class="surveypct">39<sup>%</sup> </span>
+                            </div>
+								  </div>
+								  
+								  
+								  </div>
+                          </div> <!--end row -->
+                        </button>
+                      </h4>
+									</div>
+									<!--end card header-->
+									<div id="collapseThreepatientexp" class="collapse" aria-labelledby="headingThree">
+										<div class="card-body mb-3">
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+
+													<div class="row">
+														<div class="col-12 surveyanswer">A little better</div>
+													</div>
+
+												</div>
+
+
+												<div class="col-3 stateavg">
+
+													<span class="surveypct">39<sup>%</sup> </span>
+
+												</div>
+											</div>
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+
+													<div class="row">
+														<div class="col-12 surveyanswer">About the same</div>
+													</div>
+
+												</div>
+
+
+												<div class="col-3 stateavg">
+
+													<span class="surveypct">39<sup>%</sup> </span>
+
+												</div>
+											</div>
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+
+													<div class="row">
+														<div class="col-12 surveyanswer">A little worse</div>
+													</div>
+
+												</div>
+
+
+												<div class="col-3 stateavg">
+
+													<span class="surveypct">39<sup>%</sup> </span>
+
+												</div>
+											</div>
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+
+													<div class="row">
+														<div class="col-12 surveyanswer">Much worse</div>
+													</div>
+
+												</div>
+
+
+												<div class="col-3 stateavg">
+
+													<span class="surveypct">39<sup>%</sup> </span>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--end collapse-->
+								</div>
+								<!--end card-->
+
+								<div class="card">
+									<div class="card-header true" id="headingFour">
+										<h4 class="mb-0">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseFourpatientexp" aria-expanded="false" aria-controls="collapseOne">
+                          <div class="row">
+                            <div class="col-12  font-weight-normal">
+                              <span>Have staff in this treatment program talked with you about including your family or friends in your counseling or treatment?</span>
+								
+                            </div>
+							  <div class="col-12">
+							  
+							  <div class="row  pt-3">
+							    <div class="col-9">
+										<div class="row">
+											<div class="col-12  mb-2 toplabel" >
+												Respondents said...
+											</div>
+									</div>
+									<div class="row">
+									<div class="col-12 surveyanswer">"Yes"</div>
+									</div>
+									
+                            </div>
+                     
+                            <div class="col-3 stateavg">
+								<div class="row"><div class="col mb-2 toplabel" ><b>NY</b> Average:</div></div>
+                              <span class="surveypct">28<sup>%</sup></span>
+                            </div>
+								  </div>
+								  </div>
+                          </div> <!--end row -->
+                        </button>
+                      </h4>
+									</div>
+									<!--end card header-->
+									<div id="collapseFourpatientexp" class="collapse" aria-labelledby="headingFour">
+										<div class="card-body mb-3">
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+
+													<div class="row">
+														<div class="col-12 surveyanswer">"No"</div>
+													</div>
+
+												</div>
+
+												<div class="col-3 stateavg">
+
+													<span class="surveypct">39<sup>%</sup> </span>
+
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<!--end collapse-->
+								</div>
+								<!--end card-->
+
+								<div class="card">
+									<div class="card-header true" id="headingFive">
+										<h4 class="mb-0">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseFivepatientexp" aria-expanded="false" aria-controls="collapseFive">
+                          <div class="row">
+                            <div class="col-12  font-weight-normal">
+                              <span>When you needed treatment right away, how often did you see someone from this treatment program as soon as you wanted? </span>
+								
+                            </div>
+							  <div class="col-12">
+							  
+							  <div class="row d-flex flex-row pt-3">
+								 
+							    <div class="col-9 mt-auto">
+										<div class="row">
+											<div class="col-12  mb-2 toplabel" >
+												
+												Respondents said they were able to get immediate treatment...
+<!--												Respondents said they were able to <span class="textblank"></span> see someone for treatment right away.-->
+											</div>
+									</div>
+							
+									
+                            </div>
+                    
+                            <div class="col-3  mt-auto stateavg">
+								<div class="row"><div class="col mb-2 toplabel"><b>NY</b> Average:</div></div>
+                            
+                            </div>
+
+								  </div>
+								  	  <div class="row">
+							    <div class="col-9">
+									<div class="row">
+									<div class="col-12 surveyanswer">"Always"</div>
+									</div>
+									
+                            </div>
+              
+                            <div class="col-3 stateavg">
+                              <span class="surveypct">28<sup>%</sup></span>
+                            </div>
+								  </div>
+								  </div>
+                          </div> <!--end row -->
+                        </button>
+                      </h4>
+									</div>
+									<!--end card header-->
+									<div id="collapseFivepatientexp" class="collapse" aria-labelledby="headingFive">
+										<div class="card-body mb-3">
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+
+													<div class="row">
+														<div class="col-12 surveyanswer">"Usually"</div>
+													</div>
+
+												</div>
+
+												<div class="col-3 stateavg">
+
+													<span class="surveypct">39<sup>%</sup> </span>
+
+												</div>
+											</div>
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+													<span class="surveyanswer">"Sometimes"</span>
+												</div>
+
+												<div class="col-3 stateavg"><span class="surveypct">39<sup>%</sup></span>
+
+												</div>
+											</div>
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+													<span class="surveyanswer">"Never"</span>
+												</div>
+												<div class="col-3 stateavg"><span class="surveypct">39<sup>%</sup></span>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--end collapse-->
+								</div>
+								<!--end card-->
+
+
+								<div class="card">
+									<div class="card-header true" id="headingSix">
+										<h4 class="mb-0">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseSixpatientexp" aria-expanded="false" aria-controls="collapseSix">
+                          <div class="row">
+                            <div class="col-12  font-weight-normal">
+                              <span>During your treatment, how often did treatment staff show respect for what you had to say?</span>
+								
+                            </div>
+							  <div class="col-12">
+							  
+							  <div class="row d-flex flex-row pt-3">
+							    <div class="col-9 mt-auto">
+										<div class="row">
+											<div class="col-12  mb-2 toplabel" >
+												Respondents said staff showed respect...
+											</div>
+									</div>
+								
+									
+                            </div>
+                            <div class="col-3 mt-auto stateavg">
+								<div class="row"><div class="col mb-2 toplabel" ><b>NY</b> Average:</div></div>
+                             
+                            </div>
+								  </div>
+								  
+								  			  <div class="row">
+							    <div class="col-9">
+									
+									<div class="row">
+									<div class="col-12 surveyanswer">"Always"</div>
+									</div>
+									
+                            </div>
+                            <div class="col-3 stateavg">
+							
+                              <span class="surveypct">28<sup>%</sup></span>
+                            </div>
+								  </div>
+								  
+								  </div>
+                          </div> <!--end row -->
+                        </button>
+                      </h4>
+									</div>
+									<!--end card header-->
+									<div id="collapseSixpatientexp" class="collapse" aria-labelledby="headingSix">
+										<div class="card-body mb-3">
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+
+													<div class="row">
+														<div class="col-12 surveyanswer">"Usually"</div>
+													</div>
+
+												</div>
+
+
+												<div class="col-3 stateavg">
+
+													<span class="surveypct">39<sup>%</sup> </span>
+
+												</div>
+											</div>
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+													<span class="surveyanswer">"Sometimes"</span>
+												</div>
+
+												<div class="col-3 stateavg"><span class="surveypct">39<sup>%</sup></span>
+
+												</div>
+											</div>
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+													<span class="surveyanswer">"Never"</span>
+												</div>
+
+												<div class="col-3 stateavg"><span class="surveypct">39<sup>%</sup></span>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--end collapse-->
+								</div>
+								<!--end card-->
+
+								<div class="card">
+									<div class="card-header true" id="headingSeven">
+										<h4 class="mb-0">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseSevenpatientexp" aria-expanded="false" aria-controls="collapseSeven">
+                          <div class="row">
+                            <div class="col-12  font-weight-normal">
+                              <span>During your treatment, were you given information about different kinds of treatment services and programs that are available?</span>
+								
+                            </div>
+							  <div class="col-12">
+							  
+							  <div class="row d-flex flex-row pt-3">
+							    <div class="col-9 mt-auto">
+										<div class="row">
+											<div class="col-12  mb-2 toplabel" >
+												Respondents said...
+											</div>
+									</div>
+								
+                            </div>
+            
+                            <div class="col-3 mt-auto stateavg">
+								<div class="row"><div class="col mb-2 toplabel" ><b>NY</b> Average:</div></div>
+                             
+                            </div>
+								  </div>
+								  
+								  	  <div class="row d-flex flex-row">
+							    <div class="col-9 mt-auto">
+								
+									<div class="row">
+									<div class="col-12 surveyanswer">"Yes"</div>
+									</div>
+									
+                            </div>
+                 
+                            <div class="col-3 mt-auto stateavg">
+								
+                              <span class="surveypct">28<sup>%</sup></span>
+                            </div>
+								  </div>
+								  </div>
+                          </div> <!--end row -->
+                        </button>
+                      </h4>
+									</div>
+									<!--end card header-->
+									<div id="collapseSevenpatientexp" class="collapse" aria-labelledby="headingSeven">
+										<div class="card-body mb-3">
+											<div class="row internalrow d-flex align-items-baseline py-1">
+												<div class="col-9">
+
+													<div class="row">
+														<div class="col-12 surveyanswer">"No"</div>
+													</div>
+
+												</div>
+
+
+												<div class="col-3 stateavg">
+
+													<span class="surveypct">39<sup>%</sup> </span>
+
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<!--end collapse-->
+								</div>
+								<!--end card-->
+
+
+							</div>
+							<!--end eval accordion-->
+							<!--						end pasted-->
+
+
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+	</main>
+
+	<footer>
+		<div class="container-fluid">
+			<div class="row bg-light">
+				<div class="container mt-5">
+					<div class="row">
+						<div class="col-md-2">
+							<img class="img-fluid" src="images/Shatterproof_withtag.svg">
+						</div>
+
+						<div class="col-md-2 d-flex align-items-center">
+							<a class="btn btn-primary btn-lg" href="#" role="button">Donate</a>
+						</div>
+						<div class="col-md-5">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+						<div class="col-md-3">
+							<a class="btn btn-primary btn-lg" href="#" role="button">Sign Up for Email Updates</a>
+
+							<div class="row mt-3">
+								<div class="container">
+									<i class="fab fa-facebook col-sm-3"></i><i class="fab fa-twitter col-sm-3"></i><i class="fab fa-instagram col-sm-3"></i><i class="fas fa-share col-sm-3"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+	<!--	end footer row-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/custom.js"></script>
+
+	<script src="js/consumerFacility.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/sticky.min.js"></script>
+
+
+	<script type="text/javascript">
+		$('.infodot').tooltip({
+			trigger: 'click'
+		});
+
+		var sticky = new Waypoint.Sticky({
+
+			element: $('.tostick'),
+			offset: 108
+		})
+
+		var waypoint2 = $('#endqualitymeasures').waypoint(function(direction) {
+			console.log('Direction: ' + direction)
+			if (direction == 'down') {
+				$('.tostick').removeClass('stuck')
+			} else {
+				$('.tostick').addClass('stuck')
+			}
+		}, {
+			offset: '-95%'
+		})
+
+	</script>
+</body>
+
+</html>

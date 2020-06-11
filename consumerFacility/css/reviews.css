@@ -1,0 +1,25 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* line 3, src/scss/reviews.scss */
+#reviews {
+  overflow-y: auto;
+}
+
+/* line 6, src/scss/reviews.scss */
+#reviews .card {
+  padding: 2em 1.5em 3em 0;
+  border: none;
+  border-bottom: 1px solid #61BDB0;
+  border-radius: 0;
+}
+
+/* line 12, src/scss/reviews.scss */
+#reviews .text-right {
+  color: #0C867D !important;
+}

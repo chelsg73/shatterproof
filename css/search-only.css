@@ -1,0 +1,802 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* line 3, src/scss/search-only.scss */
+#search-filters {
+  height: 100%;
+}
+
+/* line 8, src/scss/search-only.scss */
+#selectedCompare {
+  border-bottom: 1px solid #60C5B7;
+}
+
+/* line 12, src/scss/search-only.scss */
+#mapDiv {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 110px;
+}
+
+/* line 18, src/scss/search-only.scss */
+#mapDiv iframe {
+  border: 1px solid #60C5B7 !important;
+}
+
+/* line 24, src/scss/search-only.scss */
+#appliedfilterbank, #appliedfilterLabel, #filterholder {
+  display: none;
+}
+
+/* line 29, src/scss/search-only.scss */
+#zip {
+  background: #fff;
+  border-radius: 0;
+  font-size: .8rem;
+  margin-left: -20px;
+  font-weight: 500;
+  font-size: 1em;
+  padding-right: 2em;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* line 41, src/scss/search-only.scss */
+#distanceastext {
+  color: #0C867D;
+}
+
+/* line 43, src/scss/search-only.scss */
+#distanceastext .select {
+  background: #fff;
+  color: #0d867d;
+  border: none;
+  width: 48px;
+  display: inline-block;
+  border-radius: 0;
+  margin: 0 auto;
+  height: auto;
+  padding: .5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 1px;
+}
+
+/* line 59, src/scss/search-only.scss */
+#appliedfilterbank .btn-secondary, #selectedCompare .btn-secondary {
+  background-color: transparent !important;
+  border-color: #5C5D5F !important;
+  color: #5C5D5F !important;
+  margin-bottom: 0.5rem;
+  -webkit-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
+}
+
+/* line 69, src/scss/search-only.scss */
+#appliedfilterbank .btn-secondary:hover, #selectedCompare .btn-secondary:hover {
+  background-color: #5C5D5F !important;
+  border-color: #5C5D5F;
+  color: #ffffff !important;
+  margin-bottom: 0.5rem;
+}
+
+/* line 76, src/scss/search-only.scss */
+#appliedfilterbank .fa-times, #selectedCompare .fa-times {
+  color: #0C867D !important;
+}
+
+/* line 84, src/scss/search-only.scss */
+#exampleModalCenter2 .modal-dialog .modal-content {
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#d6e5e6));
+  background: linear-gradient(to right, #ffffff, #d6e5e6);
+}
+
+/* line 94, src/scss/search-only.scss */
+#mobAcc #searchCard #searchLoc {
+  margin-bottom: -.85em;
+  text-decoration: none;
+  color: #0C867D;
+  letter-spacing: .03em;
+  font-weight: 700;
+  font-size: 1.2rem !important;
+  line-height: 1.25em !important;
+  font-family: "museo-sans" !important;
+  padding: 0 0 0 1rem !important;
+}
+
+/* line 106, src/scss/search-only.scss */
+#mobAcc #searchCard input {
+  background: #fff;
+  border-radius: 0;
+  font-size: .8rem;
+  font-weight: 500;
+  font-size: 1em;
+  width: 87%;
+  margin-left: -2px;
+  border: 1px solid #C7C8CC;
+  color: #5C5D5F;
+  padding: 4px 1rem;
+  font-family: "museo-sans", 'MuseoSans500', 'Helvetica', 'Arial', sans-serif;
+  font-style: normal;
+}
+
+/* line 122, src/scss/search-only.scss */
+#mobAcc input {
+  background: #FFFFFF;
+  border: 1px solid #C7C8CC;
+  color: #5C5D5F;
+  padding: 1rem;
+  font-family: "museo-sans", 'MuseoSans500', 'Helvetica', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1.125rem;
+  width: 100%;
+}
+
+/* line 133, src/scss/search-only.scss */
+#mobAcc input[type="checkbox"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 139, src/scss/search-only.scss */
+#mobAcc input.custom-checkbox .custom-control-label::before {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+  content: "";
+  border-radius: 0;
+  width: 1rem;
+  height: 1rem;
+  left: -1.5rem;
+  top: 1px;
+}
+
+/* line 151, src/scss/search-only.scss */
+#mobAcc input.custom-control-input:not(:disabled):active ~ .custom-control-label::before, #mobAcc input .custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border: none;
+  background-color: #279184;
+}
+
+/* line 157, src/scss/search-only.scss */
+#mobAcc input.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  position: absolute;
+  top: 0.10rem;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: no-repeat 50% / 50% 50%;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  background-size: 80%;
+}
+
+/* line 172, src/scss/search-only.scss */
+#mobAcc label.check {
+  visibility: hidden;
+  /* <-- Hide the default checkbox. The rest is to hide and allow tabbing, which display:none prevents */
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* line 182, src/scss/search-only.scss */
+#mobAcc label span {
+  height: 0.8rem;
+  width: 0.8rem;
+  border: 1px solid #5C5D5F;
+  display: inline-block;
+  background: #fff;
+  /* background-image: linear-gradient(45deg, #ffffff, #5C5D5F, #ffffff); */
+}
+
+/* line 192, src/scss/search-only.scss */
+#mobAcc .custom-control {
+  position: relative;
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+/* line 198, src/scss/search-only.scss */
+#mobAcc .custom-control.custom-checkbox {
+  margin-left: -1em;
+  margin-top: .5em;
+}
+
+/* line 202, src/scss/search-only.scss */
+#mobAcc .custom-control.custom-checkbox .custom-control-label::before {
+  border-radius: 0;
+  /*			temp hack styles for selected screenshots*/
+  width: 1.2rem;
+  height: 1.2rem;
+  left: -1.4rem;
+  top: 1px;
+}
+
+/* line 211, src/scss/search-only.scss */
+#mobAcc .custom-control.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  /*			temp hack styles for selected screenshots*/
+  background-size: 90%;
+  top: 2px;
+  left: -22px;
+}
+
+/* line 218, src/scss/search-only.scss */
+#mobAcc .custom-control.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border: none;
+  background-color: #279184;
+}
+
+/* line 226, src/scss/search-only.scss */
+#mobAcc .card {
+  background: none;
+  background-color: transparent !important;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px dotted #61BDB0 !important;
+}
+
+/* line 234, src/scss/search-only.scss */
+#mobAcc .card:last-of-type {
+  border-bottom: none !important;
+}
+
+/* line 238, src/scss/search-only.scss */
+#mobAcc .card .col-md-10 {
+  line-height: 1.2em !important;
+  font-size: 1rem !important;
+}
+
+/* line 243, src/scss/search-only.scss */
+#mobAcc .card:first-of-type {
+  margin-top: -1em;
+  border-bottom: none !important;
+  margin-bottom: 0;
+}
+
+/* line 249, src/scss/search-only.scss */
+#mobAcc .card .card-header {
+  background: none;
+  background-color: transparent !important;
+  padding: 0;
+  border-bottom: none;
+}
+
+/* line 255, src/scss/search-only.scss */
+#mobAcc .card .card-header::after {
+  content: none !important;
+}
+
+/* line 259, src/scss/search-only.scss */
+#mobAcc .card .card-header.no-style {
+  background-color: transparent !important;
+  font-family: "museo sans" !important;
+}
+
+/* line 264, src/scss/search-only.scss */
+#mobAcc .card .card-header .btn {
+  text-decoration: none;
+  color: #0C867D;
+  letter-spacing: .03em;
+  font-weight: 700;
+  font-size: .5em;
+  /* font-size: 14.5px; */
+  line-height: 1.25em;
+  font-family: "museo-sans" !important;
+}
+
+/* line 274, src/scss/search-only.scss */
+#mobAcc .card .card-header .btn .col-sm-12 {
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+}
+
+/* line 280, src/scss/search-only.scss */
+#mobAcc .card .card-header .btn::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
+}
+
+/* line 291, src/scss/search-only.scss */
+#mobAcc .card .card-header .btn[aria-expanded="true"]::before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  content: "\f068";
+  margin-left: 0.8em;
+  font-size: 1em;
+  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  text-align: center;
+  opacity: 1;
+  font-weight: 900;
+}
+
+/* line 306, src/scss/search-only.scss */
+#mobAcc .card .card-header .btn[aria-expanded="false"]::before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  content: "\f067";
+  margin-left: 0.8em;
+  font-size: 1em;
+  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  text-align: center;
+  opacity: 1;
+  font-weight: 900;
+}
+
+/* line 321, src/scss/search-only.scss */
+#mobAcc .card .card-header .btn .fas {
+  color: #0C867D;
+  font-size: .85em;
+  padding-top: .16em;
+}
+
+/* line 329, src/scss/search-only.scss */
+#mobAcc .card .card-body {
+  /*   this left pad should be a temp hack*/
+  padding-left: 32px;
+  padding-right: 0;
+  padding-top: .3em;
+}
+
+/* line 335, src/scss/search-only.scss */
+#mobAcc .card .card-body .seemore {
+  color: #0C867D;
+}
+
+/* line 339, src/scss/search-only.scss */
+#mobAcc .card .card-body .seemore > span.small::after {
+  content: "see more";
+}
+
+/* line 343, src/scss/search-only.scss */
+#mobAcc .card .card-body .seemore[aria-expanded=false] > span.small::after {
+  content: "see more";
+}
+
+/* line 347, src/scss/search-only.scss */
+#mobAcc .card .card-body .seemore[aria-expanded=true] > span.small::after {
+  content: "see less";
+}
+
+/* line 353, src/scss/search-only.scss */
+#mobAcc #searchIns {
+  background: #fff;
+  border-radius: 0;
+  font-size: .8rem;
+  font-weight: 500;
+  font-size: 1em;
+  padding-right: 2em;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+  margin-left: -1.5em;
+}
+
+/* line 367, src/scss/search-only.scss */
+#searchAccordion {
+  display: none;
+}
+
+/* line 373, src/scss/search-only.scss */
+#collapseLanguages .custom-select {
+  border: 1px solid #C7C8CC;
+  color: #5C5D5F;
+  padding: .5rem 1rem;
+  font-family: "museo-sans", 'MuseoSans500', 'Helvetica', 'Arial', sans-serif;
+  width: auto;
+  display: inline-block;
+  border-radius: 0;
+  position: relative;
+  font-weight: 500 !important;
+  font-size: 1em !important;
+  padding-right: 2em;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+/* line 388, src/scss/search-only.scss */
+#collapseLanguages .custom-select:focus {
+  border: 1px solid #C7C8CC !important;
+}
+
+/* line 393, src/scss/search-only.scss */
+#collapseLanguages #languageselect {
+  color: #0d867d;
+  padding-right: 1em;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e'") no-repeat right 0.75rem center/8px 10px;
+}
+
+/* line 402, src/scss/search-only.scss */
+#collapseSubstance .card-body {
+  margin-top: -.5em;
+  padding-bottom: .5em;
+}
+
+/* line 407, src/scss/search-only.scss */
+#collapseSubstance .input-group-text {
+  background: none;
+  border: none;
+}
+
+/* line 417, src/scss/search-only.scss */
+#search-results {
+  border-bottom: 2px solid #61BDB0;
+  margin-bottom: 5em;
+}
+
+/* line 421, src/scss/search-only.scss */
+#search-results .search-item {
+  border-bottom: 1px solid #61BDB0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  /* background-color: #d6e5e6ad; */
+  /* background-color: #064f51; */
+  position: relative;
+}
+
+/* line 430, src/scss/search-only.scss */
+#search-results .treatmentSetting {
+  margin-bottom: -.5em;
+  font-size: .92em;
+  line-height: 1.2em;
+}
+
+/* line 436, src/scss/search-only.scss */
+#search-results .phonenum {
+  font-weight: 700;
+  letter-spacing: .04em;
+  font-size: 1.1em;
+  line-height: 1.1em;
+}
+
+/* line 443, src/scss/search-only.scss */
+#search-results .fac-name > a {
+  line-height: 1.3em;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* line 449, src/scss/search-only.scss */
+#search-results .denseline {
+  line-height: 1.2em;
+}
+
+/* line 453, src/scss/search-only.scss */
+#search-results .tocompare::before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  content: "\f08d";
+  margin-left: 0;
+  font-size: 1.3em;
+  vertical-align: middle;
+  position: absolute;
+  left: -.7rem;
+  top: 1.8rem;
+  text-align: center;
+  opacity: 1;
+  font-weight: 900;
+  color: #f26624;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
+@media (min-width: 1024px) {
+  /* line 474, src/scss/search-only.scss */
+  #mobfilter, #mobAcc {
+    display: none;
+  }
+  /* line 478, src/scss/search-only.scss */
+  #appliedfilterbank, #appliedfilterLabel {
+    display: block;
+  }
+  /* line 482, src/scss/search-only.scss */
+  #searchAccordion {
+    display: block;
+    border-top: 1px solid #60C5B7;
+  }
+  /* line 488, src/scss/search-only.scss */
+  #searchAccordion #searchCard #searchLoc {
+    margin-bottom: -.85em;
+    text-decoration: none;
+    color: #0C867D;
+    letter-spacing: .03em;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.25em;
+    font-family: "museo-sans" !important;
+  }
+  /* line 498, src/scss/search-only.scss */
+  #searchAccordion #searchCard input {
+    background: #fff;
+    border-radius: 0;
+    font-size: .8rem;
+    margin-left: -20px;
+    font-weight: 500;
+    font-size: 1em;
+    width: 100%;
+    border: 1px solid #C7C8CC;
+    color: #5C5D5F;
+    padding: 4px 1rem;
+    font-family: "museo-sans", 'MuseoSans500', 'Helvetica', 'Arial', sans-serif;
+    font-style: normal;
+  }
+  /* line 514, src/scss/search-only.scss */
+  #searchAccordion input {
+    background: #FFFFFF;
+    border: 1px solid #C7C8CC;
+    color: #5C5D5F;
+    padding: 1rem;
+    font-family: "museo-sans", 'MuseoSans500', 'Helvetica', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.125rem;
+    width: 100%;
+  }
+  /* line 524, src/scss/search-only.scss */
+  #searchAccordion input[type="checkbox"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 529, src/scss/search-only.scss */
+  #searchAccordion input.custom-checkbox .custom-control-label::before {
+    position: absolute;
+    display: block;
+    pointer-events: none;
+    content: "";
+    border-radius: 0;
+    width: 1rem;
+    height: 1rem;
+    left: -1.5rem;
+    top: 1px;
+  }
+  /* line 540, src/scss/search-only.scss */
+  #searchAccordion input.custom-control-input:not(:disabled):active ~ .custom-control-label::before, #searchAccordion input .custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border: none;
+    background-color: #279184;
+  }
+  /* line 545, src/scss/search-only.scss */
+  #searchAccordion input.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    position: absolute;
+    top: 0.10rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    background: no-repeat 50% / 50% 50%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    background-size: 80%;
+  }
+  /* line 560, src/scss/search-only.scss */
+  #searchAccordion label.check {
+    visibility: hidden;
+    /* <-- Hide the default checkbox. The rest is to hide and allow tabbing, which display:none prevents */
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    overflow: hidden;
+  }
+  /* line 569, src/scss/search-only.scss */
+  #searchAccordion label span {
+    height: 0.8rem;
+    width: 0.8rem;
+    border: 1px solid #5C5D5F;
+    display: inline-block;
+    background: #fff;
+    /* background-image: linear-gradient(45deg, #ffffff, #5C5D5F, #ffffff); */
+  }
+  /* line 579, src/scss/search-only.scss */
+  #searchAccordion .custom-control {
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  /* line 584, src/scss/search-only.scss */
+  #searchAccordion .custom-control.custom-checkbox {
+    margin-left: -1em;
+    margin-top: .5em;
+  }
+  /* line 587, src/scss/search-only.scss */
+  #searchAccordion .custom-control.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    /*			temp hack styles for selected screenshots*/
+    width: .9rem;
+    height: .9rem;
+    left: -1.4rem;
+    top: 1px;
+  }
+  /* line 595, src/scss/search-only.scss */
+  #searchAccordion .custom-control.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    /*			temp hack styles for selected screenshots*/
+    background-size: 70%;
+    top: .5px;
+    left: -1.45rem;
+  }
+  /* line 601, src/scss/search-only.scss */
+  #searchAccordion .custom-control.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border: none;
+    background-color: #279184;
+  }
+  /* line 609, src/scss/search-only.scss */
+  #searchAccordion .card {
+    background: none;
+    background-color: transparent !important;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px dotted #61BDB0 !important;
+  }
+  /* line 617, src/scss/search-only.scss */
+  #searchAccordion .card:last-of-type {
+    border-bottom: none !important;
+  }
+  /* line 621, src/scss/search-only.scss */
+  #searchAccordion .card .col-md-10 {
+    line-height: 1.2em !important;
+    font-size: .92em !important;
+  }
+  /* line 625, src/scss/search-only.scss */
+  #searchAccordion .card:first-of-type {
+    margin-top: -1em;
+    border-bottom: none !important;
+    margin-bottom: 0;
+  }
+  /* line 630, src/scss/search-only.scss */
+  #searchAccordion .card .card-header {
+    background: none;
+    background-color: transparent !important;
+    padding: 0;
+    border-bottom: none;
+  }
+  /* line 635, src/scss/search-only.scss */
+  #searchAccordion .card .card-header::after {
+    content: none !important;
+  }
+  /* line 638, src/scss/search-only.scss */
+  #searchAccordion .card .card-header.no-style {
+    background-color: transparent !important;
+    font-family: "museo sans" !important;
+  }
+  /* line 643, src/scss/search-only.scss */
+  #searchAccordion .card .card-header .btn {
+    text-decoration: none;
+    color: #0C867D;
+    letter-spacing: .03em;
+    font-weight: 700;
+    font-size: .5em;
+    /* font-size: 14.5px; */
+    line-height: 1.25em;
+    font-family: "museo-sans" !important;
+  }
+  /* line 653, src/scss/search-only.scss */
+  #searchAccordion .card .card-header .btn .col-sm-12 {
+    margin-left: 1.2rem;
+  }
+  /* line 657, src/scss/search-only.scss */
+  #searchAccordion .card .card-header .btn::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: all 400ms ease-in;
+    transition: all 400ms ease-in;
+  }
+  /* line 667, src/scss/search-only.scss */
+  #searchAccordion .card .card-header .btn[aria-expanded="true"]::before {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f068";
+    margin-left: 0.2em;
+    font-size: 1em;
+    vertical-align: middle;
+    position: absolute;
+    left: .8em;
+    top: .6em;
+    text-align: center;
+    opacity: 1;
+    font-weight: 900;
+  }
+  /* line 681, src/scss/search-only.scss */
+  #searchAccordion .card .card-header .btn[aria-expanded="false"]::before {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f067";
+    margin-left: 0.2em;
+    font-size: 1em;
+    vertical-align: middle;
+    position: absolute;
+    left: 0.8em;
+    top: .6em;
+    text-align: center;
+    opacity: 1;
+    font-weight: 900;
+  }
+  /* line 695, src/scss/search-only.scss */
+  #searchAccordion .card .card-header .btn .fas {
+    color: #0C867D;
+    font-size: .85em;
+    padding-top: .16em;
+  }
+  /* line 702, src/scss/search-only.scss */
+  #searchAccordion .card .card-body {
+    /*   this left pad should be a temp hack*/
+    padding-left: 7px;
+    padding-right: 0;
+    padding-top: .3em;
+  }
+  /* line 708, src/scss/search-only.scss */
+  #searchAccordion .card .card-body .seemore {
+    color: #0C867D;
+  }
+  /* line 712, src/scss/search-only.scss */
+  #searchAccordion .card .card-body .seemore > span.small::after {
+    content: "see more";
+  }
+  /* line 716, src/scss/search-only.scss */
+  #searchAccordion .card .card-body .seemore[aria-expanded=false] > span.small::after {
+    content: "see more";
+  }
+  /* line 720, src/scss/search-only.scss */
+  #searchAccordion .card .card-body .seemore[aria-expanded=true] > span.small::after {
+    content: "see less";
+  }
+  /* line 726, src/scss/search-only.scss */
+  #searchAccordion #searchIns {
+    background: #fff;
+    border-radius: 0;
+    font-size: .8rem;
+    font-weight: 500;
+    font-size: 1em;
+    padding-right: 2em;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 16px;
+    margin-left: -1.5em;
+  }
+  /* line 741, src/scss/search-only.scss */
+  #filterholder {
+    display: block;
+    border-right: 1px solid #60C5B7;
+  }
+  /* line 745, src/scss/search-only.scss */
+  #filterholder::before {
+    content: "";
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff45), to(#d6e5e6ad));
+    background: linear-gradient(to right, #ffffff45, #d6e5e6ad);
+    position: absolute;
+    right: 0;
+    top: 0rem;
+    width: 200%;
+    height: 100%;
+    z-index: -1;
+  }
+}

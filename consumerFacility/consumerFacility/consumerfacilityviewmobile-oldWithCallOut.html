@@ -1,0 +1,2331 @@
+<html lang="en">
+  <head>
+    <script type="text/javascript">
+      window["_gaUserPrefs"] = {
+        ioo: function() {
+          return true;
+        }
+      }
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>
+      Atlas Project
+    </title>
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom2.css" type="text/css" rel="stylesheet">
+    <link href="css/all.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/unm2lor.css">
+
+    <style>
+      body,html{
+        overflow-x: hidden;
+        width: 100%;
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      nav,
+		#facility_geninfo {
+			font-family: "museo-sans";
+		}
+		
+		#facility_geninfo {
+			font-size: .85em !important;
+		}
+		
+    div.details-wrapper {
+      font-size: .90em;
+      padding-bottom: 0.4em;
+    }
+
+		.accordion li .quest, .accordion div.details-wrapper div.quest {
+			display: block;
+			font-size: .96em;
+			line-height: 1.35em;
+		}
+		
+		.accordion li .answ {
+			display: block;
+		}
+		 		
+		/* i.fa.fa-info-circle {
+			color: #a4a4a4;
+		}
+		
+		i.fa.fa-info {
+			color: #a4a4a4;
+			font-size: .65em;
+			vertical-align: middle;
+			vertical-align: text-top;
+		} */
+		
+		.fa-check-circle {
+			color: #279184;
+		}
+		
+		.fa-minus-circle {
+			color: #FCAF58;
+		}
+		
+		.fa-ban {
+			color: #F16924;
+		}
+		
+		.card li {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+		}
+		
+		.card li:last-of-type {
+			border-bottom: none;
+		}
+		
+		li ul {
+			list-style: none;
+			font-size: .95em;
+		}
+		
+		#accordionExample li .fas {
+			font-size: 1.3em;
+			text-align: right;
+			float: right;
+		}
+		
+		#accordionExample li ul li .fas, #accordionExample div.details-wrapper div.answ .fas {
+			/* font-size: .6em; */
+			padding-top: .5em;
+		}
+		/*
+		.card-header p{
+			margin-left:3em
+		}
+*/
+		
+		#accordionExample .card-header:after {
+			left: .5em;
+		}
+		
+		.card-header .btn {
+			font-size: .73em;
+		}
+		
+		.card-header .btn p {
+			font-size: .83em;
+		}
+		
+		b {
+			letter-spacing: .03em;
+		}
+		
+		#accordionExample .card {
+			flex-direction: inherit;
+		}
+		
+		.card-body {
+			padding: 0;
+		}
+		
+		.card li {
+			/*border-bottom: 6px solid rgb(235, 246, 245);*/
+			padding: .3em 2em .2em 0;
+			margin-bottom: 0;
+		}
+		
+		.card ul {
+			padding-left: 0;
+		}
+		
+		.card li:first-of-type {
+			padding: 1em 2em .4em 0;
+		}
+		
+		.card li ul li {
+			border-bottom: none;
+			padding: 0 2em .2em 0;
+		}
+		
+		.card li ul li:first-of-type {
+			padding: 0 2em .4em 0;
+		}
+		
+		.card li ul li:last-of-type {
+			padding: .2em 2em 0 0;
+		}
+		
+		.accordion li ul .quest, .accordion div.details-wrapper div.quest {
+			display: block;
+			border-bottom: 1px solid #BCE3DE;
+		}
+		/*
+		#collapseFour .card-body {
+			background: #fff;
+			margin: 0 2em 2em 5em;
+			padding: 0;
+		}
+*/
+		/*
+		#collapseFour .card-body ul {
+			padding: 0;
+		}
+*/
+		
+		#accordionExample .card-body ul li {
+			list-style: none;
+		}
+		
+		#patientexp .card-header .btn {
+			color: #5C5D5F !important;
+			font-size: 15px;
+			margin-top: 1em;
+			margin-bottom: .7em;
+		}
+		
+		#patientexp .col-3 {
+			border-left: 2px solid #fff;
+			font-size: .7rem;
+    }
+
+    @media (min-width: 768px){
+      #patientexp .col-3 {
+			border-left: 2px solid #fff;
+			font-size: .8em;
+      }
+    }
+
+		#patientexp .card-header {
+			background: #e5e6e88c !important;
+		}
+    
+    #patientexp .card-body {
+			background: #e5e6e88c !important;
+    }
+    
+		#patientexp .card {
+			/*			background: #ebf6f5;*/
+			border-bottom: 12px solid #fff;
+		}
+		
+		#patientexp .internalrow .col-3 {
+			/* border-top: 2px solid #fff; */
+			margin-top: 1em;
+		}
+		
+		#patientexp.evalaccordion .card-header {
+			border-bottom: none;
+		}
+		
+		.v3#accordionExample .card {
+			margin-bottom: 1.3em;
+		}
+		
+		.v3#accordionExample .card-header {
+			background-color: #fff !important;
+			border-bottom: 1px solid #fff;
+			padding: 0;
+    }
+  
+		
+		.v3#accordionExample .card-header .btn {
+			/*			temp for scss nt working*/
+			color: inherit !important;
+		}
+		
+		/* .v3#accordionExample .card-header h4 {
+			
+			background-color: #E5E6E8 !important;
+			padding-left: 1em;
+
+		} */
+    
+    
+		.evalaccordion .card-header.true:after {
+			background: none;
+			content: "\f0d9";
+			opacity: 1;
+    }
+
+    .evalaccordion .card-header.false:after {
+			background: none;
+      content: "\f0d7";
+      color: #0C867D;
+			opacity: 1;
+    }
+
+		/*
+		span.surveypct {
+			font-size: 1.3em;
+			font-weight: 600;
+		}
+		
+		span.surveyanswer {
+			font-style: italic;
+			font-size: 1.2em;
+		}
+*/
+		
+		.surveyanswer {
+			font-weight: 600;
+			font-style: italic;
+			/* letter-spacing: .03em; */
+		}
+		
+		.surveypct {
+			font-weight: bold;
+			font-size: 1.5em;
+			color: #3e61ab;
+		}
+		
+		.facility span.surveypct {
+			color: #3e61ab;
+		}
+		
+		#accordionExample .facility span.not-provided {
+      font-size: 1.0em;
+		}
+
+		main {
+			margin-top: 74px;
+		}
+		
+		#facilityaddress {
+			line-height: 1.2em;
+		}
+		
+		.ribbon {
+			font-size: 12px !important;
+			letter-spacing: .03em;
+			/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+			width: 100%;
+			position: relative;
+			background: #F16924;
+			color: #fff;
+			text-align: center;
+			padding: 1em 2em;
+			/* Adjust to suit */
+			/* margin: 2em auto 3em; */
+			/* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+		}
+		
+		.ribbon:before {
+			content: "";
+			position: absolute;
+			display: block;
+			bottom: -.5em;
+			border: 1.8em solid #d35210;
+			z-index: -1;
+		}
+		
+		.ribbon:before {
+			left: -2.5em;
+			border-right-width: 1.5em;
+			border-left-color: transparent;
+		}
+		/*
+.ribbon:after {
+ right: -2.5em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+*/
+		
+		.ribbon .ribbon-content:before,
+		.ribbon .ribbon-content:after {
+			content: "";
+			position: absolute;
+			display: block;
+			border-style: solid;
+			border-color: #804f7c transparent transparent transparent;
+			bottom: -1em;
+		}
+		
+		.ribbon .ribbon-content:before {
+			left: 0;
+			border-width: 1em 0 0 1em;
+		}
+		
+		.ribbon .ribbon-content:after {
+			right: 0;
+			border-width: 1em 1em 0 0;
+		}
+		/*	add to real css one row is right*/
+		
+
+		
+		.btn-success {
+			color: #fff;
+			background-color: #0C867D;
+			border-color: #0C867D;
+			background: linear-gradient(to top right, #064f51, #279184);
+		}
+		
+		#reviews {
+			/*			 this would really be auto: here to show what would happen if several*/
+			/* overflow-y: scroll; */
+		}
+		
+		.fa-times-circle {
+			color: #f16925;
+		}
+		
+		#accordionExample .surveypct {
+			font-size: 1.25em;
+		}
+		
+		.v3#accordionExample .card {
+			margin-bottom: .6em;
+		}
+		
+		.v3#accordionExample .card-header h4 button {
+			line-height: 1.2em;
+			padding-top: .4em;
+		}
+		
+		.v3#accordionExample .card-header:before {
+			width: 18px;
+		}
+		/*		override only styles*/
+		
+		#accordionExample .card-header:after {
+			content: "";
+		}
+		
+		.v3#accordionExample .card {
+			border-top-style: solid;
+			border-top-width: 2px;
+		}
+		
+		.v3#accordionExample .fast.card {
+			border-top-color: #804099;
+		}
+		
+		.v3#accordionExample .fast .card-header {
+			border-top: none;
+		}
+		
+		.v3#accordionExample .personal.card {
+			border-top-color: #3F63AC;
+		}
+		
+		.v3#accordionExample .personal .card-header {
+			border-top: none;
+		}
+		
+		.v3#accordionExample .monitor.card {
+			border-top-color: #8FC640;
+		}
+		
+		.v3#accordionExample .monitor .card-header {
+			border-top: none;
+		}
+		
+		.v3#accordionExample .carecoord.card {
+			border-top-color: #9E2064;
+		}
+		
+		.v3#accordionExample .carecoord .card-header {
+			border-top: none;
+		}
+		
+		.v3#accordionExample .evidence.card {
+			border-top-color: #9C905C;
+		}
+		
+		.v3#accordionExample .evidence .card-header {
+			border-top: none;
+		}
+		
+		.v3#accordionExample .access.card {
+			border-top-color: #299284;
+		}
+		
+		.v3#accordionExample .access .card-header {
+			border-top: none;
+		}
+		
+		.v3#accordionExample .recovery.card {
+			border-top-color: #292562;
+		}
+		
+		.v3#accordionExample .recovery .card-header {
+			border-top: none;
+		}
+		/*		temp to match sentence below p margins*/
+		
+		.v3#accordionExample .card-header .btn {
+			padding-left: 1.4em;
+			padding-right: 0;
+		}
+		
+		p.text-dark.small.offset-md-1 {
+			margin-bottom: 0;
+			display: none;
+			margin-top: .5em;
+			line-height: 1.3em;
+		}
+
+
+
+    i#commentIcon {
+    font-size: 10em;
+    color: #BCE3DE;
+    }
+
+    @media (max-width: 768px){
+      i#commentIcon {
+      font-size: 7.5em;
+      }
+    }
+
+
+		i.fa.fa-info-circle {
+			transition: 400ms all;
+		}
+		
+		i.fa.fa-info-circle:hover {
+			color: #3E62AC;
+    }
+
+    .toplabel {
+			text-transform: uppercase;
+		}
+		
+    .facility .toplabel {
+      color: #3e61ab;
+    }
+		
+		#patientexp .toplabel {
+			margin-top: -1.3em;
+			line-height: 1.1em;
+    }
+    
+    #patientexp.evalaccordion .card-header .col-12 {
+      margin-bottom: 2em;
+      padding-bottom: .6em;
+      border-bottom: 2px solid #e3e3e3;
+    }
+
+    .evalaccordion .card-header.true:after {
+			background: none;
+			/*	caret:		content: "\f0d9";*/
+			/*			plus circle*/
+			/*			content: "\f055";*/
+			/*			plus plain*/
+			content: "\f067";
+			opacity: 1;
+/*			color: #F16924;*/
+			right: .5rem;
+			bottom: .5rem !important;
+			top: inherit;
+			font-size: .95em;
+    }
+    
+    
+    .evalaccordion .card-header.false:after {
+			background: none;
+			/*	caret:		content: "\f0d9";*/
+			/*			plus circle*/
+			/*			content: "\f055";*/
+			/*			plus plain*/
+			content: "\f068";
+			opacity: 1;
+/*			color: #F16924;*/
+			right: .5rem;
+			bottom: .5rem !important;
+			top: inherit;
+			font-size: .95em;
+		}
+		
+		.evalaccordion .card:first-of-type .card-header.true:after {
+			content: "";
+    }
+
+    .evalaccordion .card:first-of-type .card-header.false:after {
+			content: "";
+    }
+
+    #patientexp .internalrow {
+      border: 1px solid #f1f1f3;
+      position: relative;
+    }
+    #patientexp .internalrow {
+        padding: 0rem 2rem;
+    }
+    
+    #patientexp .internalrow .col-md-3 {
+      margin-top: 1em;
+    }
+    #patientexp .col-md-3 {
+      border-left: 2px solid #fff;
+      font-size: .8em;
+    }
+
+    .stateavg .surveypct {
+      color: #5C5D5F;
+    }
+
+    .dkGrayText {
+			color: #5C5D5F !important;
+    }
+    
+		.blue {
+			color: #3e61ab !important;
+		}
+  
+    </style>
+
+
+  </head>
+
+  <body style="background: #fff">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand w-75 mb-2 mb-1 mv-auto" href="#">
+        <img class="w-100" src="images/horizontal_logoCropped.png" alt="ATLAS logo">
+      </a>
+      <button class="navbar-toggler ml-auto mb-3 float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon float-right"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav float-right text-right pl-sm-3">
+          <li class="nav-item">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: #61BDB0">contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: #61BDB0">login/register <i class="fas fa-user"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/atlas-design/find-treatment/index.html">Find Treatment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Learn about Treatment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">National Principles of Care</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav> <!--end nav-->
+
+
+    <main role="main">
+      <div class="row" id="facilitytop" style="background: #0C867D;">    
+
+        <div class="container mt-5 text-light">
+          <div class="row my-3">
+            <div class="col-md-8 col-sm-12">
+              <div class="mx-auto text-center">
+                <h2 class="mb-3 px-3" style="font-family:'museo-sans'; font-size:2.4em; font-weight: 400; color:#fff;letter-spacing: .02em; text-transform: none;">
+                  Addiction Treatment Center of Mt. Sinai
+                </h2>
+                
+                <p class="px-5 text-left">
+                  Some space here for some about text for a facility if it is available. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+                </p>
+              </div> <!-- end col-sm-12 -->
+              <div class="col-md-4 col-sm-12 mx-auto text-center">
+                <button class="btn btn-warning w-50 mt-1 mb-3">+ Add to Compare</button>
+                <p id="facilityaddress" class="col-sm-12">
+                  937 Fulton Street, 2nd and 3rd Floors
+                  <br/>
+                  Brooklyn, NY 11238
+                </p>
+                <p>
+                  <a href="#" class="text-light col-sm-12" style="font-weight: bold; text-decoration: underline; font-size: 1.3em">
+                    718-789-1212
+                  </a>
+                </p>
+                <p>
+                  <a class="text-light col-sm-12" href="">
+                    http://www.startny.org/
+                  </a>
+                </p>
+              </div> <!--end col-sm-12 -->
+            </div> <!--end col-sm-12 -->
+
+            <div class="col-12 mb-3 mx-auto text-center">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6463.445386317184!2d-78.8678395!3d35.9048068!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1571668774467!5m2!1sen!2sus" width="375" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div> <!--end col-sm-12-->
+          </div> <!--end row-->
+        </div> <!--end top colored bg container-->
+        
+        <div class="container-fluid bg-light" style="background: #E5E6E8; background: linear-gradient(to bottom, #ffffff45, #d6e5e6ad);">
+          <div class="container"></div>
+            <div class="row my-3" id="facility_geninfo">
+              <div class="col-md-5 col-sm-12 mx-auto">
+                <div class="text-left">
+                  <b class="my-3 ml-3">
+                    Facility Information and Features:
+                  </b>
+                  <table class="ml-3 my-3">
+                    <tr>
+                      <td>Affiliated Organization: &nbsp;&nbsp;&nbsp;</td>
+                      <td>PARENT ORG NAME</td>
+                    </tr>
+                    <tr>
+                      <td>Accredidation: </td>
+                      <td>AODE<i class="fa fa-info-circle"></i> - BHSO<i class="fa fa-info-circle"></i>   CARF<i class="fa fa-info-circle"></i></td>
+                    </tr>
+                    <tr>
+                      <td>Smoking Policy:</td>
+                      <td>XYZ</td>
+                    </tr>
+                    <tr>
+                      <td>Service Setting:</td>
+                      <td>Residential; Inpatient Hospital (ER)</td>
+                    </tr>
+                    <tr>
+                      <td>Substance Focus:</td>
+                      <td>Alcohol, Opioids</td>
+                    </tr>
+                    <tr>
+                      <td>Patient Focus:</td>
+                      <td>Pregnant women; LGBTQ</td>
+                    </tr>
+                    <tr>
+                      <td>Languages Spoken:</td>
+                      <td>English</td>
+                    </tr>
+                    <tr>
+                      <td>Translation Services:</td>
+                      <td>Yes</td>
+                    </tr>
+                  </table>
+    
+                  <table class="my-2">
+                  </table>
+                </div> <!--end text-center-->
+              </div> <!--end-col-sm-12-->
+              <div class="col-md-5 col-sm-12">
+                <div class="text-left">
+                  <b class="my-3 ml-3">Insurance and Payment Options:</b>
+                  <table class="ml-3 my-3">
+                    <tr>
+                      <td class="">Insurance Accepted:</td>
+                      <td class="">Medicare, Medicaid, Aetna, BlueCross BlueShield</td>
+                    </tr>
+                    <tr>
+                      <td class="">Payment Options:</td>
+                      <td class="">cash and self-payment accepted</td>
+                    </tr>
+                    <tr>
+                      <td class="">Payment Assistance Available:</td>
+                      <td class="">Yes</td>
+                    </tr>
+                  </table>
+                </div> <!--end text-center -->
+              </div> <!--end col-sm-12-->
+
+              <div class="col-md-2 col-sm-12" style="position: relative">
+                <div class="text-left">
+                  <b class="my-3 ml-3">Facility Hours:</b>
+                  <div class="col-12 row align-items-center">
+                  <table class="timetable col-5 my-3 ml-3 w-50">
+                    <tr>
+                      <td>Mon: </td>
+                      <td>8am - 4pm</td>
+                    </tr>
+                    <tr>
+                      <td>Tue: </td>
+                      <td>8am - 9pm</td>
+                    </tr>
+                    <tr>
+                      <td>Wed: </td>
+                      <td>8am - 9pm</td>
+                    </tr>
+                    <tr>
+                      <td>Thu: </td>
+                      <td>8am - 9pm</td>
+                    </tr>
+                    </table>
+                    <table class="timetable col-5 my-3 ml-3 w-50">
+                      <tr>
+                        <td>Fri: </td>
+                        <td>8am - 9pm</td>
+                      </tr>
+                      <tr>
+                        <td>Sat: </td>
+                        <td>8am - 4pm</td>
+                      </tr>
+                      <tr>
+                        <td>Sun: </td>
+                        <td>8am - 4pm</td>
+                      </tr>
+                    </table>
+                </div> <!--end text-center-->
+              </div> <!--end-col-sm-12-->
+            </div> <!--end row-->
+          </div> <!--end container-->
+        </div>
+
+        <div class="container-fluid bg-light noBorder">
+          <div class="container pb-2">
+            <div class="row">
+              <div class="d-flex flex-column justify-content-center align-items-center mt-3 mb-2">
+                <div class="col-sm-12">
+                  <h2 class="mb-3 mt-5 text-left">Signs of High-Quality Care</h2>
+                  <div class="accordion v3 mt-3" id="accordionExample">
+
+                    <div class="card fast row">
+                      <div class="col-md-4 card-header true" id="headingOne">
+                        <h4 class="mb-0">
+                          <button class="btn w-100" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Ability to Get Treatment Fast
+                          </button>
+                        </h4>
+                        <p class="text-dark small offset-md-1">
+                          Addiction alters brain chemistry. You need to have access to treatment as soon as you are ready.
+                        </p>
+                      </div> <!--end card header -->
+
+                      <div id="collapseOne" class="col-md-8 collapse show" aria-labelledby="headingOne" data-parent="#accordionExample" style="border-left:18px solid #804099">
+                        <div class="card-body ">
+                          <ul>
+                            <li class="">
+                              <div class="row align-items-center">
+                                <div class="col-6 quest">
+                                  <span>
+                                    Offers same day or walk-in appointments
+                                  </span>&nbsp; 
+                                  <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="col-2 answ">
+                                  <span>
+                                    <i class="fas fa-check-circle"></i>
+                                  </span>
+                                </div>
+                                <div class="col-md-4 answ">
+
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row">
+                                <div class="col-6 quest">
+                                  <span>
+                                    Helps the patient find immediate alternative treatment if no beds are available
+                                  </span>&nbsp; 
+                                  <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="col-2 answ">
+                                  <span><i class="fas fa-check-circle"></i></span>
+                                </div>
+                                <div class="col-4 answ">
+                                  <a class="small" data-toggle="collapse" data-target="#fastTwoHidden">see more</a>
+                                </div>
+                              </div> <!--end row-->
+                            </li>
+                          </ul>
+
+                          <div class="row collapse" id="fastTwoHidden">
+                            <div class="col-12 quest">
+                              <p class="mt-3">This facility offers:</p>
+
+                                <div class="col-12 answ">
+                                  <ul class="mb-2">
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-0">
+                                        <span data-brackets-id="71493" class="text-left">
+                                          We provide outpatient services until the appropriate level of care is available.
+                                        </span>
+                                      </div>
+                                      <div class="col-2 ml-auto answ">
+                                        <i data-brackets-id="71479" class="fas fa-check"></i>
+                                      </div>
+                                      <div class="col-4">
+                                      </div>
+                                    </li>
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-0">
+                                        <span data-brackets-id="71497">
+                                          We call another treatment facility within the same organization and assist the patient in setting up an appointment with the other facility.
+                                        </span>
+                                      </div>
+                                      <div class="col-2 ml-auto answ">
+                                        <i data-brackets-id="71479" class="fas fa-check"></i>
+                                      </div>
+                                      <div class="col-4">
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col-md-1"></div>
+                            </div>
+                        </div> <!--end row collapse-->
+                      </div> <!--end collapseOne-->
+                    </div> <!--end card fast-->
+
+
+                    <div class="card personal row">
+                      <div class="col-md-4 col-sm-12 card-header false" id="headingTwo">
+                        <h4 class="mb-0 w-100">
+                          <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            A Personalized Treatment Plan
+                          </button>
+                        </h4>
+                        <p class="text-dark small offset-md-1">
+                          Addiction alters brain chemistry. You need to have access to treatment as soon as you are ready.
+                        </p>
+                      </div>
+                      <div id="collapseTwo" class="col-md-8 collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample" style="border-left:18px solid #3F63AC">
+                        <div class="card-body">
+                          <ul>
+                            <li class="">
+                              <div class="row align-items-center">
+                                <div class="col-6 quest">
+                                  <span>Collects and analyzes information about patient care needs on all important dimensions</span>
+                                  &nbsp;
+                                  <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="col-2 answ">
+                                  <span><i class="fas fa-check-circle"></i></span>
+                                </div>
+                                <div class="col-4 answ">
+                                  <a class="small" data-toggle="collapse" data-target="#personalOneHidden">see more</a>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+
+                          <div class="row collapse" id="personalOneHidden">
+                            <div class="col-md-7 quest text-right">
+
+                            </div>
+                            <div class="col-md-1 col-sm-4">
+
+                            </div>
+                            <div class="col-12 quest">
+                              <p class="mt-3">When you come to this facility, you will be assessed on:</p>
+                              <div class="col-12 answ">
+                                <ul class="mb-2">
+                                  <li class="row align-items-center">
+                                    <div class="col-6 mr-auto pl-0">
+                                      <span data-brackets-id="71493" class="text-left">Intoxication</span>
+                                    </div>
+                                    <div class="col-2 ml-auto answ">
+                                      <i data-brackets-id="71479" class="fas fa-check"></i>
+                                    </div>
+                                    <div class="col-4">
+
+                                    </div>
+                                  </li>
+                                  <li class="row align-items-center">
+                                    <div class="col-6 mr-auto pl-0">
+                                      <span data-brackets-id="71497">General health</span>
+                                    </div>
+                                    <div class="col-2 ml-auto answ">
+                                        <i data-brackets-id="71479" class="fas fa-check"></i>
+                                    </div>
+                                    <div class="col-4">
+
+                                    </div>
+                                  </li>
+                                  <li class="row align-items-center">
+                                    <div class="col-6 mr-auto pl-0">
+                                      <span>Mental health and cognitive condition</span>
+                                    </div>
+                                    <div class="col-2 ml-auto answ">
+                                      <i data-brackets-id="71479" class="fas fa-check"></i>
+                                    </div>
+                                    <div class="col-4">
+
+                                    </div>
+                                  </li>
+
+                                  <li class="row align-items-center">
+                                    <div class="col-6 mr-auto pl-0">
+                                      <span style="color: #949598; font-weight: 100;">Readiness to change</span>
+                                    </div>
+                                    <div class="col-2 ml-auto answ">
+                                      <i class="fas fa-ban"></i>
+                                    </div>
+                                    <div class="col-4">
+
+                                    </div>
+                                  </li>
+                                  <li class="row align-items-center">
+                                    <div class="col-6 mr-auto pl-0">
+                                      <span style="color: #949598; font-weight: 100;">Relapse potential</span>
+                                    </div>
+                                    <div class="col-2 ml-auto answ">
+                                      <i class="fas fa-ban"></i>
+                                    </div>
+                                    <div class="col-4">
+
+                                    </div>
+                                  </li>
+                                  <li class="row align-items-center">
+                                    <div class="col-6 mr-auto pl-0">
+                                      <span style="color: #949598; font-weight: 100;">Recovery and living environment</span>
+                                    </div>
+                                    <div class="col-2 ml-auto answ">
+                                      <i class="fas fa-ban"></i>
+                                    </div>
+                                    <div class="col-4">
+
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div><!--end col-12-->
+                            </div>
+                          </div><!--end row collapse-->
+                        </div><!--end card body-->
+                      </div> <!--end collapse 2-->
+                    </div> <!--end card personal-->
+
+                    <div class="card monitor row">
+                      <div class="col-md-4 col-sm-12 card-header true" id="headingThree">
+                        <h4 class="mb-0 w-100">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Long-term Care and Follow-up
+                          </button>
+                        </h4>
+                        <p class="text-dark small offset-md-1">
+                          Addiction alters brain chemistry. You need to have access to treatment as soon as you are ready.
+                        </p>
+                      </div>
+
+                      <div id="collapseThree" class="col-md-8 collapse show" aria-labelledby="headingThree" data-parent="#accordionExample" style="border-left:18px solid #8fc640">
+                        <div class="card-body">
+                          <ul>
+                            <li>
+                              <div class="row align-items-center">
+                                <div class="col-6 quest">
+                                  <span>Tracks patient progress over time on all important dimensions</span>
+                                  &nbsp;
+                                  <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="col-2 answ">
+                                  <span><i class="fas fa-times-circle"></i></span>
+                                </div>
+                                <div class="col-4 answ">
+                                  <a class="small" data-toggle="collapse" data-target="#monitorTwoHidden">see more</a>
+                                </div>
+                              </div>
+                              <div class="row align-items-center">
+                                <div class="row collapse" id="monitorTwoHidden">
+                                  <div class="col-md-7 quest text-right">
+
+                                  </div>
+                                  <div class="col-md-1">
+                                    
+                                  </div>
+                                  <div class="col-12 quest">
+                                    <p class="pl-3 mt-3">When you come to this facility, you will be assessed on:</p>
+                                    <div class="col-12 answ">
+                                      <ul class="mb-2">
+                                        <li class="row align-items-center">
+                                          <div class="col-6 mr-auto pl-3">
+                                            <span data-brackets-id="71493">Intoxication</span>
+                                          </div>
+                                          <div class="col-3 mx-auto text-center answ">
+                                            <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i>
+                                          </div>
+                                          <div class="col-3">
+                                            
+                                            </div>
+                                        </li>
+                                        <li class="row align-items-center">
+                                          <div class="col-6 mr-auto pl-3">
+                                            <span data-brackets-id="71497">General health</span>
+                                          </div>
+                                          <div class="col-3 mx-auto text-center answ">
+                                            <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i>
+                                          </div>
+                                          <div class="col-3">
+                                            
+                                          </div>
+                                        </li>
+                                        <li class="row align-items-center">
+                                          <div class="col-6 mr-auto pl-3">
+                                            <span>Mental health and cognitive condition</span>
+                                          </div>
+                                          <div class="col-3 mx-auto text-center answ">
+                                            <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i>
+                                          </div>
+                                          <div class="col-3">
+                                            
+                                          </div>
+                                        </li>
+                                        <li class="row align-items-center">
+                                          <div class="col-6 mr-auto pl-3">
+                                            <span style="color: #949598; font-weight: 100;">Readiness to change</span>
+                                          </div>
+                                          <div class="col-3 mx-auto text-center answ">
+                                            <i class="fas fa-ban text-center pr-3"></i>
+                                          </div>
+                                          <div class="col-3">
+                                            
+                                          </div>
+                                        </li>
+                                        <li class="row align-items-center">
+                                          <div class="col-6 mr-auto pl-3">
+                                            <span style="color: #949598; font-weight: 100;">Relapse potential</span>
+                                          </div>
+                                          <div class="col-3 mx-auto text-center answ">
+                                              <i class="fas fa-ban text-center pr-3"></i>
+                                          </div>
+                                          <div class="col-3">
+                                            
+                                          </div>
+                                        </li>
+                                        <li class="row align-items-center">
+                                          <div class="col-6 mr-auto pl-3">
+                                            <span style="color: #949598; font-weight: 100;">Recovery and living environment</span>
+                                          </div>
+                                          <div class="col-3 mx-auto text-center answ">
+                                            <i class="fas fa-ban text-center pr-3"></i>
+                                          </div>
+                                          <div class="col-3">
+                                            
+                                          </div>
+                                        </li>
+                                      </ul>
+
+                                    </div> <!-- end col-12 ans -->
+                                  </div> <!--end col-12 -->
+                                </div> <!--end row collapse -->
+                              </div><!--end row collapse-->
+                            </li>
+                            <li>
+                              <div class="row align-items-center">
+                                <div class="col-6 quest">
+                                  <span>Uses lab tests to track patient progress</span>
+                                  &nbsp;
+                                  <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="col-2 answ">
+                                    <span><i class="fas fa-check-circle"></i></span>
+                                </div>
+                                <div class="col-md-4 answ">
+                                  
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row align-items-center">
+                                <div class="col-6 quest">
+                                  <span>Provides follow-up care to patients within 14 days of being discharged.</span>
+                                  &nbsp;
+                                  <i class="fa fa-info-circle"></i>
+                                </div>
+                           
+                                <div class="col facility" style="border-right: 1px solid #3e61ab;">
+                                  <span class="small toplabel">facility</span>
+                                  <br/>
+                                  <span class="small" style="color:#949598">private</span>
+                                  <br>
+                                  <span class="surveypct blue">28<sup>%</sup></span>
+                                </div>
+
+                                <div class="col" style="border-right: 1px solid #949598;">
+                                  <span class="small toplabel" style="color:#5C5D5F; line-height: 14px;">state avg</span>
+                                  <br/>
+                                  <span class="small" style="color:#949598">private</span>
+                                  <br>
+                                  <span class="surveypct">34<sup>%</sup> </span>
+                                </div>
+                                <div class="col-6 quest">
+                                </div>
+                      
+                                <div class="col facility" style="border-right: 1px solid #3e61ab;">
+                                  <span class="small toplabel">facility</span>
+                                  <br/>
+                                  <span class="small" style="color:#949598">medicaid</span>
+                                  <br>
+                                  <span class="surveypct blue">28<sup>%</sup></span>
+                                </div>
+                                <div class="col" style="border-right: 1px solid #949598;">
+                                  <span class="small toplabel" style="color:#5C5D5F; line-height: 14px;">state avg</span>
+                                  <br/>
+                                  <span class="small" style="color:#949598">medicaid</span>
+                                  <br>
+                                  <span class="surveypct">34<sup>%</sup> </span>
+                                </div>
+
+                              </div>
+                            </li>
+                          </ul>
+                        </div> <!--end card body-->
+                      </div> <!--end collapse -->
+                    </div> <!--end card monitor -->
+                    
+
+                    <div class="card carecoord row">
+                      <div class="col-md-4 col-sm-12 card-header true" id="headingFour">
+                        <h4 class="mb-0 w-100">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Ability to Get Care For Other Health Conditions
+                          </button>
+                        </h4>
+                        <p class="text-dark small offset-md-1">
+                          Addiction alters brain chemistry. You need to have access to treatment as soon as you are ready.
+                        </p>
+                      </div>
+                      <div id="collapseFour" class="col-md-8 collapse show" aria-labelledby="headingFour" data-parent="#accordionExample" style="border-left:18px solid #9E2064">
+                        <div class="card-body">
+                          <ul>
+                            <li>
+                              <div class="row align-items-center">
+                                <div class="col-6 quest">
+                                  <span>Offers primary health care</span>
+                                  &nbsp;
+                                  <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="col-2 answ">
+                                  <span><i class="fas fa-check-circle"></i></span>
+                                </div>
+                                <div class="col-4">
+                                  <span>Onsite</span>
+                                  <br>
+                                  <a class="small" data-toggle="collapse" data-target="#carecoordOneHidden">see more</a>
+                                </div>
+                              </div>
+                              <div class="row align-items-center collapse" id="carecoordOneHidden">
+                                <div class="col-12 mt-2">
+                                  <p class="mt-3">
+                                    Provides onsite testing for:
+                                  </p>
+                                  <ul>
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-3">
+                                        <span data-brackets-id="71493">Hepatitis B</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ">
+                                        <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i>
+                                      </div>
+                                      <div class="col-3">
+                                        
+                                        </div>
+                                    </li>
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-3">
+                                        <span data-brackets-id="71497">Hepatitis C</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ">
+                                        <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i>
+                                      </div>
+                                      <div class="col-3">
+                                        
+                                        </div>
+                                    </li>
+                                    <li class="row align-items-center">
+                                        <div class="col-6 mr-auto pl-3">
+                                          <span>HIV</span>
+                                        </div>
+                                        <div class="col-3 mx-auto text-center answ">
+                                          <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i>
+                                        </div>
+                                        <div class="col-3">
+                                          
+                                        </div>
+                                      </li>
+                                      <li class="row align-items-center">
+                                        <div class="col-6 mr-auto pl-3">
+                                            <span data-brackets-id="71505">STIs</span>
+                                        </div>
+                                        <div class="col-3 mx-auto text-center answ">
+                                          <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i>
+                                        </div>
+                                        <div class="col-3">
+                                          
+                                        </div>
+                                      </li>
+                                      <li class="row align-items-center">
+                                        <div class="col-6 mr-auto pl-3">
+                                          <span style="color: #949598; font-weight: 100;">Tuberculosis</span>
+                                        </div>
+                                        <div class="col-3 mx-auto text-center answ">
+                                          <i class="fas fa-ban text-center pr-3"></i>
+                                        </div>
+                                        <div class="col-3">
+                                          
+                                        </div>
+                                      </li>
+                                      <li class="row align-items-center">
+                                        <div class="col-6 mr-auto pl-3">
+                                          <span style="color: #949598; font-weight: 100;">Pregnancy</span>
+                                        </div>
+                                        <div class="col-3 mx-auto text-center answ">
+                                          <i class="fas fa-ban text-center pr-3"></i>
+                                        </div>
+                                        <div class="col-3">
+                                          
+                                        </div>
+                                      </li>
+                                      <li class="row align-items-center">
+                                        <div class="col-6 mr-auto pl-3">
+                                          <span style="color: #949598; font-weight: 100;">Other [filled]</span>
+                                        </div>
+                                        <div class="col-3 mx-auto text-center answ">
+                                          <i class="fas fa-ban text-center pr-3"></i>
+                                        </div>
+                                        <div class="col-3">
+                                          
+                                        </div>
+                                      </li>
+                                      <li class="row align-items-center">
+                                        <div class="col-6 mr-auto pl-3">
+                                          <span style="color: #949598; font-weight: 100;">Does not provide tests included in survey</span>
+                                        </div>
+                                        <div class="col-3 mx-auto text-center answ">
+                                          <i class="fas fa-ban text-center pr-3"></i>
+                                        </div>
+                                        <div class="col-3">
+                                          
+                                        </div>
+                                      </li>
+                                  </ul>
+                                </div>
+                              </div> <!--end collapse-->
+                            </li>
+                            <li>
+                              <div class="row align-items-center">
+                                <div class="col-6 quest">
+                                  <span>Offers mental health care </span>&nbsp;<i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="col-md-1 col-2 answ">
+                                  <span><i class="fas fa-check-circle"></i></span>
+                                </div>
+                                <div class="col-4">
+                                  <span>Onsite</span>
+                                  <br>
+                                  <a class="small" data-toggle="collapse" data-target="#carecoordTwoHidden">see more</a>
+                                </div>
+                              </div>
+                              <div class="row align-items-center collapse" id="carecoordTwoHidden">
+                                <div class="col-12 mt-2">
+                                  <ul>
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-3">
+                                        <spa>Staff include:</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ">
+                                        <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                      </div>
+                                      <div class="col-3">
+                                        <p>[string variables: Physician (MD, DO), Physician Assistant (PA), Nurse Practitioner (NP), Registered Nurse (RN), Licensed Practical Nurse (LPN), Other, specify]</p>
+                                      </div>
+                                    </li>
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-3">
+                                        <span data-brackets-id="71493">Medications offered for mental health: </span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ">
+                                        <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i>
+                                      </div>
+                                      <div class="col-3">
+                                        
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div> <!--end card body-->
+                      </div> <!--end  collapse-->
+                    </div> <!--end card-->
+
+                    <div class="card evidence row">
+                      <div class="col-md-4 col-sm-12 card-header true" id="headingFive">
+                        <h4 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Tested and Proven Treatment from Qualified Providers
+                          </button>
+                        </h4>
+                        <p class="text-dark small offset-md-1">
+                          Addiction alters brain chemistry. You need to have access to treatment as soon as you are ready.
+                        </p>
+                      </div>
+                      <div class="card-body">
+                        <div id="collapseFive" class="col-md-8 collapse show" aria-labelledby="headingFive" data-parent="#accordionExample" style="border-left:18px solid #9C905C">
+                          <ul>
+                            <li>
+                              <div class="row align-items-center">
+                                <div class="col-6 quest">
+                                  <span>Offers addiction therapy that has been tested and proven to work</span>
+                                  &nbsp;
+                                  <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="col-2 answ">
+                                  <span><i class="fas fa-check-circle"></i></span>
+                                </div>
+                                <div class="col-4">
+                                  <a class="small" data-toggle="collapse" data-target="#evidenceOneHidden">see more</a>
+                                </div>
+                              </div>
+
+                              <div  class="row align-items-center collapse" id="evidenceOneHidden">
+                                <div class="col-12 mt-2">
+                                  <p>
+                                    This facility offers the following therapies:
+                                  </p>
+                                  <ul>
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-5">
+                                        <span data-brackets-id="71493" class="text-nowrap">Cognitive Behavioral<br> Health Therapy (CBT)</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ">
+                                        <!-- <i class="fas fa-ban "></i> -->
+                                        <i data-brackets-id="71479" class="fas fa-check text-center pr-3" style="font-size: 0.8rem;"></i>
+                                      </div>
+                                      <div class="col-3">
+                                        
+                                      </div>
+                                    </li>
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-5">
+                                        <span data-brackets-id="71497" class="text-nowrap">Contingency Management<br>/Motivational Incentives</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ">
+                                        <!-- <i class="fas fa-ban "></i> -->
+                                        <i data-brackets-id="71479" class="fas fa-check text-center pr-3" style="font-size: 0.8rem;"></i>
+                                      </div>
+                                      <div class="col-3">
+                                        
+                                      </div>
+                                    </li>
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-5">
+                                        <span class="text-nowrap">Community Reinforcement<br>Approach (CRA)</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ">
+                                        <!-- <i class="fas fa-ban "></i> -->
+                                        <i data-brackets-id="71479" class="fas fa-check text-center pr-3" style="font-size: 0.8rem;"></i>
+                                      </div>
+                                      <div class="col-3">
+                                        
+                                      </div>
+                                    </li>
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-5">
+                                          <span style="color: #949598; font-weight: 100;" class="text-nowrap">Matrix Model</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ">
+                                        <i class="fas fa-ban text-center pr-3" style="font-size: 0.8rem;"></i>
+                                        <!-- <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i> -->
+                                      </div>
+                                      <div class="col-3">
+                                        
+                                      </div>
+                                    </li>
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-5">
+                                        <span class="text-nowrap">Motivational Enhancement<br>Therapy</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ">
+                                        <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                        <i data-brackets-id="71479" class="fas fa-check text-center pr-3" style="font-size: 0.8rem;"></i>
+                                      </div>
+                                      <div class="col-3">
+                                        
+                                      </div>
+                                    </li>
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-5">
+                                        <span class="text-nowrap">Twelve-Step Facilitation<br>Therapy (TSF)</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ">
+                                        <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                        <i data-brackets-id="71479" class="fas fa-check text-center pr-3" style="font-size: 0.8rem;"></i>
+                                      </div>
+                                      <div class="col-3">
+                                        
+                                      </div>
+                                    </li>
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-5">
+                                        <span class="text-nowrap">Family Behavior Therapy</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ">
+                                        <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                        <i data-brackets-id="71479" class="fas fa-check text-center pr-3" style="font-size: 0.8rem;"></i>
+                                      </div>
+                                      <div class="col-3">
+                                        
+                                      </div>
+                                    </li>
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-5">
+                                        <span class="text-nowrap">Mindfulness-based<br>relapse prevention</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ">
+                                        <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                        <i data-brackets-id="71479" class="fas fa-check text-center pr-3" style="font-size: 0.8rem;"></i>
+                                      </div>
+                                      <div class="col-3">
+                                        
+                                      </div>
+                                    </li>
+
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="row align-items-center">
+                              <div class="col-6 mr-auto pl-3">
+                                  <span>Offers individual counseling</span>
+                                  &nbsp;
+                                  <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="col-2 ml-auto answ">
+                                  <span><i class="fas fa-check-circle"></i></span>
+                              </div>
+                              <div class="col-4"></div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div> <!-- end card evidence -->
+
+                    <div class="card access row">
+                      <div class="col-md-4 col-sm-12 card-header true" id="headingSix">
+                        <h4 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Ability to Get Medications for Addiction Treatment
+                          </button>
+                        </h4>
+                        <p class="text-dark small offset-md-1">
+                          Addiction alters brain chemistry. You need to have access to treatment as soon as you are ready.
+                        </p>
+                      </div>
+                      <div class="card-body">
+                        <div id="collapseSix" class="col-md-8 collapse show" aria-labelledby="headingSix" data-parent="#accordionExample" style="border-left:18px solid #299284;">
+                          <ul>
+                            <li>
+                              <div class="row align-items-center">
+                                <div class="col-6 mr-auto pl-3">
+                                  <span>Offers FDA-approved medication for <b>opioid use disorder</b>:</span>
+                                  &nbsp;
+                                  <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="col-2 ml-auto answ">
+                                  <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="col-4 answ">
+                                  <a class="small" data-toggle="collapse" data-target="#medicineOneHidden">see more</a>
+                                </div>
+                              </div>
+                              <div  class="row align-items-center collapse" id="medicineOneHidden">
+                                <div class="col-12 mt-2">
+                                  <!-- <p>
+                                    This facility offers the following therapies:
+                                  </p> -->
+                                  <ul>
+                                    <li class="row d-flex flex-row align-items-center">
+                                      <div class="col-6 mr-auto pl-4">
+                                        <span>Methadone</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ">
+                                        <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                        <!-- <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i> -->
+                                        <i class="fas fa-minus-circle text-center pr-3 pb-2 align-self-center"></i>
+                                      </div>
+                                      <div class="col-3">
+                                        <p class="small align-self-center text-nowrap pt-3">Does not offer but<br>will help connect<br>the patient with<br>medication</p>
+                                      </div>
+                                    </li>
+                                    <li class="row d-flex flex-row align-items-center">
+                                      <div class="col-6 mr-auto pl-4 align-items-center">
+                                        <span>Buprenorphine (e.g., Suboxone, Subutex)</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ align-items-center">
+                                        <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                        <!-- <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-minus-circle text-center pr-3"></i> -->
+                                        <span><i class="fas fa-check-circle text-center pr-3 pb-2 align-self-center"></i></span>
+                                      </div>
+                                      <div class="col-3 align-items-center">
+                                        <p class="small align-self-center text-nowrap pt-3">Onsite,<br>used for<br>maintenance</p>
+                                      </div>
+                                    </li>
+                                    <li class="row d-flex flex-row align-items-center">
+                                      <div class="col-6 mr-auto pl-4 align-items-center">
+                                        <span>Naltrexone (e.g., Vivitrol, ReVia)</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ align-items-center">
+                                        <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                        <!-- <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-minus-circle text-center pr-3"></i> -->
+                                        <span><i class="fas fa-check-circle text-center pr-3 pb-2 align-self-center"></i></span>
+                                      </div>
+                                      <div class="col-3 align-items-center">
+                                        <p class="small align-self-center text-nowrap pt-3">Onsite,<br>used for<br>maintenance</p>
+                                      </div>
+                                    </li>
+                                    <li class="row d-flex flex-row align-items-center">
+                                      <div class="col-6 mr-auto pl-4 align-items-center">
+                                        <span>Naloxone available onsite</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ align-items-center">
+                                        <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                        <!-- <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-minus-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-check-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-times-circle text-center pr-3"></i> -->
+                                        <i class="fas fa-question-circle text-center pr-3 pb-2 align-self-center"></i>
+                                      </div>
+                                      <div class="col-3 align-items-center">
+                                        <p class="small align-self-center pt-3">Data not<br>provided</p>
+                                      </div>
+                                    </li>
+                                    <li class="row d-flex flex-row align-items-center">
+                                      <div class="col-6 mr-auto pl-4 align-items-center">
+                                        <span>Naloxone training offered</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ align-items-center">
+                                        <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                        <!-- <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-minus-circle text-center pr-3"></i> -->
+                                        <i class="fas fa-check-circle text-center pr-3 pb-2 align-self-center"></i>
+                                        <!-- <i class="fas fa-times-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-question-circle text-center pr-3"></i> -->
+                                      </div>
+                                      <div class="col-3 align-items-center">
+                                        <p class="small align-self-center text-nowrap pt-3">Yes, for<br>family/friends<br>of patients</p>
+                                      </div>
+                                    </li>
+                                    <li class="row d-flex flex-row align-items-center my-1">
+                                      <div class="col-6 mr-auto pl-4 align-items-center">
+                                        <span>Medication assisted therapy (MAT) offered to opioid use disorder patients within 14 days</span>
+                                      </div>
+                                      <!-- <div class="col-1 mx-auto text-center answ"> -->
+                                        <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                        <!-- <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-minus-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-check-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-times-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-question-circle text-center pr-3"></i> -->
+                                      <!-- </div> -->
+                                      <div class="col-3 align-self-center align-items-center">
+                                        <span class="small" style="color:#949598">facility</span>
+                                        <br/>
+                                        <span class="small text-nowrap"><b>not provided</b></span>
+                                      <!-- <p class="small">Yes, for family/friends of patients</p> -->
+                                      </div>
+                                      <div class="col-3 align-self-center align-items-center">
+                                        <span class="small" style="color:#949598; line-height: 14px">state avg</span>
+                                        <br/>
+                                        <span class="small"><b>42<sup>%</sup></b></span>
+                                      </div>
+                                    </li>
+                                    <li class="row d-flex flex-row align-items-center my-1">
+                                      <div class="col-6 mr-auto pl-4 align-items-center">
+                                        <span>Medication assisted therapy (MAT) offered for 180 days</span>
+                                      </div>
+                                      <!-- <div class="col-1 mx-auto text-center answ"> -->
+                                        <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                        <!-- <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-minus-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-check-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-times-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-question-circle text-center pr-3"></i> -->
+                                      <!-- </div> -->
+                                      <div class="col-3 align-self-center align-items-center">
+                                          <span class="small" style="color:#949598">facility</span>
+                                          <br/>
+                                          <span class="small"><b>35<sup>%</sup></b></span>
+                                      </div>
+                                      <div class="col-3 align-self-center align-items-center">
+                                        <span class="small" style="color:#949598; line-height: 14px;">state avg</span>
+                                        <br/>
+                                        <span class="small"><b>42<sup>%</sup></b> </span>
+                                      </div>
+                          
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                            </li>
+                            <li>
+                              <div class="row align-items-center">
+                                <div class="col-6 mr-auto pl-3">
+                                  <span>Offers FDA-approved medication for <b>alcohol use disorder</b>:</span>
+                                  &nbsp;
+                                  <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="col-2 ml-auto answ">
+                                  <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="col-4 answ">
+                                  <a class="small" data-toggle="collapse" data-target="#medicineTwoHidden">see more</a>
+                                </div>
+                              </div>
+
+                              <div class="row align-items-center">
+                                <div class="row align-items-center collapse" id="medicineTwoHidden">
+                                  <div class="col-12 mt-3">
+                                    <ul class="ml-3">
+                                      <li class="row align-items-center my-1">
+                                        <div class="col-6 mr-auto pl-3">
+                                          <span>Acamprosate (e.g., Campral	&#174;)</span>
+                                        </div>
+                                        <div class="col-3 mx-auto text-center answ">
+                                          <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                          <!-- <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i> -->
+                                          <!-- <i class="fas fa-minus-circle text-center pr-3"></i> -->
+                                          <i class="fas fa-check-circle text-center pr-4"></i>
+                                        </div>
+                                        <div class="col-3">
+                                          <!-- <p class="small">Does not offer but will help connect the patient with medication</p> -->
+                                        </div>
+                                      </li>
+                                      <li class="row align-items-center my-1">
+                                        <div class="col-6 mr-auto pl-3">
+                                          <span>Oral Naltrexone (e.g., Depade&#174;, Revia&#174;)</span>
+                                        </div>
+                                        <div class="col-3 mx-auto text-center answ">
+                                          <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                          <!-- <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i> -->
+                                          <!-- <i class="fas fa-minus-circle text-center pr-3"></i> -->
+                                          <i class="fas fa-check-circle text-center pr-4"></i>
+                                        </div>
+                                        <div class="col-3">
+                                          <!-- <p class="small">Does not offer but will help connect the patient with medication</p> -->
+                                        </div>
+                                      </li>
+                                      <li class="row align-items-center my-1">
+                                        <div class="col-6 mr-auto pl-3">
+                                          <span>Injectable long-acting Naltrexone (e.g., Vivitrol&#174;)</span>
+                                        </div>
+                                        <div class="col-3 mx-auto text-center answ">
+                                          <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                          <!-- <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i> -->
+                                          <!-- <i class="fas fa-minus-circle text-center pr-3"></i> -->
+                                          <i class="fas fa-check-circle text-center pr-4"></i>
+                                        </div>
+                                        <div class="col-3">
+                                          <!-- <p class="small">Does not offer but will help connect the patient with medication</p> -->
+                                        </div>
+                                      </li>
+                                      <li class="row align-items-center my-1">
+                                        <div class="col-6 mr-auto pl-3">
+                                          <span>Injectable long-acting Naltrexone (e.g., Vivitrol&#174;)</span>
+                                        </div>
+                                        <div class="col-3 mx-auto text-center answ">
+                                          <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                          <!-- <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i> -->
+                                          <!-- <i class="fas fa-minus-circle text-center pr-3"></i> -->
+                                          <i class="fas fa-check-circle text-center pr-4"></i>
+                                        </div>
+                                        <div class="col-3">
+                                          <!-- <p class="small">Does not offer but will help connect the patient with medication</p> -->
+                                        </div>
+                                      </li>
+                                      <li class="row align-items-center my-1">
+                                        <div class="col-6 mr-auto pl-3">
+                                          <span>Disulfiram (e.g., Antabuse&#174;)</span>
+                                        </div>
+                                        <div class="col-3 mx-auto text-center answ">
+                                          <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                          <!-- <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i> -->
+                                          <!-- <i class="fas fa-minus-circle text-center pr-3"></i> -->
+                                          <i class="fas fa-check-circle text-center pr-4"></i>
+                                        </div>
+                                        <div class="col-3">
+                                          <!-- <p class="small">Does not offer but will help connect the patient with medication</p> -->
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div> 
+                              </div>
+
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div> <!--end card access -->
+                    
+                    <div class="card recovery row">
+                      <div class="col-md-4 col-sm-12 card-header true" id="headingSeven">
+                        <h4 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            Support for Recovery Outside the Doctor's Office
+                          </button>
+                        </h4>
+                        <p class="text-dark small offset-md-1">
+                          Addiction alters brain chemistry. You need to have access to treatment as soon as you are ready.
+                        </p>
+                      </div>
+                      <div class="card-body">
+                        <div id="collapseSeven" class="col-md-8 collapse show" aria-labelledby="headingSeven" data-parent="#accordionExample" style="border-left:18px solid #292562">
+                          <ul>
+                            <li>
+                              <div class="row align-items-center">
+                                <div class="col-6 mr-auto pl-3">
+                                  <span>Offers recovery support services:</span>
+                                  &nbsp;
+                                  <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="col-2 ml-auto answ">
+                                  <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="col-4 answ">
+                                  <a class="small" data-toggle="collapse" data-target="#collapseSupportServices">see more</a>
+                                </div>
+                              </div>
+
+                              <div class="row  align-items-center collapse" id="collapseSupportServices">
+                                <div class="col-12 mt-3">
+                                  <p>
+                                    This facility offers:
+                                  </p>
+                                  <ul>
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-3">
+                                          <span data-brackets-id="71493">Peer recovery support</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ">
+                                        <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                        <!-- <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-minus-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-check-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-times-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-question-circle text-center pr-3"></i> -->
+                                      </div>
+                                      <div class="col-3"></div>
+                                    </li>
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-3">
+                                        <span data-brackets-id="71497">Employment counseling or training</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ">
+                                        <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                        <!-- <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-minus-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-check-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-times-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-question-circle text-center pr-3"></i> -->
+                                      </div>
+                                      <div class="col-3"></div>
+                                    </li>
+                                    <li class="row align-items-center">
+                                      <div class="col-6 mr-auto pl-3">
+                                        <span>Assistance with locating housing</span>
+                                      </div>
+                                      <div class="col-3 mx-auto text-center answ">
+                                        <!-- <i class="fas fa-ban text-center pr-3"></i> -->
+                                        <!-- <i data-brackets-id="71479" class="fas fa-check text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-minus-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-check-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-times-circle text-center pr-3"></i> -->
+                                        <!-- <i class="fas fa-question-circle text-center pr-3"></i> -->
+                                      </div>
+                                      <div class="col-3"></div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div> <!-- end card recovery -->
+
+                  </div>
+                </div> <!--end col-sm-12-->
+              </div> <!--end d-flex-->
+            </div> <!--end row-->
+          </div> <!--end bg-light-->
+
+          <div class="bg-light bottomBorder">
+            <div class="container">
+
+              <div class="row linearGrad">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-3 comment text-center">
+                      <i class="fas fa-comments mx-auto mt-5 pt-1" id="commentIcon"></i>
+                    </div>
+        
+                    <div class="col-12 col-md-9 mx-auto text-center pt-2 pb-5">
+                      <h2 class="text-center" style="color: #fff; font-family: 'museo-sans'; text-transform: none; font-weight:400; font-size: 1.6em;">
+                        Have you or a loved one received treatment from Addiction Treatment Center of Mt. Sinai?
+                      </h2>
+                      <button class="float-md-right btn btn-warning w-50 my-3">
+                        Leave a Review
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="mt-5 mb-3">Patient Experience</h2>
+      <!--
+                  <div class="row small" style="color:#949598">
+                    <div class="col-sm-12 col-md-6"></div>
+      
+      
+                                  <div class="col col-md-3">This Facility</div>
+                    <div class="col-sm-6 col-md-3" style="line-height:1.1em">Addiction Treatment Center of Mt. Sinai</div>
+                    <div class="col-sm-6 col-md-3">New York Average</div>
+                  </div>
+      -->
+                  <!--						pasted-->
+                  <div class="accordion evalaccordion" id="patientexp">
+      
+                    <div class="card">
+                      <div class="card-header true" id="headingEight">
+                        <h4 class="mb-0">
+                          <button class="btn cardBtn" type="button" data-toggle="collapse" data-target="#collapseEightpatientexp" aria-expanded="true" aria-controls="collapseEight">
+                            <div class="row">
+                              <div class="col-12 col-md-6 font-weight-normal">
+                                Number of survey responses
+                              </div>
+                              <div class="col-6 col-md-3 facility">
+                                <div class="row">
+                                  <div class="col mb-2 toplabel">facility:</div>
+                                </div>
+                                <span class="surveypct">100</span>
+                              </div>
+                              <div class="col-6 col-md-3 stateavg">
+                                <div class="row">
+                                  <div class="col mb-2 toplabel">NY Average:</div>
+                                </div>
+                                <span class="surveypct">235</span>
+                              </div>
+                            </div> <!--end row -->
+                          </button>
+                        </h4>
+                      </div>
+                      <!--end card header-->
+                      <!--end collapse-->
+                    </div>
+                    <!--end card-->
+      
+                    <div class="row small" style="color:#949598">
+      
+                      <div class="col col-md-6">click sections to expand</div>
+      
+                    </div>
+      
+      
+      
+                    <div class="card">
+                      <div class="card-header true" id="headingOne">
+                        <h4 class="mb-0">
+                          <button class="btn cardBtn collapsed" type="button" data-toggle="collapse" data-target="#collapseOnepatientexp" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="row">
+                              <div class="col-12 col-md-6 font-weight-normal">
+                                How much have you been helped by the treatment you got here? 
+                              </div>
+                              <div class="col-6 col-md-3 facility">
+                              <div class="row">
+                                <div class="col mb-2 toplabel" style="">Facility:</div>
+                              </div>
+                                <span class="surveypct">28<sup>%</sup></span><br/><span> say<br/><span class="surveyanswer">“a lot”</span></span>
+                              </div>
+                              <div class="col-6 col-md-3 stateavg">
+                                <div class="row">
+                                  <div class="col mb-2 toplabel" >NY Average:</div>
+                                </div>
+                                <span class="surveypct">34<sup>%</sup></span><br/><span> say<br/> <span class="surveyanswer">“a lot”</span></span>
+                              </div>
+                            </div> <!--end row -->
+                          </button>
+                        </h4>
+                      </div>
+                      <!--end card header-->
+                      <div id="collapseOnepatientexp" class="collapse" aria-labelledby="headingOne" data-parent="#patientexp">
+                        <div class="card-body mb-3">
+                          <div class="row internalrow">
+                            <div class="col-12 col-md-6">
+                            </div>
+                            <div class="col-6 col-md-3 facility">
+                              <span class="surveypct">32<sup>%</sup></span>
+                              <br/><span> say<br/><span class="surveyanswer">“somewhat”</span></span>
+                            </div>
+                            <div class="col-6 col-md-3 stateavg">
+                              <span class="surveypct">39<sup>%</sup> </span>
+                              <br/><span> say<br/><span class="surveyanswer">“somewhat”</span></span>
+                            </div>
+                          </div>
+                          <div class="row internalrow">
+                            <div class="col-12 col-md-6">
+                            </div>
+                            <div class="col-6 col-md-3"><span class="surveypct">32<sup>%</sup></span>
+                              <br/><span> say<br/><span class="surveyanswer">“a little”</span></span>
+                            </div>
+      
+                            <div class="col-6 col-md-3 stateavg"><span class="surveypct">39<sup>%</sup> </span>
+                              <br/>
+                              <span> say<br/><span class="surveyanswer">“a little”</span></span>
+                            </div>
+                          </div>
+                          <div class="row internalrow">
+                            <div class="col-12 col-md-6">
+                            </div>
+                            <div class="col-6 col-md-3"><span class="surveypct">32<sup>%</sup></span>
+                              <br/><span> say<br/><span class="surveyanswer">“not at all”</span></span>
+                            </div>
+      
+                            <div class="col-6 col-md-3 stateavg"><span class="surveypct">39<sup>%</sup> </span>
+                              <br/>
+                              <span> say<br/><span class="surveyanswer">“not at all”</span></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--end collapse-->
+                    </div>
+                    <!--end card-->
+      
+                    <div class="card">
+                      <div class="card-header true" id="headingTwo">
+                        <h4 class="mb-0">
+                          <button class="btn cardBtn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwopatientexp" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="row">
+                              <div class="col-12 col-md-6 font-weight-normal">
+                                Using any number from 0 to 10, where 0 is the worst treatment program possible and 10 is the best treatment program possible, what number would you use to rate this treatment program?
+                              </div>
+                              <div class="col-6 col-md-3 facility">
+                                <div class="row">
+                                  <div class="col mb-2 toplabel" style="">Facility:</div>
+                                </div>
+                                <span class="surveypct">8.2</span>
+                                <br/>
+                                average score
+                              </div>		
+                              <div class="col-6 col-md-3 stateavg">
+                                <div class="row">
+                                  <div class="col mb-2 toplabel">NY Average:</div>
+                                </div>
+                                <span class="surveypct">7.6</span> 
+                                <br/>
+                                average score
+                              </div>
+                            </div>
+                          </button>
+                        </h4>
+                      </div>
+                      <!--end card header-->
+      
+                      <div id="collapseTwopatientexp" class="collapse" aria-labelledby="headingTwo" data-parent="#patientexp">
+                        <div class="card-body">
+                          <li class="true">
+                            <span>Top-line measure 1</span>
+                          </li>
+                          <li class="false">
+                            <span>Top-line measure 2</span>
+                          </li>
+                          <li class="false">
+                            <span>Top-line measure 3</span>
+                          </li>
+                        </div>
+                        <!--end card body-->
+                      </div>
+                      <!--end collapse -->
+                    </div>
+                    <!--end card-->
+      
+                    <div class="card">
+                      <div class="card-header true" id="headingThree">
+                        <h4 class="mb-0">
+                          <button class="btn cardBtn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThreepatientexp" aria-expanded="false" aria-controls="collapseThreepatientexp">
+                            <div class="row">
+                              <div class="col-12 col-md-6 font-weight-normal">
+                                Compared to when you entered this treatment program, how would you rate your ability to deal with daily problems now?
+                              </div>		
+                              <div class="col-6 col-md-3 facility">
+                                <div class="row">
+                                  <div class="col mb-2 toplabel" style="">Facility:</div>
+                                </div>
+                                <span class="surveypct">29<sup>%</sup> </span><br/><span>gave ratings of<br/><span class="surveyanswer">9 or 10</span></span>
+                              </div>		
+                              <div class="col-6 col-md-3 stateavg">
+                                <div class="row">
+                                  <div class="col mb-2 toplabel">NY Average:</div>
+                                </div>
+                                <span class="surveypct">36<sup>%</sup> </span><br/><span>gave ratings of<br/><span class="surveyanswer">9 or 10</span></span>
+                              </div>
+                            </div>
+                          </button>
+                        </h4>
+                      </div>
+                      <div id="collapseThreepatientexp" class="collapse" aria-labelledby="headingThree" data-parent="#patientexp">
+                        <div class="card-body">
+                          <li><span>Top-line measure 1</span></li>
+                          <li><span>Top-line measure 2</span></li>
+                          <li><span>Top-line measure 3</span></li>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="card">
+                      <div class="card-header true" id="headingFour">
+                        <h4 class="mb-0">
+                          <button class="btn btn-link cardBtn collapsed" type="button" data-toggle="collapse" data-target="#collapseFourpatientexp" aria-expanded="false" aria-controls="collapseFour">
+                            <div class="row">
+                              <div class="col-12 col-md-6 font-weight-normal">
+                                Have staff in this treatment program talked with you about including your family or friends in your counseling or treatment?
+                              </div>	
+                              <div class="col-6 col-md-3 facility">
+                                <div class="row">
+                                  <div class="col mb-2 toplabel" style="">Facility:</div>
+                                </div>
+                                <span class="surveypct">56<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"yes"</span></span>
+                              </div>		
+                              <div class="col-6 col-md-3 stateavg">
+                                <div class="row">
+                                  <div class="col mb-2 toplabel">NY Average:</div>
+                                </div>
+                                <span class="surveypct">58<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"yes"</span></span>
+                              </div>
+                            </div>
+                          </button>
+                        </h4>
+                      </div>
+                      <!--wnd card header-->
+                      <div id="collapseFourpatientexp" class="collapse" aria-labelledby="headingFour" data-parent="#patientexp">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <!--end card -->
+      
+                    <div class="card">
+                      <div class="card-header true" id="headingFive">
+                        <h4 class="mb-0">
+                          <button class="btn cardBtn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFivepatientexp" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="row">
+                              <div class="col-12 col-md-6 font-weight-normal">
+                                When you needed treatment right away, how often did you see someone from this treatment program as soon as you wanted? 
+                              </div>	
+                              <div class="col-6 col-md-3 facility">
+                                <div class="row">
+                                  <div class="col mb-2 toplabel" style="">Facility:</div>
+                                </div>
+                                <span class="surveypct">65<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"always"</span></span>
+                              </div>		
+                              <div class="col-6 col-md-3 stateavg">
+                              <div class="row">
+                                <div class="col mb-2 toplabel">NY Average:</div>
+                              </div>
+                                <span class="surveypct">57<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"always"</span></span>
+                              </div>
+                            </div>
+                          </button>
+                        </h4>
+                      </div>
+                      <!--end card header-->
+                      <div id="collapseFivepatientexp" class="collapse" aria-labelledby="headingThree" data-parent="#patientexp">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <!--end card-->
+      
+                    <div class="card">
+                      <div class="card-header true" id="headingSix">
+                        <h4 class="mb-0">
+                          <button class="btn cardBtn collapsed" type="button" data-toggle="collapse" data-target="#collapseSixpatientexp" aria-expanded="false" aria-controls="collapseSix">
+                            <div class="row">
+                              <div class="col-12 col-md-6 font-weight-normal">
+                                During your treatment, how often did treatment staff show respect for what you had to say?
+                              </div>
+                              <div class="col-6 col-md-3 facility">
+                                <div class="row">
+                                  <div class="col mb-2 toplabel">facility:</div>
+                                </div>
+                                <span class="surveypct">65<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"always"</span></span>
+                              </div>		
+                              <div class="col-6 col-md-3 stateavg">
+                                <div class="row">
+                                  <div class="col mb-2 toplabel">NY Average:</div>
+                                </div>
+                                <span class="surveypct">57<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"always"</span></span>
+                              </div>
+                            </div>
+                          </button>
+                        </h4>
+                      </div>
+                      <!--end card header-->
+                      <div id="collapseSixpatientexp" class="collapse" aria-labelledby="headingSix" data-parent="#patientexp">
+                        <div class="card-body">
+                          <li class="true"><span>Top-line measure 1</span></li>
+                          <li class="false"><span>Top-line measure 2</span></li>
+                          <li class="false"><span>Top-line measure 3</span></li>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end card -->
+      
+                    <div class="card">
+                      <div class="card-header true" id="headingSeven">
+                        <h4 class="mb-0">
+                          <button class="btn cardBtn collapsed" type="button" data-toggle="collapse" data-target="#collapseSevenpatientexp" aria-expanded="false" aria-controls="collapseSeven">
+                            <div class="row">
+                              <div class="col-12 col-md-6 font-weight-normal">
+                                During your treatment, were you given information about different kinds of treatment services and programs that are available? 
+                              </div>
+                              <div class="col-6 col-md-3 facility">
+                                <div class="row">
+                                  <div class="col mb-2 toplabel" style="">Facility:</div>
+                                </div>
+                                <span class="surveypct">56<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"yes"</span></span>
+                              </div>		
+                              <div class="col-6 col-md-3 stateavg">
+                                <div class="row">
+                                  <div class="col mb-2 toplabel">NY Average:</div>
+                                </div>
+                                <span class="surveypct">58<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"yes"</span></span>
+                              </div>
+                            </div>
+                          </button>
+                        </h4>
+                      </div>
+                      <!--end card header-->
+                      <div id="collapseSevenpatientexp" class="collapse" aria-labelledby="headingSeven" data-parent="#patientexp">
+                        <div class="card-body">
+                          <li class="true"><span>Top-line m9easure 1</span></li>
+                          <li class="false"><span>Top-line measure 2</span></li>
+                          <li class="false"><span>Top-line measure 3</span></li>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end card-->
+      
+                    <!-- <div class="card">
+                      <div class="card-header true" id="headingNine">
+                        <h4 class="mb-0">
+                          <button class="btn cardBtn collapsed" type="button" data-toggle="collapse" data-target="#collapseNinepatientexp" aria-expanded="false" aria-controls="collapseNine">
+                            <div class="row">
+                              <div class="col-12 col-md-6 font-weight-normal">
+                                How long have you/has the patient received treatment at this facility?
+                              </div>
+                              <div class="col col-md-3 facility">
+                                <div class="row">
+                                  <div class="col-6 mb-2 toplabel" style="">Facility:</div>
+                                </div>
+                                <span class="surveypct">56<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"yes"</span></span>
+                              </div>		
+                              <div class="col-6 col-md-3 stateavg">
+                                <div class="row">
+                                  <div class="col mb-2 toplabel">NY Average:</div>
+                                </div>
+                                <span class="surveypct">58<sup>%</sup> </span><br/><span>say<br/><span class="surveyanswer">"yes"</span></span>
+                              </div>
+                            </div>
+                          </button>
+                        </h4>
+                      </div> -->
+                      <!--end card header-->
+                      <!-- <div id="collapseNinepatientexp" class="collapse" aria-labelledby="headingNine" data-parent="#patientexp">
+                        <div class="card-body">
+                          <li class="true"><span>Top-line measure 1</span></li>
+                          <li class="false"><span>Top-line measure 2</span></li>
+                          <li class="false"><span>Top-line measure 3</span></li>
+                        </div>
+                      </div>
+                    </div> -->
+                    <!--end card-->
+                  </div>
+                  <!--end eval accordion-->
+      
+      
+                </div>
+                  <div class="col-md-6">
+        
+                    <h2 class="col-md-11 offset-md-1 mt-5 mb-1">Patient Reviews</h2>
+                    <div class="mb-5 col-md-11 offset-md-1" id="reviews">
+        
+        
+                      <div class="card">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        <span class="text-right text-dark">January 12, 2019</span>
+                      </div>
+                      <div class="card">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        <span class="text-right text-dark">February 3, 2019</span>
+                      </div>
+                      <div class="card">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        <span class="text-right text-dark">May 16, 2019</span></div>
+                      <div class="card">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        <span class="text-right text-dark">January 12, 2019</span>
+                      </div>
+        
+        
+                    </div>
+        
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div> <!-- end internal row-->
+      </main>
+
+      <div class="row bg-light footerrow">
+        <footer class="container">
+          <div class="row mt-sm-2 mt-md-2 align-items-sm-center">
+            <div class="col-6 col-md-2">
+              <img class="img-fluid w-100 mx-sm-auto" src="images/Shatterproof_withtag.svg">
+            </div>
+            <div class=" col-6 col-md-2 d-flex align-items-center">
+              <a class="btn btn-primary btn-lg mx-sm-auto mx-md-0 text-sm-center" id="mobileDonate" href="#" role="button">
+                Donate
+              </a>
+            </div>
+            <div class="col-md-5 col-sm-12 mx-sm-auto">
+              <p class="px-3 py-4 mt-2 px-md-0 my-md-0 mt-md-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="col-12 col-md-3 mx-auto text-center mx-md-0 text-md-left align-self-md-start mt-md-4">
+              <a class="btn btn-primary btn-lg mt-md-1" id="mobileSignUp" href="#" role="button">
+                Sign Up for Email Updates
+              </a>
+              <div class="col-12 mx-auto text-center mt-3 py-5 py-md-0 d-flex flex-row justify-content-center">
+                <i class="fab fa-facebook col-sm-3"></i>
+                <i class="fab fa-twitter col-sm-3"></i>
+                <i class="fab fa-instagram col-sm-3"></i>
+                <i class="fas fa-share col-sm-3"></i>
+              </div>
+            </div>
+          <div class="col-md-3"></div>
+          </div>
+        </footer>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="js/custom.js"></script>
+
+      <script src="js/consumerFacility.js"></script>
+    
+    </body>
+    
+    </html>
+    

@@ -1,0 +1,140 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* line 3, src/scss/patient-experience.scss */
+#patientexp .clickExpand {
+  color: #949598;
+}
+
+/* line 6, src/scss/patient-experience.scss */
+#patientexp .toplabel {
+  font-size: .8em;
+  line-height: 1.1em;
+}
+
+/* line 26, src/scss/patient-experience.scss */
+#patientexp .facility, #patientexp .stateavg {
+  border-left: 2px solid #fff;
+}
+
+/* line 31, src/scss/patient-experience.scss */
+#patientexp .internalrow {
+  /*				to make the same as button that is header row*/
+  border-top: 1px solid #dfdfdf;
+}
+
+/* line 37, src/scss/patient-experience.scss */
+#patientexp .internalrow .col-md-3 {
+  margin-top: 1em;
+}
+
+/* line 40, src/scss/patient-experience.scss */
+#patientexp .card {
+  /*			background: #ebf6f5;*/
+  background: #e5e6e88c;
+  border-bottom: 12px solid #fff;
+  margin-bottom: 0;
+  padding: .75em 1.25em .75em 2.3em;
+}
+
+/* line 47, src/scss/patient-experience.scss */
+#patientexp .card-header {
+  border-bottom: none;
+  background: none !important;
+  padding: 0px;
+}
+
+/* line 52, src/scss/patient-experience.scss */
+#patientexp .card-body {
+  padding: 0;
+}
+
+/* line 70, src/scss/patient-experience.scss */
+#patientexp .card-header .btn {
+  color: #5C5D5F;
+  font-size: 15px;
+  margin-top: 1em;
+  margin-bottom: .7em;
+  line-height: 1.4em;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+}
+
+/* line 80, src/scss/patient-experience.scss */
+#patientexp .card-header .btn.disabled,
+#patientexp .card-header .btn:disabled {
+  opacity: 1;
+}
+
+/* line 84, src/scss/patient-experience.scss */
+#patientexp .card-header .btn[aria-expanded="true"] {
+  margin-bottom: 0;
+}
+
+/* line 87, src/scss/patient-experience.scss */
+#patientexp .card-header .btn .surveyanswer:after {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  vertical-align: middle;
+  font-weight: 900;
+  position: absolute;
+  background: none;
+  left: -.4em;
+  top: .15em !important;
+  top: inherit;
+  font-size: .95em;
+  color: #3F63AC;
+  -webkit-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
+}
+
+/* line 103, src/scss/patient-experience.scss */
+#patientexp .card-header .btn .surveyanswer:hover:after {
+  color: #60C5B7;
+}
+
+/* line 106, src/scss/patient-experience.scss */
+#patientexp .card-header .btn[aria-expanded="true"] .surveyanswer:after {
+  content: "\f068";
+}
+
+/* line 109, src/scss/patient-experience.scss */
+#patientexp .card-header .btn[aria-expanded="false"] .surveyanswer:after {
+  content: "\f067";
+}
+
+/* line 112, src/scss/patient-experience.scss */
+#patientexp .card:first-of-type .card-header .btn .surveyanswer:after {
+  content: "" !important;
+}
+
+/* line 115, src/scss/patient-experience.scss */
+#patientexp .card-header.true:after {
+  content: "" !important;
+  color: #0C867D;
+  background: #fff;
+}
+
+/* line 122, src/scss/patient-experience.scss */
+#patientexp .card-header.false:after {
+  color: #F26722;
+  background: #fff;
+  content: "\f057";
+}
+
+@media screen and (max-width: 768px) {
+  /* line 129, src/scss/patient-experience.scss */
+  #patientexp.evalaccordion .card-header .col-12 {
+    /*
+    margin-bottom: 2em;
+    padding-bottom: .6em;
+    border-bottom: 2px solid #e3e3e3;
+*/
+  }
+}

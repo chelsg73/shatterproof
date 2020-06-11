@@ -1,0 +1,562 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* line 5, src/scss/quality-table.scss */
+i.fa.fa-info-circle {
+  color: #a4a4a4;
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+}
+
+/* line 10, src/scss/quality-table.scss */
+i.fa.fa-info-circle:hover {
+  color: #3F63AC;
+}
+
+/* line 14, src/scss/quality-table.scss */
+i.fa.fa-info-circle.ondark {
+  color: #a2dcd4;
+}
+
+/* line 18, src/scss/quality-table.scss */
+i.fa.fa-info-circle.ondark:hover {
+  color: #fff;
+}
+
+/* line 22, src/scss/quality-table.scss */
+.fa-check-circle {
+  color: #0C867D;
+}
+
+/* line 26, src/scss/quality-table.scss */
+.fa-times-circle {
+  color: #F26722;
+}
+
+/* line 30, src/scss/quality-table.scss */
+.fa-minus-circle {
+  color: #dba500;
+}
+
+/* line 34, src/scss/quality-table.scss */
+a.small {
+  font-size: .88em;
+  white-space: nowrap;
+}
+
+/* line 39, src/scss/quality-table.scss */
+.answ > a.small::after {
+  content: "+ more";
+  color: #3F63AC !important;
+  font-weight: 600;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+/* line 48, src/scss/quality-table.scss */
+.answ > a.small:hover::after {
+  color: #60C5B7 !important;
+}
+
+/* line 52, src/scss/quality-table.scss */
+.answ > a.small[aria-expanded=false]::after {
+  content: "+ more";
+}
+
+/* line 57, src/scss/quality-table.scss */
+.answ > a.small[aria-expanded=true]::after {
+  content: "- less";
+}
+
+/* line 72, src/scss/quality-table.scss */
+#qualityCare .surveypct {
+  font-size: 1.25em;
+}
+
+/* line 76, src/scss/quality-table.scss */
+#qualityCare li ul li .fas {
+  font-size: .95em;
+  padding-top: .5em;
+}
+
+/* line 84, src/scss/quality-table.scss */
+#qualityCare li ul {
+  list-style: none;
+  font-size: .95em;
+}
+
+/* line 93, src/scss/quality-table.scss */
+#qualityCare .card-header .btn {
+  font-size: .73em;
+}
+
+/* line 97, src/scss/quality-table.scss */
+#qualityCare .card-header .btn p {
+  font-size: .83em;
+}
+
+/* line 101, src/scss/quality-table.scss */
+#qualityCare .card-body {
+  padding: 0;
+}
+
+/* line 104, src/scss/quality-table.scss */
+#qualityCare .card ul {
+  padding-left: 0;
+}
+
+/* line 108, src/scss/quality-table.scss */
+#qualityCare .card li:first-of-type {
+  padding-top: 1em;
+}
+
+/* line 112, src/scss/quality-table.scss */
+#qualityCare .card li {
+  margin-bottom: 0;
+}
+
+/* line 118, src/scss/quality-table.scss */
+#qualityCare .card li .row.tier1 {
+  padding-bottom: .3em;
+}
+
+/* line 122, src/scss/quality-table.scss */
+#qualityCare .card li:last-of-type {
+  border-bottom: none;
+}
+
+/* line 126, src/scss/quality-table.scss */
+#qualityCare .card li ul li:first-of-type {
+  padding: 0 2em .4em 0;
+}
+
+/* line 130, src/scss/quality-table.scss */
+#qualityCare .card li ul li {
+  border-bottom: none;
+  padding: 0 2em .2em 0;
+}
+
+/* line 135, src/scss/quality-table.scss */
+#qualityCare .card li ul li:last-of-type {
+  padding: .2em 2em 0 0;
+}
+
+/* line 142, src/scss/quality-table.scss */
+#qualityCare .card-header {
+  padding: 0rem 15px;
+  margin-bottom: 0;
+  border-bottom: none;
+  background-color: #fff !important;
+}
+
+/* line 151, src/scss/quality-table.scss */
+#qualityCare .card ul {
+  margin-bottom: 0;
+}
+
+/* line 163, src/scss/quality-table.scss */
+#qualityCare .card li {
+  margin-bottom: 1em;
+}
+
+/* line 171, src/scss/quality-table.scss */
+#qualityCare .card li a.small {
+  color: #60C5B7;
+}
+
+/* line 177, src/scss/quality-table.scss */
+#qualityCare .card li:last-of-type {
+  margin-bottom: 0;
+}
+
+/* line 186, src/scss/quality-table.scss */
+#qualityCare .card {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: .6em;
+  border-radius: 0;
+  border: 0;
+  border-top-style: solid;
+  border-top-width: 2px;
+}
+
+/* line 194, src/scss/quality-table.scss */
+#qualityCare .card .card-header {
+  background-color: #fff !important;
+  border-bottom: none;
+}
+
+/* line 201, src/scss/quality-table.scss */
+#qualityCare .card .card-header h4 {
+  font-family: 'museo-sans';
+  color: inherit !important;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+/* line 215, src/scss/quality-table.scss */
+#qualityCare .card .card-header::before {
+  width: 18px !important;
+  color: inherit !important;
+  content: " ";
+  float: left;
+  position: absolute;
+  z-index: 500;
+  left: 0;
+  border-radius: 0;
+  height: 100%;
+  top: 0;
+  margin-left: 0;
+}
+
+/* line 229, src/scss/quality-table.scss */
+#qualityCare .card .card-header::after {
+  content: "";
+  left: .5em;
+}
+
+/* line 234, src/scss/quality-table.scss */
+#qualityCare .card .card-body ul li {
+  list-style: none;
+}
+
+/* line 240, src/scss/quality-table.scss */
+#qualityCare .card .card-body::after {
+  content: "";
+  left: .5em;
+}
+
+/* line 250, src/scss/quality-table.scss */
+#qualityCare .tier1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+  font-size: .95em;
+}
+
+/* line 256, src/scss/quality-table.scss */
+.tier1:last-of-type {
+  border-bottom: none;
+}
+
+/* line 260, src/scss/quality-table.scss */
+.tier1 {
+  line-height: 1.25em;
+}
+
+/* line 267, src/scss/quality-table.scss */
+.answ .fas {
+  font-size: 1.3em;
+  text-align: right;
+  float: right;
+}
+
+/* line 276, src/scss/quality-table.scss */
+.details-wrapper {
+  font-size: .90em;
+  padding-bottom: .3em;
+  padding-top: .3em;
+  border-bottom: 1px solid #bce3de;
+  position: relative;
+}
+
+/* line 284, src/scss/quality-table.scss */
+.details-wrapper .fas {
+  text-align: right;
+  float: right;
+}
+
+/* line 289, src/scss/quality-table.scss */
+.details-wrapper .quest {
+  padding-left: 3em;
+  display: block;
+  font-size: .96em;
+  line-height: 1.35em;
+}
+
+/* line 296, src/scss/quality-table.scss */
+.details-wrapper .answ {
+  display: block;
+  line-height: 1.35em;
+  word-break: break-word;
+}
+
+/* line 300, src/scss/quality-table.scss */
+.details-wrapper .answ.long {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 304, src/scss/quality-table.scss */
+.details-wrapper .answ .fas {
+  font-size: .95em !important;
+  padding: .3rem 0;
+}
+
+/* line 308, src/scss/quality-table.scss */
+.details-wrapper .answ .fa-check {
+  color: #0C867D;
+}
+
+/* line 311, src/scss/quality-table.scss */
+.details-wrapper .answ .fa-minus {
+  color: #dba500;
+}
+
+/* line 314, src/scss/quality-table.scss */
+.details-wrapper .answ .fa-times {
+  color: #F26722;
+}
+
+/* line 322, src/scss/quality-table.scss */
+.details-wrapper .answ.nodata, .details-wrapper .answ .nodata {
+  color: #949598;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+/* line 328, src/scss/quality-table.scss */
+.details-wrapper::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 2.5em;
+  left: 0px;
+  bottom: -1px;
+  border: 1px solid #fff;
+}
+
+/* line 339, src/scss/quality-table.scss */
+.details-wrapper.nodata .quest {
+  font-weight: 300;
+  opacity: .8;
+}
+
+/* line 343, src/scss/quality-table.scss */
+.details-wrapper.nodata .answ {
+  color: #949598;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+/* line 349, src/scss/quality-table.scss */
+.details-wrapper.nodata .answ span .fas {
+  color: #bcbcbc;
+}
+
+/* line 358, src/scss/quality-table.scss */
+.details-wrapper.negative .quest {
+  font-weight: 300;
+  opacity: .8;
+}
+
+/* line 363, src/scss/quality-table.scss */
+.details-wrapper.negative .answ .fa-times {
+  color: #F26722;
+}
+
+/* line 366, src/scss/quality-table.scss */
+.details-wrapper.negative .answ .fa-minus {
+  color: #dba500;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 376, src/scss/quality-table.scss */
+  .moreless {
+    margin-top: -1em !important;
+  }
+}
+
+/* line 381, src/scss/quality-table.scss */
+#qualityCare .fast.card {
+  border-top-color: #804099;
+}
+
+/* line 384, src/scss/quality-table.scss */
+#qualityCare .fast.card .card-header {
+  border-top: none;
+}
+
+/* line 388, src/scss/quality-table.scss */
+#qualityCare .fast.card .card-header::before {
+  background: #804099;
+  color: #804099;
+}
+
+/* line 395, src/scss/quality-table.scss */
+#qualityCare .personal.card {
+  border-top-color: #3F63AC;
+}
+
+/* line 398, src/scss/quality-table.scss */
+#qualityCare .personal.card .card-header {
+  border-top: none;
+}
+
+/* line 402, src/scss/quality-table.scss */
+#qualityCare .personal.card .card-header::before {
+  background: #3F63AC;
+  color: #3F63AC;
+}
+
+/* line 411, src/scss/quality-table.scss */
+#qualityCare .monitor.card {
+  border-top-color: #8FC640;
+}
+
+/* line 414, src/scss/quality-table.scss */
+#qualityCare .monitor.card .card-header {
+  border-top: none;
+}
+
+/* line 418, src/scss/quality-table.scss */
+#qualityCare .monitor.card .card-header::before {
+  background: #8FC640;
+  color: #8FC640;
+}
+
+/* line 425, src/scss/quality-table.scss */
+#qualityCare .carecoord.card {
+  border-top-color: #9E2064;
+}
+
+/* line 428, src/scss/quality-table.scss */
+#qualityCare .carecoord.card .card-header {
+  border-top: none;
+}
+
+/* line 432, src/scss/quality-table.scss */
+#qualityCare .carecoord.card .card-header::before {
+  background: #9E2064;
+  color: #9E2064;
+}
+
+/* line 439, src/scss/quality-table.scss */
+#qualityCare .evidence.card {
+  border-top-color: #9C905C;
+}
+
+/* line 442, src/scss/quality-table.scss */
+#qualityCare .evidence.card .card-header {
+  border-top: none;
+}
+
+/* line 446, src/scss/quality-table.scss */
+#qualityCare .evidence.card .card-header::before {
+  background: #9C905C;
+  color: #9C905C;
+}
+
+/* line 453, src/scss/quality-table.scss */
+#qualityCare .access.card {
+  border-top-color: #299284;
+}
+
+/* line 456, src/scss/quality-table.scss */
+#qualityCare .access.card .card-header {
+  border-top: none;
+}
+
+/* line 460, src/scss/quality-table.scss */
+#qualityCare .access.card .card-header::before {
+  background: #299284;
+  color: #299284;
+}
+
+/* line 467, src/scss/quality-table.scss */
+#qualityCare .recovery.card {
+  border-top-color: #292562;
+}
+
+/* line 470, src/scss/quality-table.scss */
+#qualityCare .recovery.card .card-header {
+  border-top: none;
+}
+
+/* line 474, src/scss/quality-table.scss */
+#qualityCare .recovery.card .card-header::before {
+  background: #292562;
+  color: #292562;
+}
+
+/* line 485, src/scss/quality-table.scss */
+.comparecolhead {
+  font-size: .85em;
+  letter-spacing: .03em;
+  margin-top: -1.2em;
+  color: #0C867D;
+  z-index: 5;
+  line-height: 1.3em;
+}
+
+/* line 494, src/scss/quality-table.scss */
+.comparecolhead .comparecol {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d6e5e6));
+  background: linear-gradient(to top, #ffffff, #d6e5e6);
+  padding-left: 4em;
+  padding-top: .7em;
+  padding-bottom: .4em;
+}
+
+/* line 501, src/scss/quality-table.scss */
+.comparecolhead .comparecol:before {
+  content: " ";
+  position: absolute;
+  z-index: 500;
+  right: 0;
+  width: 8px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  border-radius: 0;
+  height: 100%;
+  top: 0;
+  margin-left: 0;
+  background: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 547, src/scss/quality-table.scss */
+  #qualityCare .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: .6em;
+    border-radius: 0;
+    border: 0;
+    border-top-style: solid;
+    border-top-width: 2px;
+  }
+  /* line 555, src/scss/quality-table.scss */
+  #qualityCare .card .card-header {
+    border-bottom: 1px solid #fff;
+  }
+  /* line 559, src/scss/quality-table.scss */
+  #qualityCare .card .card-body::before {
+    display: none;
+  }
+  /* line 563, src/scss/quality-table.scss */
+  #qualityCare .card .card-body::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 573, src/scss/quality-table.scss */
+  #qualityCare .card .card-header::before {
+    width: 10px !important;
+  }
+}

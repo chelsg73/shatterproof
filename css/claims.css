@@ -1,0 +1,77 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* line 1, src/scss/claims.scss */
+#claims .accordion .card {
+  background: #f1f1f2;
+  border-top: none;
+  border-top-width: 0px;
+  padding-top: 1em;
+  padding-bottom: .7em;
+}
+
+/* line 8, src/scss/claims.scss */
+#claims .tier1 {
+  border-bottom: 1px solid #fff;
+}
+
+/* line 11, src/scss/claims.scss */
+#claims .details-wrapper {
+  border-bottom: 1px solid #fff;
+}
+
+/* line 14, src/scss/claims.scss */
+#claims .details-wrapper:after {
+  border: 1px solid #f1f1f2;
+}
+
+/* line 17, src/scss/claims.scss */
+#claims .col.col-sm.pr-1.mt-1.d-flex.align-content-end.flex-wrap {
+  border-left: 2px solid #fff;
+}
+
+/* line 20, src/scss/claims.scss */
+#claims .quest {
+  font-size: 15px;
+}
+
+/* line 23, src/scss/claims.scss */
+#claims .card h4 {
+  font-size: 1.1em;
+  line-height: 1.2em;
+  font-weight: 600;
+  padding-bottom: 1em;
+}
+
+/* line 29, src/scss/claims.scss */
+#claims .card h4.quest {
+  padding-bottom: .4em;
+}
+
+/* line 32, src/scss/claims.scss */
+#claims .card h4 .toplabel {
+  display: inline-block;
+  font-size: .86em;
+  font-weight: 400;
+  border-bottom: 1px solid;
+}
+
+/* line 38, src/scss/claims.scss */
+#claims a.small.pt-1 {
+  display: inline-block;
+}
+
+/* line 41, src/scss/claims.scss */
+#claims .tier1:last-of-type {
+  border-bottom: none;
+}
+
+/* line 44, src/scss/claims.scss */
+#claims .surveypct {
+  padding: .2rem 0;
+}

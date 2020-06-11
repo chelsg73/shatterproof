@@ -1,0 +1,410 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+@font-face {
+  font-family: tungsten;
+  src: url("../fonts/TUNGSTEN-MEDIUM.OTF") format("opentype");
+}
+
+@font-face {
+  font-family: tungsten;
+  font-weight: bold;
+  src: url("../fonts/TUNGSTEN-BOLD.OTF") format("opentype");
+}
+
+/* line 30, src/scss/old/custom-global.scss */
+body {
+  background: #fff;
+  font-family: "museo-sans";
+  color: #5C5D5F;
+}
+
+/* line 37, src/scss/old/custom-global.scss */
+body,
+html {
+  overflow-x: hidden;
+}
+
+/* line 44, src/scss/old/custom-global.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  letter-spacing: .03em;
+}
+
+/* line 58, src/scss/old/custom-global.scss */
+h2 {
+  font-family: 'tungsten';
+  font-size: 2.35em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #949598;
+}
+
+/* line 65, src/scss/old/custom-global.scss */
+h3 {
+  font-weight: 100;
+}
+
+/* line 68, src/scss/old/custom-global.scss */
+h4,
+.h4,
+h4 .btn {
+  font-size: 1.5rem;
+  letter-spacing: .02em;
+  line-height: 1.7em;
+}
+
+/* line 75, src/scss/old/custom-global.scss */
+h5 {
+  letter-spacing: .01em;
+}
+
+/* line 81, src/scss/old/custom-global.scss */
+a {
+  color: #0C867D;
+}
+
+/* line 84, src/scss/old/custom-global.scss */
+a:hover {
+  color: #61BDB0;
+}
+
+/* line 90, src/scss/old/custom-global.scss */
+.fw-300 {
+  font-weight: 300;
+}
+
+/* line 93, src/scss/old/custom-global.scss */
+.fw-200 {
+  font-weight: 200;
+}
+
+/* line 100, src/scss/old/custom-global.scss */
+.text-secondary {
+  color: #5C5D5F;
+}
+
+/* line 103, src/scss/old/custom-global.scss */
+.text-primary {
+  color: #61BDB0 !important;
+}
+
+/* line 107, src/scss/old/custom-global.scss */
+.bg-light {
+  background-color: #fff !important;
+  border-bottom: 1px solid #61BDB0;
+}
+
+/* line 112, src/scss/old/custom-global.scss */
+.bg-info {
+  background-color: #F16924 !important;
+}
+
+/* line 116, src/scss/old/custom-global.scss */
+.white {
+  color: #fff;
+}
+
+/* line 120, src/scss/old/custom-global.scss */
+.text-green {
+  color: #279184;
+}
+
+/* line 123, src/scss/old/custom-global.scss */
+.inlinelink {
+  color: #279184 !important;
+}
+
+/* line 128, src/scss/old/custom-global.scss */
+.linearGradTop {
+  background: -webkit-gradient(linear, left bottom, left top, from(#1a6b66), to(#0d867d));
+  background: linear-gradient(to top, #1a6b66, #0d867d);
+}
+
+/* line 131, src/scss/old/custom-global.scss */
+.linearGradBottom {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff45), to(#d6e5e6ad));
+  background: linear-gradient(to bottom, #ffffff45, #d6e5e6ad);
+  border-bottom: 1px solid #61BDB0;
+}
+
+/* line 136, src/scss/old/custom-global.scss */
+.linearGradRt {
+  background: -webkit-gradient(linear, left bottom, right top, from(#064f51), to(#279184));
+  background: linear-gradient(to top right, #064f51, #279184);
+}
+
+/* line 142, src/scss/old/custom-global.scss */
+.topBorder {
+  border-top: 2px solid #fff;
+}
+
+/* line 146, src/scss/old/custom-global.scss */
+.bottomBorder {
+  border-bottom: 1px solid #61BDB0;
+}
+
+/* line 150, src/scss/old/custom-global.scss */
+.noBorder {
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+/* line 157, src/scss/old/custom-global.scss */
+.noBorder {
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+/* line 166, src/scss/old/custom-global.scss */
+.btn {
+  border-radius: 0;
+}
+
+/* line 169, src/scss/old/custom-global.scss */
+.btn-primary {
+  color: #fff;
+  background-color: #F16924;
+  border-color: #F16924;
+}
+
+/* line 175, src/scss/old/custom-global.scss */
+.btn-primary:hover {
+  color: #fff;
+  background-color: #F16924;
+  border-color: #F16924;
+}
+
+/* line 181, src/scss/old/custom-global.scss */
+.btn-ondark {
+  color: #0C867D;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d6e5e6));
+  background: linear-gradient(to top, #ffffff, #d6e5e6);
+  border-color: none;
+}
+
+/* line 186, src/scss/old/custom-global.scss */
+.btn-warning {
+  background: #61BDB0;
+  border-color: #61BDB0;
+  color: #fff;
+  opacity: 1;
+}
+
+/* line 192, src/scss/old/custom-global.scss */
+.btn-secondary {
+  background: none;
+  border-color: #5C5D5F;
+  color: #5C5D5F;
+}
+
+/* line 198, src/scss/old/custom-global.scss */
+.btn-warning:hover {
+  border-color: #fff;
+  color: #fff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1a6b66), to(#0d867d));
+  background: linear-gradient(to top, #1a6b66, #0d867d);
+  -webkit-transition: all 500ms;
+  /* Safari prior 6.1 */
+  transition: all 500ms;
+}
+
+/* line 207, src/scss/old/custom-global.scss */
+.btn-lg,
+.btn-group-lg > .btn {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .05rem;
+}
+
+/* line 213, src/scss/old/custom-global.scss */
+.btn .small {
+  letter-spacing: .05em;
+}
+
+/* line 219, src/scss/old/custom-global.scss */
+input,
+select {
+  background: #FFFFFF;
+  border: 1px solid #C7C8CC;
+  color: #5C5D5F;
+  padding: 1rem;
+  font-family: "museo-sans", 'MuseoSans500', 'Helvetica', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1.125rem;
+  width: 100%;
+}
+
+/* line 231, src/scss/old/custom-global.scss */
+.form-control,
+select {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  padding: .5rem 1rem;
+  font-size: 1.125rem;
+  font-weight: 100;
+  line-height: 1.5;
+  color: #5C5D5F;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #C7C8CC;
+  border-radius: 0;
+}
+
+/* line 256, src/scss/old/custom-global.scss */
+a.nav-link {
+  padding-top: 1em;
+  padding-bottom: 0;
+  font-weight: 600;
+}
+
+/* line 261, src/scss/old/custom-global.scss */
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 700;
+}
+
+/* line 264, src/scss/old/custom-global.scss */
+.navbar-nav .nav-item {
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+}
+
+/* line 267, src/scss/old/custom-global.scss */
+.navbar-nav li:last-of-type a.nav-link {
+  padding-right: 0px;
+}
+
+/* line 270, src/scss/old/custom-global.scss */
+.secondarynav {
+  font-size: .8em;
+}
+
+/* line 272, src/scss/old/custom-global.scss */
+.secondarynav li {
+  padding-right: 3em;
+}
+
+/* line 275, src/scss/old/custom-global.scss */
+.secondarynav li:last-of-type {
+  padding-right: 0;
+}
+
+/* line 279, src/scss/old/custom-global.scss */
+.secondarynav .form-control {
+  height: 1.5rem;
+  border-radius: 0;
+  color: #60bdb0 !important;
+  padding: 0 3em;
+  /* border: #fff; */
+  text-align: right;
+  font-size: .9em;
+}
+
+/* line 288, src/scss/old/custom-global.scss */
+.secondarynav .form-control:after {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-family: "Font Awesome 5 Free";
+  font-size: 5em;
+  vertical-align: middle;
+  font-weight: 900;
+  color: #61BDB0;
+  background: none;
+  position: absolute;
+  left: .5em;
+  top: 90%;
+  content: "\f002";
+  z-index: 500;
+}
+
+/* line 303, src/scss/old/custom-global.scss */
+.navbar-brand {
+  font-family: "museo-slab";
+  color: #61BDB0 !important;
+}
+
+/* line 307, src/scss/old/custom-global.scss */
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 0.9rem;
+  padding-left: 0.5rem;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 62rem) {
+  /* line 320, src/scss/old/custom-global.scss */
+  .navbar-nav .nav-item:after {
+    content: "";
+    border-style: solid;
+    border-width: 0.9375rem;
+    border-color: transparent transparent transparent transparent;
+    position: absolute;
+    bottom: -1.75rem;
+    left: calc(50% - 15px);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  /* line 334, src/scss/old/custom-global.scss */
+  .navbar-nav .nav-item:hover:after {
+    border-color: transparent transparent #60C4B7 transparent;
+    z-index: 1001;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 346, src/scss/old/custom-global.scss */
+  .w-md-25 {
+    width: 25% !important;
+  }
+  /* line 350, src/scss/old/custom-global.scss */
+  .w-md-50 {
+    width: 50% !important;
+  }
+  /* line 354, src/scss/old/custom-global.scss */
+  .w-md-75 {
+    width: 75% !important;
+  }
+  /* line 358, src/scss/old/custom-global.scss */
+  .w-md-100 {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 371, src/scss/old/custom-global.scss */
+  .w-lg-25 {
+    width: 25% !important;
+  }
+  /* line 375, src/scss/old/custom-global.scss */
+  .w-lg-50 {
+    width: 50% !important;
+  }
+  /* line 379, src/scss/old/custom-global.scss */
+  .w-lg-75 {
+    width: 75% !important;
+  }
+  /* line 383, src/scss/old/custom-global.scss */
+  .w-lg-100 {
+    width: 100% !important;
+  }
+}

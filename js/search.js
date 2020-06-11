@@ -1,0 +1,12 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+$( document ).ready((function() {
+  console.log( "ready!" );
+
+}));

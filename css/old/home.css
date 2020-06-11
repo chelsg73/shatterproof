@@ -1,0 +1,609 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* line 5, src/scss/old/home.scss */
+body,
+html {
+  overflow-x: hidden;
+}
+
+/* line 9, src/scss/old/home.scss */
+body {
+  background: #fff;
+}
+
+/* line 12, src/scss/old/home.scss */
+.btn-success {
+  color: #fff !important;
+  background-color: #0C867D;
+  border-color: #0C867D;
+  background: -webkit-gradient(linear, left bottom, right top, from(#064f51), to(#279184));
+  background: linear-gradient(to top right, #064f51, #279184);
+}
+
+/* line 18, src/scss/old/home.scss */
+.btn-success:hover {
+  background-color: #0C867D;
+}
+
+/* line 21, src/scss/old/home.scss */
+.text-green {
+  color: #279184;
+}
+
+/* line 24, src/scss/old/home.scss */
+.inlinelink {
+  color: #279184 !important;
+}
+
+/* line 27, src/scss/old/home.scss */
+.footerrow {
+  border-top: 1px solid #61BDB0;
+}
+
+/* line 30, src/scss/old/home.scss */
+.topBorder {
+  border-top: 2px solid #fff;
+}
+
+/* line 33, src/scss/old/home.scss */
+.fw-300 {
+  font-weight: 300;
+}
+
+/* line 36, src/scss/old/home.scss */
+.fw-200 {
+  font-weight: 200;
+}
+
+/* line 39, src/scss/old/home.scss */
+.linearGradRt {
+  background: -webkit-gradient(linear, left bottom, right top, from(#064f51), to(#279184));
+  background: linear-gradient(to top right, #064f51, #279184);
+}
+
+/* line 42, src/scss/old/home.scss */
+main {
+  margin-top: 61px;
+}
+
+/*	************	begin new navbar styles **********/
+/* line 49, src/scss/old/home.scss */
+nav.navbar.navbar-expand-md.navbar-light.fixed-top.bg-light {
+  padding-bottom: 0;
+}
+
+/* line 58, src/scss/old/home.scss */
+.navbar-nav .nav-item {
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+  position: relative;
+}
+
+/* line 63, src/scss/old/home.scss */
+.navbar-nav .nav-item:hover {
+  background: #61BDB0;
+  color: #fff;
+  /*
+  background: $primary;
+  color: $ltbg;
+*/
+}
+
+/* line 71, src/scss/old/home.scss */
+.navbar-nav .nav-item .nav-link {
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+}
+
+/* line 75, src/scss/old/home.scss */
+.navbar-nav .nav-item:hover .nav-link {
+  color: #fff;
+}
+
+/* line 78, src/scss/old/home.scss */
+.navbar-expand-md .navbar-nav .nav-link {
+  /*			these need to be equal*/
+  padding-right: .7em;
+  padding-left: .7em;
+  margin-bottom: 1.5rem;
+}
+
+/* remove line 508, src/scss/custom2.scss */
+/*
+.navbar-nav li:last-of-type a.nav-link {
+padding-right: 0px;
+}
+*/
+/* line 94, src/scss/old/home.scss */
+.navbar-nav li:last-of-type a.nav-link {
+  padding-right: .7em;
+}
+
+/* line 518, src/scss/custom2.scss */
+/*
+.secondarynav li:last-of-type {
+padding-right: 0;
+}
+*/
+/* line 107, src/scss/old/home.scss */
+.secondarynav li:last-of-type {
+  padding-right: .7em;
+}
+
+/* line 110, src/scss/old/home.scss */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* line 113, src/scss/old/home.scss */
+.navbar-nav li:hover .dropdown-menu {
+  display: block;
+}
+
+/* line 116, src/scss/old/home.scss */
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: 0 2px 4px #5C5D5F;
+          box-shadow: 0 2px 4px #5C5D5F;
+}
+
+/* line 123, node_modules/bootstrap/scss/_dropdown.scss */
+/* line 127, src/scss/old/home.scss */
+.dropdown-item {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 130, src/scss/old/home.scss */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #61BDB0;
+  text-decoration: underline;
+  background: none;
+}
+
+/* line 136, src/scss/old/home.scss */
+#secondNavOuter {
+  display: none;
+}
+
+/* line 139, src/scss/old/home.scss */
+.secondNavInner {
+  display: inline;
+}
+
+/* line 142, src/scss/old/home.scss */
+.secondNavInner > a {
+  color: #61BDB0 !important;
+}
+
+/* line 145, src/scss/old/home.scss */
+.secondNavInner > a:hover {
+  color: white !important;
+}
+
+/* line 148, src/scss/old/home.scss */
+#navToggleDivOuter {
+  display: none;
+}
+
+/* line 153, src/scss/old/home.scss */
+#homeFirst {
+  font-size: 2.8em;
+  font-weight: 500;
+  letter-spacing: .03em;
+}
+
+/* line 158, src/scss/old/home.scss */
+.homeTopStyle {
+  display: inline;
+  font-weight: 700;
+  font-size: 1.6em;
+  letter-spacing: .02em;
+  line-height: 2rem;
+}
+
+/* line 165, src/scss/old/home.scss */
+.homeTopTwo {
+  line-height: 1.3em;
+}
+
+/* line 168, src/scss/old/home.scss */
+#mobileShowDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 171, src/scss/old/home.scss */
+#mobileHideDiv {
+  display: none;
+}
+
+/* line 175, src/scss/old/home.scss */
+#bannerholder {
+  display: none;
+  /*
+    height: 230px;
+    background: url(/images/bannermockLessIndiv.png);
+  
+    background-size: cover;
+    background-position-x: center;*/
+}
+
+/* line 194, src/scss/old/home.scss */
+#homeSelectDist {
+  color: #0d867d;
+  border: none;
+  width: auto;
+  display: inline-block;
+  border-radius: 0;
+  background: none;
+  font-weight: 700;
+}
+
+/* line 203, src/scss/old/home.scss */
+#distanceastext {
+  color: #0d867d;
+}
+
+/* line 206, src/scss/old/home.scss */
+#homeSearch {
+  padding: .5rem 1rem;
+}
+
+/* line 209, src/scss/old/home.scss */
+.input-group-text {
+  background-color: #f5eae5;
+  background-color: #e4eeef;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+}
+
+/* line 215, src/scss/old/home.scss */
+.search-form-control {
+  background: #fff;
+  border-radius: 0;
+}
+
+/* line 219, src/scss/old/home.scss */
+#homeNote {
+  opacity: .8;
+}
+
+/*		probably temporary handling of substance drop-menu*/
+/* line 225, src/scss/old/home.scss */
+#substancechecklist {
+  border-radius: 0;
+  -webkit-transform: translate3d(0px, 41px, 0px) !important;
+          transform: translate3d(0px, 41px, 0px) !important;
+  -webkit-box-shadow: 0 2px 4px #5C5D5F;
+          box-shadow: 0 2px 4px #5C5D5F;
+  padding: .3em .8em 1em .8em;
+}
+
+/* line 231, src/scss/old/home.scss */
+#substancechecklist .input-group-text {
+  background: none;
+  border: none;
+}
+
+/* line 235, src/scss/old/home.scss */
+#substancechecklist .custom-control-input {
+  position: relative;
+}
+
+/* line 238, src/scss/old/home.scss */
+.custom-select.dropdown {
+  position: relative;
+}
+
+/* line 241, src/scss/old/home.scss */
+#SubstanceDropdown {
+  width: 100%;
+}
+
+/* line 244, src/scss/old/home.scss */
+#SubstanceDropdown {
+  width: 100%;
+  position: relative;
+  display: block;
+  color: #6c757d;
+}
+
+/* line 250, src/scss/old/home.scss */
+#SubstanceDropdown:hover {
+  color: #0C867D;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+/* line 255, src/scss/old/home.scss */
+.custom-checkbox .custom-control-label::before {
+  border-radius: 0;
+}
+
+/* line 258, src/scss/old/home.scss */
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border: none;
+  background-color: #279184;
+}
+
+/* line 263, src/scss/old/home.scss */
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-size: 80%;
+}
+
+/* line 267, src/scss/old/home.scss */
+.treatment {
+  font-size: 1.2rem !important;
+  line-height: 1.3em;
+  padding-bottom: .5em;
+  padding-top: .5em;
+}
+
+/* line 273, src/scss/old/home.scss */
+.v3#accordionExample .card-header:before {
+  top: .85em !important;
+}
+
+/* line 276, src/scss/old/home.scss */
+#accordionExample .card-header:after {
+  content: "";
+}
+
+/* line 279, src/scss/old/home.scss */
+.accordion.v3 p {
+  font-size: .9em;
+  margin-bottom: 0;
+}
+
+/* line 283, src/scss/old/home.scss */
+.v3#accordionExample .card-header {
+  border-top: none !important;
+}
+
+/* line 286, src/scss/old/home.scss */
+.v3#accordionExample .card-header .btn {
+  padding-left: 0;
+  line-height: 1.3em;
+  font-size: 1.2rem;
+}
+
+/* line 291, src/scss/old/home.scss */
+.v3#accordionExample .card-header:before {
+  content: " ";
+  position: absolute;
+  z-index: 500;
+  left: 0;
+  width: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  border-radius: 0;
+  height: 10px;
+  top: .7em;
+  margin-left: 0;
+}
+
+/* line 306, src/scss/old/home.scss */
+#fakevid:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  content: "\f144";
+  margin-left: 0.25em;
+  font-size: 6em;
+  vertical-align: middle;
+  color: #fff;
+  position: absolute;
+  left: 35%;
+  top: 35%;
+  text-align: center;
+  opacity: .7;
+}
+
+/* line 320, src/scss/old/home.scss */
+#fakevid {
+  position: relative;
+}
+
+/* line 325, src/scss/old/home.scss */
+#quoteBox > div {
+  margin: 0 auto;
+  padding: 48px 0 48px 0;
+}
+
+/* line 329, src/scss/old/home.scss */
+#homeQuote1 {
+  top: -2.5rem;
+  font-family: serif;
+  font-size: 7.5em;
+  position: absolute;
+  left: -0.1rem;
+  color: #bce3de;
+}
+
+/* line 337, src/scss/old/home.scss */
+#homeQuote2 {
+  font-family: serif;
+  position: relative;
+  bottom: -2.8rem;
+  display: inline-block;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  -webkit-transform: scale(7.5);
+          transform: scale(7.5);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  padding-left: .05em;
+  color: #bce3de;
+}
+
+/* line 350, src/scss/old/home.scss */
+.circleimgDiv {
+  margin-right: 0.7rem;
+}
+
+/* line 353, src/scss/old/home.scss */
+#homeCircleImg {
+  padding-top: 5px;
+  border-radius: 100%;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 62rem) {
+  /* line 375, src/scss/old/home.scss */
+  .navbar-nav .nav-item:after {
+    content: "";
+    border-style: solid;
+    border-width: 0.9375rem;
+    border-color: transparent transparent transparent transparent;
+    position: absolute;
+    bottom: -1.75rem;
+    left: calc(50% - 15px);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  /* line 389, src/scss/old/home.scss */
+  .navbar-nav .nav-item:hover:after {
+    border-color: transparent transparent #60C4B7 transparent;
+    z-index: 1001;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 395, src/scss/old/home.scss */
+  #secondNavOuter {
+    display: inline;
+  }
+  /* line 398, src/scss/old/home.scss */
+  .secondNavInner {
+    display: none;
+  }
+  /* line 401, src/scss/old/home.scss */
+  #navToggleDivOuter {
+    display: inline-block;
+    padding-right: 0;
+    margin-left: -30%;
+    width: 200%;
+    max-width: 200%;
+    -webkit-box-flex: 200%;
+        -ms-flex: 200%;
+            flex: 200%;
+  }
+  /* line 409, src/scss/old/home.scss */
+  #navToggleDivInner {
+    display: none;
+  }
+  /* line 412, src/scss/old/home.scss */
+  #navbarsExampleDefault {
+    float: right;
+  }
+  /* line 415, src/scss/old/home.scss */
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+  /* line 418, src/scss/old/home.scss */
+  main {
+    margin-top: 150px;
+  }
+  /* line 421, src/scss/old/home.scss */
+  .homeTopTwo {
+    line-height: 1.4em;
+  }
+  /* line 424, src/scss/old/home.scss */
+  #homeQuote1 {
+    top: -3rem;
+    left: 0.0rem;
+  }
+  /* line 428, src/scss/old/home.scss */
+  #homeQuote2 {
+    width: 0;
+    height: 0;
+  }
+  /* line 432, src/scss/old/home.scss */
+  #mobileShowDiv {
+    display: none !important;
+  }
+  /* line 435, src/scss/old/home.scss */
+  #mobileHideDiv {
+    display: inline-block;
+    border-bottom: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 441, src/scss/old/home.scss */
+  main {
+    margin-top: 113px;
+  }
+  /* line 444, src/scss/old/home.scss */
+  #bannerholder {
+    display: inline-block;
+  }
+  /* line 451, src/scss/old/home.scss */
+  #homeSearch {
+    font-size: .85rem;
+    padding: .6rem;
+  }
+  /* line 455, src/scss/old/home.scss */
+  #quoteBox > div > .row {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 460, src/scss/old/home.scss */
+  #homeQuote1 {
+    top: -4rem;
+    font-size: 8em;
+    left: -2.3rem;
+  }
+  /* line 465, src/scss/old/home.scss */
+  #homeQuote2 {
+    width: 0;
+    height: 0;
+    -webkit-transform: scale(8);
+            transform: scale(8);
+    bottom: -3.5rem;
+  }
+  /* line 472, src/scss/old/home.scss */
+  .bottomImg > img {
+    max-width: 85% !important;
+  }
+  /* line 475, src/scss/old/home.scss */
+  #homeCircleImg {
+    max-width: 85%;
+  }
+  /* line 478, src/scss/old/home.scss */
+  #exampleModalCenter .modal-header {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  /* line 482, src/scss/old/home.scss */
+  #exampleModalCenter .modal-body {
+    padding: 1rem 3rem;
+    color: #5C5D5F;
+  }
+  /* line 486, src/scss/old/home.scss */
+  .modal-dialog {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 1224px) {
+  /* line 493, src/scss/old/home.scss */
+  #homeSearch {
+    font-size: 1rem;
+  }
+}

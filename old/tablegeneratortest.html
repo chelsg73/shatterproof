@@ -1,0 +1,43 @@
+<html lang="en">
+<HEAD>
+	
+	</HEAD>
+<BODY>
+	
+	lala
+	
+	
+	</BODY>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script>
+		
+		d3.csv("/src/data/ProfFacilMockData.csv", function (error, data) {
+		console.log("data", data)	
+		
+		var agenest = d3.nest()
+			.key(function (d) {
+				return d[firstkey];
+			})
+			.sortKeys(function (a, b) {
+				if (firstkey == "agegroup") {
+					return d3.ascending(a.agegroupindex, b.agegroupindex)
+				} else {
+					return d3.ascending
+				}
+			})
+			.key(function (d) {
+				return d[secondkey]
+			})
+			.sortKeys(d3.ascending)
+			.key(function (d) {
+				return d[thirdkey]
+			})
+			.rollup(function (leaves) {
+				return leaves.length;
+			})
+			.entries(data);
+			
+		});
+	</script>
+	
+</html>

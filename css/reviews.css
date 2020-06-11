@@ -1,0 +1,56 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* line 2, src/scss/reviews.scss */
+#reviews {
+  overflow-y: auto;
+}
+
+/* line 5, src/scss/reviews.scss */
+#reviews .card {
+  padding: 2em 0 2em 0;
+  border: none;
+  border-bottom: 1px solid #60C5B7;
+  border-radius: 0;
+}
+
+/* line 11, src/scss/reviews.scss */
+#reviews .card:first-of-type {
+  border-top: 1px solid #60C5B7;
+}
+
+/* line 14, src/scss/reviews.scss */
+#reviews .text-right {
+  color: #0C867D !important;
+}
+
+/* line 17, src/scss/reviews.scss */
+#reviews .toplabel {
+  text-transform: uppercase;
+  font-size: .88em;
+  color: #5C5D5F;
+}
+
+/* line 22, src/scss/reviews.scss */
+#reviews .reviewpct {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #949598;
+}
+
+/* line 27, src/scss/reviews.scss */
+#reviews .reviewpct b {
+  color: #0C867D;
+}
+
+@media (min-width: 768px) {
+  /* line 31, src/scss/reviews.scss */
+  #reviews #facilityhrs {
+    padding: 2em 1.5em 3em 0;
+  }
+}
