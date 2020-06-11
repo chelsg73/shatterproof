@@ -64,23 +64,18 @@
   background: #fff;
 }
 
-/* line 40, src/scss/proffacil-only.scss */
-.col.pr-1.mt-1.d-flex.align-content-end.flex-wrap {
-  border-left: 1px solid #60C5B7;
-}
-
-/* line 44, src/scss/proffacil-only.scss */
+/* line 43, src/scss/proffacil-only.scss */
 #qualityCare .surveypct {
   padding: .5rem 0;
 }
 
-/* line 47, src/scss/proffacil-only.scss */
+/* line 46, src/scss/proffacil-only.scss */
 .toplabel {
   line-height: 1.15em;
   word-break: break-word;
 }
 
-/* line 52, src/scss/proffacil-only.scss */
+/* line 51, src/scss/proffacil-only.scss */
 .answ > a.small::after {
   text-align: right;
   position: absolute;
@@ -89,18 +84,19 @@
 }
 
 @media (max-width: 768px) {
-  /* line 59, src/scss/proffacil-only.scss */
+  /* line 58, src/scss/proffacil-only.scss */
   .facInfo {
     border-left: none;
     border-right: none;
   }
-  /* line 64, src/scss/proffacil-only.scss */
+  /* line 63, src/scss/proffacil-only.scss */
   .stuck {
     padding-left: 15px;
+    width: 100%;
   }
 }
 
-/* line 70, src/scss/proffacil-only.scss */
+/* line 72, src/scss/proffacil-only.scss */
 .facility .surveypct,
 .surveypct.facility {
   color: #0C867D;

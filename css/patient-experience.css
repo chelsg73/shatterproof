@@ -13,8 +13,8 @@
 
 /* line 6, src/scss/patient-experience.scss */
 #patientexp .toplabel {
-  font-size: .8em;
-  line-height: 1.1em;
+  font-size: .8rem;
+  line-height: 1.1rem;
 }
 
 /* line 26, src/scss/patient-experience.scss */
@@ -30,7 +30,7 @@
 
 /* line 37, src/scss/patient-experience.scss */
 #patientexp .internalrow .col-md-3 {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 /* line 40, src/scss/patient-experience.scss */
@@ -39,7 +39,7 @@
   background: #e5e6e88c;
   border-bottom: 12px solid #fff;
   margin-bottom: 0;
-  padding: .75em 1.25em .75em 2.3em;
+  padding: .75rem 1.25rem .75rem 2.3rem;
 }
 
 /* line 47, src/scss/patient-experience.scss */
@@ -58,9 +58,9 @@
 #patientexp .card-header .btn {
   color: #5C5D5F;
   font-size: 15px;
-  margin-top: 1em;
-  margin-bottom: .7em;
-  line-height: 1.4em;
+  margin-top: 1rem;
+  margin-bottom: .7rem;
+  line-height: 1.31rem;
   width: 100%;
   text-align: left;
   padding: 0;
@@ -85,10 +85,10 @@
   font-weight: 900;
   position: absolute;
   background: none;
-  left: -.4em;
-  top: .15em !important;
+  left: -.4rem;
+  top: .15rem !important;
   top: inherit;
-  font-size: .95em;
+  font-size: .95rem;
   color: #3F63AC;
   -webkit-transition: all 400ms ease-in;
   transition: all 400ms ease-in;

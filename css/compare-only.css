@@ -6,104 +6,145 @@
  * http://link-to-your-git-repo.com
  */
 
-/* line 4, src/scss/compare-only.scss */
+/* line 3, src/scss/compare-only.scss */
+.compareTitle {
+  line-height: 2.5rem;
+}
+
+/* line 7, src/scss/compare-only.scss */
+.details-wrapper .quest {
+  line-height: 1.18rem;
+}
+
+/* line 13, src/scss/compare-only.scss */
 #facilitytop #compareremoval .comparecol .fas.fa-times-circle {
   color: #a2dcd4;
-  -webkit-transition: 300ms all;
-  transition: 300ms all;
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
+  text-align: right;
+  float: right;
+  line-height: 0;
+  width: 1rem;
+  height: 1rem;
+}
+
+/* line 22, src/scss/compare-only.scss */
+#facilitytop #compareremoval .comparecol .fas.fa-times-circle:hover {
+  color: #EBF6F5;
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
   text-align: right;
   float: right;
   line-height: 0;
 }
 
-/* line 11, src/scss/compare-only.scss */
+/* line 29, src/scss/compare-only.scss */
 #facilitytop h4 .multilevel {
   display: block;
-  font-size: .64em;
-  line-height: 1em;
-  padding-top: .42em;
+  font-size: .765rem;
+  letter-spacing: 0.03rem;
+  line-height: 0.88rem;
+  padding-top: 0.275rem;
 }
 
-/* line 18, src/scss/compare-only.scss */
+/* line 38, src/scss/compare-only.scss */
 h4.facilitycomparetitle {
-  line-height: 1.25em;
+  line-height: 1.1rem;
   border-bottom: 1px solid #60C5B7;
-  padding-top: .4em;
+  padding-top: .6rem;
 }
 
-/* line 24, src/scss/compare-only.scss */
+/* line 45, src/scss/compare-only.scss */
 #facilitytop p a {
   word-break: break-all;
 }
 
-/* line 27, src/scss/compare-only.scss */
+/* line 48, src/scss/compare-only.scss */
 .groupsserved {
   word-break: break-word;
 }
 
 @media (max-width: 768px) {
-  /* line 31, src/scss/compare-only.scss */
+  /* line 52, src/scss/compare-only.scss */
   h4.facilitycomparetitle {
-    font-size: 1em;
+    font-size: 1rem;
   }
-  /* line 34, src/scss/compare-only.scss */
+  /* line 55, src/scss/compare-only.scss */
   .facilityaddress,
   .facilitydist,
   .facilityphone,
   .facilitylink {
-    font-size: .88em;
+    font-size: .88rem;
+    line-height: 1.1rem;
   }
-  /* line 40, src/scss/compare-only.scss */
+  /* line 62, src/scss/compare-only.scss */
   .groupsserved {
     padding-left: 0;
   }
-}
-
-@media (min-width: 768px) {
-  /* line 45, src/scss/compare-only.scss */
-  #facilityhrs {
-    float: right;
-    padding-right: 0;
-  }
-  /* line 49, src/scss/compare-only.scss */
-  .comparecol #facilityhrs {
-    float: left;
-  }
-  /* line 52, src/scss/compare-only.scss */
-  #insurancecol {
-    padding-left: 4%;
+  /* line 66, src/scss/compare-only.scss */
+  .mobiletostick.stuck {
+    position: relative;
+    top: 0;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 57, src/scss/compare-only.scss */
+  /* line 76, src/scss/compare-only.scss */
   #comparefacilfeatures.linearGradBottom {
     background: #fff;
   }
+  /* line 79, src/scss/compare-only.scss */
+  .facilityfeaturescolhead {
+    background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d6e5e6));
+    background: linear-gradient(to top, #ffffff, #d6e5e6);
+  }
+  /* line 85, src/scss/compare-only.scss */
+  #facilityinfocomparetable .row .col.flex-grow-1 {
+    background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#e6f2f3));
+    background: linear-gradient(to top, #ffffff, #e6f2f3);
+  }
+  /* line 93, src/scss/compare-only.scss */
+  .facilityfeaturescolhead {
+    display: none;
+  }
+  /* line 96, src/scss/compare-only.scss */
+  .facilityfeaturescolhead {
+    font-size: .85rem;
+    letter-spacing: .03rem;
+    margin-top: -1.2rem;
+    color: #0C867D;
+  }
+  /* line 102, src/scss/compare-only.scss */
+  .facilityfeaturescolhead .comparecol {
+    padding-top: .7rem;
+    padding-bottom: .4rem;
+  }
 }
 
-/* line 63, src/scss/compare-only.scss */
-.facilityfeaturescolhead {
-  display: none;
-}
-
-/* line 66, src/scss/compare-only.scss */
-.facilityfeaturescolhead {
-  font-size: .85em;
-  letter-spacing: .03em;
-  margin-top: -1.2em;
-  color: #0C867D;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d6e5e6));
-  background: linear-gradient(to top, #ffffff, #d6e5e6);
-}
-
-/* line 73, src/scss/compare-only.scss */
-.facilityfeaturescolhead .comparecol {
-  padding-top: .7em;
-  padding-bottom: .4em;
-}
-
-/* line 79, src/scss/compare-only.scss */
-#qualityCare .row.tier1 > div {
-  padding-top: 0;
+@media (min-width: 768px) {
+  /* line 115, src/scss/compare-only.scss */
+  #facilityhrs {
+    float: right;
+    padding-right: 0;
+  }
+  /* line 119, src/scss/compare-only.scss */
+  .comparecol #facilityhrs {
+    float: left;
+  }
+  /* line 122, src/scss/compare-only.scss */
+  #insurancecol {
+    padding-left: 4%;
+  }
+  /* line 126, src/scss/compare-only.scss */
+  h4.facilitycomparetitle {
+    line-height: 1.88rem;
+  }
+  /* line 130, src/scss/compare-only.scss */
+  #facilitytop h4 .multilevel {
+    line-height: 0.64rem;
+  }
+  /* line 134, src/scss/compare-only.scss */
+  #facilityinfocomparetable .row .col.flex-grow-1 {
+    background: none;
+  }
 }

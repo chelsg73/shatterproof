@@ -11,68 +11,81 @@
   border-left: 1px solid #60C5B7;
 }
 
-/* line 6, src/scss/multiColQuality.scss */
+/* line 5, src/scss/multiColQuality.scss */
+.comparecol .flex-grow-1.align-self-center {
+  font-size: 0.88rem;
+  line-height: 1.1rem;
+}
+
+/* line 10, src/scss/multiColQuality.scss */
 .multilevel {
   text-transform: uppercase;
-  font-size: .9em;
-  letter-spacing: .04em;
+  font-size: .765rem;
+  letter-spacing: .03rem;
   -webkit-transition: 400ms all;
   transition: 400ms all;
 }
 
-/* line 13, src/scss/multiColQuality.scss */
+/* line 17, src/scss/multiColQuality.scss */
 .multilevel span,
 span.multilevel {
   border-top: 1px solid #F26722;
 }
 
-/* line 18, src/scss/multiColQuality.scss */
+/* line 22, src/scss/multiColQuality.scss */
 .answ .indicator {
   width: 30px;
 }
 
-/* line 21, src/scss/multiColQuality.scss */
+/* line 25, src/scss/multiColQuality.scss */
 #qualityCare .details-wrapper:hover,
 #qualityCare .tier1:hover {
   background: #196b660d;
 }
 
-/* line 26, src/scss/multiColQuality.scss */
-.row.tier1 > div {
-  padding-top: .3em;
-  padding-bottom: .2em;
-}
-
 /* line 30, src/scss/multiColQuality.scss */
-.tier1 .quest {
-  padding-top: .4em;
-  padding-bottom: .4em;
-  padding-left: 3em;
+#qualityCare .toStick .tier1:hover {
+  background: none;
 }
 
-/* line 36, src/scss/multiColQuality.scss */
+/* line 34, src/scss/multiColQuality.scss */
+.row.tier1 > div {
+  padding-top: .2rem;
+  padding-bottom: .3rem;
+}
+
+/* line 38, src/scss/multiColQuality.scss */
+.tier1 .quest {
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  padding-left: 3rem;
+  font-size: 0.88rem;
+  line-height: 1.1rem;
+}
+
+/* line 46, src/scss/multiColQuality.scss */
 .tier1 .answ .fa,
 .tier1 .answ .fas {
   float: none;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   text-align: center;
   width: 30px;
 }
 
 @media (min-width: 1200px) {
-  /* line 44, src/scss/multiColQuality.scss */
+  /* line 54, src/scss/multiColQuality.scss */
   .details-wrapper .quest {
-    padding-left: 6em;
+    padding-left: 6rem;
   }
 }
 
-/* line 48, src/scss/multiColQuality.scss */
+/* line 58, src/scss/multiColQuality.scss */
 .details-wrapper:before {
   content: " ";
   position: absolute;
   z-index: 500;
   left: 0;
-  width: 5.5em;
+  width: 5.5rem;
   background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
@@ -83,105 +96,105 @@ span.multilevel {
   background: #fff;
 }
 
-/* line 63, src/scss/multiColQuality.scss */
+/* line 73, src/scss/multiColQuality.scss */
 .details-wrapper .answ .fa,
 .details-wrapper .answ .fas {
   text-align: center;
   width: 30px;
 }
 
-/* line 68, src/scss/multiColQuality.scss */
+/* line 78, src/scss/multiColQuality.scss */
 .details-wrapper .small.toplabel {
   color: #0C867D;
   text-transform: none;
   font-weight: 600;
 }
 
-/* line 73, src/scss/multiColQuality.scss */
+/* line 83, src/scss/multiColQuality.scss */
 .stuck {
   position: fixed;
   top: 108px;
-  z-index: 5;
+  z-index: 200;
 }
 
 @media (max-width: 768px) {
-  /* line 79, src/scss/multiColQuality.scss */
+  /* line 89, src/scss/multiColQuality.scss */
   .desktoptostick .comparecolhead {
     display: none;
   }
-  /* line 82, src/scss/multiColQuality.scss */
+  /* line 92, src/scss/multiColQuality.scss */
   .comparecol {
     border-left: 1px solid #bce3de;
   }
-  /* line 85, src/scss/multiColQuality.scss */
+  /* line 95, src/scss/multiColQuality.scss */
   .comparecol:first-of-type {
     border-left: none;
   }
-  /* line 88, src/scss/multiColQuality.scss */
+  /* line 98, src/scss/multiColQuality.scss */
   .details-wrapper {
     border-bottom: none;
   }
-  /* line 91, src/scss/multiColQuality.scss */
+  /* line 101, src/scss/multiColQuality.scss */
   .details-wrapper .quest,
   .details-wrapper .answ {
     font-size: .85rem;
     line-height: 1rem;
   }
-  /* line 96, src/scss/multiColQuality.scss */
+  /* line 106, src/scss/multiColQuality.scss */
   #qualityCare .card .card-header h4 {
-    font-size: 1.13em;
+    font-size: 1.13rem;
   }
-  /* line 99, src/scss/multiColQuality.scss */
+  /* line 109, src/scss/multiColQuality.scss */
   .details-wrapper .quest {
     border-bottom: none;
     font-weight: 600;
-    padding-left: 25px;
-    padding-bottom: .4em;
-    padding-top: .4em;
+    padding-left: 15px;
+    padding-bottom: .4rem;
+    padding-top: .4rem;
   }
-  /* line 106, src/scss/multiColQuality.scss */
+  /* line 116, src/scss/multiColQuality.scss */
   .details-wrapper:after {
     width: 0;
   }
-  /* line 109, src/scss/multiColQuality.scss */
+  /* line 119, src/scss/multiColQuality.scss */
   .details-wrapper:before {
     width: 0;
   }
-  /* line 112, src/scss/multiColQuality.scss */
+  /* line 122, src/scss/multiColQuality.scss */
   .tier1 .quest {
-    padding-left: 1em;
+    padding-left: 1rem;
   }
-  /* line 115, src/scss/multiColQuality.scss */
+  /* line 125, src/scss/multiColQuality.scss */
   .tier1 .quest,
   .tier1 .small {
-    padding-bottom: .7em;
+    padding-bottom: .7rem;
   }
-  /* line 119, src/scss/multiColQuality.scss */
+  /* line 129, src/scss/multiColQuality.scss */
   .tier1 .flex-grow-1 {
-    padding-bottom: .5em;
+    padding-bottom: .5rem;
   }
-  /* line 122, src/scss/multiColQuality.scss */
+  /* line 132, src/scss/multiColQuality.scss */
   .tier1 .answ .fa,
   .tier1 .answ .fas {
     float: none;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     text-align: center;
     width: 30px;
   }
-  /* line 129, src/scss/multiColQuality.scss */
+  /* line 139, src/scss/multiColQuality.scss */
   #qualityCare {
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 133, src/scss/multiColQuality.scss */
+  /* line 143, src/scss/multiColQuality.scss */
   .comparecolhead .comparecol {
     padding-left: 15px;
   }
-  /* line 137, src/scss/multiColQuality.scss */
+  /* line 147, src/scss/multiColQuality.scss */
   #qualityCare .card-header {
     padding: 0 15px 0 30px;
   }
-  /* line 140, src/scss/multiColQuality.scss */
+  /* line 150, src/scss/multiColQuality.scss */
   .mobiletostick.stuck {
     top: 65px;
     background: #0C867D;
@@ -189,67 +202,68 @@ span.multilevel {
     margin-left: -15px;
     padding-left: 15px;
   }
-  /* line 148, src/scss/multiColQuality.scss */
+  /* line 158, src/scss/multiColQuality.scss */
   .stuck .comparecolhead {
     margin-top: 0;
     border-bottom: 3px solid #60C5B7;
   }
-  /* line 152, src/scss/multiColQuality.scss */
+  /* line 162, src/scss/multiColQuality.scss */
   #qualityCare .tostick .tier1:hover {
     background: none;
   }
-  /* line 155, src/scss/multiColQuality.scss */
+  /* line 165, src/scss/multiColQuality.scss */
   #facilityinfocomparetable li {
     margin-left: 15px;
   }
-  /* line 158, src/scss/multiColQuality.scss */
+  /* line 168, src/scss/multiColQuality.scss */
   .internalrow .quest {
-    padding-bottom: .6em;
+    padding-bottom: .6rem;
   }
-  /* line 161, src/scss/multiColQuality.scss */
-  #patientexp .facility:first-of-type,
+  /* line 170, src/scss/multiColQuality.scss */
+  r
+#patientexp .facility:first-of-type,
   #patientexp .stateavg:first-of-type {
     border-left: none;
   }
-  /* line 165, src/scss/multiColQuality.scss */
+  /* line 175, src/scss/multiColQuality.scss */
   #patientExp .btn .surveyanswer {
-    padding-bottom: .5em;
+    padding-bottom: .5rem;
   }
-  /* line 168, src/scss/multiColQuality.scss */
+  /* line 178, src/scss/multiColQuality.scss */
   #qualityCare .surveypct {
     font-size: .93rem;
     text-align: center;
   }
-  /* line 172, src/scss/multiColQuality.scss */
+  /* line 182, src/scss/multiColQuality.scss */
   .flex-grow-1 .col-3 {
     border-right: 3px solid #60C5B7;
   }
-  /* line 175, src/scss/multiColQuality.scss */
+  /* line 185, src/scss/multiColQuality.scss */
   .col.pr-1.mt-1.d-flex.align-content-end.flex-wrap:first-of-type {
     border-left: none;
   }
-  /* line 179, src/scss/multiColQuality.scss */
+  /* line 189, src/scss/multiColQuality.scss */
   .collapse.show {
     margin-top: 1.6rem;
   }
 }
 
-/* line 184, src/scss/multiColQuality.scss */
+/* line 194, src/scss/multiColQuality.scss */
 .patExpColhead {
   border-bottom: 2px solid #fff;
 }
 
-/* line 187, src/scss/multiColQuality.scss */
+/* line 197, src/scss/multiColQuality.scss */
 .patExpColhead .facility {
   color: #0C867D;
   text-transform: none;
   font-weight: 600;
-  font-size: .9em !important;
+  font-size: 0.85rem !important;
+  line-height: 0.94rem !important;
 }
 
-/* line 194, src/scss/multiColQuality.scss */
+/* line 205, src/scss/multiColQuality.scss */
 .surveypct {
   font-weight: bold;
-  font-size: 1.28em;
-  color: #5C5D5F;
+  font-size: 1.2rem;
 }

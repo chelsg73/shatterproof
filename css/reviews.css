@@ -13,7 +13,7 @@
 
 /* line 5, src/scss/reviews.scss */
 #reviews .card {
-  padding: 2em 0 2em 0;
+  padding: 2rem 0 2rem 0;
   border: none;
   border-bottom: 1px solid #60C5B7;
   border-radius: 0;
@@ -32,13 +32,13 @@
 /* line 17, src/scss/reviews.scss */
 #reviews .toplabel {
   text-transform: uppercase;
-  font-size: .88em;
+  font-size: .88rem;
   color: #5C5D5F;
 }
 
 /* line 22, src/scss/reviews.scss */
 #reviews .reviewpct {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   font-weight: 600;
   color: #949598;
 }
@@ -51,6 +51,6 @@
 @media (min-width: 768px) {
   /* line 31, src/scss/reviews.scss */
   #reviews #facilityhrs {
-    padding: 2em 1.5em 3em 0;
+    padding: 2rem 1.5rem 3rem 0;
   }
 }

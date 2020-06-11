@@ -1,4 +1,13 @@
+<!--
+For using as a template for the Drupal site, ONLY the 'access to medications' card should be used as a template for the quality measures. The first sub-row (.details-wrapper) should be sufficient as a template for those.
+
+For the top facility info section, the only difference between this an consumer is the  'edit this'.
+
+For patient reviews, this page implementation is probably a better template than consumer. THis has the bell- which just doesn't show on consumer view
+-->
+
 <html lang="en">
+    
 <script type="text/javascript">
     window["_gaUserPrefs"] = {
         ioo: function() {
@@ -37,7 +46,7 @@
 </head>
 
 <body>
-<!--DO NOT USE THIS NAV!!!!!!!!!!!!!!-->
+    <!--DO NOT USE THIS NAV!!!!!!!!!!!!!!-->
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
 
         <div class="container">
@@ -104,8 +113,8 @@
 
     <main role="main">
         <div class="container-fluid">
-            
-<!--            THIS TOP SECTION WITH FACIL NAME : THE ONLY DIFFERENCE FOR THIS VIEW VS CONSUMER FACILITY IS THAT THIS ONE DOES NOT HAVE THE 'ADD TO COMPARE' BUTTON-->
+
+            <!--            THIS TOP SECTION WITH FACIL NAME : THE ONLY DIFFERENCE FOR THIS VIEW VS CONSUMER FACILITY IS THAT THIS ONE DOES NOT HAVE THE 'ADD TO COMPARE' BUTTON-->
             <div class="row linearGradTop pt-md-4">
                 <div class="container my-4 text-light">
                     <div class="row mb-3">
@@ -151,7 +160,7 @@
             <!--end row linearGrad-->
 
 
-<!--     THE ONLY DIFFERENCE FOR THIS VIEW VS CONSUMER FACILITY IS THAT THIS ONE DOES  HAVE THE 'EDIT THIS FACILITY' OPTIION-->
+            <!--     THE ONLY DIFFERENCE FOR THIS VIEW VS CONSUMER FACILITY IS THAT THIS ONE DOES  HAVE THE 'EDIT THIS FACILITY' OPTIION-->
             <div class="row linearGradBottom facInfo">
                 <div class="container">
                     <div class="row mt-4 facility_geninfo">
@@ -310,7 +319,7 @@
 
 
                             <div class="row mb-3">
-<!--PLEASE ONLY USE THE ACCESS TO MEDICATIONS SECTION AS A TEMPLATE, AND FOR INTERNAL STRUCTURE OF THE HIDDEN ROWS, ONLY USE A CHILD DETAIL-WRAPPER ROW FROM 'Offers FDA-approved medication for opioid use disorder:' -->
+                                <!--PLEASE ONLY USE THE ACCESS TO MEDICATIONS SECTION AS A TEMPLATE, AND FOR INTERNAL STRUCTURE OF THE HIDDEN ROWS, ONLY USE A CHILD DETAIL-WRAPPER ROW FROM 'Offers FDA-approved medication for opioid use disorder:' -->
                                 <h2 class="col-md-7 mb-3">Signs of High-Quality Care</h2>
                                 <div class="col-md-5 mb-3 text-right font-italic d-flex align-items-end justify-content-end">Data last updated 01/31/2020</div>
 
@@ -431,41 +440,47 @@ realize this and the flex cells for LOC columns vs not might need rearranging to
                                                                     <div class="w-100 small facility toplabel">this facility:</div>
 
                                                                 </div>
+                                                                <div class="col answ align-self-center">
+                                                                    <div class="row">
 
 
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-md-2 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
-                                                                    <div class="d-none d-md-block w-100 small toplabel" style="text-transform: uppercase">Inpatient:</div>
-                                                                    <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">In pat</div>
 
+                                                                        <div class="col col-sm pr-1 pl-1 pl-md-2 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
+                                                                            <div class="d-none d-md-block w-100 small toplabel" style="text-transform: uppercase">Inpatient:</div>
+                                                                            <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">IP</div>
+
+                                                                        </div>
+                                                                        <div class="col col-sm pr-1 pl-1 pl-md-2 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
+                                                                            <div class="d-none d-md-block w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>
+                                                                            <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">OP</div>
+
+                                                                        </div>
+                                                                        <div class="col col-sm pr-1 pl-1 pl-md-2 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
+                                                                            <div class="d-none d-md-block w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>
+                                                                            <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">OTP</div>
+
+                                                                        </div>
+                                                                        <div class="col col-sm pr-1 pl-1 pl-md-2 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
+                                                                            <div class="d-none d-md-block w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>
+                                                                            <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">Res</div>
+                                                                        </div>
+
+
+                                                                        <div class="col col-sm pr-1 pl-1 pl-md-3 mt-1 d-flex align-content-end flex-wrap comparecol statecol">
+                                                                            <div class="d-none d-md-block w-100 small toplabel" style="text-transform: uppercase">state:</div>
+                                                                            <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">State</div>
+
+                                                                        </div>
+
+                                                                        <div class="col col-sm pr-1 pl-1 pl-md-3 mt-1 d-flex align-content-end flex-wrap comparecol statecol">
+                                                                            <div class="d-none d-md-block w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>
+                                                                            <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">Medi caid</div>
+
+                                                                        </div>
+
+                                                                    </div>
                                                                 </div>
-                                                                <div class="col col-sm pr-1 pl-1 pl-md-2 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
-                                                                    <div class="d-none d-md-block w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>
-                                                                    <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">Out pat</div>
-
-                                                                </div>
-                                                                <div class="col col-sm pr-1 pl-1 pl-md-2 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
-                                                                    <div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>
-
-                                                                </div>
-                                                                <div class="col col-sm pr-1 pl-1 pl-md-2 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
-                                                                    <div class="d-none d-md-block w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>
-                                                                    <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">Resid</div>
-                                                                </div>
-
-
-                                                                <div class="col col-sm pr-1 pl-1 pl-md-3 mt-1 d-flex align-content-end flex-wrap comparecol statecol">
-                                                                    <div class="d-none d-md-block w-100 small toplabel" style="text-transform: uppercase">state:</div>
-                                                                    <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">State</div>
-
-                                                                </div>
-
-                                                                <div class="col col-sm pr-1 pl-1 pl-md-3 mt-1 d-flex align-content-end flex-wrap comparecol statecol">
-                                                                    <div class="d-none d-md-block w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>
-                                                                    <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">Accpt Medi caid</div>
-
-                                                                </div>
-
                                                             </div>
 
 
@@ -495,7 +510,7 @@ realize this and the flex cells for LOC columns vs not might need rearranging to
                                         <div class="col-md-12 card-header true" id="headingOne">
 
                                             <div class="row d-flex pl-md-5 mt-3">
-                                               <h4 class="col-lg-3 mb-3">          
+                                                <h4 class="col-lg-3 mb-3">          
 Fast Access to Treatment
       </h4>
 
@@ -527,29 +542,29 @@ Fast Access to Treatment
                                                                 <div class="col answ align-self-center">
 
                                                                     <div class="row ">
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                         
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                           
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
 
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
 
@@ -558,7 +573,7 @@ Fast Access to Treatment
                                                                 </div>
 
 
-                                      
+
                                                             </div>
                                                         </div>
 
@@ -583,31 +598,31 @@ Fast Access to Treatment
 
 
                                                                 <div class="col answ align-self-center">
-                         
+
                                                                     <div class="row ">
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                             <!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">state:</div>-->
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                           
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
 
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
                                                                     </div>
@@ -660,32 +675,32 @@ Fast Access to Treatment
 
 
                                                                     <div class="row ">
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                             <div class="w-100 small toplabel">onsite:</div>
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
                                                                         <div class="col sm pr-1 mt-1 d-flex align-content-between flex-wrap">
-                                                                           
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
                                                                     </div>
@@ -828,7 +843,7 @@ Fast Access to Treatment
                                         <div class="col-md-12 card-header true" id="headingOne">
 
                                             <div class="row d-flex pl-md-5 mt-3">
-                                               <h4 class="col-lg-3 mb-3">          
+                                                <h4 class="col-lg-3 mb-3">          
   Access to Medications for Opioid or Alcohol Use Disorder
       </h4>
 
@@ -867,29 +882,29 @@ Fast Access to Treatment
                                                                 <div class="col answ align-self-center">
 
                                                                     <div class="row ">
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                        
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                   
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                   
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                      
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                           
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
 
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                      
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
 
@@ -925,21 +940,21 @@ Fast Access to Treatment
 
                                                                         <div class="col-3 col-md-4 col-lg-3">
                                                                             <div class="row h-100">
-                                                                                
-                                                                                
+
+
                                                                                 <div class="pb-2 pb-md-0 col-12 col-md-4 answ d-flex align-items-center justify-content-md-end">
-<!--                                                                         PLACEHOLDER- SOME OF THESE GET ICONS (NO CIRCLE) HERE-->
-                                                                        </div>
-                                                                                
-                                                                               <div class="col-12 col-md-8 pb-3 pb-md-0 answ d-flex align-items-center">
-                                                                            Onsite
-                                                                      
-                                                                        </div>
+                                                                                    <!--                                                                         PLACEHOLDER- SOME OF THESE GET ICONS (NO CIRCLE) HERE-->
+                                                                                </div>
+
+                                                                                <div class="col-12 col-md-8 pb-3 pb-md-0 answ d-flex align-items-center">
+                                                                                    Onsite
+
+                                                                                </div>
                                                                             </div>
-                                                                            
-                                                                            
-                                                                            
-                                                                            
+
+
+
+
                                                                         </div>
 
 
@@ -947,29 +962,29 @@ Fast Access to Treatment
 
 
                                                                             <div class="row ">
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                                     <div class="w-100 small toplabel">onsite:</div>
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
 
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
                                                                             </div>
@@ -997,44 +1012,44 @@ Fast Access to Treatment
 
                                                                         <div class="col-3 col-md-4 col-lg-3">
                                                                             <div class="row h-100">
-                                                                                           
+
                                                                                 <div class="pb-2 pb-md-0 col-12 col-md-4 answ d-flex align-items-center justify-content-md-end">
-<!--                                                                         PLACEHOLDER- SOME OF THESE GET ICONS (NO CIRCLE) HERE-->
-                                                                        </div>
-                                                                                
-                                                                               <div class="col-12 col-md-8 pb-3 pb-md-0 answ d-flex align-items-center">
-                                                                            Different Location
-                                                                      
-                                                                        </div>
+                                                                                    <!--                                                                         PLACEHOLDER- SOME OF THESE GET ICONS (NO CIRCLE) HERE-->
+                                                                                </div>
+
+                                                                                <div class="col-12 col-md-8 pb-3 pb-md-0 answ d-flex align-items-center">
+                                                                                    Different Location
+
+                                                                                </div>
                                                                             </div>
                                                                         </div>
 
                                                                         <div class="col answ align-self-center">
-                                                          
+
                                                                             <div class="row ">
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                                     <div class="w-100 small toplabel">onsite:</div>
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
 
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
                                                                             </div>
@@ -1062,44 +1077,44 @@ Fast Access to Treatment
 
                                                                         <div class="col-3 col-md-4 col-lg-3">
                                                                             <div class="row h-100">
-                                                                                           
+
                                                                                 <div class="pb-2 pb-md-0 col-12 col-md-4 answ d-flex align-items-center justify-content-md-end">
-<!--                                                                         PLACEHOLDER- SOME OF THESE GET ICONS (NO CIRCLE) HERE-->
-                                                                        </div>
-                                                                                
-                                                                               <div class="col-12 col-md-8 pb-3 pb-md-0 answ d-flex align-items-center">
-                                                                            Onsite
-                                                                      
-                                                                        </div>
+                                                                                    <!--                                                                         PLACEHOLDER- SOME OF THESE GET ICONS (NO CIRCLE) HERE-->
+                                                                                </div>
+
+                                                                                <div class="col-12 col-md-8 pb-3 pb-md-0 answ d-flex align-items-center">
+                                                                                    Onsite
+
+                                                                                </div>
                                                                             </div>
                                                                         </div>
 
                                                                         <div class="col answ align-self-center">
 
                                                                             <div class="row ">
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                                     <div class="w-100 small toplabel">onsite:</div>
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
 
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
                                                                             </div>
@@ -1128,15 +1143,15 @@ Fast Access to Treatment
 
                                                                         <div class="col-3 col-md-4 col-lg-3">
                                                                             <div class="row h-100">
-                                                                                           
+
                                                                                 <div class="pb-2 pb-md-0 col-12 col-md-4 answ d-flex align-items-center justify-content-md-end">
-<!--                                                                         PLACEHOLDER- SOME OF THESE GET ICONS (NO CIRCLE) HERE-->
-                                                                        </div>
-                                                                                
-                                                                               <div class="col-12 col-md-8 pb-3 pb-md-0 answ d-flex align-items-center">
-                                                                            Onsite
-                                                                      
-                                                                        </div>
+                                                                                    <!--                                                                         PLACEHOLDER- SOME OF THESE GET ICONS (NO CIRCLE) HERE-->
+                                                                                </div>
+
+                                                                                <div class="col-12 col-md-8 pb-3 pb-md-0 answ d-flex align-items-center">
+                                                                                    Onsite
+
+                                                                                </div>
                                                                             </div>
                                                                         </div>
 
@@ -1144,29 +1159,29 @@ Fast Access to Treatment
 
 
                                                                             <div class="row ">
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                                     <div class="w-100 small toplabel">onsite:</div>
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
 
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
                                                                             </div>
@@ -1195,44 +1210,44 @@ Fast Access to Treatment
 
                                                                         <div class="col-3 col-md-4 col-lg-3">
                                                                             <div class="row h-100">
-                                                                                          
+
                                                                                 <div class="pb-2 pb-md-0 col-12 col-md-4 answ d-flex align-items-center justify-content-md-end">
-<!--                                                                         PLACEHOLDER- SOME OF THESE GET ICONS (NO CIRCLE) HERE-->
-                                                                        </div>
-                                                                                
-                                                                               <div class="col-12 col-md-8 pb-3 pb-md-0 answ d-flex align-items-center">
-                                                                            Onsite
-                                                                      
-                                                                        </div>
+                                                                                    <!--                                                                         PLACEHOLDER- SOME OF THESE GET ICONS (NO CIRCLE) HERE-->
+                                                                                </div>
+
+                                                                                <div class="col-12 col-md-8 pb-3 pb-md-0 answ d-flex align-items-center">
+                                                                                    Onsite
+
+                                                                                </div>
                                                                             </div>
                                                                         </div>
 
                                                                         <div class="col answ align-self-center">
 
                                                                             <div class="row ">
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                                     <div class="w-100 small toplabel">onsite:</div>
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
 
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
                                                                             </div>
@@ -1261,44 +1276,44 @@ Fast Access to Treatment
 
                                                                         <div class="col-3 col-md-4 col-lg-3">
                                                                             <div class="row h-100">
-                                                                                        
+
                                                                                 <div class="pb-2 pb-md-0 col-12 col-md-4 answ d-flex align-items-center justify-content-md-end">
-<!--                                                                         PLACEHOLDER- SOME OF THESE GET ICONS (NO CIRCLE) HERE-->
-                                                                        </div>
-                                                                                
-                                                                               <div class="col-12 col-md-8 pb-3 pb-md-0 answ d-flex align-items-center">
-                                                                            Different Location
-                                                                      
-                                                                        </div>
+                                                                                    <!--                                                                         PLACEHOLDER- SOME OF THESE GET ICONS (NO CIRCLE) HERE-->
+                                                                                </div>
+
+                                                                                <div class="col-12 col-md-8 pb-3 pb-md-0 answ d-flex align-items-center">
+                                                                                    Different Location
+
+                                                                                </div>
                                                                             </div>
                                                                         </div>
 
                                                                         <div class="col answ align-self-center">
 
                                                                             <div class="row ">
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                                     <div class="w-100 small toplabel">onsite:</div>
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
 
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
                                                                             </div>
@@ -1335,29 +1350,29 @@ Fast Access to Treatment
 
 
                                                                             <div class="row ">
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                                     <div class="w-100 small toplabel">onsite:</div>
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
 
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
                                                                             </div>
@@ -1405,28 +1420,28 @@ Fast Access to Treatment
                                                                 <div class="col answ align-self-center">
 
                                                                     <div class="row ">
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
 
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
@@ -1474,31 +1489,31 @@ Fast Access to Treatment
                                                                         </div>
 
                                                                         <div class="col answ align-self-center">
-                                                                        
+
                                                                             <div class="row ">
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                                     <div class="w-100 small toplabel">onsite:</div>
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
 
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
                                                                             </div>
@@ -1543,29 +1558,29 @@ Fast Access to Treatment
 
 
                                                                             <div class="row ">
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                                     <div class="w-100 small toplabel">onsite:</div>
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
 
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
                                                                             </div>
@@ -1913,7 +1928,7 @@ Fast Access to Treatment
                                         <div class="col-md-12 card-header true" id="headingFour">
 
                                             <div class="row d-flex pl-md-5 mt-3">
-                                               <h4 class="col-lg-3 mb-3">          
+                                                <h4 class="col-lg-3 mb-3">          
    Coordinated Care for Mental and Physical Health
       </h4>
 
@@ -1947,29 +1962,29 @@ Fast Access to Treatment
                                                                 <div class="col answ align-self-center">
 
                                                                     <div class="row ">
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                             <!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">state:</div>-->
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                           
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
 
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                            
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
 
@@ -1989,7 +2004,7 @@ Fast Access to Treatment
 
 
                                                         <div class="col-md-12">
- 
+
                                                             <div class="row details-wrapper">
 
 
@@ -2006,7 +2021,7 @@ Fast Access to Treatment
                                                                         <div class="col-3 col-md-4 col-lg-3">
                                                                             <div class="row h-100">
                                                                                 <div class="col-12 col-md-8 offset-md-4 answ d-flex align-items-center">
-                                                                                                  Psychiatrist (MD, DO), Other physician (MD, DO), Psychologist (PsD or PhD), Physician Assistant (PA), Nurse Practitioner (NP), Registered Nurse (RN), Social Worker (MSW/DSW), Counselor (Licensed, Master's level), Peer Recovery Counselor, Other
+                                                                                    Psychiatrist (MD, DO), Other physician (MD, DO), Psychologist (PsD or PhD), Physician Assistant (PA), Nurse Practitioner (NP), Registered Nurse (RN), Social Worker (MSW/DSW), Counselor (Licensed, Master's level), Peer Recovery Counselor, Other
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -2016,29 +2031,29 @@ Fast Access to Treatment
 
 
                                                                             <div class="row ">
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                                     <div class="w-100 small toplabel">onsite:</div>
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
 
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
                                                                             </div>
@@ -2076,29 +2091,29 @@ Fast Access to Treatment
 
 
                                                                             <div class="row ">
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                                     <div class="w-100 small toplabel">onsite:</div>
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
 
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
                                                                             </div>
@@ -2142,28 +2157,28 @@ Fast Access to Treatment
                                                                 <div class="col answ align-self-center">
 
                                                                     <div class="row ">
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
 
-                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                        <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                             <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                         </div>
@@ -2221,29 +2236,29 @@ Fast Access to Treatment
 
 
                                                                             <div class="row ">
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                                     <div class="w-100 small toplabel">onsite:</div>
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
 
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
                                                                             </div>
@@ -2288,29 +2303,29 @@ Fast Access to Treatment
 
 
                                                                             <div class="row ">
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                                     <div class="w-100 small toplabel">onsite:</div>
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
 
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
-                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
-                                                                                    
+                                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
+
                                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                                 </div>
                                                                             </div>
@@ -2624,11 +2639,11 @@ Fast Access to Treatment
                                                                 </div>
 
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct facility">42<sup>%</sup> </div>
                                                                 </div>
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
 
@@ -2643,11 +2658,11 @@ Fast Access to Treatment
                                                                 </div>
 
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct facility">42<sup>%</sup> </div>
                                                                 </div>
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
 
@@ -2715,11 +2730,11 @@ Fast Access to Treatment
                                                                 </div>
 
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct facility">42<sup>%</sup> </div>
                                                                 </div>
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
 
@@ -2734,11 +2749,11 @@ Fast Access to Treatment
                                                                 </div>
 
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct facility">42<sup>%</sup> </div>
                                                                 </div>
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
 
@@ -2805,11 +2820,11 @@ Fast Access to Treatment
                                                                 </div>
 
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct facility">42<sup>%</sup> </div>
                                                                 </div>
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
 
@@ -2824,11 +2839,11 @@ Fast Access to Treatment
                                                                 </div>
 
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct facility">42<sup>%</sup> </div>
                                                                 </div>
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
 
@@ -2896,11 +2911,11 @@ Fast Access to Treatment
                                                                 </div>
 
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct facility">42<sup>%</sup> </div>
                                                                 </div>
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
 
@@ -2915,11 +2930,11 @@ Fast Access to Treatment
                                                                 </div>
 
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct facility">42<sup>%</sup> </div>
                                                                 </div>
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
 
@@ -3014,7 +3029,7 @@ ATLAS Survey Statistics
 
                                                             <div class="row ">
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
 
                                                                 </div>
@@ -3078,19 +3093,19 @@ ATLAS Survey Statistics
                                                             <div class="row ">
 
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
                                                             </div>
@@ -3178,11 +3193,11 @@ Insurance
                                                             <div class="row ">
 
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
@@ -3219,11 +3234,11 @@ Insurance
 
                                                             <div class="row ">
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
@@ -3275,11 +3290,11 @@ Insurance
 
 
                                                             <div class="row ">
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
@@ -3317,11 +3332,11 @@ Insurance
 
                                                             <div class="row ">
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
@@ -3358,11 +3373,11 @@ Insurance
 
                                                             <div class="row ">
 
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>
-                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap">
+                                                                <div class="col col-sm pr-1 pl-1 pl-lg-3 mt-1 d-flex align-content-end flex-wrap comparecol">
 
                                                                     <div class="w-100 surveypct">42<sup>%</sup> </div>
                                                                 </div>

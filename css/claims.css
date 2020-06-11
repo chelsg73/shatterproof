@@ -11,8 +11,8 @@
   background: #f1f1f2;
   border-top: none;
   border-top-width: 0px;
-  padding-top: 1em;
-  padding-bottom: .7em;
+  padding-top: 1rem;
+  padding-bottom: .7rem;
 }
 
 /* line 8, src/scss/claims.scss */
@@ -42,21 +42,21 @@
 
 /* line 23, src/scss/claims.scss */
 #claims .card h4 {
-  font-size: 1.1em;
-  line-height: 1.2em;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
   font-weight: 600;
-  padding-bottom: 1em;
+  padding-bottom: 1rem;
 }
 
 /* line 29, src/scss/claims.scss */
 #claims .card h4.quest {
-  padding-bottom: .4em;
+  padding-bottom: .4rem;
 }
 
 /* line 32, src/scss/claims.scss */
 #claims .card h4 .toplabel {
   display: inline-block;
-  font-size: .86em;
+  font-size: .86rem;
   font-weight: 400;
   border-bottom: 1px solid;
 }

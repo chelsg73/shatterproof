@@ -14,1050 +14,32 @@
 	<meta name="description" content="">
 	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 	<meta name="generator" content="Jekyll v3.8.5">
-	<title>Jumbotron Template · Bootstrap</title>
+		<title>Payer Professional View | ATLAS</title>
 
-	<!--    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/jumbotron/">-->
+    <link rel="stylesheet" href="https://use.typekit.net/unm2lor.css">
+    <link href="css/all.css" type="text/css" rel="stylesheet">
 
-	<!-- Bootstrap core CSS -->
-	<!--
-	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
-	<!--
+    <link href="css/all-global.css" type="text/css" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
--->
+    <!-- Custom styles for this template -->
+    <link href="css/bar-rating.css" type="text/css" rel="stylesheet">
 
-
-	<!-- Custom styles for this template -->
-	<!-- <link href="css/custom2.css" type="text/css" rel="stylesheet"> -->
-	<link href="css/all.css" type="text/css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/unm2lor.css">
-  
-  <link href="css/all-global.css" type="text/css" rel="stylesheet">
-
-
-  <link href=“css/quality-table.css” type=“text/css” rel=“stylesheet”>
-  <link href=“css/multiColQuality.css” type=“text/css” rel=“stylesheet”>
-
-  <link href=“css/bar-rating.css” type=“text/css” rel=“stylesheet”> -->
-  <link href=“css/facility-only.css” type=“text/css” rel=“stylesheet”>
-  <link href=“css/patient-experience.css” type=“text/css” rel=“stylesheet”>
-  <link href=“css/reviews.css” type=“text/css” rel=“stylesheet”>
-  <link href=“css/claims.css” type=“text/css” rel=“stylesheet”>
-
-
-	<style>
-		.statetitle {
-			font-family: 'museo-sans';
-			font-size: 2.4em;
-			font-weight: 400;
-			color: #fff;
-			letter-spacing: .02em;
-			text-transform: none;
-		}
-		
-		.bd-placeholder-img {
-			font-size: 1.125rem;
-			text-anchor: middle;
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-			user-select: none;
-		}
-		
-		@media (min-width: 768px) {
-			.bd-placeholder-img-lg {
-				font-size: 3.5rem;
-			}
-		}
-		
-		@media (min-width: 768px) {
-			#facilityhrs {
-				float: right;
-				padding-right: 0;
-			}
-		}
-		
-		@media (max-width: 768px) {
-			#patientexp.evalaccordion .card-header .col-12 {
-				/*
-				margin-bottom: 2em;
-				padding-bottom: .6em;
-				border-bottom: 2px solid #e3e3e3;
-*/
-			}
-		}
-		/*	table styles. Don't know if we'll want to replace with bootstrap grid so moblie's better'	*/
-		
-		#stateinfotable {}
-		
-		#facilityinfotable td:first-of-type {
-			min-width: 160px;
-			display: table-cell;
-		}
-		
-		#facilitypaytable td:first-of-type {
-			min-width: 210px;
-			display: table-cell;
-		}
-		
-		@media (min-width: 768px) {
-			#insurancecol {
-				padding-left: 4%;
-			}
-		}
-		
-		h3 {
-			font-weight: 400;
-			color: #949598;
-			letter-spacing: .015em;
-			font-size: 1.5em;
-		}
-		
-		nav,
-		#facility_geninfo {
-			font-family: "museo-sans";
-		}
-		
-		#facility_geninfo {
-			font-size: .85em !important;
-		}
-		
-		div.details-wrapper {
-			font-size: .85em;
-			padding-bottom: 0;
-			padding-top: 0;
-			border-bottom: 1px solid #BCE3DE;
-			position: relative;
-		}
-		
-		.details-wrapper:after {
-			content: '';
-			display: block;
-			position: absolute;
-			width: 2.5em;
-			left: 0px;
-			bottom: -1px;
-			border: 1px solid #fff;
-		}
-		
-		.accordion li .quest,
-		.accordion div.details-wrapper div.quest {
-			display: block;
-			line-height: 1.35em;
-		}
-		
-		.details-wrapper .quest {
-			padding-left: 3em;
-		}
-		
-		.details-wrapper .fa-minus {
-			color: #dba500;
-		}
-		
-		.details-wrapper .fa-times {
-			color: #f16925
-		}
-		
-		.details-wrapper .nodata {
-			color: #949598;
-			text-transform: uppercase;
-			font-size: .8em;
-		}
-		
-		.details-wrapper.negative .quest div {
-			font-weight: 300;
-			opacity: .8;
-		}
-		
-		.groupsserved li {
-			color: inherit !important;
-		}
-		/*		for example wide bulleted list in facility deets section*/
-		
-		ul.groupsserved.overhang {
-			top: 1.4em;
-			position: absolute;
-			left: 100%;
-			/* top: 0px; */
-			width: 300px;
-		}
-		
-		.accordion li .answ {
-			display: block;
-		}
-		
-		.small.instructions {
-			color: #949598;
-		}
-		
-		i.fa.fa-info-circle {
-			transition: 400ms all;
-		}
-		
-		i.fa.fa-info-circle:hover {
-			color: #3E62AC;
-		}
-		
-		.fa-check-circle {
-			color: #279184;
-		}
-		
-		.fa-minus-circle {
-			color: #FCAF58;
-		}
-		
-		.fa-times {
-			color: #F16924;
-		}
-		
-		.fa-check {
-			color: #279184;
-		}
-		
-		.fa-question {
-			color: #bcbcbc
-		}
-		
-		.card li {
-			border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-		}
-		
-		.card li:last-of-type {
-			border-bottom: none;
-		}
-		
-		li ul {
-			list-style: none;
-			font-size: .95em;
-		}
-		/*
-		#accordionExample li .fas {
-			font-size: 1.3em;
-			text-align: right;
-			float: right;
-		}
-		
-		#accordionExample li ul li .fas,
-		#accordionExample div.details-wrapper div.answ .fas {
-			font-size: .95em;
-			padding-top: .5em;
-		}
-*/
-		/*
-		.card-header p{
-			margin-left:3em
-		}
-*/
-		/*		ERROR BLOCK END*/
-		
-		.accordion .card-header:after {
-			left: .5em;
-		}
-		
-		.card-header .btn {
-			font-size: .73em;
-		}
-		
-		.card-header .btn p {
-			font-size: .83em;
-		}
-		
-		b {
-			letter-spacing: .03em;
-		}
-		
-		.accordion .toplabel {
-			line-height: 1.15em;
-		}
-		
-		.card-body {
-			padding: 0;
-		}
-		
-		.card li {
-			/*border-bottom: 6px solid rgb(235, 246, 245);*/
-			padding: .3em 2em .2em 0;
-			margin-bottom: 0;
-		}
-		
-		.card ul {
-			padding-left: 0;
-		}
-		
-		.card li:first-of-type {
-			padding: 1em 2em .4em 0;
-		}
-		
-		.card li ul li {
-			border-bottom: none;
-			padding: 0 2em .2em 0;
-		}
-		
-		.card li ul li:first-of-type {
-			padding: 0 2em .4em 0;
-		}
-		
-		.card li ul li:last-of-type {
-			padding: .2em 2em 0 0;
-		}
-		/*
-		.accordion li ul .quest,
-		.accordion div.details-wrapper div.quest {
-			display: block;
-						border-bottom: 1px solid #BCE3DE;
-		}
-*/
-		/*
-		.details-wrapper .quest div {
-   border-bottom: 1px solid #BCE3DE;
-}
-*/
-		/*
-		#collapseFour .card-body {
-			background: #fff;
-			margin: 0 2em 2em 5em;
-			padding: 0;
-		}
-*/
-		/*
-		#collapseFour .card-body ul {
-			padding: 0;
-		}
-*/
-		
-		.accordionExample .card-body ul li {
-			list-style: none;
-		}
-		
-		#patientexp .card-header .btn {
-			color: #5C5D5F !important;
-			font-size: 15px;
-			margin-top: 1em;
-			margin-bottom: .7em;
-			line-height: 1.4em;
-		}
-		
-		#patientexp .card-header .btn[aria-expanded="true"] {
-			margin-bottom: 0;
-		}
-		/*
-		#patientexp .col-md-3,
-		#patientexp .col-3,
-*/
-		
-		#patientexp .toplabel {
-			/*			border-left: 2px solid #fff;*/
-			font-size: .8em;
-		}
-		/*
-		#patientexp .col-md-3,
-		#patientexp .col-3 {
-			border-left: 2px solid #fff;
-		}
-*/
-		/*
-		#patientexp .card-header {
-			background: #e5e6e88c !important;
-		}
-		
-*/
-		
-		#patientexp .col-md-3,
-		#patientexp .stateavg {
-			border-left: 2px solid #fff;
-		}
-		
-		#patientexp .card {
-			/*			background: #ebf6f5;*/
-			background: #e5e6e88c;
-			border-bottom: 12px solid #fff;
-		}
-		
-		#patientexp .internalrow {
-			/*				to make the same as button that is header row*/
-			padding: 0rem 2rem;
-			border-top: 1px solid #dfdfdf;
-			position: relative;
-		}
-		/*
-		#patientexp .internalrow:after {
-			content: '';
-			display: block;
-			position: absolute;
-			width: 45%;
-			top: 5px;
-			right: 30px;
-			border: 1px solid #e3e3e3;
-		}
-*/
-		
-		#patientexp .internalrow .col-md-3 {
-			margin-top: 1em;
-		}
-		
-		#patientexp.evalaccordion .card-header {
-			border-bottom: none;
-			background: none !important;
-			position: relative;
-		}
-		
-		.v3#accordionExample .card {
-			margin-bottom: 1.3em;
-		}
-		
-		.v3#accordionExample .card {
-			flex-direction: inherit;
-		}
-		
-		.v3#accordionExample .card-header {
-			background-color: #fff !important;
-			border-bottom: 1px solid #fff;
-			padding: 0;
-		}
-		
-		.v3#accordionExample .card-header .btn {
-			/*			temp for scss nt working*/
-			color: inherit !important;
-		}
-		
-		.v3 .answ.col-md-2 {
-			line-height: 1.3em;
-		}
-		
-		.evalaccordion .card-header .btn .surveyanswer:after {
-			font: normal normal normal 14px/1 FontAwesome;
-			font-family: 'Font Awesome 5 Free';
-			vertical-align: middle;
-			font-weight: 900;
-			position: absolute;
-			background: none;
-			left: -.4em;
-			top: .15em !important;
-			top: inherit;
-			font-size: .95em;
-			color: #11857d;
-		}
-		
-		.evalaccordion .card-header .btn[aria-expanded="true"] .surveyanswer:after {
-			content: "\f068";
-		}
-		
-		.evalaccordion .card-header .btn[aria-expanded="false"] .surveyanswer:after {
-			content: "\f067";
-		}
-		
-		.evalaccordion .card:first-of-type .card-header .btn .surveyanswer:after {
-			content: "" !important;
-		}
-		
-		.evalaccordion .card .card-header.true:after {
-			content: "" !important;
-		}
-		
-		.surveyanswer {
-			font-weight: 400;
-			font-style: italic;
-			font-size: 15px !important;
-			/* letter-spacing: .03em; */
-		}
-		
-		.surveypct {
-			font-weight: bold;
-			font-size: 1.28em;
-			color: #3e61ab;
-		}
-		
-		.stateavg .surveypct {
-			color: #5C5D5F;
-		}
-		
-		.facility span.surveypct {
-			color: #3e61ab;
-		}
-		
-		.toplabel {
-			text-transform: uppercase;
-			font-size: .8em;
-		}
-		
-		.facility .toplabel {
-			color: #3e61ab;
-		}
-		
-		#patientexp .toplabel {
-			/*			margin-top: -1.3em;*/
-			line-height: 1.1em;
-		}
-		
-		#accordionExample .facility span.not-provided {
-			font-size: 1.0em;
-		}
-		
-		main {
-			margin-top: 81px;
-		}
-		
-		#facilityaddress {
-			line-height: 1.2em;
-		}
-		
-		.ribbon {
-			font-size: 12px !important;
-			letter-spacing: .03em;
-			/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-			width: 100%;
-			position: relative;
-			background: #F16924;
-			color: #fff;
-			text-align: center;
-			padding: 1em 2em;
-			/* Adjust to suit */
-			/* margin: 2em auto 3em; */
-			/* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
-		}
-		
-		.ribbon:before {
-			content: "";
-			position: absolute;
-			display: block;
-			bottom: -.5em;
-			border: 1.8em solid #d35210;
-			z-index: -1;
-		}
-		
-		.ribbon:before {
-			left: -2.5em;
-			border-right-width: 1.5em;
-			border-left-color: transparent;
-		}
-		/*
-.ribbon:after {
- right: -2.5em;
- border-left-width: 1.5em;
- border-right-color: transparent;
-}
-*/
-		
-		.ribbon .ribbon-content:before,
-		.ribbon .ribbon-content:after {
-			content: "";
-			position: absolute;
-			display: block;
-			border-style: solid;
-			border-color: #804f7c transparent transparent transparent;
-			bottom: -1em;
-		}
-		
-		.ribbon .ribbon-content:before {
-			left: 0;
-			border-width: 1em 0 0 1em;
-		}
-		
-		.ribbon .ribbon-content:after {
-			right: 0;
-			border-width: 1em 1em 0 0;
-		}
-		/*	add to real css one row is right*/
-		
-		.btn-success {
-			color: #fff;
-			background-color: #0C867D;
-			border-color: #0C867D;
-			background: linear-gradient(to top right, #064f51, #279184);
-		}
-		
-		#reviews {
-			/*			 this would really be auto: here to show what would happen if several*/
-			overflow-y: auto;
-		}
-		
-		#reviews .card:first-of-type {
-			border-top: 1px solid #61BDB0;
-		}
-		
-		#accordionExample .surveypct {
-			font-size: 1.25em;
-		}
-		
-		.v3#accordionExample .card {
-			margin-bottom: .6em;
-		}
-		
-		.v3#accordionExample .card-header h4 button {
-			line-height: 1.2em;
-			padding-top: .4em;
-		}
-		
-		.v3#accordionExample .card-header:before {
-			width: 18px;
-		}
-		/*		override only styles*/
-		
-		#accordionExample .card-header:after {
-			content: "";
-		}
-		
-		.v3#accordionExample .card {
-			border-top-style: solid;
-			border-top-width: 2px;
-		}
-		
-		.v3#accordionExample .fast.card {
-			border-top-color: #804099;
-		}
-		
-		.v3#accordionExample .fast .card-header {
-			border-top: none;
-		}
-		
-		.v3#accordionExample .personal.card {
-			border-top-color: #3F63AC;
-		}
-		
-		.v3#accordionExample .personal .card-header {
-			border-top: none;
-		}
-		
-		.v3#accordionExample .monitor.card {
-			border-top-color: #8FC640;
-		}
-		
-		.v3#accordionExample .monitor .card-header {
-			border-top: none;
-		}
-		
-		.v3#accordionExample .carecoord.card {
-			border-top-color: #9E2064;
-		}
-		
-		.v3#accordionExample .carecoord .card-header {
-			border-top: none;
-		}
-		
-		.v3#accordionExample .evidence.card {
-			border-top-color: #9C905C;
-		}
-		
-		.v3#accordionExample .evidence .card-header {
-			border-top: none;
-		}
-		
-		.v3#accordionExample .access.card {
-			border-top-color: #299284;
-		}
-		
-		.v3#accordionExample .access .card-header {
-			border-top: none;
-		}
-		
-		.v3#accordionExample .recovery.card {
-			border-top-color: #292562;
-		}
-		
-		.v3#accordionExample .recovery .card-header {
-			border-top: none;
-		}
-		
-		.v3#accordionExample .card.toStick {
-			border: none;
-			border-radius: 0;
-			border-width: 0;
-		}
-		/*		temp to match sentence below p margins*/
-		
-		.v3#accordionExample .card-header .btn {
-			padding-left: 2em;
-			padding-right: 2em;
-			padding-top: 1em;
-		}
-		
-		p.text-dark.small.offset-md-1 {
-			margin-bottom: 0;
-			display: none;
-			margin-top: .5em;
-			line-height: 1.3em;
-		}
-		/*
-		i#commentIcon {
-    font-size: 10em;
-    color: #BCE3DE;
-}
-*/
-		
-		.comment {
-			background: url(images/noun_comment_2969806.svg);
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position-x: center;
-			background-position-y: -1em;
-		}
-		/*
-		.comment.col-md-3:after {
-    content: '\f086';
-    font-family: "Font Awesome 5 Free";
-    color: #BCE3DE;
-    width: 100%;
-    position: absolute;
-}
-*/
-		
-		.not-provided {
-			line-height: 1.2em;
-		}
-		
-		.textblank {
-			width: 4em;
-			display: inline-block;
-			border-bottom: 1px solid;
-			margin: 0 .3em;
-		}
-		
-		#reviews .toplabel {
-			color: #5c5d5f !important;
-			font-size: .85em;
-		}
-		
-		#reviews .toplabel b {
-			color: #0C867D !important;
-			font-weight: 800;
-			font-size: 1.3em;
-		}
-		
-		#reviews .toplabel .reviewpct {
-			color: #959595 !important;
-			font-size: 1.3em;
-		}
-		/*		popper.js tooltips- already defined tooltip styles elsewhere?!*/
-		
-		.tooltip-inner {
-			max-width: 400px;
-			padding: 0.25rem 0.5rem;
-			color: inherit;
-			text-align: center;
-			background-color: rgb(255, 255, 255);
-			border-radius: 0.25rem;
-			/* opacity: 1; */
-			-webkit-box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.31);
-			box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.31);
-			opacity: 1 !important;
-			text-align: left;
-			font-size: .97em;
-			line-height: 1.35em;
-			font-weight: 500;
-			padding: 2em;
-		}
-		
-		.tooltip-inner ul {
-			padding-left: 1em;
-			margin-bottom: 0;
-		}
-		
-		.tooltip-inner ul li {
-			padding-bottom: .7em;
-		}
-		
-		.tooltip.show {
-			opacity: 1;
-		}
-		
-		*/ .not-provided {
-			line-height: 1.2em;
-		}
-		
-		.textblank {
-			width: 4em;
-			display: inline-block;
-			border-bottom: 1px solid;
-			margin: 0 .3em;
-		}
-		
-		#reviews .toplabel {
-			color: #5c5d5f !important;
-			font-size: .85em;
-		}
-		
-		#reviews .toplabel b {
-			color: #0C867D !important;
-			font-weight: 800;
-			font-size: 1.3em;
-		}
-		
-		#reviews .toplabel .reviewpct {
-			color: #959595 !important;
-			font-size: 1.3em;
-		}
-		/*		changes to styles for prof view*/
-		
-		.card h4 {
-			font-size: 1.1em;
-			line-height: 1.2em;
-			font-weight: 600;
-			padding-bottom: 1em;
-		}
-		
-		.row.tier1 .quest {
-			font-size: .9em;
-			line-height: 1.25em;
-			padding-left: 3em;
-			position: relative;
-		}
-		
-		.tier1 {
-			border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-		}
-		
-		.tier1:last-of-type {
-			border-bottom: none;
-		}
-		
-		.row.tier1>div {
-			padding-top: .3em;
-			padding-bottom: .2em;
-		}
-		/*
-		.row.collapse .quest:before {
-			content: " ";
-			position: absolute;
-			z-index: 500;
-			left: 0;
-			width: 6em;
-			background-size: contain;
-			background-repeat: no-repeat;
-			height: 100%;
-			border-radius: 0;
-			height: 2px;
-			bottom: -1;
-			margin-left: 0;
-			background: #fff;
-		}
-		
-*/
-		
-		.row.details-wrapper:last-of-type {
-			/* background: red; */
-			margin-bottom: 1em;
-		}
-		
-		.row.collapse .quest {
-			line-height: 1.25em;
-			padding-left: 6em;
-		}
-		
-		.card h4 {
-			font-size: 1.1em;
-			line-height: 1.2em;
-			font-weight: 600;
-			padding-bottom: 1em;
-		}
-		
-		.v3#accordionExample a.small {
-			float: right;
-			color: #61BDB0;
-			line-height: 1em;
-		}
-		
-		.answ .fas {
-			font-size: 1.3em;
-			text-align: right;
-			float: right;
-		}
-		
-		.surveypct {
-			color: inherit;
-		}
-		
-		.col.col-sm.pr-1.mt-1.d-flex.align-content-between.flex-wrap {
-			border-left: 1px solid #61bdb0;
-		}
-		
-/*
-		.col.col-sm.pr-1.mt-1.d-flex.align-content-end.flex-wrap {
-			border-bottom: 1px solid #3e61ab;
-		}
-*/
-		
-		.custom-control.custom-checkbox.form-check {
-			padding-right: 2em;
-			font-size: .9em;
-		}
-		
-		.comparecol {
-			border-left: 1px solid #61bdb0;
-		}
-		
-		.facilcol {
-			border-left: none;
-		}
-		
-		.loccol {
-			background: linear-gradient(to top, #ffffff45, #d6e5e6ad);
-		}
-		
-		.statecol {
-			background: linear-gradient(to bottom, #ffffff45, #d6e5e6ad);
-		}
-		
-		.stuck {
-			position: fixed;
-			top: 108px;
-			z-index: 5;
-		}
-		
-		.tostick.stuck {
-			width: 1140px;
-		}
-		
-		.tostick2.stuck {
-			width: 1140px;
-		}
-		/*
-		#claims .v3#accordionExample .card {
-			background: #f1f1f2;
-			border-top: none;
-			border-top-width: 0px;
-			padding-top: 1em;
-		}
-*/
-		
-		#claims .accordion .card {
-			background: #f1f1f2;
-			border-top: none;
-			border-top-width: 0px;
-			padding-top: 1em;
-		}
-		
-		#claims .tier1 {
-			border-bottom: 1px solid #fff;
-		}
-		
-		#claims .details-wrapper {
-			border-bottom: 1px solid #fff;
-		}
-		
-		#claims .details-wrapper:after {
-			border: 1px solid #f1f1f2;
-		}
-		
-		#claims .col.col-sm.pr-1.mt-1.d-flex.align-content-between.flex-wrap {
-			border-left: 2px solid #fff;
-		}
-		
-		#claims .quest {
-			font-size: 15px;
-		}
-		
-		#claims .card h4 {
-			font-size: 1.1em;
-			line-height: 1.2em;
-			font-weight: 600;
-			padding-bottom: 1em;
-		}
-		
-		#stateinfotable2 td {
-			width: 25%;
-			letter-spacing: .03em;
-		}
-		
-		#stateinfotable2 .toplabel {
-			padding-top: .4em;
-			padding-bottom: .25em;
-		}
-		
-		#stateinfotable2 b {
-			letter-spacing: .03em;
-			font-size: 1.1em;
-			letter-spacing: .04em;
-			padding-top: .7em;
-			display: inline-block;
-			padding-bottom: .1em;
-		}
-		
-		#stateinfotable2 .surveypct {
-			color: inherit;
-			font-size: 1.55em;
-		}
-		
-		#stateinfotable2 .toplabel {
-			padding-top: .4em;
-			padding-bottom: .25em;
-			padding-right: .7em;
-			font-size: .9em;
-			font-weight: 300;
-		}
-		
-		#stateinfotable2 .headerrow {
-			border-top: 1px solid #53ad9f;
-		}
-		
-		#stateinfotable2 .headerrow:first-of-type {
-			border-top: none;
-		}
-		
-		.claims2#claims .tier1 {
-			border-bottom: none;
-		}
-		/*
-		.claims2#claims .answ col:last-of-type {
-			border-left:1px solid red;
-		}
-*/
-		
-		.claims2#claims .answ .col:last-of-type {
-			border-left: 2px solid #fff;
-		}
-		
-		.claims2#claims .card {
-			padding-bottom: 1em;
-		}
-		
-		h2 .subtitle {
-			text-transform: none;
-			font-family: "museo-sans";
-			font-weight: 400;
-			font-size: 24px;
-		}
-		
-		div#stateselect {
-			font-size: .9em;
-		}
-		
-		table#stateinfotable2 {
-			font-size: .9em;
-		}
-		
-		#stateinfotable2 td .surveypct {
-			padding-bottom: .3em;
-			display: inline-block;
-		}
-
-		
-/*		from professfail*/
-		#claims .card h4 .toplabel {
-    display: inline-block;
-    font-size: .86em;
-    font-weight: 400;
-    border-bottom: 1px solid;
-}
-		
-		.tostick .col.col-sm.pr-1.mt-1.d-flex.align-content-end.flex-wrap {
-    border-bottom: 1px solid #3e61ab;
-}
-		
-		#claims .col.col-sm.pr-1.mt-1.d-flex.align-content-end.flex-wrap {
-    border-left: 2px solid #fff;
-}
-		
-
-		
-	</style>
-
+    <link href="css/quality-table.css" type="text/css" rel="stylesheet">
+    <link href="css/patient-experience.css" type="text/css" rel="stylesheet">
+    <link href="css/reviews.css" type="text/css" rel="stylesheet">
+    <link href="css/facility-only.css" type="text/css" rel="stylesheet">
+   <link href="css/proffacil-only.css" type="text/css" rel="stylesheet">
+    <link href="css/multiColQuality.css" type="text/css" rel="stylesheet">
+    <link href="css/claims.css" type="text/css" rel="stylesheet">
+     <link href="css/payerprof-only.css" type="text/css" rel="stylesheet">
+    
 
 
 </head>
 
 <body>
 
-	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
 
 		<div class="container">
 			<div class="row">
@@ -1130,9 +112,9 @@
 
 
 					<div class="row pb-4">
-						<h2 class="col-sm-12 col-md-7 statetitle mb-0">New York</h2>
+						<h2 class="col-sm-12 col-md-7 statetitle mb-0">Empire BlueCross BlueShield</h2>
 						
-							<div class="col-md-4 offset-md-1 align-self-end pb-4">
+														<div class="col-md-4 offset-md-1 align-self-end pb-4">
 															
 <!--															fix this for true bottom alignment-->
 									<div class="mt-2" id="stateselect" style="color: #0d867d; background: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e) no-repeat right 0.75rem center/8px 10px; ">
@@ -1154,8 +136,6 @@
 
 
 								</div>
-						
-
 
 					</div>
 
@@ -1170,7 +150,14 @@
 							<table class="mb-3 text-light" id="stateinfotable2">
 
 
-							
+								<tr class="headerrow">
+									<td colspan='4'><b>Insurance Plan Distribution:</b></td>
+								</tr>
+
+								<tr>
+									<td colspan='4'><span class="surveypct">42<sup>%</sup></span> of ATLAS facilities who say they accept <b>Empire BlueCross BlueShield</b></td>
+
+								</tr>
 
 								<tr class="headerrow">
 									<td colspan='4'><b>Payer Distribution: </b> <i>Percentage of ATLAS facilities accepting - </i></td>
@@ -1253,7 +240,7 @@
 			</div>
 
 
-			<div class="row bg-light contentblock ">
+			<div class="row bg-white contentblock borderBottom">
 				<div class="container">
 
 					<div class="row justify-content-center ">
@@ -1322,117 +309,116 @@
 							</div>
 
 							<div class="row">
-								<div class="col-12 accordion v3" id="accordionExample">
+								<div class="col-12 accordion v3" id="qualityCare">
 
 
+                                                            <div class="toStick ">
+                                                                            
+<!--                                                                            This will be the same as the sticky header for proffacil, except without the first 3-col wide holder for the sigle facility specific information-->
+                                        <div class="col-md-12">
 
-									<div class="card toStick fromcomp">
-										<div class="col-md-12">
+                                            <div class="row pl-md-5">
 
+                                                <div id="collapseSix" class="col-12">
 
-
-
-											<div class="row pl-5">
-
-												<div id="collapseSix" class="col-12">
-
-
-
-													<div class="row tier1 d-flex align-items-end">
-														<div class="col-sm-12 col-md-3 quest">
+                                                    <div class="row tier1">
+                                                    
 
 
-														</div>
-														<div class="col-md-1 answ d-flex align-items-center">
+                                                        <div class="col flex-grow-1">
+                                                            <div class="row">
 
-														</div>
+                                                                <div class="col small text-center facility headertoprow">ATLAS facilities- State average for:</div>
+                                                            </div>
 
+                                                            <div class="row mt-3">
 
-														<div class="col flex-grow-1">
+                                                                <div class="d-flex flex-grow-1">
+                                                                    <div class="col loc text-center">
+                                                                        Level of Care
+                                                                    </div>
+                                                                    <div class="col-4 ">
+                                                                        <!--																																	placeholder above state  
+realize this and the flex cells for LOC columns vs not might need rearranging to resize properly depending upon what's included from user selections in top checkboxes-->
 
-
-															<div class="row">
-
-
-
-
-																<div class="col small text-center facility" style="color:#0C867D; text-transform: uppercase; border-bottom:2px solid #0C867D">ATLAS facilities- State average for:</div>
-															</div>
-
-															<div class="row d-flex align-content-end justify-content-end mt-3">
-
-
-																<div class="d-flex flex-grow-1">
-																	<div class="col loc text-center" style="color:#0C867D; background: linear-gradient(to top, #ffffff45, #d6e5e6ad);">
-																		Level of Care
-																	</div>
-																	<div class="col-4 loc">
-																		<!--															placeholder above state-->
-																	</div>
-																</div>
+                                                                    </div>
+                                                                </div>
 
 
-															</div>
+                                                            </div>
 
-															<div class="row d-flex align-content-end justify-content-end ">
+                                                            <div class="row">
 
-
-																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap comparecol loccol" style=" background: linear-gradient(to top, #ffffff45, #d6e5e6ad);">
-																	<div class="w-100 small toplabel" style="text-transform: uppercase">Inpatient Facilities:</div>
-
-																</div>
-																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
-																	<div class="w-100 small toplabel" style="text-transform: uppercase">Outpatient Facilities:</div>
-
-																</div>
-																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
-																	<div class="w-100 small toplabel" style=" text-transform: uppercase">Opioid Treatment Programs (OTPs):</div>
-
-																</div>
-																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
-																	<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential Facilities:</div>
-																</div>
-
-
-																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap comparecol statecol">
-																	<div class="w-100 small toplabel" style="text-transform: uppercase">State Overall:</div>
-
-																</div>
-
-																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap comparecol statecol">
-																	<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>
-
-																</div>
-
-															</div>
-
-
-														</div>
-
-
-													</div>
-
-
-												</div>
-
-
-											</div>
-
-
-
-										</div>
+                                                        
+                                                                <div class="col answ align-self-center">
+                                                                    <div class="row">
 
 
 
 
-									</div>
+                                                                        <div class="col col-sm pr-1 pl-1 pl-md-2 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
+                                                                            <div class="d-none d-md-block w-100 small toplabel" style="text-transform: uppercase">Inpatient:</div>
+                                                                            <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">IP</div>
 
+                                                                        </div>
+                                                                        <div class="col col-sm pr-1 pl-1 pl-md-2 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
+                                                                            <div class="d-none d-md-block w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>
+                                                                            <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">OP</div>
+
+                                                                        </div>
+                                                                        <div class="col col-sm pr-1 pl-1 pl-md-2 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
+                                                                            <div class="d-none d-md-block w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>
+                                                                            <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">OTP</div>
+
+                                                                        </div>
+                                                                        <div class="col col-sm pr-1 pl-1 pl-md-2 mt-1 d-flex align-content-end flex-wrap comparecol loccol">
+                                                                            <div class="d-none d-md-block w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>
+                                                                            <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">Res</div>
+                                                                        </div>
+
+
+                                                                        <div class="col col-sm pr-1 pl-1 pl-md-3 mt-1 d-flex align-content-end flex-wrap comparecol statecol">
+                                                                            <div class="d-none d-md-block w-100 small toplabel" style="text-transform: uppercase">state:</div>
+                                                                            <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">State</div>
+
+                                                                        </div>
+
+                                                                        <div class="col col-sm pr-1 pl-1 pl-md-3 mt-1 d-flex align-content-end flex-wrap comparecol statecol">
+                                                                            <div class="d-none d-md-block w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>
+                                                                            <div class="w-100 small toplabel d-md-none" style="text-transform: uppercase">Medi caid</div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+
+
+                                                    </div>
+
+
+                                                </div>
+
+
+                                            </div>
+
+
+
+                                        </div>
+
+
+
+
+                                    </div>
 
 
 									<div class="card fast fromcomp">
 										<div class="col-md-12 card-header true" id="headingOne">
 
-											<div class="row d-flex pl-5 mt-3">
+											<div class="row d-flex pl-md-5 mt-3">
 												<h4 class="col-md-3 mb-0">          
 Fast Access to Treatment
       </h4>
@@ -1441,7 +427,7 @@ Fast Access to Treatment
 
 
 
-											<div class="row pl-5">
+											<div class="row pl-md-5">
 
 												<div id="collapseSix" class="col-12">
 
@@ -1462,28 +448,28 @@ Fast Access to Treatment
 																<div class="col answ">
 
 																	<div class="row ">
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
 
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
@@ -1504,7 +490,7 @@ Fast Access to Treatment
 
 														<div class="col-md-1 answ d-flex align-items-center">
 
-															<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#fastOneHidden">+ more</a>
+															<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#fastOneHidden"></a>
 														</div>
 
 														<div class="col flex-grow-1">
@@ -1516,28 +502,28 @@ Fast Access to Treatment
 
 
 																	<div class="row ">
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
 
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
@@ -1591,21 +577,21 @@ Fast Access to Treatment
 
 
 																	<div class="row ">
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<div class="w-100 small toplabel" style="    color: #3e61ab;
     text-transform: none;
     font-weight: 600;">onsite:</div>
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
@@ -1613,11 +599,11 @@ Fast Access to Treatment
 																			<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">Inpatient:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
@@ -1673,7 +659,7 @@ Fast Access to Treatment
 															</div>
 															<div class="col-md-4 answ">
 
-																<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#personalOneHidden">+ more</a>
+																<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#personalOneHidden"></a>
 
 															</div>
 
@@ -1760,7 +746,7 @@ Fast Access to Treatment
 									<div class="card access fromcomp">
 										<div class="col-md-12 card-header true" id="headingOne">
 
-											<div class="row d-flex pl-5 mt-3">
+											<div class="row d-flex pl-md-5 mt-3">
 												<h4 class="col-md-3 mb-0">          
   Access to Medications for Opioid or Alcohol Use Disorder
       </h4>
@@ -1769,7 +755,7 @@ Fast Access to Treatment
 
 
 
-											<div class="row pl-5">
+											<div class="row pl-md-5">
 
 												<div id="collapseSix" class="col-12">
 
@@ -1779,7 +765,7 @@ Fast Access to Treatment
 														<div class="col-sm-12 col-md-3 quest"><span>Offers FDA-approved medication for <b>opioid use disorder</b>:</span> <i class="fa fa-info-circle" aria-hidden="true"></i></div>
 														<div class="col-md-1 answ d-flex align-items-center">
 
-															<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#accessOneHidden">+ more</a>
+															<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#accessOneHidden"></a>
 
 														</div>
 
@@ -1793,28 +779,28 @@ Fast Access to Treatment
 																<div class="col answ">
 
 																	<div class="row ">
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">state:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">Inpatient:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
 
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
@@ -1868,28 +854,28 @@ Fast Access to Treatment
 
 
 																			<div class="row ">
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
 
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
@@ -1934,28 +920,28 @@ Fast Access to Treatment
 
 
 																			<div class="row ">
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
 
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
@@ -2003,28 +989,28 @@ Fast Access to Treatment
 
 
 																			<div class="row ">
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
 
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
@@ -2072,28 +1058,28 @@ Fast Access to Treatment
 
 
 																			<div class="row ">
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
 
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
@@ -2142,28 +1128,28 @@ Fast Access to Treatment
 
 
 																			<div class="row ">
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
 
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
@@ -2210,28 +1196,28 @@ Fast Access to Treatment
 
 
 																			<div class="row ">
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
 
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
@@ -2279,28 +1265,28 @@ Fast Access to Treatment
 
 
 																			<div class="row ">
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
 
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
@@ -2331,7 +1317,7 @@ Fast Access to Treatment
 
 														<div class="col-md-1 answ d-flex align-items-center">
 
-															<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#accessOneHidden">+ more</a>
+															<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#accessOneHidden"></a>
 
 														</div>
 
@@ -2344,28 +1330,28 @@ Fast Access to Treatment
 																<div class="col answ">
 
 																	<div class="row ">
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
 
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
@@ -2423,30 +1409,30 @@ Fast Access to Treatment
 
 
 																			<div class="row ">
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<div class="w-100 small toplabel" style="    color: #3e61ab;
     text-transform: none;
     font-weight: 600;">onsite:</div>
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
 
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
@@ -2492,30 +1478,30 @@ Fast Access to Treatment
 
 
 																			<div class="row ">
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<div class="w-100 small toplabel" style="    color: #3e61ab;
     text-transform: none;
     font-weight: 600;">onsite:</div>
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
 
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
@@ -2586,7 +1572,7 @@ Fast Access to Treatment
 															</div>
 															<div class="col-md-4 answ">
 
-																<a class="small ml-auto mt-auto align-self-end" data-toggle="collapse" data-target="#behaviorOneHidden">+ more</a>
+																<a class="small ml-auto mt-auto align-self-end" data-toggle="collapse" data-target="#behaviorOneHidden"></a>
 
 															</div>
 
@@ -2750,12 +1736,12 @@ Fast Access to Treatment
 
 															<div class="col-md-4 answ">
 																<!--															<span>This facility offers:</span>-->
-																<a class="small small ml-auto mt-auto align-self-end" data-toggle="collapse" data-target="#monitorOneHidden">+ more</a>
+																<a class="small small ml-auto mt-auto align-self-end" data-toggle="collapse" data-target="#monitorOneHidden"></a>
 
 
 																<!--
 															  <button type="button" class="dropdown-toggle small" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    + more
+    
   </button>
 -->
 															</div>
@@ -2863,7 +1849,7 @@ Fast Access to Treatment
 									<div class="card carecoord fromcomp">
 										<div class="col-md-12 card-header true" id="headingFour">
 
-											<div class="row d-flex pl-5 mt-3">
+											<div class="row d-flex pl-md-5 mt-3">
 												<h4 class="col-md-3 mb-0">          
    Coordinated Care for Mental and Physical Health
       </h4>
@@ -2872,7 +1858,7 @@ Fast Access to Treatment
 
 
 
-											<div class="row pl-5">
+											<div class="row pl-md-5">
 
 												<div id="collapseSix" class="col-12">
 
@@ -2882,7 +1868,7 @@ Fast Access to Treatment
 														<div class="col-sm-12 col-md-3 quest"><span>Offers mental health care</span> <i class="fa fa-info-circle" aria-hidden="true"></i></div>
 														<div class="col-md-1 answ d-flex align-items-center">
 
-															<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#carecoordOneHidden">+ more</a>
+															<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#carecoordOneHidden"></a>
 
 														</div>
 
@@ -2894,28 +1880,28 @@ Fast Access to Treatment
 																<div class="col answ">
 
 																	<div class="row ">
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">state:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">Inpatient:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
 
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																			<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
@@ -2996,30 +1982,30 @@ Fast Access to Treatment
 
 
 																			<div class="row ">
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<div class="w-100 small toplabel" style="    color: #3e61ab;
     text-transform: none;
     font-weight: 600;">onsite:</div>
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
 
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
@@ -3048,7 +2034,7 @@ Fast Access to Treatment
 
 														<div class="col-md-1 answ d-flex align-items-center">
 
-															<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#carecoordTwoHidden">+ more</a>
+															<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#carecoordTwoHidden"></a>
 
 														</div>
 
@@ -3059,28 +2045,28 @@ Fast Access to Treatment
 																<div class="col answ">
 
 																	<div class="row ">
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
 
-																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																		<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																			<div class="w-100 surveypct">42<sup>%</sup> </div>
 																		</div>
@@ -3138,30 +2124,30 @@ Fast Access to Treatment
 
 
 																			<div class="row ">
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<div class="w-100 small toplabel" style="    color: #3e61ab;
     text-transform: none;
     font-weight: 600;">onsite:</div>
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
 
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
@@ -3207,30 +2193,30 @@ Fast Access to Treatment
 
 
 																			<div class="row ">
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<div class="w-100 small toplabel" style="    color: #3e61ab;
     text-transform: none;
     font-weight: 600;">onsite:</div>
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style="text-transform: uppercase">outpatient:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">OTP:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
 
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Residential:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
-																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap">
+																				<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 																					<!--																			<div class="w-100 small toplabel" style=" text-transform: uppercase">Facilities Accepting Medicaid:</div>-->
 																					<div class="w-100 surveypct">42<sup>%</sup> </div>
 																				</div>
@@ -3299,7 +2285,7 @@ Fast Access to Treatment
 
 															</div>
 															<div class="col-md-4 answ">
-																<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#collapseSupportServices">+ more</a>
+																<a class="small ml-auto mt-auto align-self-end " data-toggle="collapse" data-target="#collapseSupportServices"></a>
 															</div>
 
 														</div>
@@ -3474,7 +2460,7 @@ Fast Access to Treatment
 
 				</div>
 			</div>
-			<div class="row bg-light contentblock ">
+			<div class="row bg-white contentblock borderBottom ">
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-md-12">
@@ -3494,20 +2480,44 @@ Fast Access to Treatment
 								<div class="col-12  accordion">
 
 
-						
-											<div class="card">
+									<div class="toStick3">
+
+
+										<div class="col-12">
+
+
+											<div class="row tier1 d-flex align-items-end">
+												<div class="col-sm-12 col-md-9 quest">
+
+												</div>
+
+
+												<div class="col flex-grow-1">
+													<div class="row">
+
+														<div class="col small text-center facility" style="color:#0C867D; text-transform: uppercase; border-bottom:2px solid #0C867D">State Data from Other Sources:</div>
+													</div>
+
+
+
+
+												</div>
+
+
+											</div>
+
+
+										</div>
+
+									</div>
+
+									<div class="card">
 
 										<div class="col-12">
 											<div class="row d-flex mt-3">
-
-
-												<h4 class="col-sm-12 col-md-9 pl-5 quest">          
-State Data from Other Sources
-																									<br/><span class="toplabel mt-3">          
+												<h4 class="col-sm-12 col-md-9 pl-md-5 quest">          
 Insurance
-      </span>
       </h4>
-
 
 												<div class="col flex-grow-1 align-self-end">
 
@@ -3518,14 +2528,14 @@ Insurance
 
 
 														<div class="col col-sm mt-1 d-flex align-content-end flex-wrap">
-															<div class="w-100 small toplabel" style="text-transform: uppercase">New York:</div>
+															<div class="w-100 small toplabel" style="text-transform: uppercase"><b>NY:</b></div>
 
 														</div>
 
 
 
 														<div class="col col-sm mt-1 d-flex align-content-end flex-wrap">
-															<div class="w-100 small toplabel" style=" text-transform: uppercase">United States:</div>
+															<div class="w-100 small toplabel" style=" text-transform: uppercase">US:</div>
 
 														</div>
 
@@ -3560,11 +2570,11 @@ Insurance
 															<div class="row ">
 
 
-																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																	<div class="w-100 surveypct">42<sup>%</sup> </div>
 																</div>
-																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																	<div class="w-100 surveypct">42<sup>%</sup> </div>
 																</div>
@@ -3601,11 +2611,11 @@ Insurance
 
 															<div class="row ">
 
-																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																	<div class="w-100 surveypct">42<sup>%</sup> </div>
 																</div>
-																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																	<div class="w-100 surveypct">42<sup>%</sup> </div>
 																</div>
@@ -3623,12 +2633,41 @@ Insurance
 
 										</div>
 
+
+
+									</div>
+
+									<div class="card">
+
 										<div class="col-12">
 											<div class="row d-flex mt-3">
-												<h4 class="col-sm-12 col-md-12 pl-5 quest">          
-													<span class="toplabel"> Substance Use Disorder Prevalence</span>
+												<h4 class="col-sm-12 col-md-9 pl-md-5 quest">          
+Substance Use Disorder Prevalence
       </h4>
 
+												<div class="col flex-grow-1 align-self-end">
+
+
+													<div class="row d-flex align-content-end justify-content-end ">
+
+
+
+
+														<div class="col col-sm mt-1 d-flex align-content-end flex-wrap">
+															<div class="w-100 small toplabel" style="text-transform: uppercase"><b>NY</b>:</div>
+
+														</div>
+
+
+														<div class="col col-sm mt-1 d-flex align-content-end flex-wrap">
+															<div class="w-100 small toplabel" style=" text-transform: uppercase">US:</div>
+
+														</div>
+
+													</div>
+
+
+												</div>
 
 
 											</div>
@@ -3657,11 +2696,11 @@ Insurance
 
 
 															<div class="row ">
-																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																	<div class="w-100 surveypct">42<sup>%</sup> </div>
 																</div>
-																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																	<div class="w-100 surveypct">42<sup>%</sup> </div>
 																</div>
@@ -3699,11 +2738,11 @@ Insurance
 
 															<div class="row ">
 
-																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																	<div class="w-100 surveypct">42<sup>%</sup> </div>
 																</div>
-																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																	<div class="w-100 surveypct">42<sup>%</sup> </div>
 																</div>
@@ -3740,11 +2779,11 @@ Insurance
 
 															<div class="row ">
 
-																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																	<div class="w-100 surveypct">42<sup>%</sup> </div>
 																</div>
-																<div class="col col-sm pr-1 mt-1 d-flex align-content-end flex-wrap">
+																<div class="col col-sm pr-1 mt-1 d-flex align-content-between flex-wrap comparecol">
 
 																	<div class="w-100 surveypct">42<sup>%</sup> </div>
 																</div>
@@ -3764,10 +2803,7 @@ Insurance
 
 
 
-
-
 									</div>
-
 
 
 								</div>
@@ -3782,7 +2818,7 @@ Insurance
 				<!--end content block-->
 			</div>
 
-			<div class="row bg-light contentblock">
+			<div class="row bg-white contentblock borderBottom">
 				<div class="container">
 
 					<div class="row">
@@ -4704,7 +3740,7 @@ Insurance
 
 	<footer>
 		<div class="container-fluid">
-			<div class="row bg-light">
+			<div class="row bg-white">
 				<div class="container mt-5">
 					<div class="row">
 						<div class="col-md-2">

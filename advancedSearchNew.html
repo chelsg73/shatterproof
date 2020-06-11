@@ -17,17 +17,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
-	<meta name="author" content="Marcia Underwood, Chelsea Gieck">
+	<meta name="author" content="">
 	<meta name="generator" content="Jekyll v3.8.5">
 	<title>Search | Atlas Project</title>
 
+
+    <link rel="stylesheet" href="https://use.typekit.net/unm2lor.css">
+    <link href="css/all.css" type="text/css" rel="stylesheet">
+
+    <link href="css/all-global.css" type="text/css" rel="stylesheet">
+
 	<!-- Custom styles for this template -->
 	
-  <link href="css/all-global.css" type="text/css" rel="stylesheet">
   <link href="css/search-only.css" type="text/css" rel="stylesheet">
-  
-  <link href="css/all.css" type="text/css" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.typekit.net/unm2lor.css">
 
 </head>
 <body>
@@ -215,11 +217,11 @@
                 <div class="container">
 
                   <div class="row mb-2">
-                    <span class="col-6 col-md-6 small" style="text-transform: uppercase">Applied Filters:</span>
+                    <span class="col-6 col-md-6 small caplabel">Applied Filters:</span>
                     <a class="col-6 col-md-6 text-right float-right small" href="#">clear all filters</a>
                   </div>
   
-                  <div class="mb-5">
+                  <div class="mb-4" id="modalappliedfilterbank">
                     <div class="d-flex flex-column">
   
                       <div class="">
@@ -272,7 +274,7 @@
     
                     <div class="card border-0">
                       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="">
-                        <div class="card-body row justify-content-center align-items-center" style="padding-bottom:.3em">
+                        <div class="card-body row justify-content-center align-items-center pb-2">
                           
                           <!-- <div class="col-md-2 align-self-center text-center">
                             <label class="my-1">
@@ -283,7 +285,7 @@
                               <div class="col-sm-12">
                                 <p class="mb-1">
                                   Within
-                                  <span id="distanceastext" style='background: url("data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"%3e%3cpath fill="%23343a40" d="M2 0L0 2h4zm0 5L0 3h4z"/%3e%3c/svg%3e"") no-repeat right 0.75rem center/8px 10px;'>
+                                  <span id="distanceastext">
                                     <select class="select bg-white">
                                       <option selected="">5</option>
                                       <option value="2">10</option>
@@ -303,7 +305,7 @@
                         <div class="card-body row justify-content-center align-items-center" style="padding-bottom:.7em;">
                           <div class="col-md-2 align-self-center text-center">
                           </div>
-                          <div class="col-md-10 custom-control custom-checkbox form-check" style="margin-left: -1em; margin-top: .5em;">
+                          <div class="col-md-10 custom-control custom-checkbox form-check">
                             <input type="checkbox" class="custom-control-input" id="customCheck2" checked>
                             <label class=" custom-control-label" for="customCheck2">
                               Quality Data Provided
@@ -429,6 +431,7 @@
                         </div> <!--end card body-->
                       </div> <!--end collapse-->
                     </div> <!--end card -->
+            
                     
                     <div class="card border-0">
                       <div class="card-header" id="headingSeven">
@@ -736,7 +739,7 @@
                           </div>
                         </h3>
                       </div>
-                      <div id="collapseLanguages" class="show" aria-labelledby="headingLanguages">
+                      <div id="collapseLanguages" class="collapse show" aria-labelledby="headingLanguages">
                         <div class="card-body row justify-content-center align-items-center">
                           <div class="col-sm-10 col-md-10 my-1">
                             <span class="dropdown" id="languageselect">
@@ -1063,7 +1066,7 @@
 							<h2 class="text-left">
                 Refine Search
               </h2>
-              <div class="text-right">
+              <div class="text-right small">
                 <a href="#">clear all filters</a>
               </div>
 
@@ -1076,7 +1079,7 @@
                         <div class="col-sm-12 text-left" id="searchLoc">
                           Location
                         </div>
-                      </button>
+                                            </button>
                     </h3>
                   </div> <!--end card header-->
 									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="">
@@ -1106,7 +1109,7 @@
 													<div class="col-sm-12">
 														<p class="mb-1">
 															Within
-															<span id="distanceastext" style='background: url("data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"%3e%3cpath fill="%23343a40" d="M2 0L0 2h4zm0 5L0 3h4z"/%3e%3c/svg%3e"") no-repeat right 0.75rem center/8px 10px;'>
+															<span id="distanceastext">
                                 <select class="select bg-white">
                                   <option selected="">5</option>
                                   <option value="2">10</option>
@@ -1252,6 +1255,8 @@
 										</div> <!--end card body-->
 									</div> <!--end collapse-->
                 </div> <!--end card -->
+                  
+                  
                 
                 <div class="card w-100 border-0">
 									<div class="card-header" id="headingSeven">
@@ -1559,7 +1564,7 @@
                       </div>
                     </h3>
 									</div>
-									<div id="collapseLanguages" class="show" aria-labelledby="headingLanguages">
+									<div id="collapseLanguages" class="collapse show" aria-labelledby="headingLanguages">
 										<div class="card-body row justify-content-center align-items-center">
                       <div class="col-sm-10 col-md-10 my-1">
                         <span class="dropdown" id="languageselect">
@@ -1882,7 +1887,7 @@
                 </a>
 
 								<div class="row my-3" id="appliedfilterLabel">
-									<span class="col-6 col-md-6 small" style="text-transform: uppercase">Applied Filters:</span>
+									<span class="col-6 col-md-6 small caplabel" >Applied Filters:</span>
 									<a class="col-6 col-md-6 text-right float-right small" href="#">clear all filters</a>
 								</div>
 
@@ -1911,7 +1916,7 @@
 									</div>
                 </div> <!--end row-->
 								
-                <div class="row mx-0 mt-4 pt-2 pb-1" style="background: linear-gradient(to top, #1a6b66, #0d867d); color:#fff; border-bottom: 1px solid #61BDB0;">
+                <div class="row mx-0 mt-4 pt-2 pb-1 resultsheader" >
                   
                   <!--mockup view for some results-->
 									<div class="col-12 col-md-8" id="resultscounter">
@@ -1939,8 +1944,8 @@
 								</div> <!--end row-->
 
 								<div class="row mt-3" id="selectedCompare">
-                  <span class="col-12 col-md-6 small" style="text-transform: uppercase">
-                    <i class="fas fa-thumbtack" style="color: #f26624;"></i> 
+                  <span class="col-12 col-md-6 small">
+                    <i class="fas fa-thumbtack"></i> 
                     Selected Facilities to Compare:
                   </span>
 									<a class="col-12 col-md-6 mb-2 mb-md-0 text-right small" href="">clear selections</a>
@@ -1986,7 +1991,7 @@
 						</div>
 
 						<div class="row">
-							<div class="col-12 col-md-8 pl-md-5">
+							<div class="col-12 col-md-8 pl-4 pl-md-5">
 								<div class="d-flex flex-column align-items-center justify-content-center py-2 mb-0" id="search-results">
 
 									<div class="search-item text-left row"> <!--begin search item-->
@@ -1994,17 +1999,17 @@
 											<p class="fac-name mb-0">
 												<a href="#">Addiction Treatment Center of Mt. Sinai</a>
 											</p>
-                      <span class="warning small" style="color:#F26722">
+                      <span class="warning small">
                         <i class="fas fa-question-circle"></i> Quality Data Not Available
                       </span>
 										</div>
-										<div class="col-7 col-md-7">
+										<div class="col-7">
 											<p class="denseline">
 												937 Fulton Street, 2nd and 3rd Floors
 												<br/> Brooklyn, NY 11238
 											</p>
 										</div>
-										<div class="col-5 col-md-5">
+										<div class="col-5">
 											<p class="my-0 text-right small denseline">
 												10.3 miles
 												<br/>from <span class="distancecenter">11238</span>
@@ -2024,7 +2029,7 @@
                             </a>
 													</p>
 													<div class="my-3 my-md-2 w-100 treatmentSetting">
-														<span class="small" style="text-transform: uppercase">Treatment Setting:</span>
+														<span class="small caplabel" >Treatment Setting:</span>
 														<br/>
 														<span>inpatient</span>, <span>outpatient</span>, <span>residential</span>
 													</div>
@@ -2044,13 +2049,13 @@
 												<a href="#">Addiction Treatment Center of Mt. Sinai</a>
 											</p>
 										</div>
-										<div class="col-7 col-md-7">
+										<div class="col-7">
 											<p class="denseline">
 												937 Fulton Street, 2nd and 3rd Floors
 												<br/> Brooklyn, NY 11238
 											</p>
 										</div>
-										<div class="col-12 col-md-5">
+										<div class="col-5">
 											<p class="my-0 text-right small denseline">
 												10.3 miles
 												<br/>from <span class="distancecenter">11238</span>
@@ -2070,7 +2075,7 @@
                             </a>
 													</p>
 													<div class="my-2 w-100 treatmentSetting">
-														<span class="small" style="text-transform: uppercase">Treatment Setting:</span>
+														<span class="small caplabel" >Treatment Setting:</span>
 														<br/>
 														<span>inpatient</span>, <span>outpatient</span>, <span>residential</span>
 													</div>
@@ -2117,7 +2122,7 @@
                             </a>
 													</p>
 													<div class="my-2 w-100 treatmentSetting">
-														<span class="small" style="text-transform: uppercase">Treatment Setting:</span>
+														<span class="small caplabel" >Treatment Setting:</span>
 														<br/>
 														<span>inpatient</span>, <span>outpatient</span>, <span>residential</span>
 													</div>
@@ -2163,7 +2168,7 @@
                             </a>
 													</p>
 													<div class="my-2 w-100 treatmentSetting">
-														<span class="small" style="text-transform: uppercase">Treatment Setting:</span>
+														<span class="small caplabel" >Treatment Setting:</span>
 														<br/>
 														<span>inpatient</span>, <span>outpatient</span>, <span>residential</span>
 													</div>
@@ -2207,7 +2212,7 @@
                         </a>
                       </p>
                       <div class="my-2 w-100 treatmentSetting">
-                        <span class="small" style="text-transform: uppercase">Treatment Setting:</span>
+                        <span class="small caplabel">Treatment Setting:</span>
                         <br/>
                         <span>inpatient</span>, <span>outpatient</span>, <span>residential</span>
                       </div>
@@ -2250,7 +2255,7 @@
                         </a>
                       </p>
                       <div class="my-2 w-100 treatmentSetting">
-                        <span class="small" style="text-transform: uppercase">Treatment Setting:</span>
+                        <span class="small caplabel">Treatment Setting:</span>
                         <br/>
                         <span>inpatient</span>, <span>outpatient</span>, <span>residential</span>
                       </div>
@@ -2292,7 +2297,7 @@
                         </a>
                       </p>
                       <div class="my-2 w-100 treatmentSetting">
-                        <span class="small" style="text-transform: uppercase">Treatment Setting:</span>
+                        <span class="small caplabel">Treatment Setting:</span>
                         <br/>
                         <span>inpatient</span>, <span>outpatient</span>, <span>residential</span>
                       </div>
@@ -2335,7 +2340,7 @@
                         </a>
                       </p>
                       <div class="my-2 w-100 treatmentSetting">
-                        <span class="small" style="text-transform: uppercase">Treatment Setting:</span>
+                        <span class="small caplabel">Treatment Setting:</span>
                         <br/>
                         <span>inpatient</span>, <span>outpatient</span>, <span>residential</span>
                       </div>
@@ -2378,7 +2383,7 @@
                         </a>
                       </p>
                       <div class="my-2 w-100 treatmentSetting">
-                        <span class="small" style="text-transform: uppercase">Treatment Setting:</span>
+                        <span class="small caplabel" >Treatment Setting:</span>
                         <br/>
                         <span>inpatient</span>, <span>outpatient</span>, <span>residential</span>
                       </div>

@@ -1,0 +1,485 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* NOT on the homepage */
+/* line 25, src/scss/old/old-rename.scss */
+.ribbon {
+  font-size: 12px !important;
+  letter-spacing: .03em;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+  width: 100%;
+  position: relative;
+  background: #F16924;
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em;
+  /* Adjust to suit */
+  /* margin: 2em auto 3em; */
+  /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+
+/* line 39, src/scss/old/old-rename.scss */
+.ribbon:before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -.5em;
+  border: 1.8em solid #d35210;
+  z-index: -1;
+}
+
+/* line 47, src/scss/old/old-rename.scss */
+.ribbon:before {
+  left: -2.5em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+
+/* line 52, src/scss/old/old-rename.scss */
+.ribbon .ribbon-content:before,
+.ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #804f7c transparent transparent transparent;
+  bottom: -1em;
+}
+
+/* line 61, src/scss/old/old-rename.scss */
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+
+/* line 65, src/scss/old/old-rename.scss */
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+/* line 70, src/scss/old/old-rename.scss */
+.display-3 {
+  font-family: "museo-slab";
+  font-weight: 700;
+  font-size: 2.5rem;
+  border-bottom: 3px dotted #fff;
+  color: #fff;
+}
+
+/* line 79, src/scss/old/old-rename.scss */
+#filterholder {
+  border-right: 1px solid #61BDB0;
+}
+
+/* line 82, src/scss/old/old-rename.scss */
+#filterholder:before {
+  content: "";
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff45), to(#d6e5e6ad));
+  background: linear-gradient(to bottom, #ffffff45, #d6e5e6ad);
+  position: absolute;
+  right: 0;
+  top: 0rem;
+  width: 200%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* line 93, src/scss/old/old-rename.scss */
+#resultsfilter {
+  background: #fff;
+  background: #fff;
+  padding: 2em 2em 0em 2em;
+  font-size: .85em;
+}
+
+/* line 99, src/scss/old/old-rename.scss */
+#resultsfilter li {
+  list-style: none;
+  position: relative;
+}
+
+/* line 102, src/scss/old/old-rename.scss */
+#resultsfilter li b {
+  letter-spacing: .03em;
+}
+
+/* line 106, src/scss/old/old-rename.scss */
+#resultsfilter li.closed:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 1.1em;
+  vertical-align: middle;
+  font-weight: 900;
+  content: "\f0da";
+  color: #0C867D;
+  background: none;
+  position: absolute;
+  left: -1.5em;
+  top: 0rem;
+}
+
+/* line 119, src/scss/old/old-rename.scss */
+#resultsfilter li.open:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 1.1em;
+  vertical-align: middle;
+  font-weight: 900;
+  color: #0C867D;
+  background: none;
+  position: absolute;
+  left: -1.5em;
+  top: .25rem;
+  content: "\f0d7";
+}
+
+/* line 142, src/scss/old/old-rename.scss */
+.progress {
+  border-radius: 5rem;
+  background-color: #fff;
+  border: 3px solid #fff;
+  padding: 0;
+}
+
+/* line 149, src/scss/old/old-rename.scss */
+#progressholder:after {
+  content: " ";
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #F16924;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  /* margin-left: -.5rem; */
+  z-index: 400;
+  display: block;
+  position: absolute;
+  top: .25rem;
+  left: 25%;
+}
+
+/* line 164, src/scss/old/old-rename.scss */
+.scrlcontainer {
+  position: relative;
+}
+
+/* line 169, src/scss/old/old-rename.scss */
+.overimg {
+  position: relative;
+  z-index: 1000;
+  top: 15rem;
+  text-shadow: #00000087 3px 0 10px;
+}
+
+/* line 176, src/scss/old/old-rename.scss */
+#bgimgscrl {
+  background: url(../images/toScrollLonger.png) repeat-x;
+  height: 200px;
+  width: 2653px;
+  -webkit-animation: slide 120s linear infinite;
+          animation: slide 120s linear infinite;
+  background-size: cover;
+}
+
+/* line 184, src/scss/old/old-rename.scss */
+#bgimgNoscrl {
+  background-image: url(../images/feat-cta-image-taskforce-hompage-1300x600.jpg);
+  background-size: cover;
+  /* background-position-x: 200px; */
+  background-position-y: -50px;
+}
+
+/* line 190, src/scss/old/old-rename.scss */
+.imgscrn {
+  background: black;
+  opacity: .25;
+  z-index: 400;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-1692px, 0, 0);
+            transform: translate3d(-1692px, 0, 0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-1692px, 0, 0);
+            transform: translate3d(-1692px, 0, 0);
+  }
+}
+
+/* line 207, src/scss/old/old-rename.scss */
+#mapholder:after {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-family: "Font Awesome 5 Free";
+  font-size: 5em;
+  vertical-align: middle;
+  font-weight: 900;
+  color: #61BDB0;
+  background: none;
+  position: absolute;
+  left: .5em;
+  top: 90%;
+  content: "\f0d7";
+  z-index: 500;
+}
+
+/* line 224, src/scss/old/old-rename.scss */
+.card-header i.fa.fa-plus-circle {
+  float: right;
+  color: #fff;
+  background: #F16924;
+  border-radius: 50%;
+  /* border: 2px solid #fff; */
+  font-size: 1.4rem;
+  margin-top: .5rem;
+  /* transform: scale(1.5); */
+}
+
+/* line 237, src/scss/old/old-rename.scss */
+#accordionExample .card-header:after {
+  content: "\f055";
+  font-size: 1.5em;
+  vertical-align: middle;
+  font-weight: 900;
+  content: "\f055";
+  color: #279184;
+  border-radius: 50%;
+  position: absolute;
+  left: 1.3em;
+  top: .15em;
+  content: 02D1;
+  content: ' \02D1';
+  -webkit-transform: scaleX(2);
+          transform: scaleX(2);
+}
+
+/* line 253, src/scss/old/old-rename.scss */
+#accordionExample .card-header:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  content: "\f055";
+  margin-left: 0.25em;
+  font-size: 1.1em;
+  vertical-align: middle;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f055";
+  color: #fff;
+  background: #F16924;
+  border-radius: 50%;
+  position: absolute;
+  left: -3em;
+  top: .5rem;
+}
+
+/* line 274, src/scss/old/old-rename.scss */
+span.a-list-item {
+  padding-left: 1em;
+  line-height: 1.1em;
+}
+
+/* line 280, src/scss/old/old-rename.scss */
+.shattericon {
+  border: 3px solid red;
+}
+
+/* line 283, src/scss/old/old-rename.scss */
+.shattericon:before {
+  content: "**";
+  height: 100%;
+  width: 3em;
+  background: red;
+}
+
+/* line 299, src/scss/old/old-rename.scss */
+#fakemodal {
+  -webkit-box-shadow: 1px 2px 16px -4px #024242;
+  box-shadow: 1px 2px 16px -4px #024242;
+}
+
+/* line 307, src/scss/old/old-rename.scss */
+.describe {
+  font-family: "museo-slab", 'MuseoSans500', 'Helvetica', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+/* line 314, src/scss/old/old-rename.scss */
+#biglogoholder:before {
+  content: "* ";
+  width: 300%;
+  height: 100%;
+  position: absolute;
+  background: #fff;
+  left: 100%;
+}
+
+/* line 322, src/scss/old/old-rename.scss */
+#biglogoholder:after {
+  content: " *";
+  width: 300%;
+  height: 2px;
+  position: absolute;
+  background: #fff;
+  right: 100%;
+  bottom: 0;
+}
+
+/* line 342, src/scss/old/old-rename.scss */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  /* line 352, src/scss/old/old-rename.scss */
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/*	table styles. Don't know if we'll want to replace with bootstrap grid so moblie's better'	*/
+@media (min-width: 768px) {
+  /* line 362, src/scss/old/old-rename.scss */
+  #insurancecol {
+    padding-left: 4%;
+  }
+}
+
+/* line 367, src/scss/old/old-rename.scss */
+.groupsserved li {
+  color: inherit !important;
+}
+
+/*		for example wide bulleted list in facility deets section*/
+/* line 372, src/scss/old/old-rename.scss */
+ul.groupsserved.overhang {
+  top: 1.4em;
+  position: absolute;
+  left: 100%;
+  /* top: 0px; */
+  width: 300px;
+}
+
+/* line 381, src/scss/old/old-rename.scss */
+.small.instructions {
+  color: #949598;
+}
+
+/* line 387, src/scss/old/old-rename.scss */
+main {
+  margin-top: 81px;
+}
+
+/* line 391, src/scss/old/old-rename.scss */
+.ribbon {
+  font-size: 12px !important;
+  letter-spacing: .03em;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+  width: 100%;
+  position: relative;
+  background: #F16924;
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em;
+  /* Adjust to suit */
+  /* margin: 2em auto 3em; */
+  /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+
+/* line 406, src/scss/old/old-rename.scss */
+.ribbon:before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -.5em;
+  border: 1.8em solid #d35210;
+  z-index: -1;
+}
+
+/* line 415, src/scss/old/old-rename.scss */
+.ribbon:before {
+  left: -2.5em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+
+/* line 422, src/scss/old/old-rename.scss */
+.ribbon .ribbon-content:before,
+.ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #804f7c transparent transparent transparent;
+  bottom: -1em;
+}
+
+/* line 432, src/scss/old/old-rename.scss */
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+
+/* line 437, src/scss/old/old-rename.scss */
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+/*	add to real css one row is right*/
+/* line 443, src/scss/old/old-rename.scss */
+.btn-success {
+  color: #fff;
+  background-color: #0C867D;
+  border-color: #0C867D;
+  background: -webkit-gradient(linear, left bottom, right top, from(#064f51), to(#279184));
+  background: linear-gradient(to top right, #064f51, #279184);
+}
+
+/* line 450, src/scss/old/old-rename.scss */
+.comment {
+  background: url(images/noun_comment_2969806.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -1em;
+}
+
+/* line 458, src/scss/old/old-rename.scss */
+.not-provided {
+  line-height: 1.2em;
+}
+
+/* line 462, src/scss/old/old-rename.scss */
+.textblank {
+  width: 4em;
+  display: inline-block;
+  border-bottom: 1px solid;
+  margin: 0 .3em;
+}

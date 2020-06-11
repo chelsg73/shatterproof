@@ -7,53 +7,60 @@
  */
 
 /* line 6, src/scss/home-only.scss */
-#callOut .fas.fa-exclamation-circle {
+#callOut .fas.fa-exclamation-circle, #callOut .fas.fa-exclamation {
   color: #0C867D;
-  font-size: 1.3em;
+  font-size: 1.3rem;
+  padding-right: .6rem;
 }
 
-/* line 11, src/scss/home-only.scss */
+/* line 12, src/scss/home-only.scss */
 #homeFirst {
   font-weight: 500;
-  letter-spacing: .03em;
+  letter-spacing: .065rem;
   font-size: 2.8rem;
+  line-height: 3.22rem;
 }
 
-/* line 16, src/scss/home-only.scss */
+/* line 18, src/scss/home-only.scss */
 .homeTopStyle {
   display: inline;
   font-weight: 700;
-  font-size: 1.4em;
-  letter-spacing: .02em;
+  font-size: 1.4rem;
+  letter-spacing: .03rem;
   line-height: 2rem;
 }
 
-/* line 23, src/scss/home-only.scss */
-.homeTopTwo {
-  line-height: 1.3em;
+/* line 26, src/scss/home-only.scss */
+.heading {
+  line-height: 2.5rem;
 }
 
-/* line 26, src/scss/home-only.scss */
+/* line 30, src/scss/home-only.scss */
+.homeTopTwo {
+  line-height: 1.3rem;
+}
+
+/* line 33, src/scss/home-only.scss */
 #mobileShowDiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-/* line 29, src/scss/home-only.scss */
+/* line 36, src/scss/home-only.scss */
 #mobileHideDiv {
   display: none;
 }
 
-/* line 52, src/scss/home-only.scss */
+/* line 59, src/scss/home-only.scss */
 #distanceastext {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   border-bottom: 3px solid #EBF6F5;
   font-weight: 700 !important;
   padding: 0 0;
 }
 
-/* line 57, src/scss/home-only.scss */
+/* line 64, src/scss/home-only.scss */
 #distanceastext #homeSelectDist {
   background: #fff;
   color: #0d867d;
@@ -69,38 +76,38 @@
   line-height: 1.5;
 }
 
-/* line 71, src/scss/home-only.scss */
+/* line 78, src/scss/home-only.scss */
 #distanceastext #homeSelectDist:hover {
   color: #60C5B7;
 }
 
-/* line 75, src/scss/home-only.scss */
+/* line 82, src/scss/home-only.scss */
 .distanceastext {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   border-bottom: 3px solid #EBF6F5;
   font-weight: 700;
   padding: 0 0;
 }
 
-/* line 81, src/scss/home-only.scss */
+/* line 88, src/scss/home-only.scss */
 #homeSearch {
   padding: .5rem 1rem;
   max-width: 200px;
 }
 
-/* line 86, src/scss/home-only.scss */
+/* line 93, src/scss/home-only.scss */
 .search-form-control {
   background: #fff;
   border-radius: 0;
 }
 
-/* line 91, src/scss/home-only.scss */
+/* line 98, src/scss/home-only.scss */
 #homeNote {
   color: #5C5D5F;
-  font-size: .97em;
+  font-size: .97rem;
 }
 
-/* line 95, src/scss/home-only.scss */
+/* line 102, src/scss/home-only.scss */
 .custom-select {
   border: 1px solid #C7C8CC;
   border-radius: 0;
@@ -116,33 +123,33 @@
 }
 
 /* probably temporary handling of substance drop-menu */
-/* line 111, src/scss/home-only.scss */
+/* line 118, src/scss/home-only.scss */
 #substancechecklist {
   border-radius: 0;
   -webkit-transform: translate3d(0px, 41px, 0px) !important;
           transform: translate3d(0px, 41px, 0px) !important;
   -webkit-box-shadow: 0 2px 4px #5C5D5F;
           box-shadow: 0 2px 4px #5C5D5F;
-  padding: .3em .8em 1em .8em;
+  padding: .3rem .8rem 1rem .8rem;
 }
 
-/* line 117, src/scss/home-only.scss */
+/* line 124, src/scss/home-only.scss */
 #substancechecklist .input-group-text {
   background: none;
   border: none;
 }
 
-/* line 121, src/scss/home-only.scss */
+/* line 128, src/scss/home-only.scss */
 #substancechecklist .custom-control-input {
   position: relative;
 }
 
-/* line 124, src/scss/home-only.scss */
+/* line 131, src/scss/home-only.scss */
 .custom-select.dropdown {
   position: relative;
 }
 
-/* line 127, src/scss/home-only.scss */
+/* line 134, src/scss/home-only.scss */
 #SubstanceDropdown {
   width: 100%;
   position: relative;
@@ -150,36 +157,36 @@
   color: #6c757d;
 }
 
-/* line 133, src/scss/home-only.scss */
+/* line 140, src/scss/home-only.scss */
 #SubstanceDropdown:hover {
   color: #0C867D;
   text-decoration: none;
   font-weight: 300;
 }
 
-/* line 150, src/scss/home-only.scss */
+/* line 157, src/scss/home-only.scss */
 .linearGradBottom a {
   color: #0C867D;
 }
 
-/* line 154, src/scss/home-only.scss */
+/* line 161, src/scss/home-only.scss */
 .treatment {
-  line-height: 1.3em;
-  padding-bottom: .5em;
-  padding-top: .5em;
+  line-height: 1.3rem;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
 }
 
-/* line 160, src/scss/home-only.scss */
+/* line 167, src/scss/home-only.scss */
 #qualityTag {
   color: #5C5D5F;
 }
 
-/* line 163, src/scss/home-only.scss */
+/* line 170, src/scss/home-only.scss */
 .accordion > .card {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
-/* line 166, src/scss/home-only.scss */
+/* line 173, src/scss/home-only.scss */
 .v3#accordionExample .card-header {
   background-color: #fff !important;
   border-bottom: 1px solid #fff;
@@ -188,26 +195,26 @@
   padding-top: 0;
 }
 
-/* line 173, src/scss/home-only.scss */
+/* line 180, src/scss/home-only.scss */
 .v3#accordionExample .card-header p {
   margin-bottom: 0;
   font-family: inherit;
-  line-height: 1.4em;
+  line-height: 1.4rem;
 }
 
-/* line 179, src/scss/home-only.scss */
+/* line 186, src/scss/home-only.scss */
 .v3#accordionExample .card-header h4 {
   color: #5C5D5F !important;
   padding: 0.3rem 0.75rem;
   width: 100%;
   text-align: left;
   padding-left: 0;
-  line-height: 1.3em;
+  line-height: 1.3rem;
   font-size: 1.2rem;
   font-family: inherit;
 }
 
-/* line 191, src/scss/home-only.scss */
+/* line 198, src/scss/home-only.scss */
 .v3#accordionExample .card-header:before {
   content: " ";
   position: absolute;
@@ -218,98 +225,98 @@
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 0;
-  top: .7em;
+  top: .7rem;
   margin-left: 0;
 }
 
-/* line 204, src/scss/home-only.scss */
+/* line 211, src/scss/home-only.scss */
 .v3#accordionExample .accordion > .card {
-  margin-bottom: 1.06em;
+  margin-bottom: 1.06rem;
   padding-top: 0;
 }
 
-/* line 208, src/scss/home-only.scss */
+/* line 215, src/scss/home-only.scss */
 .v3#accordionExample .fast .card-header:before {
   background: #804099;
 }
 
-/* line 211, src/scss/home-only.scss */
+/* line 218, src/scss/home-only.scss */
 .v3#accordionExample .personal .card-header:before {
   background: #3F63AC;
 }
 
-/* line 214, src/scss/home-only.scss */
+/* line 221, src/scss/home-only.scss */
 .v3#accordionExample .monitor .card-header:before {
   background: #8FC640;
 }
 
-/* line 217, src/scss/home-only.scss */
+/* line 224, src/scss/home-only.scss */
 .v3#accordionExample .carecoord .card-header:before {
   background: #9E2064;
 }
 
-/* line 220, src/scss/home-only.scss */
+/* line 227, src/scss/home-only.scss */
 .v3#accordionExample .evidence .card-header:before {
   background: #9C905C;
 }
 
-/* line 223, src/scss/home-only.scss */
+/* line 230, src/scss/home-only.scss */
 .v3#accordionExample .access .card-header:before {
   background: #299284;
 }
 
-/* line 226, src/scss/home-only.scss */
+/* line 233, src/scss/home-only.scss */
 .v3#accordionExample .recovery .card-header:before {
   background: #292562;
 }
 
-/* line 229, src/scss/home-only.scss */
+/* line 236, src/scss/home-only.scss */
 .v3#accordionExample .fast .card-header {
   border-top: 1px solid #804099;
 }
 
-/* line 232, src/scss/home-only.scss */
+/* line 239, src/scss/home-only.scss */
 .v3#accordionExample .personal .card-header {
   border-top: 1px solid #3F63AC;
 }
 
-/* line 235, src/scss/home-only.scss */
+/* line 242, src/scss/home-only.scss */
 .v3#accordionExample .monitor .card-header {
   border-top: 1px solid #8FC640;
 }
 
-/* line 238, src/scss/home-only.scss */
+/* line 245, src/scss/home-only.scss */
 .v3#accordionExample .carecoord .card-header {
   border-top: 1px solid #9E2064;
 }
 
-/* line 241, src/scss/home-only.scss */
+/* line 248, src/scss/home-only.scss */
 .v3#accordionExample .evidence .card-header {
   border-top: 1px solid #9C905C;
 }
 
-/* line 244, src/scss/home-only.scss */
+/* line 251, src/scss/home-only.scss */
 .v3#accordionExample .access .card-header {
   border-top: 1px solid #299284;
 }
 
-/* line 247, src/scss/home-only.scss */
+/* line 254, src/scss/home-only.scss */
 .v3#accordionExample .recovery .card-header {
   border-top: 1px solid #292562;
 }
 
-/* line 251, src/scss/home-only.scss */
+/* line 258, src/scss/home-only.scss */
 .v3#accordionExample .card-header:after {
   content: "";
 }
 
-/* line 255, src/scss/home-only.scss */
+/* line 262, src/scss/home-only.scss */
 #fakevid:before {
   font: normal normal normal 14px/1 FontAwesome;
   font-family: 'Font Awesome 5 Free';
   content: "\f144";
-  margin-left: 0.25em;
-  font-size: 6em;
+  margin-left: 0.25rem;
+  font-size: 6rem;
   vertical-align: middle;
   color: #fff;
   position: absolute;
@@ -319,22 +326,22 @@
   opacity: .7;
 }
 
-/* line 269, src/scss/home-only.scss */
+/* line 276, src/scss/home-only.scss */
 #fakevid {
   position: relative;
 }
 
-/* line 277, src/scss/home-only.scss */
+/* line 284, src/scss/home-only.scss */
 #homeQuote1 {
   top: -2.5rem;
   font-family: serif;
-  font-size: 7.5em;
+  font-size: 7.5rem;
   position: absolute;
   left: -0.1rem;
   color: #bce3de;
 }
 
-/* line 285, src/scss/home-only.scss */
+/* line 292, src/scss/home-only.scss */
 #homeQuote2 {
   font-family: serif;
   position: relative;
@@ -347,45 +354,45 @@
           transform: scale(7.5);
   -webkit-transform-origin: top left;
           transform-origin: top left;
-  padding-left: .05em;
+  padding-left: .05rem;
   color: #bce3de;
 }
 
-/* line 298, src/scss/home-only.scss */
+/* line 305, src/scss/home-only.scss */
 .circleimgDiv {
   margin-right: 0.7rem;
 }
 
-/* line 301, src/scss/home-only.scss */
+/* line 308, src/scss/home-only.scss */
 #homeCircleImg {
   padding-top: 5px;
   border-radius: 100%;
 }
 
 @media (min-width: 768px) {
-  /* line 306, src/scss/home-only.scss */
+  /* line 313, src/scss/home-only.scss */
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
-  /* line 309, src/scss/home-only.scss */
+  /* line 316, src/scss/home-only.scss */
   .homeTopTwo {
-    line-height: 1.4em;
+    line-height: 1.4rem;
   }
-  /* line 312, src/scss/home-only.scss */
+  /* line 319, src/scss/home-only.scss */
   #homeQuote1 {
     top: -3rem;
     left: 0.0rem;
   }
-  /* line 316, src/scss/home-only.scss */
+  /* line 323, src/scss/home-only.scss */
   #homeQuote2 {
     width: 0;
     height: 0;
   }
-  /* line 320, src/scss/home-only.scss */
+  /* line 327, src/scss/home-only.scss */
   #mobileShowDiv {
     display: none !important;
   }
-  /* line 323, src/scss/home-only.scss */
+  /* line 330, src/scss/home-only.scss */
   #mobileHideDiv {
     display: inline-block;
     border-bottom: none !important;
@@ -393,25 +400,25 @@
 }
 
 @media (min-width: 992px) {
-  /* line 336, src/scss/home-only.scss */
+  /* line 343, src/scss/home-only.scss */
   #homeSearch {
     font-size: .85rem;
     padding: .6rem;
     width: 100%;
   }
-  /* line 341, src/scss/home-only.scss */
+  /* line 348, src/scss/home-only.scss */
   #quoteBox > div > .row {
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 346, src/scss/home-only.scss */
+  /* line 353, src/scss/home-only.scss */
   #homeQuote1 {
     top: -4rem;
-    font-size: 8em;
+    font-size: 8rem;
     left: -2.3rem;
   }
-  /* line 351, src/scss/home-only.scss */
+  /* line 358, src/scss/home-only.scss */
   #homeQuote2 {
     width: 0;
     height: 0;
@@ -419,32 +426,32 @@
             transform: scale(8);
     bottom: -3.5rem;
   }
-  /* line 358, src/scss/home-only.scss */
+  /* line 365, src/scss/home-only.scss */
   .bottomImg > img {
     max-width: 85% !important;
   }
-  /* line 361, src/scss/home-only.scss */
+  /* line 368, src/scss/home-only.scss */
   #homeCircleImg {
     max-width: 85%;
   }
-  /* line 364, src/scss/home-only.scss */
+  /* line 371, src/scss/home-only.scss */
   #exampleModalCenter .modal-header {
     padding-bottom: 0;
     border-bottom: none;
   }
-  /* line 368, src/scss/home-only.scss */
+  /* line 375, src/scss/home-only.scss */
   #exampleModalCenter .modal-body {
     padding: 1rem 3rem;
     color: #5C5D5F;
   }
-  /* line 372, src/scss/home-only.scss */
+  /* line 379, src/scss/home-only.scss */
   .modal-dialog {
     max-width: 750px;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 377, src/scss/home-only.scss */
+  /* line 384, src/scss/home-only.scss */
   #homeSearch {
     font-size: 1rem;
   }

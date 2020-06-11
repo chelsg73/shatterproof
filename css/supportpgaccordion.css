@@ -19,53 +19,54 @@
 /* line 12, src/scss/supportpgaccordion.scss */
 .supportpg .pagetitle {
   font-family: 'museo-sans';
-  font-size: 2.4em;
+  font-size: 2.4rem;
   font-weight: 400;
   color: #fff;
-  letter-spacing: .02em;
+  letter-spacing: .02rem;
   text-transform: none;
-  margin: 4.2em 0 1.8em;
+  margin: 10.5rem 0 4.3rem;
 }
 
 /* line 21, src/scss/supportpgaccordion.scss */
 .supportpg h2 {
   font-size: 2.35rem;
+  line-height: 2.55rem;
 }
 
-/* line 24, src/scss/supportpgaccordion.scss */
+/* line 25, src/scss/supportpgaccordion.scss */
 .supportpg h3 {
   font-weight: 400;
   color: #949598;
-  letter-spacing: .015em;
-  font-size: 1.01em;
+  letter-spacing: .015rem;
+  font-size: 1.01rem;
 }
 
-/* line 30, src/scss/supportpgaccordion.scss */
+/* line 31, src/scss/supportpgaccordion.scss */
 .supportpg .facility_header {
   color: #0C867D;
-  letter-spacing: .03em;
-  font-size: 1.05em;
+  letter-spacing: .03rem;
+  font-size: 1.05rem;
   font-weight: 700;
 }
 
-/* line 36, src/scss/supportpgaccordion.scss */
+/* line 37, src/scss/supportpgaccordion.scss */
 .supportpg .clickExpand {
   color: #949598;
 }
 
-/* line 39, src/scss/supportpgaccordion.scss */
+/* line 40, src/scss/supportpgaccordion.scss */
 .supportpg .toplabel {
-  font-size: .8em;
-  line-height: 1.1em;
+  font-size: .8rem;
+  line-height: 1.1rem;
   padding: 0 0 0 1rem;
 }
 
-/* line 44, src/scss/supportpgaccordion.scss */
+/* line 45, src/scss/supportpgaccordion.scss */
 .supportpg .border-bottom {
   border-bottom: 2px solid #e3e3e3;
 }
 
-/* line 47, src/scss/supportpgaccordion.scss */
+/* line 48, src/scss/supportpgaccordion.scss */
 .supportpg .internalrow {
   /*				to make the same as button that is header row*/
   padding: 0rem 2rem;
@@ -73,12 +74,12 @@
   position: relative;
 }
 
-/* line 53, src/scss/supportpgaccordion.scss */
+/* line 54, src/scss/supportpgaccordion.scss */
 .supportpg .internalrow .col-md-3 {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
-/* line 56, src/scss/supportpgaccordion.scss */
+/* line 57, src/scss/supportpgaccordion.scss */
 .supportpg .card {
   border-bottom: 12px solid #fff;
   margin-bottom: 0;
@@ -86,7 +87,7 @@
   border-radius: 0;
 }
 
-/* line 62, src/scss/supportpgaccordion.scss */
+/* line 63, src/scss/supportpgaccordion.scss */
 .supportpg .card-header {
   border-bottom: none;
   background: none !important;
@@ -95,21 +96,22 @@
   padding: 0px;
 }
 
-/* line 69, src/scss/supportpgaccordion.scss */
+/* line 70, src/scss/supportpgaccordion.scss */
 .supportpg .card-header .btn {
   color: #5C5D5F !important;
-  line-height: 1.4em;
+  line-height: 1.4rem;
   width: 100%;
+  height: 100%;
   text-align: left;
 }
 
-/* line 75, src/scss/supportpgaccordion.scss */
+/* line 77, src/scss/supportpgaccordion.scss */
 .supportpg .card-header .btn[aria-expanded="true"] {
   margin-bottom: 0;
   border-bottom: 1px solid #0C867D;
 }
 
-/* line 80, src/scss/supportpgaccordion.scss */
+/* line 82, src/scss/supportpgaccordion.scss */
 .supportpg .card-header .btn .expander:after {
   font: normal normal normal 14px/1 FontAwesome;
   font-family: 'Font Awesome 5 Free';
@@ -118,60 +120,66 @@
   position: absolute;
   background: none;
   left: -15px;
-  top: .65em;
+  top: .65rem;
   color: #11857d;
   -webkit-transition: all 400ms ease-in;
   transition: all 400ms ease-in;
 }
 
-/* line 93, src/scss/supportpgaccordion.scss */
+/* line 95, src/scss/supportpgaccordion.scss */
 .supportpg .card-header .btn[aria-expanded="true"] .expander:after {
   content: "\f068";
 }
 
-/* line 96, src/scss/supportpgaccordion.scss */
+/* line 98, src/scss/supportpgaccordion.scss */
 .supportpg .card-header .btn[aria-expanded="false"] .expander:after {
   content: "\f067";
 }
 
-/* line 99, src/scss/supportpgaccordion.scss */
+/* line 101, src/scss/supportpgaccordion.scss */
 .supportpg .card-header.true:after {
   color: #0C867D;
   background: #fff;
 }
 
-/* line 103, src/scss/supportpgaccordion.scss */
+/* line 105, src/scss/supportpgaccordion.scss */
 .supportpg .card-header.false:after {
   color: #F26722;
   background: #fff;
   content: "\f057";
 }
 
-/* line 108, src/scss/supportpgaccordion.scss */
+/* line 110, src/scss/supportpgaccordion.scss */
 .supportpg li,
 .supportpg .card ul li {
   list-style: none;
   color: #5C5D5F;
   border-bottom: none;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
-/* line 115, src/scss/supportpgaccordion.scss */
+/* line 117, src/scss/supportpgaccordion.scss */
 .supportpg li ul {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
-/* line 118, src/scss/supportpgaccordion.scss */
+/* line 120, src/scss/supportpgaccordion.scss */
 .supportpg ul li::before {
   content: "\2022";
   color: #0d867d;
   font-weight: bold;
   display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+  width: 1rem;
+  margin-left: -1rem;
 }
 
-/* line 127, src/scss/supportpgaccordion.scss */
+/* line 129, src/scss/supportpgaccordion.scss */
+.supportpg ul li ul li:before {
+  color: #60c5b7;
+  content: '\25AA';
+}
+
+/* line 134, src/scss/supportpgaccordion.scss */
 .supportpg ol {
   list-style: none;
   counter-reset: my-awesome-counter;
@@ -179,15 +187,15 @@
           padding-inline-start: 25px;
 }
 
-/* line 132, src/scss/supportpgaccordion.scss */
+/* line 139, src/scss/supportpgaccordion.scss */
 .supportpg ol li {
   counter-increment: my-awesome-counter;
 }
 
-/* line 135, src/scss/supportpgaccordion.scss */
+/* line 142, src/scss/supportpgaccordion.scss */
 .supportpg ol li::before {
   content: counter(my-awesome-counter) ". ";
   color: #0C867D;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }

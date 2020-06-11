@@ -1,0 +1,86 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2020 
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* line 2, src/scss/payerprof-only.scss */
+.statetitle {
+  font-family: 'museo-sans';
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: .02rem;
+  text-transform: none;
+}
+
+/* line 11, src/scss/payerprof-only.scss */
+#qualityCare .card.toStick.fromcomp {
+  border: none;
+}
+
+/* line 17, src/scss/payerprof-only.scss */
+#stateselect {
+  font-size: .9rem;
+}
+
+/* line 21, src/scss/payerprof-only.scss */
+table#stateinfotable2 {
+  font-size: .9rem;
+}
+
+/* line 25, src/scss/payerprof-only.scss */
+#stateinfotable2 td {
+  width: 25%;
+  letter-spacing: .03rem;
+}
+
+/* line 30, src/scss/payerprof-only.scss */
+#stateinfotable2 td .surveypct {
+  padding-bottom: .42rem;
+  display: inline-block;
+}
+
+/* line 35, src/scss/payerprof-only.scss */
+#stateinfotable2 .surveypct {
+  color: inherit;
+  font-size: 1.4rem;
+}
+
+/* line 41, src/scss/payerprof-only.scss */
+#stateinfotable2 .toplabel {
+  padding-top: .37rem;
+  padding-bottom: .2rem;
+  padding-right: .6rem;
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+/* line 49, src/scss/payerprof-only.scss */
+#stateinfotable2 b {
+  letter-spacing: .03rem;
+  font-size: 1rem;
+  letter-spacing: .04rem;
+  padding-top: .7rem;
+  display: inline-block;
+  padding-bottom: .1rem;
+}
+
+/* line 59, src/scss/payerprof-only.scss */
+#stateinfotable2 .headerrow {
+  border-top: 1px solid #53ad9f;
+}
+
+/* line 63, src/scss/payerprof-only.scss */
+#stateinfotable2 .headerrow:first-of-type {
+  border-top: none;
+}
+
+/* line 67, src/scss/payerprof-only.scss */
+.custom-select {
+  color: #5C5D5F;
+  height: auto;
+  padding: .5rem 1rem;
+}
